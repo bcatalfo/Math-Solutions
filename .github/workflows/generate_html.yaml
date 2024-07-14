@@ -11,16 +11,20 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Pandoc
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install KaTeX
       run: |
-        sudo apt-get update
-        sudo apt-get install -y pandoc
+        npm install katex
 
     - name: Convert Markdown to HTML
       run: |
         for file in $(find . -name "*.md"); do
-          output="${file%.md}.html"
-          pandoc "$file" --from markdown --to html --template=katex-template.html -o "$output"
+          base=$(basename "$file" .md)
+          npx katex < "$file" -o "${base}.html" --display-mode
         done
 
     - name: Debugging Step
