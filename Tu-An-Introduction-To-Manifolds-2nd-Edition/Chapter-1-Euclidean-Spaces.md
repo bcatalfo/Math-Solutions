@@ -1,3 +1,8 @@
+---
+export_on_save:
+  html: true
+---
+
 # Chapter 1 - Euclidean Spaces
 
 ## 1.1. A function that is \( C^2 \) but not \( C^3 \)
