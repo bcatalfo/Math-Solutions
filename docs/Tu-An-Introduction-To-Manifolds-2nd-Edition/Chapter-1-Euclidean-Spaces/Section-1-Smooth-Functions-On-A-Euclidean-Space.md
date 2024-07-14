@@ -66,3 +66,45 @@ Since $p_{2k}$ is of degree \( 2k \), \(p'_{2k}\) is of degree \( 2k - 1 \), so 
 ### (b)
 Prove that \( f \) is \( C^\infty \) on \( \mathbb{R} \) and that \( f^{(k)}(0) = 0 \) for all \( k \geq 0 \).
 
+#### Solution
+To prove that \( f \) is \( C^{\infty}\) on \( \mathbb{R} \) it is sufficient to show that it is smooth at \( x = 0 \), as we handled that case \( x > 0 \) in part (a) and the case \( x < 0 \) is trivial as we have a whole epsilon ball where \( f = 0 \). Take \( k \geq 0 \), we need to show that the limit
+$$
+\lim_{h \to 0} \frac{f^{(k)}(h) - f^{(k)}(0)}{h}
+$$ 
+exists, and for the second part of the question we need to show that it equals to zero. We proceed by induction. For the base case \( k = 0 \) we have that
+$$
+\lim_{h \to 0} \frac{f^{(k)}(h) - f^{(k)}(0)}{h} = \lim_{h \to 0} \frac{f(h) - f(0)}{h} 
+$$ 
+This splits into two cases: approaching from the left and from the right. From the left we always have \( h < 0 \) so
+$$
+\lim_{h \to 0^-} \frac{f(h) - f(0)}{h} = \lim_{h \to 0^-} \frac{0 - 0}{h} = 0
+$$
+From the right we always have \( h > 0 \) so 
+$$
+\lim_{h \to 0^+} \frac{f(h) - f(0)}{h} = \lim_{h \to 0^+} \frac{e^{-1/h} - 0}{h}
+$$
+Let \( y = 1/h \) so as \( h \to 0\) we have \( y \to \infty \)
+$$
+\lim_{h \to 0^+} \frac{e^{-1/h} - 0}{h} = \lim_{y \to \infty} ye^{-y} = \lim_{y \to \infty} \frac{y}{e^y} = 0
+$$
+The last equality follows from L'Hospital's Rule. Now it's time for the induction. Assume that 
+$$
+\lim_{h \to 0} \frac{f^{(k)}(h) - f^{(k)}(0)}{h} = 0
+$$ 
+We need to show that (note that the following limit is not even assumed to exist)
+$$
+\lim_{h \to 0} \frac{f^{(k+1)}(h) - f^{(k+1)}(0)}{h} = 0
+$$ 
+From the assumption it is clear that \(f^{(k+1)}(0) = 0 \) so all that remains to show is that
+$$
+\lim_{h \to 0} \frac{f^{(k+1)}(h)}{h} = 0
+$$ 
+If \(h\) approaches from the left than this is obvious as the left side of the function is identically zero (since the left side of \(f \) is zero so are all of its derivatives). So without loss of generality approach from the right, and use part (a)
+$$
+\lim_{h \to 0^+} \frac{f^{(k+1)}(h)}{h} = \lim_{h \to 0^+}\frac{p_{2k+2}(1/h)e^{-1/h}}{h} = \lim_{h \to 0^+} \frac{p_{2k+3}(1/h)}{e^{1/h}}
+$$ 
+Once again substitue \( y = 1/h\)
+$$
+\lim_{h \to 0^+} \frac{f^{(k+1)}(h)}{h} = \lim_{y \to \infty} \frac{p_{2k+3}(y)}{e^{y}} = 0
+$$
+The last equality following from repeated applications of L'Hospital's Rule.
