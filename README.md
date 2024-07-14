@@ -14,7 +14,7 @@ The repository is organized by textbooks. Each textbook has its own folder, and 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
