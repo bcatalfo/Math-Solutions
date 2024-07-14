@@ -1,0 +1,36 @@
+name: Generate HTML
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Pandoc
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pandoc
+
+    - name: Convert Markdown to HTML
+      run: |
+        for file in $(find . -name "*.md"); do
+          output="${file%.md}.html"
+          pandoc "$file" --from markdown --to html --template=katex-template.html -o "$output"
+        done
+
+    - name: Commit and push HTML
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add *.html
+        git commit -m 'Generate HTML from Markdown files'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
