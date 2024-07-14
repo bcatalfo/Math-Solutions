@@ -2,8 +2,6 @@ name: Generate HTML
 
 on:
   push:
-    branches:
-      - main  
 
 jobs:
   build:
@@ -11,7 +9,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Pandoc
       run: |
@@ -23,6 +21,20 @@ jobs:
         for file in $(find . -name "*.md"); do
           output="${file%.md}.html"
           pandoc "$file" --from markdown --to html --template=katex-template.html -o "$output"
+        done
+
+    - name: Debugging Step
+      run: |
+        echo "List of files in root directory:"
+        ls -la
+        echo "List of files in current directory:"
+        find . -type f
+        echo "Current directory:"
+        pwd
+        echo "Contents of the generated HTML files:"
+        for file in $(find . -name "*.html"); do
+          echo "Contents of $file:"
+          cat "$file"
         done
 
     - name: Commit and push HTML
