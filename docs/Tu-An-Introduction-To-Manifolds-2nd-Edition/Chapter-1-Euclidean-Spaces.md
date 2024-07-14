@@ -29,17 +29,7 @@ g''(x) =
 \text{undefined} & \text{for } x = 0.
 \end{cases}
 $$
-
-So
-$$
-g'''(x) = 
-\begin{cases} 
--\frac{2}{9}x^{-5/3} & \text{for } x \ne 0, \\
-\text{undefined} & \text{for } x = 0.
-\end{cases}
-$$
-
-Thus, \( g \) is \( C^2 \) but not \( C^3 \) at \( x = 0 \).
+By the fundamental theorem of calculus \( h'(x) = g(x)\), so this shows that \( h \) is \( C^2 \) but not \( C^3 \) at \( x = 0 \) (as \( h''' = g'' \) ). Note that \( h \) is a polynomial and therefore continuous.
 
 ## 1.2.* A \( C^\infty \) function very flat at 0
 
