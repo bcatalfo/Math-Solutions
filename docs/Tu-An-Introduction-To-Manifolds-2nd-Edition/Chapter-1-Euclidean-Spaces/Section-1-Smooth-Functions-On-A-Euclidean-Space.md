@@ -83,7 +83,7 @@ From the right we always have \( h > 0 \) so
 $$
 \lim_{h \to 0^+} \frac{f(h) - f(0)}{h} = \lim_{h \to 0^+} \frac{e^{-1/h} - 0}{h}
 $$
-Let \( y = 1/h \) so as \( h \to 0\) we have \( y \to \infty \)
+Let \( y = 1/h \) so as \( h \to 0^+\) we have \( y \to \infty \)
 $$
 \lim_{h \to 0^+} \frac{e^{-1/h} - 0}{h} = \lim_{y \to \infty} ye^{-y} = \lim_{y \to \infty} \frac{y}{e^y} = 0
 $$
@@ -103,7 +103,7 @@ If \(h\) approaches from the left than this is obvious as the left side of the f
 $$
 \lim_{h \to 0^+} \frac{f^{(k+1)}(h)}{h} = \lim_{h \to 0^+}\frac{p_{2k+2}(1/h)e^{-1/h}}{h} = \lim_{h \to 0^+} \frac{p_{2k+3}(1/h)}{e^{1/h}}
 $$ 
-Once again substitue \( y = 1/h\)
+Once again substitute \( y = 1/h\)
 $$
 \lim_{h \to 0^+} \frac{f^{(k+1)}(h)}{h} = \lim_{y \to \infty} \frac{p_{2k+3}(y)}{e^{y}} = 0
 $$
