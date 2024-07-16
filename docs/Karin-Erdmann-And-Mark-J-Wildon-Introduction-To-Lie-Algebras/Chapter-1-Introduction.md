@@ -22,6 +22,10 @@ $$
 $$
 Since \( [x, x] = 0\) by property (L1).
 ***Exercise 1.2***
+Let \( F = \mathbf{R} \). The vector product \( (x, y) \mapsto  x \wedge y\) defines the structure of a Lie algebra on \(\mathbf{R}^3\). We denote this Lie algebra by \( \mathbf{R}^3_\wedge\). Explicitly, if \( x=(x_1, x_2, x_3)\) and \( y=(y_1, y_2, y_3)\) then
+$$
+x \wedge y = (x_2y_3 - x_3y_2, x_3y_1 - x_1y_3, x_1y_2 - x_2y_1)
+$$
 Convince yourself that \( \wedge \) is bilinear. Then check that the Jacobi identity holds. *Hint*: If \( x \cdot y \) denotes the dot product of the vectors \( x, y \in \mathbb{R}^3 \), then
 $$
 x \wedge (y \wedge z) = (x \cdot z)y - (x \cdot y)z \quad \text{for all } x,y, z \in \mathbb{R^3}
@@ -31,10 +35,6 @@ Let \( a, b \in \mathbb{R} \) and \(x, y, z \in \mathbb{R^3}\). To show that \( 
 $$
 (a x + b y) \wedge z = a (x \wedge z) + b (y \wedge z), \\
 z \wedge (a x + b y) = a ( z \wedge x) + b(z \wedge y),
-$$
-By definition for \( x = (x_1, x_2, x_3) \) amd \( y = (y_1, y_2, y_2) \) in \(\mathbb{R^3}\) we have
-$$
-x \wedge y = (x_2y_3 - x_3y_2, x_3y_1 - x_1y_3, x_1y_2 - x_2y_1)
 $$
 So
 $$
