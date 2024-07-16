@@ -68,3 +68,9 @@ Finally we must show that the Jacobi identity holds for \( \wedge \). This is ea
 $$
 x \wedge (y \wedge z) + y \wedge (z \wedge x) + z \wedge (x \wedge y) = ((x \cdot z)y - (x \cdot y)z) + ((y \cdot x)z - (y \cdot z)x) + ((z \cdot y)x - (z \cdot x)y) = 0
 $$
+***Exercise 1.3***
+Suppose that \( V \) is a finite-dimensional vector space over \( F \). Write \( \mathrm{gl}(V) \) for the set of all linear maps from \( V \) to \( V \). This is again a vector space over \( F \), and it becomes a Lie algebra, known as the *general linear algebra*, if we define the Lie bracket \( [-, -]\) by
+$$
+[x, y] \coloneqq x \circ y- y \circ x \quad \text{for } x, y \in \mathrm{gl}(V), 
+$$
+where \( \circ \) denotes the composition of maps. Check that the Jacobi identity holds.
