@@ -13,14 +13,14 @@ and
 $$
 [0, v] = [0 + 0, v] = [0, v] + [0, v]　
 $$
-Subtracting \( [v, 0]\) from the first equation and \( [0, v] \) from the second gives the desired result.
+Subtracting \( [v, 0]\) from the first equation and \( [0, v] \) from the second gives the desired result. \( \square\)
 (ii) Suppose that \( x, y \in L\) satisfy \( [x, y] \neq 0\). Show that \( x \) and \( y \) are linearly independent over \( F \).
 **Solution**
 The contrapositive of the statement is to assume that \( x \) and \( y \) are linearly dependent over F and prove that \( [x, y] = 0 \). We shall prove the contrapositive. So take \( x = ky \) for some \( k \in F\). Then
 $$
 [x, y] = [x, kx] = k [x, x] = 0
 $$
-Since \( [x, x] = 0\) by property (L1).
+Since \( [x, x] = 0\) by property (L1). \( \square\)
 ***Exercise 1.2***
 Let \( F = \mathbf{R} \). The vector product \( (x, y) \mapsto  x \wedge y\) defines the structure of a Lie algebra on \(\mathbf{R}^3\). We denote this Lie algebra by \( \mathbf{R}^3_\wedge\). Explicitly, if \( x=(x_1, x_2, x_3)\) and \( y=(y_1, y_2, y_3)\) then
 $$
@@ -68,6 +68,7 @@ Finally we must show that the Jacobi identity holds for \( \wedge \). This is ea
 $$
 x \wedge (y \wedge z) + y \wedge (z \wedge x) + z \wedge (x \wedge y) = ((x \cdot z)y - (x \cdot y)z) + ((y \cdot x)z - (y \cdot z)x) + ((z \cdot y)x - (z \cdot x)y) = 0
 $$
+\( \square \)
 ***Exercise 1.3***
 Suppose that \( V \) is a finite-dimensional vector space over \( F \). Write \( \mathrm{gl}(V) \) for the set of all linear maps from \( V \) to \( V \). This is again a vector space over \( F \), and it becomes a Lie algebra, known as the *general linear algebra*, if we define the Lie bracket \( [-, -]\) by
 $$
@@ -95,4 +96,4 @@ $$
 &= 0
 \end{aligned}
 $$
-It seems that all the terms cancelled out nicely! I see why this exercise is famous as one that every mathematician should do at least once in their life :)
+It seems that all the terms cancelled out nicely! I see why this exercise is famous as one that every mathematician should do at least once in their life :) \( \square \)
