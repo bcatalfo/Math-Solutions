@@ -2,7 +2,7 @@
 export_on_save:
   html: true
 ---
-*Exercise 1.1*
+***Exercise 1.1***
 (i) Show that \( [v, 0] = 0 = [0, v]\) for all \( v \in L \)
 **Solution**
 Since the Lie bracket is bilinear, we have
@@ -21,3 +21,50 @@ $$
 [x, y] = [x, kx] = k [x, x] = 0
 $$
 Since \( [x, x] = 0\) by property (L1).
+***Exercise 1.2***
+Convince yourself that \( \wedge \) is bilinear. Then check that the Jacobi identity holds. *Hint*: If \( x \cdot y \) denotes the dot product of the vectors \( x, y \in \mathbb{R}^3 \), then
+$$
+x \wedge (y \wedge z) = (x \cdot z)y - (x \cdot y)z \quad \text{for all } x,y, z \in \mathbb{R^3}
+$$
+**Solution**
+Let \( a, b \in \mathbb{R} \) and \(x, y, z \in \mathbb{R^3}\). To show that \( \wedge \) is bilinear we must show that
+$$
+(a x + b y) \wedge z = a (x \wedge z) + b (y \wedge z), \\
+z \wedge (a x + b y) = a ( z \wedge x) + b(z \wedge y),
+$$
+By definition for \( x = (x_1, x_2, x_3) \) amd \( y = (y_1, y_2, y_2) \) in \(\mathbb{R^3}\) we have
+$$
+x \wedge y = (x_2y_3 - x_3y_2, x_3y_1 - x_1y_3, x_1y_2 - x_2y_1)
+$$
+So
+$$
+\begin{aligned}
+(a x + b y) \wedge z &= (ax_1 + by_1, ax_2 + by_2, ax_3 + by_3) \wedge (z_1, z_2, z_3) \\
+&= \big((ax_2 + by_2)z_3 - (ax_3 + by_3)z_2, \\
+&\quad (ax_3 + by_3)z_1 - (ax_1 + by_1)z_3, \\
+&\quad (ax_1 + by_1)z_2 - (ax_2 + by_2)z_1\big) \\
+&= \big(a(x_2z_3 - x_3z_2) + b(y_2z_3 - y_3z_2), \\
+&\quad a(x_3z_1 - x_1z_3) + b(y_3z_1 - y_1z_3), \\
+&\quad a(x_1z_2 - x_2z_1) + b(y_1z_2 - y_2z_1)\big) \\
+&= a(x_2z_3 - x_3z_2, x_3z_1 - x_1z_3, x_1z_2 - x_2z_1) \\
+&\quad + b(y_2z_3 - y_3z_2, y_3z_1 - y_1z_3, y_1z_2 - y_2z_1) \\
+&= a (x \wedge z) + b (y \wedge z)
+\end{aligned}
+$$
+To show that \( z \wedge (a x + b y) = a ( z \wedge x) + b(z \wedge y) \) we could repeat the above but reversed, but there is a shortcut. Calculate that 
+$$
+\begin{aligned}
+y \wedge x &= (y_2x_3 - y_3x_2, y_3x_1 - y_1x_3, y_1x_2 - y_2x_1) \\
+&= - (y_3x_2 - y_2x_3, y_1x_3 - y_3x_1, y_2x_1 - y_1x_2) \\
+&= - (x_2y_3 - x_3y_2, x_3y_1 - x_1y_3, x_1y_2 - x_2y_1) \\
+&= - x \wedge y
+\end{aligned}
+$$
+So
+$$
+z \wedge (a x + b y) = - ((a x + b y) \wedge z) = -(a (x \wedge z) + b (y \wedge z)) = a(z \wedge x) + b(z \wedge y)
+$$
+Finally we must show that the Jacobi identity holds for \( \wedge \). This is easy using the given identity
+$$
+x \wedge (y \wedge z) + y \wedge (z \wedge x) + z \wedge (x \wedge y) = ((x \cdot z)y - (x \cdot y)z) + ((y \cdot x)z - (y \cdot z)x) + ((z \cdot y)x - (z \cdot x)y) = 0
+$$
