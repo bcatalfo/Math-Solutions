@@ -97,3 +97,15 @@ $$
 \end{aligned}
 $$
 It seems that all the terms cancelled out nicely! I see why this exercise is famous as one that every mathematician should do at least once in their life :) \( \square \)
+***Unnamed Exercise***
+Write \( \mathrm{gl}(n, F)\) for the vector space of all \( n \times n \) matrices over \( F \) with the Lie bracket defined by
+$$
+[x, y] \coloneqq xy - yx
+$$
+Where \( xy \) is the usual product of the matrices \( x \) and \( y \).
+As a vector space, \( \mathrm{gl}(n, F)\) has a basis consisting of the *matrix units* \( e_{ij} \) for \( 1 \leq i, j \leq n \). Here \( e_{ij} \) is the \( n \times n \) matrix which has 1 in the \(ij\)-th position and all other entries are 0. We leave it as an exercise to check that
+$$
+[e_{ij}, e_{kl}] = \delta_{jk}e_{il} - \delta_{il}e_{kj}
+$$
+where \( \delta \) is the Kronecker delta, defined by \( \delta_{ij} = 1\) if \( i = j \) and \( \delta_{ij} = 0\) otherwise.
+**Solution**
