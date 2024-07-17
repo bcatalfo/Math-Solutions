@@ -109,3 +109,19 @@ $$
 $$
 where \( \delta \) is the Kronecker delta, defined by \( \delta_{ij} = 1\) if \( i = j \) and \( \delta_{ij} = 0\) otherwise.
 **Solution**
+$$
+[e_{ij}, e_{kl}] = e_{ij}e_{kl} - e_{kl}e_{ij}
+$$
+Using the formula for matrix multiplication at some index \( 1 \leq a, b \leq n \) we get
+$$
+(e_{ij}e_{kl})_{ab} = \sum_{x = 0}^{n} (e_{ij})_{ax}\cdot(e_{kl})_{xb} 
+$$
+Whenever \( x \neq j\) by definition we have \( (e_{ij})_{ax} = 0\) so this reduces to
+$$
+(e_{ij}e_{kl})_{ab} = (e_{ij})_{aj}\cdot(e_{kl})_{jb} = \delta_{ai} \cdot \delta_{kj} \cdot \delta_{lb}
+$$
+Hence we have
+$$
+e_{ij}e_{kl} = \delta_{jk} \cdot e_{il}
+$$
+As by definition \( (e_{il})_{ab} = \delta_{ai} \cdot \delta_{lb}\). Rearranging symbols gives \( e_{kl}e_{ij} = \delta_{li}e_{kj}\), combining the results finishes the proof. \( \square \)
