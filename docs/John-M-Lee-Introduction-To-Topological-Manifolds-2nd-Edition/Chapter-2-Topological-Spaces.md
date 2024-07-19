@@ -13,3 +13,11 @@ This is obvious as \( X \) and \( \emptyset \) are both subsets of \( X \).
 Let \( U_1, \ldots, U_n \) be elements of \( \mathcal{T}\), then  \( U_1 \cap \cdots \cap U_n \subset U_1 \subset X\) so \( U_1 \cap \cdots \cap U_n \in \mathcal{P}(X) = \mathcal{T}\).
 (iii) \( \mathcal{T}\) is closed under arbitrary unions.
 Let \( (U_\alpha)_{\alpha \in A} \) be a family of elements of \( \mathcal{T}\), and let \( x \in \bigcup_{\alpha \in A} U_\alpha\). Then there must exist \( \alpha \in A\) such that \( x \in U_\alpha \subset X\), so \( x \in X\), hence \( \bigcup_{\alpha \in A} U_\alpha \in \mathcal{T}\). \( \square\)
+(b) Let \( Y \) be any set, and let \( \mathcal{T} = \{Y, \emptyset \}\).
+**Solution**
+(i) \( Y \) and \( \emptyset \) are elements of \( \mathcal{T}\).
+This is obvious by our defintion of \( \mathcal{T}\).
+(ii) \( \mathcal{T} \) is closed under finite intersections.
+The only intersection we can construct is \( Y \cap \emptyset = \emptyset \in \mathcal{T}\).
+(iii) \( \mathcal{T}\) is closed under arbitrary unions.
+The only union we can construct is \( Y \cup \emptyset = Y \in \mathcal{T}\). \( \square\)
