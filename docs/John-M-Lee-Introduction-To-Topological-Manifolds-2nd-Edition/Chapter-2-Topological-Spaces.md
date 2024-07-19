@@ -21,3 +21,4 @@ This is obvious by our defintion of \( \mathcal{T}\).
 The only intersection we can construct is \( Y \cap \emptyset = \emptyset \in \mathcal{T}\).
 (iii) \( \mathcal{T}\) is closed under arbitrary unions.
 The only union we can construct is \( Y \cup \emptyset = Y \in \mathcal{T}\). \( \square\)
+(c) Let \( Z \) be the set \( \{1, 2, 3\}\) and declare the open subsets to be \( \{1\}, \{ 1, 2\}, \{ 1, 2, 3\}\), and the empty set.
