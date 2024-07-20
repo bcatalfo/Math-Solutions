@@ -55,10 +55,10 @@ and
 $$
 \begin{aligned}
 B_{r_2}^{(d)}(x) &= \{y \in M : d(y,x) < r_2\} = \left\{y \in M : d(y,x) < \frac{r}{c}\right\} \\
-&= \{y \in M : c \cdot d(y,x) < r\} = \{y \in M : d'(y,x) < r\} = B_{r}^{(d')}(x)
+&= \{y \in M : c \cdot d(y,x) < r\} = \{y \in M : d'(y,x) < r\} = B_{r}^{(d')}(x).
 \end{aligned}
 $$
-\(\square\)
+So by part (a) \(d\) and \(d'\) generate the same topology on \(M\). \(\square\)
 **(c)** Define a metric \(d'\) on \(\mathbb{R^n}\) by \(d'(x,y) = \text{max}\{|x_1 - y_1|, \ldots, |x_n - y_n|\}\). Show that the Euclidean metric and \(d'\) generate the same topology on \(\mathbb{R^n}\). [Hint: see Exercise B.1.]
 **Solution**
 We begin by showing that \(d'\) is in fact a metric. Take \(x, y, z \in \mathbb{R^n}\), check the following properties of \(d'\):
@@ -78,3 +78,16 @@ Using the definition of \(d'\) and notating the usual Euclidean metric as \(d\)
 $$
 d'(x,y) \leq d(x,y) \leq \sqrt{n} \cdot d'(x,y).
 $$
+By symmetry,
+$$
+d'(y,x) \leq d(y,x) \leq \sqrt{n} \cdot d'(y,x).
+$$
+Now we can finally prove that \(d\) and \(d'\) generate the same topology on \(\mathbb{R^n}\) by utilizing part (a). Let \(x \in \mathbb{R^n}\) and \(r > 0\), pick \(r_1 = \frac{r}{\sqrt{n}}> 0\) and \(r_2 = r > 0\). Then
+$$
+B_{r_1}^{(d')}(x) = \{y \in \mathbb{R^n} : d'(y,x) < r_1\} = \left\{y \in \mathbb{R^n} : d'(y,x) < \frac{r}{\sqrt{n}}\right\} = \{y \in \mathbb{R^n} : \sqrt{n} \cdot d'(y,x) < r\}.
+$$ 
+Let \(y' \in B_{r_1}^{(d')}(x)\), then \(d(y',x) \leq \sqrt{n} \cdot d'(y',x) < r\), so \(y' \in B_{r}^{(d)}(x)\), yielding \(B_{r_1}^{(d')}(x) \subseteq B_{r}^{(d)}(x)\). We also have
+$$
+B_{r_2}^{(d)}(x) = \{y \in \mathbb{R^n} : d(y,x)<r_2\} = \{y \in \mathbb{R^n} : d(y,x)<r\}.
+$$
+Let \(y \in B_{r_2}^{(d)}(x)\), then \(d'(y,x) \leq d(y,x) < r \), so \(y \in B_{r}^{(d')}(x)\), yielding \(B_{r_2}^{(d)} \subseteq B_{r}^{(d')}(x)\). So by part (a) \(d\) and \(d'\) generate the same topology on \(\mathbb{R^n}\). \(\square\)
