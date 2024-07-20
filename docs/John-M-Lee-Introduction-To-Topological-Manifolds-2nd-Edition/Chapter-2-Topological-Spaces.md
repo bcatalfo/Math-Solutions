@@ -103,3 +103,14 @@ B_{r}^{(d)}(x) = \{x\} \subseteq U.
 $$
 Therefore each \(U \subseteq X\) is open in \(d\) so \(\mathcal{T} = \mathcal{P}(X)\), the set of all subsets of \(X\), a.k.a the discrete topology. \(\square\)
 **(e)** Show that the discrete metric and the Euclidean metric generate the same topology on the set \(\mathbb{Z}\) of integers.
+**Solution**
+By part (d) the discrete metric generates the discrete topology, so it suffices to show that the Euclidean metric does the same. We can actually solve this the same way we did (d), that is by taking \(U \subseteq \mathbb{Z}\), \(x \in U\), and \(r = \frac{1}{2}\). We then have (letting \(d\) denote the Euclidean metric)
+$$
+B_{r}^{(d)}(x) = \{y \in \mathbb{Z} : d(y,x)<r\} = \left\{y \in \mathbb{Z} : d(y,x)<\frac{1}{2}\right\}
+$$
+Of course since we are in \(\mathbb{Z}\) the nearest integers to \(y\) other than \(y\) itself are \(y + 1\) and \(y - 1\), and of course \(d(y+1,y) = d(y-1,y) = 1 > \frac{1}{2}\). So
+$$
+B_{r}^{(d)}(x) = \{x\} \subseteq U,
+$$
+meaning that each \(U \subseteq Z\) is open in the Euclidean metric, generating the discrete topology \(\mathcal{T} = \mathcal{P}(\mathbb{Z})\). \(\square\)
+****
