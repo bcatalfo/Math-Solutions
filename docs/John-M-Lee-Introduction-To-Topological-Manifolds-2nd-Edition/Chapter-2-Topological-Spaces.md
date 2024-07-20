@@ -34,3 +34,6 @@ Let's calculate some unions:
 \( \{1\} \cup \{1, 2\} = \{1, 2\} \)
 \( \{1\} \cup \{1, 2, 3\} = \{1, 2, 3\} \)
 \( \{1, 2\} \cup \{1, 2, 3\} = \{1, 2, 3\}\) \( \square\)
+
+**Exercise 2.4**
+(a) Suppose that \( M \) is a set and \( d, d'\) are two different metrics on \( M \). Prove that \( d \) and \( d' \) generate the same topology on \( M \) if and only if the following condition is satisfied: for every \( x \in M\) and every \( r > 0\), there exist positive numbers \( r_1 \) and \( r_2\) such that \( B_{r_1}^{d'}(x) \subseteq B_{r}^{(d)}(x)\) and \(B_{r_2}^{(d)}(x) \subseteq B_{r}^{(d')}(x)\).
