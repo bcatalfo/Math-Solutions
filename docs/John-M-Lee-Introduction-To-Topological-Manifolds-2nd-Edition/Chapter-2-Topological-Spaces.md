@@ -4,7 +4,7 @@ export_on_save:
 ---
 **Exercise 2.2**
 Verify that each of the following examples is in fact a topology.
-(a) Let \( X \) be any set whatsoever, and let \( \mathcal{T} = \mathcal{P}(X)\) (the ***power set of X***, which is the set of all subsets of \(X \)), so every subset of \(X\) is open. 
+**(a)** Let \( X \) be any set whatsoever, and let \( \mathcal{T} = \mathcal{P}(X)\) (the ***power set of X***, which is the set of all subsets of \(X \)), so every subset of \(X\) is open. 
 **Solution**
 Let's verify each axiom one by one.
 (i) \( X \) and \( \emptyset \) are elements of \( \mathcal{T}\).
@@ -13,7 +13,7 @@ This is obvious as \( X \) and \( \emptyset \) are both subsets of \( X \).
 Let \( U_1, \ldots, U_n \) be elements of \( \mathcal{T}\), then  \( U_1 \cap \cdots \cap U_n \subset U_1 \subset X\) so \( U_1 \cap \cdots \cap U_n \in \mathcal{P}(X) = \mathcal{T}\).
 (iii) \( \mathcal{T}\) is closed under arbitrary unions.
 Let \( (U_\alpha)_{\alpha \in A} \) be a family of elements of \( \mathcal{T}\), and let \( x \in \bigcup_{\alpha \in A} U_\alpha\). Then there must exist \( \alpha \in A\) such that \( x \in U_\alpha \subset X\), so \( x \in X\), hence \( \bigcup_{\alpha \in A} U_\alpha \in \mathcal{T}\). \( \square\)
-(b) Let \( Y \) be any set, and let \( \mathcal{T} = \{Y, \emptyset \}\).
+**(b)** Let \( Y \) be any set, and let \( \mathcal{T} = \{Y, \emptyset \}\).
 **Solution**
 (i) \( Y \) and \( \emptyset \) are elements of \( \mathcal{T}\).
 This is obvious by our definition of \( \mathcal{T}\).
@@ -36,9 +36,9 @@ Let's calculate some unions:
 \( \{1, 2\} \cup \{1, 2, 3\} = \{1, 2, 3\}\) \( \square\)
 
 **Exercise 2.4**
-(a) Suppose that \( M \) is a set and \( d, d'\) are two different metrics on \( M \). Prove that \( d \) and \( d' \) generate the same topology on \( M \) if and only if the following condition is satisfied: for every \( x \in M\) and every \( r > 0\), there exist positive numbers \( r_1 \) and \( r_2\) such that \( B_{r_1}^{(d')}(x) \subseteq B_{r}^{(d)}(x)\) and \(B_{r_2}^{(d)}(x) \subseteq B_{r}^{(d')}(x)\).
+**(a)** Suppose that \( M \) is a set and \( d, d'\) are two different metrics on \( M \). Prove that \( d \) and \( d' \) generate the same topology on \( M \) if and only if the following condition is satisfied: for every \( x \in M\) and every \( r > 0\), there exist positive numbers \( r_1 \) and \( r_2\) such that \( B_{r_1}^{(d')}(x) \subseteq B_{r}^{(d)}(x)\) and \(B_{r_2}^{(d)}(x) \subseteq B_{r}^{(d')}(x)\).
 **Solution**
 Let us denote the metric topologies induced by \( d \) and \( d' \) as \(\mathcal{T}\), \(\mathcal{T'}\), respectively. 
 \(\Rightarrow\) Assume that \( \mathcal{T} = \mathcal{T'}\), and take \( x \in M\) and \( r > 0\). Clearly \(B_{r}^{(d)}(x) \in \mathcal{T}\), so by the assumption \(B_{r}^{(d)}(x) \in \mathcal{T'}\). This means that \(B_{r}^{(d)}(x)\) is an open set in the \(d'\) metric topology, so for each \(x' \in B_{r}^{(d)}(x)\) we have an open ball \(B_{r_1}^{(d')}(x') \subseteq B_{r}^{(d)}(x)\) for some \(r_1 > 0\). Since \( x \in B_{r}^{(d)}(x)\) we can take \( x' = x\) giving the desired \(B_{r_1}^{(d')}(x) \subseteq B_{r}^{(d)}(x)\). Using the same logic, the set \(B_{r}^{(d')}(x) \in \mathcal{T'} = \mathcal{T}\) is open in the \(d\) metric giving some \(r_2 > 0\) such that \(B_{r_2}^{(d)}(x) \subseteq B_{r}^{(d')}(x)\).
 \(\Leftarrow\) Assume that for every \( x \in M\) and every \( r > 0\), there exist positive numbers \( r_1 \) and \( r_2\) such that \( B_{r_1}^{(d')}(x) \subseteq B_{r}^{(d)}(x)\) and \(B_{r_2}^{(d)}(x) \subseteq B_{r}^{(d')}(x)\). Let \( U \in \mathcal{T}\), so \(U\) is an open set in \(d\)'s metric topology, so for each \(x \in U \) there exists some \( r > 0\) such that \(B_{r}^{(d)}(x) \subseteq U\). By the assumption we have some \(r_1 > 0\) such that \(B_{r_1}^{(d')}(x) \subseteq B_{r}^{(d)}(x) \subseteq U\), so \(U\) is open in the \(d'\) metric, giving \(U \in \mathcal{T'}\). Since this is true for all \(U \in \mathcal{T}\) we have \(\mathcal{T} \subseteq \mathcal{T'}\). Similarly, let \(U' \in \mathcal{T'}\), so for each \(x' \in U'\) we have \(r' > 0\) such that \(B_{r'}^{(d')}(x') \subseteq U'\). By the assumption there exists \(r_2 > 0\) such that \(B_{r_2}^{(d)}(x) \subseteq B_{r'}^{(d')}(x) \subseteq U'\), so \(U'\) is open in the \(d\) metric, yielding \(U' \in \mathcal{T}\). Since this is true for all \(U' \in \mathcal{T'}\) we have \(\mathcal{T'} \subseteq \mathcal{T}\). Combining this with \(\mathcal{T} \subseteq \mathcal{T'}\) gives the desired \(\mathcal{T} = \mathcal{T'}\). \(\square\)
-(b) Let \((M,d)\) be a metric space, let \(c\) be a positive real number, and define a new metric \(d'\) on \(M\) by \(d'(x,y) = c \cdot d(x,y)\). Prove that \(d\) and \(d'\) generate the same topology on \(M\).
+**(b)** Let \((M,d)\) be a metric space, let \(c\) be a positive real number, and define a new metric \(d'\) on \(M\) by \(d'(x,y) = c \cdot d(x,y)\). Prove that \(d\) and \(d'\) generate the same topology on \(M\).
