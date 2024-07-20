@@ -102,3 +102,4 @@ $$
 B_{r}^{(d)}(x) = \{x\} \subseteq U. 
 $$
 Therefore each \(U \subseteq X\) is open in \(d\) so \(\mathcal{T} = \mathcal{P}(X)\), the set of all subsets of \(X\), a.k.a the discrete topology. \(\square\)
+**(e)** Show that the discrete metric and the Euclidean metric generate the same topology on the set \(\mathbb{Z}\) of integers.
