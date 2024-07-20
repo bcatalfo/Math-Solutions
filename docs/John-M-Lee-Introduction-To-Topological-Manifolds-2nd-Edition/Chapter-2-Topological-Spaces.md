@@ -60,3 +60,21 @@ B_{r_2}^{(d)}(x) &= \{y \in M : d(y,x) < r_2\} = \left\{y \in M : d(y,x) < \frac
 $$
 \(\square\)
 **(c)** Define a metric \(d'\) on \(\mathbb{R^n}\) by \(d'(x,y) = \text{max}\{|x_1 - y_1|, \ldots, |x_n - y_n|\}\). Show that the Euclidean metric and \(d'\) generate the same topology on \(\mathbb{R^n}\). [Hint: see Exercise B.1.]
+**Solution**
+We begin by showing that \(d'\) is in fact a metric. Take \(x, y, z \in \mathbb{R^n}\), check the following properties of \(d'\):
+*Symmetry*: \(d'(x,y) = \text{max}\{|x_1 - y_1|, \ldots, |x_n - y_n|\} = \text{max}\{|y_1 - x_1|, \ldots, |y_n - x_n|\} = d(y,x)\),
+*Positivity*: \(d'(x,y) = \text{max}\{|x_1 - y_1|, \ldots, |x_n - y_n|\}\) so for some \(i \in 1, \ldots, n\) we have \(d'(x,y) = |x_i - y_i| \geq 0\) with equality if and only if \( x = y\), and
+*Triangle Inequality*: \(d'(x,y) = \text{max}\{|x_1 - y_1|,\ldots,|x_n - y_n|\} \leq \text{max}\{|x_1 - y_1| + |y_1 - z_1|,\ldots,|x_n - y_n| + |y_n - z_n|\}\)
+\(\leq \text{max}\{|x_1 - y_1|,\ldots,|x_n - y_n|\} + \text{max}\{|y_1 - z_1|,\ldots,|y_n - z_n|\} = d'(x,y) + d'(y,z)\).
+Then note Exercise B.1. says that for any \(x = (x_1, \ldots, x_n) \in \mathbb{R^n}\):
+$$
+\text{max}\{|x_1|,\ldots,|x_n|\} \leq |x| \leq \sqrt{n} \text{max}\{|x_1|,\ldots,|x_n|\}.
+$$
+So in particular
+$$
+\text{max}\{|x_1 - y_1|,\ldots,|x_n - y_n|\} \leq |x - y| \leq \sqrt{n} \text{max}\{|x_1 - y_1|,\ldots,|x_n - y_n|\}.
+$$
+Using the definition of \(d'\) and notating the usual Euclidean metric as \(d\)
+$$
+d'(x,y) \leq d(x,y) \leq \sqrt{n} \cdot d'(x,y).
+$$
