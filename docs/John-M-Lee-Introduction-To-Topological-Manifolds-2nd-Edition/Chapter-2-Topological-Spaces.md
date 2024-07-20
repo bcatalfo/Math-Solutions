@@ -115,3 +115,12 @@ $$
 meaning that each \(U \subseteq Z\) is open in the Euclidean metric, generating the discrete topology \(\mathcal{T} = \mathcal{P}(\mathbb{Z})\). \(\square\)
 ****
 **Exercise 2.5.** Suppose \(X\) is a topological space and \(Y\) is an open subset of \(X\). Show that the collection of all open subsets of \(X\) that are contained in \(Y\) is a topology on \(Y\).
+**Solution**
+Let \(\mathcal{T}\) denote the open subsets of \(X\) and let 
+$$
+\mathcal{T}_Y \coloneqq \{U \in \mathcal{T} : U \subseteq Y\}.
+$$
+We need to use the fact that \(\mathcal{T}\) is a topology on \(X\) and that \(Y \in \mathcal{T}\) to show that \(\mathcal{T}_Y\) is a topology on \(Y\). There are three properties that we need to show:
+(i) \(Y\) and \(\emptyset\) are elements of \(\mathcal{T}_Y\).
+(ii) \(\mathcal{T}_Y\) is closed under finite intersections.
+(iii) \(\mathcal{T}_Y\) is closed under arbitrary unions.
