@@ -114,3 +114,4 @@ B_{r}^{(d)}(x) = \{x\} \subseteq U,
 $$
 meaning that each \(U \subseteq Z\) is open in the Euclidean metric, generating the discrete topology \(\mathcal{T} = \mathcal{P}(\mathbb{Z})\). \(\square\)
 ****
+**Exercise 2.5.** Suppose \(X\) is a topological space and \(Y\) is an open subset of \(X\). Show that the collection of all open subsets of \(X\) that are contained in \(Y\) is a topology on \(Y\).
