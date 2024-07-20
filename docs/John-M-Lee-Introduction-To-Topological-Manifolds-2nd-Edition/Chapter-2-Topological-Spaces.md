@@ -93,4 +93,12 @@ $$
 Let \(y \in B_{r_2}^{(d)}(x)\), then \(d'(y,x) \leq d(y,x) < r \), so \(y \in B_{r}^{(d')}(x)\), yielding \(B_{r_2}^{(d)} \subseteq B_{r}^{(d')}(x)\). So by part (a) \(d\) and \(d'\) generate the same topology on \(\mathbb{R^n}\). \(\square\)
 **(d)** Let \(X\) be any set, and let \(d\) be the discrete metric on \(X\) (see Example B.3(c)). Show that \(d\) generates the discrete topology.
 **Solution**
-From Example B.3(c) we have the definition of the discrete metric: \(d(x,y) = 1\) unless \(x = y\), in which case \(d(x,y)=0\). Next from Example 2.1 the discrete topology is defined by letting \(\mathcal{T} = \mathcal{P}(X)\).
+From Example B.3(c) we have the definition of the discrete metric: \(d(x,y) = 1\) unless \(x = y\), in which case \(d(x,y)=0\). Next from Example 2.1 the discrete topology is defined by letting \(\mathcal{T} = \mathcal{P}(X)\). Let \(U \subseteq X\) and let \(x \in U\). We need to show that \(U\) is open under the discrete metric, which is equivalent to showing that for some \(r > 0\) we have \(B_{r}^{(d)}(x) \subseteq U\). Let \( r = \frac{1}{2}\). Then
+$$
+B_{r}^{(d)}(x) = \{y \in X: d(y,x) < r\} = \left\{y \in X: d(y,x) < \frac{1}{2}\right\}.
+$$
+Since \(y \neq x \Rightarrow d(y,x) = 1 > \frac{1}{2}\) and \(y = x \Rightarrow d(y,x) = 0 < \frac{1}{2}\), we get 
+$$
+B_{r}^{(d)}(x) = \{x\} \subseteq U. 
+$$
+Therefore each \(U \subseteq X\) is open in \(d\) so \(\mathcal{T} = \mathcal{P}(X)\), the set of all subsets of \(X\), a.k.a the discrete topology. \(\square\)
