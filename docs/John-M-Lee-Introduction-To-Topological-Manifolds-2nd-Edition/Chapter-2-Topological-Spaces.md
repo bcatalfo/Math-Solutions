@@ -91,3 +91,4 @@ $$
 B_{r_2}^{(d)}(x) = \{y \in \mathbb{R^n} : d(y,x)<r_2\} = \{y \in \mathbb{R^n} : d(y,x)<r\}.
 $$
 Let \(y \in B_{r_2}^{(d)}(x)\), then \(d'(y,x) \leq d(y,x) < r \), so \(y \in B_{r}^{(d')}(x)\), yielding \(B_{r_2}^{(d)} \subseteq B_{r}^{(d')}(x)\). So by part (a) \(d\) and \(d'\) generate the same topology on \(\mathbb{R^n}\). \(\square\)
+**(d)** Let \(X\) be any set, and let \(d\) be the discrete metric on \(X\) (see Example B.3(c)). Show that \(d\) generates the discrete topology.
