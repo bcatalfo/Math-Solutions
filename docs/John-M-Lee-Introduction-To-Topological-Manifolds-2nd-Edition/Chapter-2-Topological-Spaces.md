@@ -172,6 +172,7 @@ $$
 \(\Leftarrow\) Let \(x \in X\) such that for each open \(C \subseteq X\) we have \(y, z \in C\) such that \(y \in A\) and \(z \in X \setminus A\). Therefore, \(x\) has no neighborhood contained in \(A\) and no neighborhood contained in \(X \setminus A\). Part (a) tells us that \(x \notin \text{Int}A\) and part (b) tells us that \(x \notin \text{Ext} A\). Therefore, \(x \in X \setminus (\text{Int}A \cup \text{Ext} A) = \partial A\). \(\square\)
 **(d)** A point is in \(\overline{A}\) if and only if every neighborhood of it contains a point of \(A\).
 **Solution**
+\(\Rightarrow\) Let \(x \in \overline{A}\) and let \(C\) be a neighborhood of \(x\). Assume that there exists no \(y \in C\) such that \(y \in A\). Then \(X \setminus C \supseteq A\), and since \(X \setminus C\) is closed and \(x \in \overline{A}\) we have \(x \in X \setminus C\), contradicting \(x \in C\). Our assumption must be wrong, yielding \(y \in C\) such that \(y \in A\).
 **(e)** \(\overline{A} = A \cup \partial A = \text{Int} A \cup \partial A\).
 **(f)** \(\text{Int} A\) and \(\text{Ext} A\) are open in \(X\), while \(\overline{A}\) and \(\partial A\) are closed in \(X\).
 **(g)** The following are equivalent:
