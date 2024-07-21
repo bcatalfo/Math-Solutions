@@ -157,6 +157,8 @@ and the closure of \(A\) is
 $$
 \overline{A} = \bigcap \{B \subseteq X : B \supseteq A \text{ and } B \text{ is closed in } X \}.
 $$
+Take \(x \in \text{Ext} A\), then by definition of the exterior \(x \notin \overline{A}\). Then by the definition of the closure there must be some \(B \supseteq A\) that is closed in \(A\) and \(x \notin B\). Now consider the set \(X \setminus B\). Since \(B\) is closed by definition \(X \setminus B\) is open. Additionally, since \(x \in X\) and \(x \notin B\) we have \(x \in X \setminus B\). Finally, note that since \(B \supseteq A\) we have \(X \setminus B \subseteq X \setminus A\). Therefore, \(X \setminus B\) is our desired neighborhood.
+Alternatively take \(x \in C \subseteq X \setminus A\) with \(C\) open. Then \(X \setminus C\) is closed and \(X \setminus C \supseteq A\). However, \(x \notin X \setminus C\) so \(x \notin \overline{A}\) so \(x \in \text{Ext} A\). \(\square\)
 **(c)** A point is in \(\partial A\) if and only if every neighborhood of it contains both a point of \(A\) and a point of \(X \setminus A\).
 **(d)** A point is in \(\overline{A}\) if and only if every neighborhood of it contains a point of \(A\).
 **(e)** \(\overline{A} = A \cup \partial A = \text{Int} A \cup \partial A\).
