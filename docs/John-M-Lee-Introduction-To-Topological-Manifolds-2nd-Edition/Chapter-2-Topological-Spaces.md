@@ -2,6 +2,9 @@
 export_on_save:
   html: true
 ---
+<style>
+.katex-display { overflow: auto hidden }
+</style>
 **Exercise 2.2**
 Verify that each of the following examples is in fact a topology.
 **(a)** Let \( X \) be any set whatsoever, and let \( \mathcal{T} = \mathcal{P}(X)\) (the ***power set of X***, which is the set of all subsets of \(X \)), so every subset of \(X\) is open. 

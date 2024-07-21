@@ -2,7 +2,9 @@
 export_on_save:
   html: true
 ---
-
+<style>
+.katex-display { overflow: auto hidden }
+</style>
 # Chapter 1
 # Matrix Lie Groups
 

@@ -2,6 +2,9 @@
 export_on_save:
   html: true
 ---
+<style>
+.katex-display { overflow: auto hidden }
+</style>
 ***Exercise 1.1***
 (i) Show that \( [v, 0] = 0 = [0, v]\) for all \( v \in L \)
 **Solution**
