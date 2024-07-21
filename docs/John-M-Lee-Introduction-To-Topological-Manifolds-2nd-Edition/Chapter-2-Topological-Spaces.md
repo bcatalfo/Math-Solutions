@@ -143,6 +143,11 @@ Let \((U_\beta)_{\beta \in B}\) be any (finite or infinite) family of elements o
 ****
 **Exercise 2.9.** Let \(X\) be a topological space and let \(A \subseteq X\) be any subset. Prove the following:
 (a) A point is in \(\text{Int} A\) if and only if it has a neighborhood contained in \(A\).
+By definition
+$$
+\text{Int} A = \bigcup \{C \subseteq X : C \subseteq A \text{ and } C \text{ is open in } X\}
+$$
+So if \(x \in \text{Int} A\) then \(x \in C \) for some open \(C \subseteq A\) and \(C\) is open in \(X\). This is our desired neighborhood (in this book a neighborhood of a point is by definition an open subset containing it). Alternatively if \(x'\) has a neighborhood contained in \(A\) that means that \(x \in C'\) for some \(C' \subseteq A\) where \(C'\) is open in \(X\). Since \(A \subseteq X\) we have \(C' \subseteq X\) so by definition \(x' \in \text{Int} A\). \(\square\)
 (b) A point is in \(\text{Ext} A\) if and only if it has a neighborhood contained in \(X \setminus A\).
 (c) A point is in \(\partial A\) if and only if every neighborhood of it contains both a point of \(A\) and a point of \(X \setminus A\).
 (d) A point is in \(\overline{A}\) if and only if every neighborhood of it contains a point of \(A\).
