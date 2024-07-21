@@ -143,6 +143,7 @@ Let \((U_\beta)_{\beta \in B}\) be any (finite or infinite) family of elements o
 ****
 **Exercise 2.9.** Let \(X\) be a topological space and let \(A \subseteq X\) be any subset. Prove the following:
 **(a)** A point is in \(\text{Int} A\) if and only if it has a neighborhood contained in \(A\).
+**Solution**
 By definition
 $$
 \text{Int} A = \bigcup \{C \subseteq X : C \subseteq A \text{ and } C \text{ is open in } X\}.
@@ -150,6 +151,7 @@ $$
 \(\Rightarrow\) If \(x \in \text{Int} A\) then \(x \in C \) for some open \(C \subseteq A\) and \(C\) is open in \(X\). This is our desired neighborhood (in this book a neighborhood of a point is by definition an open subset containing it). 
 \(\Leftarrow\) If \(x'\) has a neighborhood contained in \(A\) that means that \(x \in C'\) for some \(C' \subseteq A\) where \(C'\) is open in \(X\). Since \(A \subseteq X\) we have \(C' \subseteq X\) so by definition \(x' \in \text{Int} A\). \(\square\)
 **(b)** A point is in \(\text{Ext} A\) if and only if it has a neighborhood contained in \(X \setminus A\).
+**Solution**
 By definition the exterior of \(A\) is
 $$
 \text{Ext} A = X \setminus \overline{A}
@@ -161,6 +163,7 @@ $$
 \(\Rightarrow\) Take \(x \in \text{Ext} A\), then by definition of the exterior \(x \notin \overline{A}\). Then by the definition of the closure there must be some \(B \supseteq A\) that is closed in \(A\) and \(x \notin B\). Now consider the set \(X \setminus B\). Since \(B\) is closed by definition \(X \setminus B\) is open. Additionally, since \(x \in X\) and \(x \notin B\) we have \(x \in X \setminus B\). Finally, note that since \(B \supseteq A\) we have \(X \setminus B \subseteq X \setminus A\). Therefore, \(X \setminus B\) is our desired neighborhood.
 \(\Leftarrow\) Take \(x \in C \subseteq X \setminus A\) with \(C\) open. Then \(X \setminus C\) is closed and \(X \setminus C \supseteq A\). However, \(x \notin X \setminus C\) so \(x \notin \overline{A}\) so \(x \in \text{Ext} A\). \(\square\)
 **(c)** A point is in \(\partial A\) if and only if every neighborhood of it contains both a point of \(A\) and a point of \(X \setminus A\).
+**Solution**
 Recall that the boundary of \(A\) is defined as
 $$
 \partial A = X \setminus (\text{Int} A \cup \text{Ext} A)
@@ -168,6 +171,7 @@ $$
 \(\Rightarrow\) Let \(x \in \partial A\). It follows immediately from this definition that \(x \notin \text{Int} A\) and \(x \notin \text{Ext} A\). Let \(C\) be an open set in \(X\) such that \(x \in C\). Since \(x \notin \text{Int} A\) we must have \(C \nsubseteq A\), so there exists \(y \in C\) such that \(y \notin A\), or equivalently \(y \in X \setminus A\). Since \(x \notin \text{Ext} A\) and \(\text{Ext} A = X \setminus \overline{A}\), we have \(x \in \overline{A}\). \(C\) is open so \(X \setminus C\) is closed. Assume that there is no \(z \in C\) such that \(z \in A\). Then \(X \setminus C \supseteq A \), so since \(x \in \overline{A}\) we have \(x \in X \setminus C\), contradicting \(x \in C\). Therefore, our assumption was wrong and there does exist some \(z \in C\) such that \(z \in A\).
 \(\Leftarrow\) Let \(x \in X\) such that for each open \(C \subseteq X\) we have \(y, z \in C\) such that \(y \in A\) and \(z \in X \setminus A\). Therefore, \(x\) has no neighborhood contained in \(A\) and no neighborhood contained in \(X \setminus A\). Part (a) tells us that \(x \notin \text{Int}A\) and part (b) tells us that \(x \notin \text{Ext} A\). Therefore, \(x \in X \setminus (\text{Int}A \cup \text{Ext} A) = \partial A\). \(\square\)
 **(d)** A point is in \(\overline{A}\) if and only if every neighborhood of it contains a point of \(A\).
+**Solution**
 **(e)** \(\overline{A} = A \cup \partial A = \text{Int} A \cup \partial A\).
 **(f)** \(\text{Int} A\) and \(\text{Ext} A\) are open in \(X\), while \(\overline{A}\) and \(\partial A\) are closed in \(X\).
 **(g)** The following are equivalent:
