@@ -122,5 +122,7 @@ $$
 $$
 We need to use the fact that \(\mathcal{T}\) is a topology on \(X\) and that \(Y \in \mathcal{T}\) to show that \(\mathcal{T}_Y\) is a topology on \(Y\). There are three properties that we need to show:
 (i) \(Y\) and \(\emptyset\) are elements of \(\mathcal{T}_Y\).
+It is obvious that \(Y \in \mathcal{T}_Y\) as it is given that \(Y \in \mathcal{T}\) and clearly \(Y \subseteq Y\). Since \(\mathcal{T}\) is a topology we must have \(\emptyset \in \mathcal{T}\), combining this with the fact that \(\emptyset \subseteq Y\) as the empty set is a subset of all sets we get \(\emptyset \in \mathcal{T}_Y\).
 (ii) \(\mathcal{T}_Y\) is closed under finite intersections.
+Let \(U_1,\ldots,U_n \in \mathcal{T}_Y\). By the definition of \(\mathcal{T}_Y\) we have \(U_1,\ldots,U_n \in \mathcal{T}\). Since \(\mathcal{T}\) is a topology we have \(U_1 \cap\ldots\cap U_n \in \mathcal{T}\). The definition of 
 (iii) \(\mathcal{T}_Y\) is closed under arbitrary unions.
