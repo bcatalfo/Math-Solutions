@@ -147,7 +147,8 @@ By definition
 $$
 \text{Int} A = \bigcup \{C \subseteq X : C \subseteq A \text{ and } C \text{ is open in } X\}.
 $$
-So if \(x \in \text{Int} A\) then \(x \in C \) for some open \(C \subseteq A\) and \(C\) is open in \(X\). This is our desired neighborhood (in this book a neighborhood of a point is by definition an open subset containing it). Alternatively if \(x'\) has a neighborhood contained in \(A\) that means that \(x \in C'\) for some \(C' \subseteq A\) where \(C'\) is open in \(X\). Since \(A \subseteq X\) we have \(C' \subseteq X\) so by definition \(x' \in \text{Int} A\). \(\square\)
+\(\Rightarrow\) If \(x \in \text{Int} A\) then \(x \in C \) for some open \(C \subseteq A\) and \(C\) is open in \(X\). This is our desired neighborhood (in this book a neighborhood of a point is by definition an open subset containing it). 
+\(\Leftarrow\) If \(x'\) has a neighborhood contained in \(A\) that means that \(x \in C'\) for some \(C' \subseteq A\) where \(C'\) is open in \(X\). Since \(A \subseteq X\) we have \(C' \subseteq X\) so by definition \(x' \in \text{Int} A\). \(\square\)
 **(b)** A point is in \(\text{Ext} A\) if and only if it has a neighborhood contained in \(X \setminus A\).
 By definition the exterior of \(A\) is
 $$
@@ -157,8 +158,8 @@ and the closure of \(A\) is
 $$
 \overline{A} = \bigcap \{B \subseteq X : B \supseteq A \text{ and } B \text{ is closed in } X \}.
 $$
-Take \(x \in \text{Ext} A\), then by definition of the exterior \(x \notin \overline{A}\). Then by the definition of the closure there must be some \(B \supseteq A\) that is closed in \(A\) and \(x \notin B\). Now consider the set \(X \setminus B\). Since \(B\) is closed by definition \(X \setminus B\) is open. Additionally, since \(x \in X\) and \(x \notin B\) we have \(x \in X \setminus B\). Finally, note that since \(B \supseteq A\) we have \(X \setminus B \subseteq X \setminus A\). Therefore, \(X \setminus B\) is our desired neighborhood.
-Alternatively take \(x \in C \subseteq X \setminus A\) with \(C\) open. Then \(X \setminus C\) is closed and \(X \setminus C \supseteq A\). However, \(x \notin X \setminus C\) so \(x \notin \overline{A}\) so \(x \in \text{Ext} A\). \(\square\)
+\(\Rightarrow\) Take \(x \in \text{Ext} A\), then by definition of the exterior \(x \notin \overline{A}\). Then by the definition of the closure there must be some \(B \supseteq A\) that is closed in \(A\) and \(x \notin B\). Now consider the set \(X \setminus B\). Since \(B\) is closed by definition \(X \setminus B\) is open. Additionally, since \(x \in X\) and \(x \notin B\) we have \(x \in X \setminus B\). Finally, note that since \(B \supseteq A\) we have \(X \setminus B \subseteq X \setminus A\). Therefore, \(X \setminus B\) is our desired neighborhood.
+\(\Leftarrow\) Take \(x \in C \subseteq X \setminus A\) with \(C\) open. Then \(X \setminus C\) is closed and \(X \setminus C \supseteq A\). However, \(x \notin X \setminus C\) so \(x \notin \overline{A}\) so \(x \in \text{Ext} A\). \(\square\)
 **(c)** A point is in \(\partial A\) if and only if every neighborhood of it contains both a point of \(A\) and a point of \(X \setminus A\).
 **(d)** A point is in \(\overline{A}\) if and only if every neighborhood of it contains a point of \(A\).
 **(e)** \(\overline{A} = A \cup \partial A = \text{Int} A \cup \partial A\).
