@@ -2,6 +2,9 @@
 export_on_save:
   html: true
 ---
+<style>
+.katex-display { overflow: auto hidden }
+</style>
 
 # \(\S 1\) - Smooth Functions on a Euclidean Space
 
