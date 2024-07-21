@@ -132,3 +132,8 @@ Let \(U_1,\ldots,U_n \in \mathcal{T}_Y\). By the definition of \(\mathcal{T}_Y\)
 Let \((U_\alpha)_{\alpha \in A}\) be any (finite or infinite) family of elements of \(\mathcal{T}_Y\). Since this is also a family of elements in \(\mathcal{T}\) which is a topology we have \(\bigcup_{\alpha \in A}U_\alpha \in \mathcal{T}\). Let \(x \in \bigcup_{\alpha \in A}U_\alpha\), then for some \(\alpha \in A\) we have \(x \in U_\alpha \subseteq Y\), so \(\bigcup_{\alpha \in A}U_\alpha \subseteq Y\). We conclude that \(\bigcup_{\alpha \in A}U_\alpha \in \mathcal{T}_Y\). \(\square\)
 ****
 **Exercise 2.6** Let \(X\) be a set, and suppose \(\{\mathcal{T}_\alpha\}_{\alpha \in A}\) is a collection of topologies on \(X\). Show that the intersection \(\mathcal{T} = \bigcap_{\alpha \in A}\mathcal{T}_\alpha\) is a topology on \(X\). (The open subsets in this topology are exactly those subsets of \(X\) that are open in each of the topologies \(\mathcal{T}_\alpha\).)
+**Solution**
+To show that \(\mathcal{T}\) is a topology we need to show the following properties
+(i) \(X\) and \(\emptyset\) are elements of \(\mathcal{T}\).
+(ii) \(\mathcal{T}\) is closed under finite intersections.
+(iii) \(\mathcal{T}\) is closed under arbitrary unions.
