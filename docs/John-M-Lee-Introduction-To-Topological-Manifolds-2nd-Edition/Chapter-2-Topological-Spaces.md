@@ -142,25 +142,34 @@ Let \(U_1, \ldots, U_n \in \mathcal{T} = \bigcap_{\alpha \in A}\mathcal{T}_\alph
 Let \((U_\beta)_{\beta \in B}\) be any (finite or infinite) family of elements of \(\mathcal{T} = \bigcap_{\alpha \in A}\mathcal{T_\alpha}\). Let \(\alpha \in A\) and \( \beta \in B\), we have \(U_\beta \in \mathcal{T_\alpha}\). Since \(\mathcal{T_\alpha}\) is a topology we have \(\bigcup_{\beta \in B}U_\beta \in \mathcal{T}_\alpha\). Since this holds for all \(\alpha \in A\) we have \(\bigcup_{\beta \in B}U_\beta \in \bigcap_{\alpha \in A}\mathcal{T}_\alpha = \mathcal{T}\). \(\square\) 
 ****
 **Exercise 2.9.** Let \(X\) be a topological space and let \(A \subseteq X\) be any subset. Prove the following:
-(a) A point is in \(\text{Int} A\) if and only if it has a neighborhood contained in \(A\).
+**(a)** A point is in \(\text{Int} A\) if and only if it has a neighborhood contained in \(A\).
 By definition
 $$
-\text{Int} A = \bigcup \{C \subseteq X : C \subseteq A \text{ and } C \text{ is open in } X\}
+\text{Int} A = \bigcup \{C \subseteq X : C \subseteq A \text{ and } C \text{ is open in } X\}.
 $$
 So if \(x \in \text{Int} A\) then \(x \in C \) for some open \(C \subseteq A\) and \(C\) is open in \(X\). This is our desired neighborhood (in this book a neighborhood of a point is by definition an open subset containing it). Alternatively if \(x'\) has a neighborhood contained in \(A\) that means that \(x \in C'\) for some \(C' \subseteq A\) where \(C'\) is open in \(X\). Since \(A \subseteq X\) we have \(C' \subseteq X\) so by definition \(x' \in \text{Int} A\). \(\square\)
-(b) A point is in \(\text{Ext} A\) if and only if it has a neighborhood contained in \(X \setminus A\).
-(c) A point is in \(\partial A\) if and only if every neighborhood of it contains both a point of \(A\) and a point of \(X \setminus A\).
-(d) A point is in \(\overline{A}\) if and only if every neighborhood of it contains a point of \(A\).
-(e) \(\overline{A} = A \cup \partial A = \text{Int} A \cup \partial A\).
-(f) \(\text{Int} A\) and \(\text{Ext} A\) are open in \(X\), while \(\overline{A}\) and \(\partial A\) are closed in \(X\).
-(g) The following are equivalent:
+**(b)** A point is in \(\text{Ext} A\) if and only if it has a neighborhood contained in \(X \setminus A\).
+By definition the exterior of \(A\) is
+$$
+\text{Ext} A = X \setminus \overline{A}
+$$
+and the closure of \(A\) is
+$$
+\overline{A} = \bigcap \{B \subseteq X : B \supseteq A \text{ and } B \text{ is closed in } X \}.
+$$
+**(c)** A point is in \(\partial A\) if and only if every neighborhood of it contains both a point of \(A\) and a point of \(X \setminus A\).
+**(d)** A point is in \(\overline{A}\) if and only if every neighborhood of it contains a point of \(A\).
+**(e)** \(\overline{A} = A \cup \partial A = \text{Int} A \cup \partial A\).
+**(f)** \(\text{Int} A\) and \(\text{Ext} A\) are open in \(X\), while \(\overline{A}\) and \(\partial A\) are closed in \(X\).
+**(g)** The following are equivalent:
 * \(A\) is open in \(X\).
 * \(A = \text{Int} A\).
 * \(A\) contains none of its boundary points.
 * Every point of \(A\) has a neighborhood contained in \(A\).
 
-(h) The following are equivalent:
+**(h)** The following are equivalent:
 * \(A\) is closed in \(X\).
 * \(A = \overline{A}\).
 * \(A\) contains all of its boundary points.
 * Every point of \(X \setminus A\) has a neighborhood contained in \(X \setminus A\).
+****
