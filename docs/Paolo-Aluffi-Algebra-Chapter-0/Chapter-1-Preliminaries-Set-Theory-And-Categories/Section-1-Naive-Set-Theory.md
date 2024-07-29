@@ -12,3 +12,6 @@ $$
 [a]_\sim \coloneqq \{b \in S \mid b \sim a\} .
 $$
 Each \([a]_\sim\) is nonempty as \(a \in [a]_\sim\). For some \(a, b \in S\) if \(x \in [a]_\sim \cap [b]_\sim\) then we have both \(x \sim a\) and \(x \sim b\) so by symmetry and transitivity \(a \sim b\), so our equivalence classes are disjoint. Finally, since we have an equivalence class for each \(a \in S\) of course the union of all the elements is \(S\). \(\square\)
+****
+**1.3.** \(\triangleright\) Given a partition \(\mathscr{P}\) on a set \(S\), show how to define a relation \(\sim\) on \(S\) such that \(\mathscr{P}\) is the corresponding partition. \([\S1.5]\)
+**Solution**
