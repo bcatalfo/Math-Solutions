@@ -27,3 +27,4 @@ By the hypothesis we have bijections \(f: A \to B\) and \(g: B \to C\), their co
 ****
 **2.5.** \(\triangleright\) Formulate a notion of *epimorphism*, in the style of the notion of *monomorphism* seen in \(\S 2.6\), and prove a result analogous to Proposition 2.3, for epimorphisms and surjections. \([\S 2.6, \S 4.2]\)
 **Solution**
+Define a function \(f: A \to B\) to be a *epimorphism* (or *epic*) if for all sets \(Z\) and all functions \(\alpha', \alpha'' : B \to Z\) we have \(\alpha' \circ f = \alpha'' \circ f \implies \alpha' = \alpha''\). 
