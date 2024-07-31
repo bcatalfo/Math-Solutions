@@ -17,3 +17,11 @@ Assume \(A \neq \emptyset\) and let \(f: A \to B\) be a function. Statement (2) 
 ****
 **2.4.** \(\triangleright\) Prove that 'isomorphism' is an equivalence relation (on any set of sets). \([\S 2.5, \mathrm{V}.3.3]\)
 **Solution**
+Let \(S\) be a set of sets and \(A, B, C \in S\). Define \(\sim\) as \(X \sim Y \iff \exists f: X \to Y\), \(f\) bijective. We now check that the properties of an equivalence relation apply.
+* *reflexivity:* \(A \sim A\)
+This is clear by considering \(\text{id}_A\), which is obviously a bijection.
+* *symmetry:* \(A \sim B \implies B \sim A\)
+Since we have \(A \sim B\) we get \(f: A \to B\), \(f\) a bijection. Since \(f\) is a bijection it has an inverse, call it \(g: B \to A\), which is also a bijection, yielding \(B \sim A\).
+* *transitivity:* \(\left( A \sim B \text{ and } B \sim C\right) \implies A \sim C\)
+By the hypothesis we have bijections \(f: A \to B\) and \(g: B \to C\), their composition \(g \circ f: A \to C\) is also a bijection so \(A \sim C\). \(\square\)
+****
