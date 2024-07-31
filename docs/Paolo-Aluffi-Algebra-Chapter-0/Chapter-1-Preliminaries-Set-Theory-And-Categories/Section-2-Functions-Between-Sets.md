@@ -25,3 +25,5 @@ Since we have \(A \sim B\) we get \(f: A \to B\), \(f\) a bijection. Since \(f\)
 * *transitivity:* \(\left( A \sim B \text{ and } B \sim C\right) \implies A \sim C\)
 By the hypothesis we have bijections \(f: A \to B\) and \(g: B \to C\), their composition \(g \circ f: A \to C\) is also a bijection so \(A \sim C\). \(\square\)
 ****
+**2.5.** \(\triangleright\) Formulate a notion of *epimorphism*, in the style of the notion of *monomorphism* seen in \(\S 2.6\), and prove a result analogous to Proposition 2.3, for epimorphisms and surjections. \([\S 2.6, \S 4.2]\)
+**Solution**
