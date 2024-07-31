@@ -15,3 +15,5 @@ Assume \(A \neq \emptyset\) and let \(f: A \to B\) be a function. Statement (2) 
 \((\implies)\) Assume that \(f\) has a right inverse. This means that we have some \(g: B \to A\) such that \(f \circ g = \text{id}_B\). Let \(b \in B\). To show that \(f\) is surjective it is sufficient to find \(a \in A\) such that \(f(a) = b\). By our assumption \(f(g(b)) = (f \circ g) (b) = \text{id}_B(b) = b\). Hence, \(g(b) \in A\) is our desired \(a\).
 \((\impliedby)\) Assume that \(f\) is surjective. We need to construct some \(g: B \to A\) such that \(f \circ g = \text{id}_B\). For each \(b \in B\), since \(f\) is surjective there exists \(a \in A\) such that \(f(a) = b\). So we define \(g(b) = a\) with the axiom of choice, clearly \(f \circ g = \text{id}_B\) as desired. \(\square\)
 ****
+**2.4.** \(\triangleright\) Prove that 'isomorphism' is an equivalence relation (on any set of sets). \([\S 2.5, \mathrm{V}.3.3]\)
+**Solution**
