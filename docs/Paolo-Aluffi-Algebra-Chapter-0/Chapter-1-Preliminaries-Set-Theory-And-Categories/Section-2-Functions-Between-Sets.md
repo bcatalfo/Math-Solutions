@@ -27,4 +27,22 @@ By the hypothesis we have bijections \(f: A \to B\) and \(g: B \to C\), their co
 ****
 **2.5.** \(\triangleright\) Formulate a notion of *epimorphism*, in the style of the notion of *monomorphism* seen in \(\S 2.6\), and prove a result analogous to Proposition 2.3, for epimorphisms and surjections. \([\S 2.6, \S 4.2]\)
 **Solution**
-Define a function \(f: A \to B\) to be a *epimorphism* (or *epic*) if for all sets \(Z\) and all functions \(\alpha', \alpha'' : B \to Z\) we have \(\alpha' \circ f = \alpha'' \circ f \implies \alpha' = \alpha''\). 
+Define a function \(f: A \to B\) to be a *epimorphism* (or *epic*) if for all sets \(Z\) and all functions \(\alpha', \alpha'' : B \to Z\) we have \(\alpha' \circ f = \alpha'' \circ f \implies \alpha' = \alpha''\). We propose that \(f\) is surjective if and only if it is epic. 
+\(\left(\implies\right)\) We are given that \(f\) is surjective. By Problem 2.2 we get a right inverse \(g: B \to A\), i.e. \(f \circ g = \text{id}_B\). Let \(\alpha', \alpha'' : B \to Z\) satisfy
+$$
+\alpha' \circ f = \alpha'' \circ f.
+$$
+Compose on the right by \(g\), and use associativity of composition:
+$$
+\alpha' \circ (f \circ g) = (\alpha' \circ f) \circ g = (\alpha'' \circ f) \circ g = \alpha'' \circ (f \circ g);
+$$
+since \(g\) is a right-inverse of \(f\), this says 
+$$
+\alpha' \circ \text{id}_B = \alpha'' \circ \text{id}_B,
+$$
+and therefore
+$$
+\alpha' = \alpha'',
+$$
+as needed to conclude that \(f\) is an epimorphism.
+\(\left(\impliedby\right)\)
