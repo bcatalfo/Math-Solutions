@@ -76,3 +76,5 @@ First let's show injectivity. Let \(h(x') = h(x'')\). Since \(A'' \cap B'' = \em
 Next we show surjectivity, which is even easier. Let \(y \in A'' \cup B''\). If \(y \in A''\) then we get \(x \in A'\) such that \(f(x) = y\) by \(f\)'s surjectivity. If \(y \in B''\) then we get \(x \in B'\) such that \(g(x) = y\) by \(g\)'s surjectivity. Either way \(h(x) = y\), so we conclude that \(h\) is surjective.
 Since \(h\) is well-defined, and both injective and surjective and hence a bijection, we can conclude that \(A' \cup B' \cong A'' \cup B''\) and that \(A \amalg B\) is well-defined up to isomorphism. \(\square\)
 ****
+**2.10.** \(\triangleright\) Show that if \(A\) and \(B\) are finite sets, then \(|B^A| = |B|^{|A|}\). \(\left[\S2.1, 2.11, \S \mathrm{II}.4.1\right]\)
+**Solution**
