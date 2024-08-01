@@ -12,3 +12,4 @@ epimorphism
 monomorphism
 epimorphisms
 surjections
+piecewise

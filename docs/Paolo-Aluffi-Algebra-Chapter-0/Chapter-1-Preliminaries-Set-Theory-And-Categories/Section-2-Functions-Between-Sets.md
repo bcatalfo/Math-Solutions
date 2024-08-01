@@ -45,4 +45,20 @@ $$
 \alpha' = \alpha'',
 $$
 as needed to conclude that \(f\) is an epimorphism.
-\(\left(\impliedby\right)\)
+\(\left(\impliedby\right)\) We are given that \(f\) is an epimorphism. Let \(Z = \{0, 1\}\). We define \(\alpha': B \to Z\) piecewise:
+$$
+\alpha'(b) = \begin{cases}
+  1 &\text{if } b \in \text{Im}(f) \\
+  0 &\text{otherwise } 
+\end{cases}
+$$
+Next, we define \(\alpha'': B \to Z\) more simply, taking \(\alpha''(b) = 1\) for all \(b \in B\). It is obvious that
+$$
+\alpha' \circ f = \alpha'' \circ f
+$$
+as both functions map every element of \(B\) to \(1\). By the definition of an epimorphism we conclude that
+$$
+\alpha' = \alpha''.
+$$
+Now let \(b \in B\). If \(b \notin \text{Im}(f)\) then \(\alpha'(b) = 0\), but this is a contradiction as \(\alpha'' = \alpha'\) and \(\alpha''(b) = 1\) by its definition. So we must have \(b \in \text{Im}(f)\) for each \(b \in B\). We conclude that \(f\) is surjective. \(\square\)
+****
