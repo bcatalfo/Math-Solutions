@@ -80,3 +80,14 @@ Since \(h\) is well-defined, and both injective and surjective and hence a bijec
 **Solution**
 Recall that \(B^A\) is defined as the set of all functions \(f: A \to B\). For each \(a \in A\) it could be sent to any of the \(b \in B\) by \(f\), hence there are \(|B|\) possibilities. So you multiply \(|B|\) by itself \(|A|\) times (once for each \(a \in A)\) to get \(|B|^{|A|}\). \(\square\)
 ****
+**2.11** \(\triangleright\) In view of Exercise 2.10, it is not unreasonable to use \(2^A\) to denote the set of functions from an arbitrary set \(A\) to a set with \(2\) elements (say \(\{0, 1\}\)). Prove that there is a bijection between \(2^A\) and the *power set* of \(A\) (c.f. \(\S 1.2\)). \(\left[\S 1.2, \mathrm{III}.2.3\right]\)
+**Solution**
+Define \(f: 2^A \to \mathscr{P}(A)\) as \(a \in f(g)\) if \(g(a) = 1\) for \(g: A \to \{0, 1\}\) (this is the same as \(g \in 2^A\)) and \(a \in A\). We need to show that \(f\) is a bijection. First we show injectivity. Take \(g', g'' : A \to \{0,1\}\) such that \(f(g') = f(g'')\). Let \(a \in A\). We have two possibilities: \(a \in f(g') = f(g'')\), or \(a \notin f(g') = f(g'')\). First examine that case of the former, that is \(a \in f(g') = f(g'')\). By the definition of \(f\) we have \(g'(a) = g''(a) = 1\). Next examine that latter case, that is \(a \notin f(g') = f(g'')\). By the  definition of \(f\) we have \(g'(a) = g''(a) = 0\). We conclude that \(f(g') = f(g'') \implies g' = g''\), so \(f\) is injective.
+Next we show surjectivity. Let \(B \in \mathscr{P}(A)\), so \(B \subseteq A\). Define \(g: A \to \{0, 1\}\) piecewise
+$$
+g(a) = \begin{cases}
+  1 &\text{if } a \in B \\
+  0 &\text{otherwise} 
+\end{cases}
+$$
+It is evident by our construction of \(f\) that \(f(g) = B\). In detail, if \(a \in f(g)\) then \(a \in B\) by definition of \(g\), and if \(a \in B\) then \(g(a) = 1\) by the definition of \(g\) and then by the definition of \(f\) we have \(a \in f(g)\). \(\square\)
