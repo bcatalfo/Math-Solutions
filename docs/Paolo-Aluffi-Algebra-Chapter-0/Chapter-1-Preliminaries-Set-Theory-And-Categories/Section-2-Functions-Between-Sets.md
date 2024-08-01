@@ -62,3 +62,5 @@ $$
 $$
 Now let \(b \in B\). If \(b \notin \text{Im}(f)\) then \(\alpha'(b) = 0\), but this is a contradiction as \(\alpha'' = \alpha'\) and \(\alpha''(b) = 1\) by its definition. So we must have \(b \in \text{Im}(f)\) for each \(b \in B\). We conclude that \(f\) is surjective. \(\square\)
 ****
+**2.9.** \(\triangleright\) Show that if \(A' \cong A''\) and \(B' \cong B''\), and further \(A' \cap B' = \emptyset\) and \(A'' \cap B'' = \emptyset\), then \(A' \cup B' \cong A'' \cup B''\). Conclude that the operation \(A \amalg B\) ( as described in \(\S 1.4\) ) is well-defined *up to isomorphism* (cf. \(\S 2.9\)). \(\left[\S2.9, 5.7\right]\)
+**Solution**
