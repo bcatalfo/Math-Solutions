@@ -78,3 +78,5 @@ Since \(h\) is well-defined, and both injective and surjective and hence a bijec
 ****
 **2.10.** \(\triangleright\) Show that if \(A\) and \(B\) are finite sets, then \(|B^A| = |B|^{|A|}\). \(\left[\S2.1, 2.11, \S \mathrm{II}.4.1\right]\)
 **Solution**
+Recall that \(B^A\) is defined as the set of all functions \(f: A \to B\). For each \(a \in A\) it could be sent to any of the \(b \in B\) by \(f\), hence there are \(|B|\) possibilities. So you multiply \(|B|\) by itself \(|A|\) times (once for each \(a \in A)\) to get \(|B|^{|A|}\). \(\square\)
+****
