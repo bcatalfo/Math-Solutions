@@ -62,5 +62,17 @@ $$
 $$
 Now let \(b \in B\). If \(b \notin \text{Im}(f)\) then \(\alpha'(b) = 0\), but this is a contradiction as \(\alpha'' = \alpha'\) and \(\alpha''(b) = 1\) by its definition. So we must have \(b \in \text{Im}(f)\) for each \(b \in B\). We conclude that \(f\) is surjective. \(\square\)
 ****
-**2.9.** \(\triangleright\) Show that if \(A' \cong A''\) and \(B' \cong B''\), and further \(A' \cap B' = \emptyset\) and \(A'' \cap B'' = \emptyset\), then \(A' \cup B' \cong A'' \cup B''\). Conclude that the operation \(A \amalg B\) ( as described in \(\S 1.4\) ) is well-defined *up to isomorphism* (cf. \(\S 2.9\)). \(\left[\S2.9, 5.7\right]\)
+**2.9.** \(\triangleright\) Show that if \(A' \cong A''\) and \(B' \cong B''\), and further \(A' \cap B' = \emptyset\) and \(A'' \cap B'' = \emptyset\), then \(A' \cup B' \cong A'' \cup B''\). Conclude that the operation \(A \amalg B\) (as described in \(\S 1.4\)) is well-defined *up to isomorphism* (cf. \(\S 2.9\)). \(\left[\S2.9, 5.7\right]\)
 **Solution**
+We are given bijections \(f: A' \to A''\) and \(g: B' \to B''\). Define \(h: A' \cup B' \to A'' \cup B''\) piecewise:
+$$
+h(x) = \begin{cases}
+  f(x) &\text{if } x \in A' \\
+  g(x) &\text{if } x \in B'
+\end{cases}
+$$
+Since \(A' \cap B' = \emptyset\) it is evident that \(h\) is well-defined, so it is sufficient to prove that it is a bijection. 
+First let's show injectivity. Let \(h(x') = h(x'')\). Since \(A'' \cap B'' = \emptyset\) we have either \(h(x') = h(x'') \in A''\) or \(h(x') = h(x'') \in B''\), but not both. We start by assuming the former, that is \(h(x') = h(x'') \in A''\). If we were to have \(x \in \{x', x''\}\) such that \(x \in B'\) then \(h(x) \in B''\), contradicting \(A'' \cap B'' = \emptyset\). We conclude that \(x', x'' \in A'\). Thus, \(h(x') = h(x'') = f(x') = f(x'')\). Since \(f\) is a bijection it is injective, so we conclude that \(x' = x''\). The other case, that is \(h(x') = h(x'') \in B''\), is handled by extremely similar reasoning.
+Next we show surjectivity, which is even easier. Let \(y \in A'' \cup B''\). If \(y \in A''\) then we get \(x \in A'\) such that \(f(x) = y\) by \(f\)'s surjectivity. If \(y \in B''\) then we get \(x \in B'\) such that \(g(x) = y\) by \(g\)'s surjectivity. Either way \(h(x) = y\), so we conclude that \(h\) is surjective.
+Since \(h\) is well-defined, and both injective and surjective and hence a bijection, we can conclude that \(A' \cup B' \cong A'' \cup B''\) and that \(A \amalg B\) is well-defined up to isomorphism. \(\square\)
+****

@@ -13,3 +13,5 @@ monomorphism
 epimorphisms
 surjections
 piecewise
+injectivity
+surjectivity
