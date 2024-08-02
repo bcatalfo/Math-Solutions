@@ -11,6 +11,10 @@ export_on_save:
 
 Show how to make this into a category (that is, define composition of morphisms in \(\mathsf{C}^{op}\) and verify the properties listed in \(\S3.1\) ).
 Intuitively, the 'opposite' category \(\mathsf{C}^{op}\) is simply obtained by 'reversing all the arrows' in \(\mathsf{C}\). \(\left[5.1, \S \mathrm{VIII}.1.1, \S \mathrm{IX}.1.2, \mathrm{IX.1.10} \right]\)
+Here is a test diagram with Quiver
+<!-- https://q.uiver.app/#q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImYiXV0= -->
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImYiXV0=&embed" width="432" height="176" style="border-radius: 8px; border: none;"></iframe>
+
 ****
 **3.3.** Formulate precisely what it means to say that \(1_a\) is an identity with respect to composition in Example 3.3, and prove this assertion. \(\left[\S 3.2\right]\)
 ****
