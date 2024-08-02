@@ -17,9 +17,9 @@ Here is a test diagram with Quiver
 
 
 ****
-**3.3.** Formulate precisely what it means to say that \(1_a\) is an identity with respect to composition in Example 3.3, and prove this assertion. \(\left[\S 3.2\right]\)
+**3.3.** \(\triangleright\) Formulate precisely what it means to say that \(1_a\) is an identity with respect to composition in Example 3.3, and prove this assertion. \(\left[\S 3.2\right]\)
 ****
-**3.5.** Explain in what sense Example 3.4 is an instance of the categories considered in Example 3.3. \(\left[\S 3.2\right]\)
+**3.5.** \(\triangleright\) Explain in what sense Example 3.4 is an instance of the categories considered in Example 3.3. \(\left[\S 3.2\right]\)
 ****
 **3.6.** \(\triangleright\) (Assuming some familiarity with linear algebra) Define a category \(\mathsf{V}\) by taking \(\text{Obj} = \N\) and letting \(\text{Hom}_{\mathsf{V}}(n,m) =\) the set of \(m \times n\) matrices with real entries, for all \(n, m \in \N\). (I will leave the reader the task of making sense of a matrix with \(0\) rows or columns.) Use product of matrices to define composition. Does this category 'feel' familiar? \(\left[\S \mathrm{VI}.2.1, \S \mathrm{VIII}.1.3 \right]\)
 ****
