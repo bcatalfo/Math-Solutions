@@ -13,7 +13,7 @@ Show how to make this into a category (that is, define composition of morphisms 
 Intuitively, the 'opposite' category \(\mathsf{C}^{op}\) is simply obtained by 'reversing all the arrows' in \(\mathsf{C}\). \(\left[5.1, \S \mathrm{VIII}.1.1, \S \mathrm{IX}.1.2, \mathrm{IX.1.10} \right]\)
 Here is a test diagram with Quiver
 <!-- https://q.uiver.app/#q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImYiXV0= -->
-<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImYiXV0=&embed" width="400" height="400" style="border-radius: 8px; border: none;"></iframe>
+<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImYiXV0=&embed" width="300" height="150" style="border-radius: 8px; border: none;"></iframe>
 
 
 ****
