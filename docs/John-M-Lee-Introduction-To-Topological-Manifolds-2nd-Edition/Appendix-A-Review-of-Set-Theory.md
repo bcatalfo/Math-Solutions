@@ -38,3 +38,15 @@ $$
 $$
 A \smallsetminus \left( \bigcup_{X \in \mathscr{C}} X \right) = \bigcap_{X \in \mathscr{C}} (A \smallsetminus X).
 $$
+
+**Solution** 
+Let \(x \in A \smallsetminus \left( \bigcap_{X \in \mathscr{C}} X \right)\). Then there must exist some \(X' \in \mathscr{C}\) such that \(x \notin X'\), because if there wasn't we would have \(x \in \bigcap_{X \in \mathscr{C}} X\), contradicting our choice of \(x\). Since \(x \in A\) as well we have \(x \in A \smallsetminus X'\). Since \(X' \in \mathscr{C}\) we have \(x \in \bigcup_{X \in \mathscr{C}} (A \smallsetminus X)\). Since our choice of \(x\) was arbitrary we have \(A \smallsetminus \left( \bigcap_{X \in \mathscr{C}} X \right) \subseteq \bigcup_{X \in \mathscr{C}} (A \smallsetminus X) \).
+
+Let \( x \in \bigcup_{X \in \mathscr{C}} (A \smallsetminus X) \). Then there exists some \( X' \in \mathscr{C} \) such that \( x \in A \smallsetminus X' \). So \(x \in A\) and \( x \notin X'\). Since \(x \notin X'\) we must have \(x \notin \bigcap_{X \in \mathscr{C}} X\) because \(x \in \bigcap_{X \in \mathscr{C}} \implies x \in X'\). Since \(x \in A\) and \(x \notin \bigcap_{X \in \mathscr{C}} X\) we have \(x \in A \smallsetminus \left( \bigcap_{X \in \mathscr{C}} X \right)\). Since our choice of \(x\) was arbitrary we have \( \bigcup_{X \in \mathscr{C}} (A \smallsetminus X) \subseteq A \smallsetminus \left( \bigcap_{X \in \mathscr{C}} X \right) \).
+
+Let \(x \in A \smallsetminus \left( \bigcup_{X \in \mathscr{C}} X \right)\). Let \(X' \in \mathscr{C}\). By our choice of \(x\) we have \(x \in A\) and \(x \notin \bigcup_{X \in \mathscr{C}} X\). We must have \(x \notin X'\), because \(x \in X' \implies x \in \bigcup_{X \in \mathscr{C}} X\). So we have \(x \in A \smallsetminus X'\) for each \(X' \in \mathscr{C}\) as our choice of \(X'\) was arbitrary. We can rewrite this as \(x \in \bigcap_{X \in \mathscr{C}}(A \smallsetminus X)\). Since our choice of \(x\) was arbitrary we have \(A \smallsetminus \left( \bigcup_{X \in \mathscr{C}} X \right) \subseteq \bigcap_{X \in \mathscr{C}}(A \smallsetminus X) \).
+
+Let \( x \in \bigcap_{X \in \mathscr{C}} (A \smallsetminus X) \). Clearly \(x \in A\). Let \(X \in \mathscr{C}\). By our choice of \(x\) we have \(x \in A \smallsetminus X\), so \(x \notin X\). Since this applies to all \(X \in \mathscr{C}\), we have \(x \notin \bigcup_{X \in \mathscr{C}} X\). So \(x \in A \smallsetminus \left(\bigcap_{X \in \mathscr{C}} X\right)\). Since our choice of \(x\) was arbitrary, we have \(\bigcap_{X \in \mathscr{C}} (A \smallsetminus X) \subseteq A \smallsetminus \left(\bigcap_{X \in \mathscr{C}} X\right) \).
+
+
+Combining the four subset relations at the end of each paragraph gives the two desired set equalities. \( \square \)
