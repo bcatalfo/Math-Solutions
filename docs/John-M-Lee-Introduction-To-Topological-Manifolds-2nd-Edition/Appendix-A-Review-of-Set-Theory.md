@@ -52,3 +52,12 @@ Let \( x \in \bigcap_{X \in \mathscr{C}} (A \smallsetminus X) \). Clearly \(x \i
 Combining the four subset relations at the end of each paragraph gives the two desired set equalities. \( \square \)
 
 **Exercise A.2.** Given an equivalence relation \(\sim\) on a set \(X\), show that the set \(X/\sim\) of equivalence classes is a partition of \(X\). Conversely, given a partition of \(X\), show that there is a unique equivalence relation whose set of equivalence classes is exactly the original partition.
+
+**Solution**
+First, we need to show that \(X/\sim\) is a partition of \(X\). By the definition of a partition we need to show that \(X\) is the disjoint union of the sets in \(X/\sim\).  By the definition of a disjoint union we need to show that \(A, B \in X/\sim \text{ and } A \neq B \implies A \cap B = \emptyset\) (this is the "disjoint") and that \(\{y \in [x]: x \in X\} = X\) (this is the "union").
+
+Let \(A, B \in X / \sim\) such that \(A \neq B\). Let \(a, b \in X\) such that \(A = [a]\), \(B = [b]\). Suppose there exists some \(c \in A \cap B\). Since \(a \sim c\) and \(b \sim c\) we have \(a \sim b \implies A = B \), a contradiction. By contradiction there exists no \(c \in A \cap B\), so we conclude that \(A \cap B = \emptyset\), the "disjoint" part of the "disjoint union".
+
+Let \(y \in \{y \in [x]: x \in X\}\), then for some \(x \in X\) we have \(y \in [x]\implies y \sim x \implies y \in X\), so \(\{y \in [x]: x \in X\} \subseteq X\). Let \(x \in X\), then \(x \in [x]\), so \(X \subseteq \{y \in [x]: x \in X\}\). Therefore \(\{y \in [x]: x \in X\} = X\), the 'union' part of the "disjoint union".
+
+Conversely, let \(\mathscr{C}\) be a partition of \(X\). Let \(\sim\) be a relation on \(X\) such that \(a \sim b \iff \exists U \in C \text{ s.t. } a, b \in U\). We need to show that \(\sim\) is an equivalence relation. Let \(a, b, c \in X\). Since \(X\) is the disjoint union of the sets of \(\mathscr{C}\), there must exist some \(U \in C\) such that \(a \in U\), so \(a \sim a\). It is trivial that \(a \sim b \implies b \sim a\). If \(a \sim b\) and \(b \sim c\), then there must exist \(U, V \in \mathscr{C}\) such that \(a, b \in U\) and \(b, c \in V\). Since \(U \cap V \neq \emptyset\) we must have \(U = V\) (this is the contrapositive of the disjoint rule), so \(a \sim c\). Therefore \(\sim\) is an equivalence relation as desired. \(\square\)
