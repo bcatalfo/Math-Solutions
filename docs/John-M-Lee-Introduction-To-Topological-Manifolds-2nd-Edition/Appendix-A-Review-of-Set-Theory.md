@@ -50,3 +50,5 @@ Let \( x \in \bigcap_{X \in \mathscr{C}} (A \smallsetminus X) \). Clearly \(x \i
 
 
 Combining the four subset relations at the end of each paragraph gives the two desired set equalities. \( \square \)
+
+**Exercise A.2.** Given an equivalence relation \(\sim\) on a set \(X\), show that the set \(X/\sim\) of equivalence classes is a partition of \(X\). Conversely, given a partition of \(X\), show that there is a unique equivalence relation whose set of equivalence classes is exactly the original partition.
