@@ -50,3 +50,10 @@ $$
 |1/z||z| = |1/z \cdot z| = |1| = 1
 $$
 Dividing both sides by \(|z|\) (which we know isn't zero thanks to \(\text{(b)}\) ) gives the result. \(\square\)
+**2.** If \(z = x + iy\) is a complex number with \(x, y \in \R\), we define the **complex conjugate** of \(z\) by
+$$
+\overline{z} = x - iy.
+$$
+\(\quad \text{(a)}\) What is the geometric interpretation of \(\overline{z}\)?
+\(\quad \text{(b)}\) Show that \(|z|^2 = z\overline{z}\).
+\(\quad \text{(c)}\) Prove that if \(z\) belongs to the unit circle, then \(1/z = \overline{z}\).
