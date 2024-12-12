@@ -16,6 +16,8 @@ and call this quantity the **modulus** or **absolute value** of \(z\).
 **Solution**
 The geometric interpretation of \(|z|\) is the length of the vector \(z\).
 \(\quad \text{(b)}\) Show that if \(|z| = 0\), then \(z = 0\).
+**Solution**
+If \(|z| = 0\) then by definition \(0 = (x^2 + y^2)^{1/2} \implies 0 = x^2 + y^2 \implies x = y = 0\). \(\square\)
 \(\quad \text{(c)}\) Show that if \(\lambda \in \R\), then \(|\lambda z| = |\lambda||z|\), where \(|\lambda|\) denotes the standard absolute value of a real number.
 \(\quad \text{(d)}\) If \(z_1\) and \(z_2\) are two complex numbers, prove that
 $$
