@@ -58,4 +58,8 @@ $$
 **Solution**
 The geometric interpetation of \(\overline{z}\) is a reflection of the vector \(z\) over the \(x\)-axis.
 \(\quad \text{(b)}\) Show that \(|z|^2 = z\overline{z}\).
+**Solution**
+$$
+z\overline{z} = (x + iy)(x - iy) = x^2 + y^2 = |z|^2 \quad \square
+$$
 \(\quad \text{(c)}\) Prove that if \(z\) belongs to the unit circle, then \(1/z = \overline{z}\).
