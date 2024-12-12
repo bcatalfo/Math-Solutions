@@ -4,6 +4,7 @@ export_on_save:
 ---
 <style>
 .katex-display { overflow: auto hidden }
+iframe {display: block; margin: 0 auto;}
 </style>
 **3.1.** \(\triangleright\) Let \(\mathsf{C}\) be a category. Consider a structure \(\mathsf{C}^{op}\) with
 * \(\text{Obj}(\mathsf{C}^{op}) \coloneqq \text{Obj}(\mathsf{C})\);
