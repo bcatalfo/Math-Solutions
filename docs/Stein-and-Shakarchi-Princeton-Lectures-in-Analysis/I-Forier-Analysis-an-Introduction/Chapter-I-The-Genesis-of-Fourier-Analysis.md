@@ -44,3 +44,9 @@ $$
 \iff 0 \leq (x_1y_2 - y_1x_2)^2 \\ \square
 $$
 \(\quad \text{(e)}\) Show that if \(z \neq 0\), then \(|1/z| = 1/|z|\).
+**Solution**
+Using the previous result
+$$
+|1/z||z| = |1/z \cdot z| = |1| = 1
+$$
+Dividing both sides by \(|z|\) (which we know isn't zero thanks to \(\text{(b)}\) ) gives the result. \(\square\)
