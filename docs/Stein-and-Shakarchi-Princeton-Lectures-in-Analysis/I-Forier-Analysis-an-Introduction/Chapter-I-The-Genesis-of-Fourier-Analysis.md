@@ -63,3 +63,5 @@ $$
 z\overline{z} = (x + iy)(x - iy) = x^2 + y^2 = |z|^2 \quad \square
 $$
 \(\quad \text{(c)}\) Prove that if \(z\) belongs to the unit circle, then \(1/z = \overline{z}\).
+**Solution**
+If \(z\) belongs to the unit circle that means that \(|z| = 1\). Using part \(\text{(b)}\) we get that \(z\overline{z} = |z|^2 = 1\). Diving both sides by \(z\) gives the result. \(\square\)
