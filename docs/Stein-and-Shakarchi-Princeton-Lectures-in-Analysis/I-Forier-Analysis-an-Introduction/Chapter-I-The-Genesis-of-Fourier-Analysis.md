@@ -55,5 +55,7 @@ $$
 \overline{z} = x - iy.
 $$
 \(\quad \text{(a)}\) What is the geometric interpretation of \(\overline{z}\)?
+**Solution**
+The geometric interpetation of \(\overline{z}\) is a reflection of the vector \(z\) over the \(x\)-axis.
 \(\quad \text{(b)}\) Show that \(|z|^2 = z\overline{z}\).
 \(\quad \text{(c)}\) Prove that if \(z\) belongs to the unit circle, then \(1/z = \overline{z}\).
