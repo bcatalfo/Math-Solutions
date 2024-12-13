@@ -34,6 +34,16 @@ which is exactly what we set out to show. \(\square\)
 
 ****
 **3.3.** \(\triangleright\) Formulate precisely what it means to say that \(1_a\) is an identity with respect to composition in Example 3.3, and prove this assertion. \(\left[\S 3.2\right]\)
+**Solution**
+In this example \(1_a\) is the relation \(a \sim a\) which can also be viewed as the pair \((a, a)\), to show that it is the identity with respect to composition we need to show that for all \(f \in \text{Hom}(a, b)\) we have
+$$
+f1_a = f, \quad 1_bf = f
+$$
+In our category the only element of \(\text{Hom}(a,b)\) is the pair \((a, b)\) representing the true statement \(a \sim b\), so the above is equivalent to
+$$
+(a, b) (a, a) = (a, b), \quad (b, b)(a, b) = (a, b);
+$$
+which follows directly from the definition of composition in the example. \(\square\)
 ****
 **3.5.** \(\triangleright\) Explain in what sense Example 3.4 is an instance of the categories considered in Example 3.3. \(\left[\S 3.2\right]\)
 ****
