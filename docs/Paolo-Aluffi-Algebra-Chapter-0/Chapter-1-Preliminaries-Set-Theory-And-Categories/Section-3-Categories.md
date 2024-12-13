@@ -12,10 +12,25 @@ iframe {display: block; margin: 0 auto;}
 
 Show how to make this into a category (that is, define composition of morphisms in \(\mathsf{C}^{op}\) and verify the properties listed in \(\S3.1\) ).
 Intuitively, the 'opposite' category \(\mathsf{C}^{op}\) is simply obtained by 'reversing all the arrows' in \(\mathsf{C}\). \(\left[5.1, \S \mathrm{VIII}.1.1, \S \mathrm{IX}.1.2, \mathrm{IX.1.10} \right]\)
-Here is a test diagram with Quiver
-<!-- https://q.uiver.app/#q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImYiXV0= -->
-<iframe class="quiver-embed" src="https://q.uiver.app/#q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImYiXV0=&embed" width="300" height="150" style="border-radius: 8px; border: none;"></iframe>
 
+**Solution**
+First we'll define an identity morphism. Since \(\mathsf{C}\) is a category, for every object \(A\) of \(\mathsf{C}\), there exists an identity morphism \(1_A \in \text{Hom}_\mathsf{C}(A, A)\). By our definition of \(\mathsf{C}^{op}\) we have \(\text{Obj}(\mathsf{C}^{op}) = \text{Obj}(\mathsf{C})\) and \(\text{Hom}_{\mathsf{C}^{op}}(A, A) = \text{Hom}_\mathsf{C}(A, A)\), so we can just use \(1_A\) as is for \(C^{op}\).
+Now for the heart of the matter, defining the composition of morphisms in \(\mathsf{C}^{op}\) and verifying the properties of \(\S 3.1\). Let \(A, B\) be objects of \(\mathsf{C}^{op}\) (which is the same as being an object of \(\mathsf{C}\)), and let \(f \in \text{Hom}_{\mathsf{C}^{op}}(A, B)\) and \(g \in \text{Hom}_{\mathsf{C}^{op}}(B, C)\). By definition we have \(f \in \text{Hom}_{\mathsf{C}}(B, A)\) and \(g \in \text{Hom}_{\mathsf{C}}(C, B)\). This gives us \(fg \in \text{Hom}_{\mathsf{C}}(C, A) = \text{Hom}_{\mathsf{C}^{op}}(A, C)\) by composition. Define \(gf = fg\). This notation is a bit confusing because the LHS is composition in \(\mathsf{C}^{op}\) and the RHS is composition in \(\mathsf{C}\). We proceed by verifying that this composition is associative and respects the identity.
+Let \(f \in \text{Hom}_{\mathsf{C}^{op}}(A, B)\), \(g \in \text{Hom}_{\mathsf{C}^{op}}(B, C)\), and \(h \in \text{Hom}_{\mathsf{C}^{op}}(C, D)\). Then \((hg)f = (gh)f\), where now on the RHS we are using composition in \(\mathsf{C}\) in the parentheses. Applying the definition of composition in \(\mathsf{C}^{op}\) again we get \((hg)f = f(gh)\). Now that on the RHS we are entirely in \(\mathsf{C}\) we can use associativity in \(\mathsf{C}\) to get \((hg)f = (fg)h\). Then using the definition of composition in \(\mathsf{C}^{op}\) twice we get \((hg)f = (fg)h = (gf)h = h(gf)\) proving associativity.
+This is a bit unclear, so let me rewrite this denoting composition in \(\mathsf{C}^{op}\) as \(\circ '\) and composition in \(\mathsf{C}\) as \(\circ\). Then
+$$
+(h \circ' g) \circ' f = (g \circ h) \circ' f = f \circ (g \circ h) \\
+ = (f \circ g) \circ h = (g \circ' f) \circ h = h \circ' (g \circ' f).
+$$
+It is pretty clear that the identity respects composition, let \(f \in \text{Hom}_{\mathsf{C}^{op}}(A, B) = \text{Hom}_{\mathsf{C}}(B, A)\). Because the identity respects composition in \(\mathsf{C}\) we have
+$$
+f \circ 1_B = f, \quad 1_A \circ f = f
+$$
+So by the definition of composition in \(\mathsf{C}^{op}\) and because the identities are the same in both \(\mathsf{C}\) and \(\mathsf{C}^{op}\)
+$$
+1_B \circ' f = f, \quad f \circ' 1_A = f;
+$$
+which is exactly what we set out to show. \(\square\)
 
 ****
 **3.3.** \(\triangleright\) Formulate precisely what it means to say that \(1_a\) is an identity with respect to composition in Example 3.3, and prove this assertion. \(\left[\S 3.2\right]\)
