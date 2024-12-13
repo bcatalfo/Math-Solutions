@@ -83,7 +83,20 @@ because composition in categories is associative, and
 $$
 \tau (\sigma f_1) = \tau f_2 = f_3
 $$
-due to the commutative diagrams in (1).
+due to the commutative diagrams in (1). 
+Composition in \(\mathsf{C}_A\) is associative because the following diagram commutes (do I need to prove this?)
+![](../../assets/2024-12-13-16-28-21.png)
+so \((\sigma \tau) \upsilon = \sigma (\tau \upsilon)\).
+For every \(f: A \to Z\) in \(\mathsf{C}_A\), the identity \(1_f\) is the following commutative diagram
+![](../../assets/2024-12-13-16-15-02.png)
+which commutes because \(\mathsf{C}\) is a category. 
+Finally, the identity is an identity with respect to our composition. To show this first take the diagram earlier for \(\sigma\), representing an arbitrary morphism in \(\mathsf{C}_A\), and put the identity diagram with it side-by-side
+![](../../assets/2024-12-13-16-48-31.png)
+then, as per the definition of composition in \(\mathsf{C}_A\), we remove the middle and compose \(\sigma\) and \(1_{Z_1}\)
+![](../../assets/2024-12-13-16-53-18.png)
+The diagram above is by definition \(\sigma 1_{f_1}\). Because \(\mathsf{C}\) is a category \(\sigma 1_{Z_1} = \sigma\) so \(\sigma 1_{f_1}\) is equal to the below diagram
+![](../../assets/2024-12-13-16-56-12.png)
+which is the original diagram for \(\sigma\), so we can conclude that \(\sigma 1_{f_1} = \sigma\). The argument that \(1_{f_2}\sigma = \sigma\) is similar. \(\square\)
 ****
 **3.8.** \(\triangleright\) A *subcategory* \(\mathsf{C}'\) of a category \(\mathsf{C}\) consists of a collection of objects of \(\mathsf{C}\) with sets of morphisms \(\text{Hom}_{\mathsf{C}'}(A, B) \subseteq \text{Hom}_{\mathsf{C}}(A, B)\) for all objects \(A, B\) in \(\text{Obj}(\mathsf{C}')\), such that identities and compositions in \(\mathsf{C}\) make \(\mathsf{C'}\) into a category. A subcategory \(\mathsf{C'}\) is *full* if \(\text{Hom}_{\mathsf{C'}}(A,B) = \text{Hom}_{\mathsf{C}}(A,B)\) for all \(A, B\) in \(\text{Obj}(\mathsf{C'})\). Construct a category of *infinite sets* and explain how it may be viewed as a full subcategory of \(\mathsf{Set}\). \(\left[4.4, \S \mathrm{VI}.1.1, \S \mathrm{VIII}.1.3\right]\)
 ****
