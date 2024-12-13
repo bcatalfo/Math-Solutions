@@ -46,6 +46,8 @@ $$
 which follows directly from the definition of composition in the example. \(\square\)
 ****
 **3.5.** \(\triangleright\) Explain in what sense Example 3.4 is an instance of the categories considered in Example 3.3. \(\left[\S 3.2\right]\)
+**Solution**
+Let \(A, B, C \subseteq S\) and define \(A \sim B \iff A \subseteq B\). Because \(A \subseteq B\) and \(B \subseteq C\) implies that \(A \subseteq C\), \(\sim\) is transitive. Because \(A \subseteq A\), \(\sim\) is reflective. Because \(\mathscr{P}(S)\) is a set and \(\sim\) is a reflexive and transitive relation on \(\mathscr{P}(S)\), Example 3.4 is an instance of the categories considered in Example 3.3. \(\square\)
 ****
 **3.6.** \(\triangleright\) (Assuming some familiarity with linear algebra) Define a category \(\mathsf{V}\) by taking \(\text{Obj} = \N\) and letting \(\text{Hom}_{\mathsf{V}}(n,m) =\) the set of \(m \times n\) matrices with real entries, for all \(n, m \in \N\). (I will leave the reader the task of making sense of a matrix with \(0\) rows or columns.) Use product of matrices to define composition. Does this category 'feel' familiar? \(\left[\S \mathrm{VI}.2.1, \S \mathrm{VIII}.1.3 \right]\)
 ****
