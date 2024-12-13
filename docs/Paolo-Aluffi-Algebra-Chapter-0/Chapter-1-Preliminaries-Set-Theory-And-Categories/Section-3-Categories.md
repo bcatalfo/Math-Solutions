@@ -4,7 +4,7 @@ export_on_save:
 ---
 <style>
 .katex-display { overflow: auto hidden }
-iframe {display: block; margin: 0 auto;}
+img {display: block; margin: 0 auto;}
 </style>
 **3.1.** \(\triangleright\) Let \(\mathsf{C}\) be a category. Consider a structure \(\mathsf{C}^{op}\) with
 * \(\text{Obj}(\mathsf{C}^{op}) \coloneqq \text{Obj}(\mathsf{C})\);
@@ -54,6 +54,36 @@ Let \(A, B, C \subseteq S\) and define \(A \sim B \iff A \subseteq B\). Because 
 It 'feels' like the category of finite dimensional vector spaces, as each object is a natural number (the dimension) and the morphisms correspond to linear transformations.
 ****
 **3.7.** \(\triangleright\) Define carefully objects and morphisms in Example 3.7, and draw the diagram corresponding to composition. \(\left[\S 3.2\right]\)
+**Solution**
+Let \(\mathsf{C}\) be a category and \(A \in \text{Obj}(\mathsf{C})\). We define the co-slice category \(\mathsf{C}_A\) as follows:
+* \(\text{Obj}(\mathsf{C}_A) = \{f \in \text{Hom}_{\mathsf{C}}(A, Z): Z \in \text{Obj}(\mathsf{C})\} \). Diagramatically,
+![](../../assets/2024-12-13-14-34-03.png)
+
+* If \(f_1, f_2 \in \text{Obj}(\mathsf{C}_A)\), diagramatically
+![](../../assets/2024-12-13-14-35-03.png)
+
+
+Then elements of \(\text{Hom}_{\mathsf{C}_A}(f_1, f_2)\) are commutative diagrams like
+![](../../assets/2024-12-13-15-51-10.png)
+
+And if we were to take two morphisms, \(\sigma: f_1 \to f_2\) and \(\tau: f_2 \to f_3\) pictured below
+![](../../assets/2024-12-13-15-51-56.png)
+
+we can define their composition by first putting the diagrams side-by-side
+![](../../assets/2024-12-13-15-52-34.png)
+
+And then removing the middle and composing \(\sigma\) and \(\tau\)
+![](../../assets/2024-12-13-15-53-02.png)
+
+The above diagram commutes because 
+$$
+\tau \sigma f_1 = \tau (\sigma f_1)
+$$ 
+because composition in categories is associative, and
+$$
+\tau (\sigma f_1) = \tau f_2 = f_3
+$$
+due to the commutative diagrams in (1).
 ****
 **3.8.** \(\triangleright\) A *subcategory* \(\mathsf{C}'\) of a category \(\mathsf{C}\) consists of a collection of objects of \(\mathsf{C}\) with sets of morphisms \(\text{Hom}_{\mathsf{C}'}(A, B) \subseteq \text{Hom}_{\mathsf{C}}(A, B)\) for all objects \(A, B\) in \(\text{Obj}(\mathsf{C}')\), such that identities and compositions in \(\mathsf{C}\) make \(\mathsf{C'}\) into a category. A subcategory \(\mathsf{C'}\) is *full* if \(\text{Hom}_{\mathsf{C'}}(A,B) = \text{Hom}_{\mathsf{C}}(A,B)\) for all \(A, B\) in \(\text{Obj}(\mathsf{C'})\). Construct a category of *infinite sets* and explain how it may be viewed as a full subcategory of \(\mathsf{Set}\). \(\left[4.4, \S \mathrm{VI}.1.1, \S \mathrm{VIII}.1.3\right]\)
 ****
