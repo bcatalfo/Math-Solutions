@@ -50,6 +50,7 @@ $$
 |1/z||z| = |1/z \cdot z| = |1| = 1
 $$
 Dividing both sides by \(|z|\) (which we know isn't zero thanks to \(\text{(b)}\) ) gives the result. \(\square\)
+****
 **2.** If \(z = x + iy\) is a complex number with \(x, y \in \R\), we define the **complex conjugate** of \(z\) by
 $$
 \overline{z} = x - iy.
@@ -65,3 +66,4 @@ $$
 \(\quad \text{(c)}\) Prove that if \(z\) belongs to the unit circle, then \(1/z = \overline{z}\).
 **Solution**
 If \(z\) belongs to the unit circle that means that \(|z| = 1\). Using part \(\text{(b)}\) we get that \(z\overline{z} = |z|^2 = 1\). Diving both sides by \(z\) gives the result. \(\square\)
+****
