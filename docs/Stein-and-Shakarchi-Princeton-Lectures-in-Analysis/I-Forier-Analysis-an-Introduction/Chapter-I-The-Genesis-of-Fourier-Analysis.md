@@ -73,6 +73,22 @@ $$
 $$
 and we say that \(w\) is a limit of the sequence.
 \(\quad \text{(a)}\) Show that a converging sequence of complex numbers has a unique limit.
+**Solution**
+Let \(x, y\) be limits of \(\{w_n\}_{n=1}^\infty\)
+$$
+0 = \lim_{n \to \infty}|w_n - x| = \lim_{n \to \infty}|w_n - y| \\
+$$
+So
+$$
+\begin{aligned}
+|x - y| &= \lim_{n \to \infty} |x - y| = \lim_{n \to \infty} |x - w_n + w_n - y| \\
+&\leq \lim_{n \to \infty} |x - w_n| + |w_n - y| \quad \text{(using 1 (d))} \\
+&= \lim_{n \to \infty} |w_n - x| + |w_n - y| \\
+&=  \lim_{n \to \infty}|w_n - x| + \lim_{n \to \infty}|w_n - y| \\
+&= 0 + 0 = 0 \\
+\end{aligned}
+$$
+This shows that \(|x - y| \leq 0\), we also have \(|x - y| \geq 0\) by the definition of \(|\cdot|\) so we have \(|x - y| = 0\). Using \(\text{1 (b)}\) we get \(x - y = 0 \implies x = y\) so any two limits of a converging sequence of complex numbers are equal, hence this limit is unique. \(\square\)
 The sequence \(\{w_n\}_{n=1}^\infty\) is said to be a **Cauchy sequence** if for every \(\epsilon > 0\) there exists a positive integer \(N\) such that
 $$
 |w_n - w_m| < \epsilon \quad \text{whenever } n, m > N.
