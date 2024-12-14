@@ -84,9 +84,9 @@ $$
 \tau (\sigma f_1) = \tau f_2 = f_3
 $$
 due to the commutative diagrams in (1). 
-Composition in \(\mathsf{C}_A\) is associative because the following diagram commutes (do I need to prove this?)
+Composition in \(\mathsf{C}_A\) is associative because (**TODO: FIX THIS ARGUMENT**) the following diagram commutes 
 ![](../../assets/2024-12-13-16-28-21.png)
-so \((\sigma \tau) \upsilon = \sigma (\tau \upsilon)\).
+so \((\sigma \tau) \upsilon = \sigma (\tau \upsilon)\). 
 For every \(f: A \to Z\) in \(\mathsf{C}_A\), the identity \(1_f\) is the following commutative diagram
 ![](../../assets/2024-12-13-16-15-02.png)
 which commutes because \(\mathsf{C}\) is a category. 
