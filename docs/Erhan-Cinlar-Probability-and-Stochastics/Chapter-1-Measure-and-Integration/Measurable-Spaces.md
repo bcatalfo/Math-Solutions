@@ -34,3 +34,12 @@ Showing \(\text{1.3 b)}\) is trivial, as the countable union of a countable unio
 Combining \(\text{1.3 a)}\) and \(\text{1.3 b)}\) shows that \(\mathcal{E}\) is a \(\sigma\)-algebra.
 To finish the proof we need to show that \(\mathcal{E} = \sigma \mathcal{C}\). It is obvious that \(\mathcal{E}\) contains \(\mathcal{C}\) and we know that \(\mathcal{E}\) is a \(\sigma\)-algebra so it is obvious that \(\sigma \mathcal{C} \subseteq \mathcal{E}\). Because a \(\sigma\)-algebra is by definition closed under countable unions we must also have \(\mathcal{E} \subseteq \sigma \mathcal{C}\), so \(\mathcal{E} = \sigma \mathcal{C}\). \(\square\)
 \(\quad \text{c)} \>\) Let \(E = \R\), the set of all real numbers. Let \(\mathcal{C}\) be the collection of all singleton subsets of \(\R\), that is, each element of \(\mathcal{C}\) is a set that consists of exactly one point in \(\R\). Show that every element of \(\sigma \mathcal{C}\) is either a countable set or the complement of a countable set. Incidentally, \(\sigma \mathcal{C}\) is much smaller than \(\mathcal{B}(\R)\); for instance, the interval \((0, 1)\) belongs to the latter but not to the former.
+**Solution**
+Let \(\mathcal{E}\) be the set of all finite unions of singletons and their complements. We propose that \(\sigma \mathcal{C} = \mathcal{E}\).
+First we show that \(\mathcal{E}\) is indeed a \(\sigma\)-algebra. By definition this means showing that
+* \(A \in \mathcal{E} \implies \R \setminus A \in \mathcal{E}\)
+This is obvious from construction.
+* \(A_1, A_2, \dots \in \mathcal{E} \implies \bigcup_{n}A_n \in \mathcal{E}\)
+Harder to show. Figure out some other time.
+
+Anyways after having showed that \(\mathcal{E}\) is a \(\sigma\)-algebra the rest of this problem is trivial. \(\mathcal{C} \subset \mathcal{E}\) is obvious by construction, so by the definition of a \(\sigma\)-algebra being generated we have \(\sigma \mathcal{C} \subset \mathcal{E}\). \(\mathcal{E} \subset \sigma \mathcal{C}\) is trivial because \(\sigma\)-algebras are closed under finite unions and complements.
