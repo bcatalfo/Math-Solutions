@@ -94,6 +94,19 @@ $$
 |w_n - w_m| < \epsilon \quad \text{whenever } n, m > N.
 $$
 \(\quad \text{(b)}\) Prove that a sequence of complex numbers converges if and only if it is a Cauchy sequence. [Hint: A similar theorem exists for the convergence of a sequence of real numbers. Why does it carry over to sequences of complex numbers?]
+**Solution**
+$$
+\lim_{n \to \infty} |w_n - w| = 0 \iff \lim_{n \to \infty} |x_n + iy_n - (x + iy)| = 0 \\
+\iff \lim_{n \to \infty} |x_n  - x + i(y_n + y)| = 0  \\
+\iff \lim_{n \to \infty} |x_n - x| = 0 \text{ and } \lim_{n \to \infty} |y_n - y| = 0 \\
+\iff |{x_n}_a - {x_n}_b| < \epsilon \quad \text{ whenever } a, b > N_1 \text{ and } \\
+|{y_n}_a - {y_n}_b| < \epsilon \quad \text{ whenever } a, b > N_2
+$$
+$$
+|w_n - w_m| < \epsilon \iff |x_n + iy_n - (x_m + iy_m)| < \epsilon \\
+\iff |x_n - x_m + i(y_n - y_m)| < \epsilon \\
+\iff |x_n - x_m| < \epsilon \text{ and } |y_n - y_m| < \epsilon \\
+$$
 A series \(\sum_{n=1}^\infty z_n\) of complex numbers is said to converge if the sequence formed by the partial sums
 $$
 S_N = \sum_{n=1}^N z_n
