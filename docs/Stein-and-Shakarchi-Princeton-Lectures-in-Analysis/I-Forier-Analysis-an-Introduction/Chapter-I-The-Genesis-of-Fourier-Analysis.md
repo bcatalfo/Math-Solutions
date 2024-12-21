@@ -15,12 +15,15 @@ and call this quantity the **modulus** or **absolute value** of \(z\).
 \(\quad \text{(a)}\) What is the geometric interpretation of \(|z|\)?
 **Solution**
 The geometric interpretation of \(|z|\) is the length of the vector \(z\).
+****
 \(\quad \text{(b)}\) Show that if \(|z| = 0\), then \(z = 0\).
 **Solution**
 If \(|z| = 0\) then by definition \(0 = (x^2 + y^2)^{1/2} \implies 0 = x^2 + y^2 \implies x = y = 0\). \(\square\)
+****
 \(\quad \text{(c)}\) Show that if \(\lambda \in \R\), then \(|\lambda z| = |\lambda||z|\), where \(|\lambda|\) denotes the standard absolute value of a real number.
 **Solution**
 Calculate that \(\lambda z = \lambda x + i \lambda y\), so \(|\lambda z| = ((\lambda x)^2 + (\lambda y)^2 )^{1/2} = |\lambda||z|\). \(\square\)
+****
 \(\quad \text{(d)}\) If \(z_1\) and \(z_2\) are two complex numbers, prove that
 $$
 |z_1z_2| = |z_1||z_2| \quad \text{and} \quad |z_1 + z_2| \leq |z_1| + |z_2|.
@@ -43,6 +46,7 @@ $$
 \iff 0 \leq x_1^2y_2^2 - 2x_1x_2y_1y_2 + y_1^2x_2^2\\
 \iff 0 \leq (x_1y_2 - y_1x_2)^2 \\ \square
 $$
+****
 \(\quad \text{(e)}\) Show that if \(z \neq 0\), then \(|1/z| = 1/|z|\).
 **Solution**
 Using the previous result
@@ -58,11 +62,13 @@ $$
 \(\quad \text{(a)}\) What is the geometric interpretation of \(\overline{z}\)?
 **Solution**
 The geometric interpetation of \(\overline{z}\) is a reflection of the vector \(z\) over the \(x\)-axis.
+****
 \(\quad \text{(b)}\) Show that \(|z|^2 = z\overline{z}\).
 **Solution**
 $$
 z\overline{z} = (x + iy)(x - iy) = x^2 + y^2 = |z|^2 \quad \square
 $$
+****
 \(\quad \text{(c)}\) Prove that if \(z\) belongs to the unit circle, then \(1/z = \overline{z}\).
 **Solution**
 If \(z\) belongs to the unit circle that means that \(|z| = 1\). Using part \(\text{(b)}\) we get that \(z\overline{z} = |z|^2 = 1\). Diving both sides by \(z\) gives the result. \(\square\)
@@ -89,6 +95,7 @@ $$
 \end{aligned}
 $$
 This shows that \(|x - y| \leq 0\), we also have \(|x - y| \geq 0\) by the definition of \(|\cdot|\) so we have \(|x - y| = 0\). Using \(\text{1 (b)}\) we get \(x - y = 0 \implies x = y\) so any two limits of a converging sequence of complex numbers are equal, hence this limit is unique. \(\square\)
+****
 The sequence \(\{w_n\}_{n=1}^\infty\) is said to be a **Cauchy sequence** if for every \(\epsilon > 0\) there exists a positive integer \(N\) such that
 $$
 |w_n - w_m| < \epsilon \quad \text{whenever } n, m > N.
@@ -112,4 +119,6 @@ $$
 S_N = \sum_{n=1}^N z_n
 $$
 converges. Let \(\{a_n\}_{n=1}^\infty\) be a sequence of non-negative real numbers such that the series \(\sum_{n}a_n\) converges.
+****
 \(\quad \text{(c)}\) Show that if \(\{z_n\}_{n=1}^\infty\) is a sequence of complex numbers satisfying \(|z_n| \leq a_n\) for all \(n\), then the series \(\sum_{n} z_n\) converges. [Hint: Use the Cauchy criterion.]
+****
