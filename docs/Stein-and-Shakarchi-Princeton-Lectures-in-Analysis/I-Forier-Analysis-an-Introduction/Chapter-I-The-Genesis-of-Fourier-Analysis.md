@@ -137,6 +137,20 @@ $$
 e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!}.
 $$
 \(\quad \text{(a)}\) Prove that the above definition makes sense, by showing that the series converges for every complex number \(z\). Moreover, show that the convergence is uniform on every bounded subset of \(\Complex\).
+**Solution**
+First we use **3.** \(\text{(c)}\) to show that the series converges. Let \(z \in \Complex\), then we have a sequence of non-negative real numbers \(\frac{|z|^n}{n!}\) whose sum converges to \(e^{|z|}\). Since \(\left|\frac{z^n}{n!}\right| \leq \frac{|z|^n}{n!}\) we are done.
+We go on to show that the convergence is uniform on bounded subsets. Let \(S \subset C\) be bounded with radius \(R>0\), so for each \(z \in S\) we have \(|z| < R\). Let \(\epsilon > 0\). Regardless of what \(z\) we choose from \(S\)
+$$
+\left| \sum_{n=0}^N \frac{z^n}{n!}-e^z \right| = \left| \sum_{n=N}^\infty \frac{z^n}{n!} \right| \leq \sum_{n=N}^\infty \left|\frac{z^n}{n!}\right| \leq \sum_{n=N}^\infty \frac{|z|^n}{n!} \leq \sum_{n=N}^\infty \frac{R^n}{n!}
+$$
+So choose \(N\) large enough so that we have
+$$
+\epsilon > \left|\sum_{n=0}^N \frac{R^n}{n!} - e^R\right| = \left| \sum_{n=N}^\infty \frac{R^n}{n!} \right| = \sum_{n=N}^\infty \frac{R^n}{n!}.
+$$
+Note that the above is valid because of the convergence for the exponential series of positive reals. Combining inequalities yields the desired result
+$$
+\left| \sum_{n=0}^N \frac{z^n}{n!}-e^z \right| < \epsilon. \quad \square
+$$
 ****
 \(\quad \text{(b)}\) If \(z_1, z_2\) are two complex numbers, prove that \(e^{z_1}e^{z_2} = e^{z_1 + z_2}\). [Hint: Use the binomial theorem to expand \((z_1 + z_2)^n\), as well as the formula for the binomial coefficients.]
 ****
