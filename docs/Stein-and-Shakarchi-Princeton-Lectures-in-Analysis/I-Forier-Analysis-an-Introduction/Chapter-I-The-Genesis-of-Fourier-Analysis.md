@@ -153,6 +153,16 @@ $$
 $$
 ****
 \(\quad \text{(b)}\) If \(z_1, z_2\) are two complex numbers, prove that \(e^{z_1}e^{z_2} = e^{z_1 + z_2}\). [Hint: Use the binomial theorem to expand \((z_1 + z_2)^n\), as well as the formula for the binomial coefficients.]
+$$
+(z_1 + z_2)^n = \sum_{k = 0}^n \frac{n!z_1^{n-k}z_2^k}{k!(n-k)!}
+$$
+$$
+e^{z_1 + z_2} = \sum_{n=0}^\infty \frac{(z_1 + z_2)^n}{n!} = \sum_{n=0}^\infty \sum_{k=0}^n\frac{z_1^{n-k}z_2^k}{k!(n-k)!}
+$$
+
+$$
+e^{z_1}e^{z_2} = \sum_{n=0}^\infty \frac{z_1^n}{n!} \cdot \sum_{n=0}^\infty \frac{z_2^n}{n!}
+$$
 ****
 \(\quad \text{(c)}\) Show that if \(z\) is purely imaginary, that is, \(z = iy\) with \(y \in \R\), then
 $$
