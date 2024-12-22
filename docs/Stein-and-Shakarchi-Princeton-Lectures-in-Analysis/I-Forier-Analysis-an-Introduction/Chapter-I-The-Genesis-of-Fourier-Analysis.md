@@ -137,12 +137,15 @@ $$
 e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!}.
 $$
 \(\quad \text{(a)}\) Prove that the above definition makes sense, by showing that the series converges for every complex number \(z\). Moreover, show that the convergence is uniform on every bounded subset of \(\Complex\).
+****
 \(\quad \text{(b)}\) If \(z_1, z_2\) are two complex numbers, prove that \(e^{z_1}e^{z_2} = e^{z_1 + z_2}\). [Hint: Use the binomial theorem to expand \((z_1 + z_2)^n\), as well as the formula for the binomial coefficients.]
+****
 \(\quad \text{(c)}\) Show that if \(z\) is purely imaginary, that is, \(z = iy\) with \(y \in \R\), then
 $$
 e^{iy} = \cos y + i \sin y.
 $$
 This is Euler's identity. [Hint: Use power series.]
+****
 \(\quad \text{(d)}\) More generally,
 $$
 e^{x + iy} = e^x(\cos y + i \sin y)
@@ -151,7 +154,9 @@ whenever \(x, y \in \R\), and show that
 $$
 \left| e^{x + iy}  \right| = e^{x}
 $$
+****
 \(\quad \text{(e)}\) Prove that \(e^z = 1\) if and only if \(z = 2 \pi k i\) for some integer \(k\).
+****
 \(\quad \text{(f)}\) Show that every complex number \(z = x + iy\) can be written in the form
 $$
 z = r e^{i \theta},
@@ -161,12 +166,15 @@ $$
 r = |z| \quad \text{and} \quad \theta = \arctan(y/x)
 $$
 whenever these formulas make sense.
-\(\quad \text{(g)}\) In particular, \(i = e^{i \pi / 2}\). What is the geometric meaning of multiplying a complex number by \(i\)? Or by \(e^{i \theta}\) for any \(\theta \in \R\)?
+****
+\(\quad \text{(g)}\) In particular, \(i = e^{i \pi / 2}\). What is the geometric meaning of multiplying a complex number by \(i\)? Or by \(e^{i \theta}\) for any \(\theta \in \R\)
+****
 \(\quad \text{(h)}\) Given \(\theta \in \R\), show that
 $$
 \cos \theta = \frac{e^{i\theta} + e^{-i\theta}}{2} \quad \text{and} \quad \sin \theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}.
 $$
 There are also called Euler's indentities.
+****
 \(\quad \text{(i)}\) Use the complex exponential to derive trigonometric identities such as
 $$
 \cos (\theta + \phi) = \cos \theta \cos \phi - \sin \theta \sin \phi,
@@ -177,3 +185,4 @@ $$
 2 \sin \theta \cos \phi = \sin(\theta + \phi) + \sin(\theta - \phi).
 $$
 This calculation connects the solution given by d'Alember in terms of traveling waves and the solution in terms of superposition of standing waves.
+****
