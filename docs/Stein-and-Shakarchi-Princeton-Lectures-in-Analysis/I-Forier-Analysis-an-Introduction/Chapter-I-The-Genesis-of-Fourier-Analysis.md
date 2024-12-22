@@ -114,11 +114,21 @@ $$
 \iff |x_n - x_m + i(y_n - y_m)| < \epsilon \\
 \iff |x_n - x_m| < \epsilon \text{ and } |y_n - y_m| < \epsilon \\
 $$
+****
 A series \(\sum_{n=1}^\infty z_n\) of complex numbers is said to converge if the sequence formed by the partial sums
 $$
 S_N = \sum_{n=1}^N z_n
 $$
 converges. Let \(\{a_n\}_{n=1}^\infty\) be a sequence of non-negative real numbers such that the series \(\sum_{n}a_n\) converges.
-****
 \(\quad \text{(c)}\) Show that if \(\{z_n\}_{n=1}^\infty\) is a sequence of complex numbers satisfying \(|z_n| \leq a_n\) for all \(n\), then the series \(\sum_{n} z_n\) converges. [Hint: Use the Cauchy criterion.]
+**Solution**
+Start with the Cauchy criterion for \(\sum_{n}a_n\). For any \(\epsilon > 0\) there exists \(n\) such that for all \(N, M > K\) we have
+$$
+\epsilon > |A_N - A_M| = \left|\sum_{n=1}^N a_n - \sum_{m=1}^M a_m \right| = \left|\sum_{j=\text{min}(N, M)}^{\text{max}(N, M)} a_j\right|
+$$
+Finish with the Cauchy criterion for \(\sum_{n}z_n\)
+$$
+|S_N - S_M| = \left|\sum_{n=1}^N z_n - \sum_{m=1}^M z_m\right| = \left|\sum_{j=\text{min}(N, M)}^{\text{max}(N, M)} z_j\right| \\
+\leq \sum_{j=\text{min}(N, M)}^{\text{max}(N, M)} |z_j| \leq \sum_{j=\text{min}(N, M)}^{\text{max}(N, M)} a_j \leq \left|\sum_{j=\text{min}(N, M)}^{\text{max}(N, M)} a_j\right| < \epsilon  \quad \square
+$$
 ****
