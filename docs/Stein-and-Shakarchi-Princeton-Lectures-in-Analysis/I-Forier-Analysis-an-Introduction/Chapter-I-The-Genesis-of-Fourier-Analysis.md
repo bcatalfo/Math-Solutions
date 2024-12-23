@@ -157,12 +157,19 @@ $$
 (z_1 + z_2)^n = \sum_{k = 0}^n \frac{n!z_1^{n-k}z_2^k}{k!(n-k)!}
 $$
 $$
-e^{z_1 + z_2} = \sum_{n=0}^\infty \frac{(z_1 + z_2)^n}{n!} = \sum_{n=0}^\infty \sum_{k=0}^n\frac{z_1^{n-k}z_2^k}{k!(n-k)!}
+e^{z_1 + z_2} = \sum_{n=0}^\infty \frac{(z_1 + z_2)^n}{n!} = \sum_{n=0}^\infty \sum_{k=0}^n\frac{z_1^{n-k}z_2^k}{k!(n-k)!} = 1 + \sum_{k=0}^1\frac{z_1^{1-k}z_2^k}{k!(1-k)!} + \sum_{k=0}^2\frac{z_1^{2-k}z_2^k}{k!(2-k)!} + \cdots \\
+= 1 + (z_1 + z_2) + \left(\frac{z_1^2}{2} + z_1z_2 + \frac{z_2^2}{2} \right) + \cdots
 $$
 
 $$
-e^{z_1}e^{z_2} = \sum_{n=0}^\infty \frac{z_1^n}{n!} \cdot \sum_{n=0}^\infty \frac{z_2^n}{n!}
+e^{z_1}e^{z_2} = \sum_{n=0}^\infty \frac{z_1^n}{n!} \cdot \sum_{k=0}^\infty \frac{z_2^k}{k!} = \left(1 + z_1 + \frac{z_1^2}{2} + \cdots\right) \cdot \left( 1 + z_2 + \frac{z_2^2}{2} + \cdots\right) \\
+= 1\left(1 + z_2 + \frac{z_2^2}{2} + \cdots\right) + z_1\left(1 + z_2 + \frac{z_2^2}{2} + \cdots\right)+ \frac{z_1^2}{2}\left(1 + z_2 + \frac{z_2^2}{2} + \cdots\right) + \cdots \\
+= \left(1 + z_2 + \frac{z_2^2}{2} + \cdots\right) + \left(z_1 + z_1z_2 + \frac{z_1z_2^2}{2} + \cdots\right)+ \left(\frac{z_1^2}{2} + \frac{z_2z_1^2}{2} + \frac{z_2^2z_1^2}{4} + \cdots\right) + \cdots \\
+= 1 + (z_1 + z_2) + \left(\frac{z_1^2}{2} + z_1z_2 + \frac{z_2^2}{2}\right) + \frac{z_1z_2^2}{2} + \frac{z_2z_1^2}{2} + \frac{z_2^2z_1^2}{4} + \cdots \\
+e^{z_1}e^{z_2} = \sum_{n=0}^\infty \frac{z_1^n}{n!} \cdot \sum_{k=0}^\infty \frac{z_2^k}{k!} = \sum_{k=0}^\infty \frac{z_2^k}{k!} + z_1 \sum_{k=0}^\infty \frac{z_2^k}{k!} + \frac{z_1^2}{2}\sum_{k=0}^\infty \frac{z_2^k}{k!} + \cdots \\
+= \sum_{k=0}^\infty \frac{z_2^k + z_1z_2^k + \frac{z_1^2z_2^k}{2} + \cdots}{k!} = \sum_{k=0}^\infty \frac{z_2^k(1 + z_1 + \frac{z_1^2}{2} + \cdots)}{k!}
 $$
+Idea- show that the difference of the series tends to zero
 ****
 \(\quad \text{(c)}\) Show that if \(z\) is purely imaginary, that is, \(z = iy\) with \(y \in \R\), then
 $$
