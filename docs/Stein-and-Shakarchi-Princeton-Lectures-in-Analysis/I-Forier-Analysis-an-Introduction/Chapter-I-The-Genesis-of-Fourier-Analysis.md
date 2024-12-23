@@ -153,6 +153,8 @@ $$
 $$
 ****
 \(\quad \text{(b)}\) If \(z_1, z_2\) are two complex numbers, prove that \(e^{z_1}e^{z_2} = e^{z_1 + z_2}\). [Hint: Use the binomial theorem to expand \((z_1 + z_2)^n\), as well as the formula for the binomial coefficients.]
+**Solution**
+This whole thing is trivial using the Cauchy product. TODO: do the damn Cauchy product.
 $$
 (z_1 + z_2)^n = \sum_{k = 0}^n \frac{n!z_1^{n-k}z_2^k}{k!(n-k)!}
 $$
