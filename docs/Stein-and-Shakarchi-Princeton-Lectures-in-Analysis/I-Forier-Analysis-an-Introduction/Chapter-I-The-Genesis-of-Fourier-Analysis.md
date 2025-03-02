@@ -182,8 +182,24 @@ $$
   &+ \left( \frac{b^2}{2} + \frac{ab^2}{2} + \cdots \right) + \left(\frac{b^3}{6} + \cdots\right) + \cdots \\
   &= \sum_{n=0}^{\infty} \frac{a^n}{n!} + b\sum_{n=0}^{\infty}\frac{a^n}{n!} + \frac{b^2}{2}\sum_{n=0}^{\infty}\frac{a^n}{n!} + \frac{b^3}{6}\sum_{n=0}^{\infty} \frac{a^n}{n!} + \cdots \\
   &= \sum_{n=0}^{\infty}\frac{a^n}{n!} \left( 1 + b + \frac{b^2}{2} + \frac{b^3}{6} + \cdots \right) \\
-  &= \sum_{n=0}^{\infty}\frac{a^n}{n!} \cdot \sum_{k=0}^{\infty}\frac{b^k}{k!} = e^a \cdot e^b \qquad \square
+  &= \sum_{n=0}^{\infty}\frac{a^n}{n!} \cdot \sum_{k=0}^{\infty}\frac{b^k}{k!} = e^a \cdot e^b 
 \end{aligned}
+$$
+This is the heart and soul of the proof, but it is a little bit hand-wavey. I hope that the above gives the reader a clear intuition behind the proof. In order to turn this intuition into more rigorous mathematics, we use the binomial expansion
+$$
+(a + b)^n = \sum_{k=0}^{n} \frac{n!a^{n-k}b^k}{(n-k)!k!} 
+$$
+to calculate that 
+$$
+\sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} = \sum_{n=0}^{\infty} \frac{(a+b)^n}{n!} = e^{a + b}
+$$
+and combinatorically rearrange the series to switch from adding the rows to adding the columns via the identity
+$$
+\sum_{n=0}^{\infty}\sum_{k=0}^{n} f(n,k) = \sum_{k=0}^{\infty}\sum_{n=k}^{\infty} f(n,k)
+$$
+which holds because both the LHS and RHS are summing over each $k, n \in \N$ such that $k \leq n$. Plugging in $f(n,k)=\frac{a^{n-k}b^{k}}{(n-k)!k!}$ to the identity yields
+$$
+\sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} = \sum_{k=0}^{\infty}\sum_{n=k}^{\infty} \frac{a^{n-k}b^k}{(n-k)!k!} = \sum_{k=0}^{\infty} \frac{b^k}{k!} \sum_{n=k}^{\infty} \frac{a^{n-k}}{(n-k)!} = \sum_{k=0}^{\infty} \frac{b^k}{k!} \sum_{n=0}^{\infty} \frac{a^n}{n!} = e^a \cdot e^b \qquad \square
 $$
 ****
 \(\quad \text{(c)}\) Show that if \(z\) is purely imaginary, that is, \(z = iy\) with \(y \in \R\), then
