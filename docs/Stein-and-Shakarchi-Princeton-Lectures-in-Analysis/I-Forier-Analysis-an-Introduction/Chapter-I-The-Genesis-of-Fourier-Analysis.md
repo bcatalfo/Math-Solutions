@@ -154,24 +154,37 @@ $$
 ****
 \(\quad \text{(b)}\) If \(z_1, z_2\) are two complex numbers, prove that \(e^{z_1}e^{z_2} = e^{z_1 + z_2}\). [Hint: Use the binomial theorem to expand \((z_1 + z_2)^n\), as well as the formula for the binomial coefficients.]
 **Solution**
-This whole thing is trivial using the Cauchy product. TODO: do the damn Cauchy product.
+This problem had stumped me for a while. I ended up taking a break from this problem, learning some combinatorics, and coming back to it. Upon doing so I realized that there is a very easy combinatorical solution to this problem using the basic method of "double-counting". Take a look at the following infinite list of terms.
 $$
-(z_1 + z_2)^n = \sum_{k = 0}^n \frac{n!z_1^{n-k}z_2^k}{k!(n-k)!}
+\begin{array}{ccccc}
+  1 \\[4pt]
+  a & b \\[4pt]
+  \frac{a^2}{2} & ab & \frac{b^2}{2} \\[4pt]
+  \frac{a^3}{6} & \frac{a^2b}{2} & \frac{ab^2}{2} & \frac{b^3}{6} \\[4pt]
+  \vdots & \vdots & \vdots & \vdots & \vdots 
+\end{array}
 $$
+Here the term at the $n + 1$th row and the $k + 1$th column is given by the formula $\frac{a^{n-k}b^{k}}{(n -k)!k!}$, where we always have $k \leq n$, so the sum of all of these terms is $\sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!}$.
+
+The key insight of the double-counting method is that there are two different ways of adding up all of the terms- you can add all the rows or add all of the columns- but the result is the same.
+
+If we add all the rows we get 
 $$
-e^{z_1 + z_2} = \sum_{n=0}^\infty \frac{(z_1 + z_2)^n}{n!} = \sum_{n=0}^\infty \sum_{k=0}^n\frac{z_1^{n-k}z_2^k}{k!(n-k)!} = 1 + \sum_{k=0}^1\frac{z_1^{1-k}z_2^k}{k!(1-k)!} + \sum_{k=0}^2\frac{z_1^{2-k}z_2^k}{k!(2-k)!} + \cdots \\
-= 1 + (z_1 + z_2) + \left(\frac{z_1^2}{2} + z_1z_2 + \frac{z_2^2}{2} \right) + \cdots
+\sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} = 1 + (a + b) + \left(\frac{a^2}{2} + ab + \frac{b^2}{2}\right) + \left( \frac{a^3}{6} + \frac{a^2b}{2} + \frac{ab^2}{2} + \frac{b^3}{6} \right) + \cdots \\
+= 1 + \frac{(a + b)^0}{0!} + \frac{(a + b)^1}{1!} + \frac{(a + b)^2}{2!} + \frac{(a + b)^3}{3!} + \cdots \\
+= \sum_{n=0}^{\infty} \frac{(a + b)^n}{n!} = e^{a + b}
 $$
 
+If we add all the columns we get
 $$
-e^{z_1}e^{z_2} = \sum_{n=0}^\infty \frac{z_1^n}{n!} \cdot \sum_{k=0}^\infty \frac{z_2^k}{k!} = \left(1 + z_1 + \frac{z_1^2}{2} + \cdots\right) \cdot \left( 1 + z_2 + \frac{z_2^2}{2} + \cdots\right) \\
-= 1\left(1 + z_2 + \frac{z_2^2}{2} + \cdots\right) + z_1\left(1 + z_2 + \frac{z_2^2}{2} + \cdots\right)+ \frac{z_1^2}{2}\left(1 + z_2 + \frac{z_2^2}{2} + \cdots\right) + \cdots \\
-= \left(1 + z_2 + \frac{z_2^2}{2} + \cdots\right) + \left(z_1 + z_1z_2 + \frac{z_1z_2^2}{2} + \cdots\right)+ \left(\frac{z_1^2}{2} + \frac{z_2z_1^2}{2} + \frac{z_2^2z_1^2}{4} + \cdots\right) + \cdots \\
-= 1 + (z_1 + z_2) + \left(\frac{z_1^2}{2} + z_1z_2 + \frac{z_2^2}{2}\right) + \frac{z_1z_2^2}{2} + \frac{z_2z_1^2}{2} + \frac{z_2^2z_1^2}{4} + \cdots \\
-e^{z_1}e^{z_2} = \sum_{n=0}^\infty \frac{z_1^n}{n!} \cdot \sum_{k=0}^\infty \frac{z_2^k}{k!} = \sum_{k=0}^\infty \frac{z_2^k}{k!} + z_1 \sum_{k=0}^\infty \frac{z_2^k}{k!} + \frac{z_1^2}{2}\sum_{k=0}^\infty \frac{z_2^k}{k!} + \cdots \\
-= \sum_{k=0}^\infty \frac{z_2^k + z_1z_2^k + \frac{z_1^2z_2^k}{2} + \cdots}{k!} = \sum_{k=0}^\infty \frac{z_2^k(1 + z_1 + \frac{z_1^2}{2} + \cdots)}{k!}
+\begin{aligned}
+  \sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} &= \left(1 + a + \frac{a^2}{2} + \frac{a^3}{6} + \cdots \right) + \left( b + ab + \frac{a^2b}{2} + \cdots \right) \\ 
+  &+ \left( \frac{b^2}{2} + \frac{ab^2}{2} + \cdots \right) + \left(\frac{b^3}{6} + \cdots\right) + \cdots \\
+  &= \sum_{n=0}^{\infty} \frac{a^n}{n!} + b\sum_{n=0}^{\infty}\frac{a^n}{n!} + \frac{b^2}{2}\sum_{n=0}^{\infty}\frac{a^n}{n!} + \frac{b^3}{6}\sum_{n=0}^{\infty} \frac{a^n}{n!} + \cdots \\
+  &= \sum_{n=0}^{\infty}\frac{a^n}{n!} \left( 1 + b + \frac{b^2}{2} + \frac{b^3}{6} + \cdots \right) \\
+  &= \sum_{n=0}^{\infty}\frac{a^n}{n!} \cdot \sum_{k=0}^{\infty}\frac{b^k}{k!} = e^a \cdot e^b \qquad \square
+\end{aligned}
 $$
-Idea- show that the difference of the series tends to zero
 ****
 \(\quad \text{(c)}\) Show that if \(z\) is purely imaginary, that is, \(z = iy\) with \(y \in \R\), then
 $$
