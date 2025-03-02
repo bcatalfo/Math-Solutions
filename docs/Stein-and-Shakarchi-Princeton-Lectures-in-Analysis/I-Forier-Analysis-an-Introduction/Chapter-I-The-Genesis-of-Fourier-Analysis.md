@@ -171,7 +171,7 @@ The key insight of the double-counting method is that there are two different wa
 If we add all the rows we get 
 $$
 \sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} = 1 + (a + b) + \left(\frac{a^2}{2} + ab + \frac{b^2}{2}\right) + \left( \frac{a^3}{6} + \frac{a^2b}{2} + \frac{ab^2}{2} + \frac{b^3}{6} \right) + \cdots \\
-= 1 + \frac{(a + b)^0}{0!} + \frac{(a + b)^1}{1!} + \frac{(a + b)^2}{2!} + \frac{(a + b)^3}{3!} + \cdots \\
+= \frac{(a + b)^0}{0!} + \frac{(a + b)^1}{1!} + \frac{(a + b)^2}{2!} + \frac{(a + b)^3}{3!} + \cdots \\
 = \sum_{n=0}^{\infty} \frac{(a + b)^n}{n!} = e^{a + b}
 $$
 
