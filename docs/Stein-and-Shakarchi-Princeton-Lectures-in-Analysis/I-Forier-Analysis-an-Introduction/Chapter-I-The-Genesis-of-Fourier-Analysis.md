@@ -272,6 +272,16 @@ $$
 r = |z| \quad \text{and} \quad \theta = \arctan(y/x)
 $$
 whenever these formulas make sense.
+**Solution**
+$$
+z = x + iy \\
+\frac{z}{\sqrt{x^2 + y^2}} = \frac{x}{\sqrt{x^2 + y^2}} + i \frac{y}{\sqrt{x^2+y^2}} \\
+z = \sqrt{x^2 + y^2} \left( \frac{x}{\sqrt{x^2+y^2}} + i \frac{y}{\sqrt{x^2+y^2}} \right)
+$$
+Now by making a right triangle with bases of $x$ and $y$ it is clear that there is $\theta$ such that $\cos \theta = \frac{x}{\sqrt{x^2 + y^2}}$ and $\sin \theta \ = \frac{y}{\sqrt{x^2+y^2}}$, and for such $\theta$ we have $\arctan(\theta) = y/x$. Plugging in,
+$$
+z = \sqrt{x^2 + y^2} \cdot ( \cos \theta + i \sin \theta) = re^{i\theta} \quad \square
+$$
 ****
 \(\quad \text{(g)}\) In particular, \(i = e^{i \pi / 2}\). What is the geometric meaning of multiplying a complex number by \(i\)? Or by \(e^{i \theta}\) for any \(\theta \in \R\)
 ****
