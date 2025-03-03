@@ -292,6 +292,15 @@ $$
 \cos \theta = \frac{e^{i\theta} + e^{-i\theta}}{2} \quad \text{and} \quad \sin \theta = \frac{e^{i\theta} - e^{-i\theta}}{2i}.
 $$
 There are also called Euler's indentities.
+**Solution**
+$$
+e^{i \theta} = \cos \theta + i \sin \theta \\
+e^{-i \theta} = e^{i \cdot (-\theta)} = \cos (-\theta) + i \sin (-\theta) = \cos \theta - i \sin \theta \\
+e^{i \theta} + e^{-i\theta} = (\cos \theta + i \sin \theta) + (\cos \theta - i \sin \theta) = 2 \cos \theta \\
+\cos \theta = \frac{e^{i \theta} + e^{-i \theta}}{2} \\
+e^{i \theta} - e^{-i \theta} = (\cos \theta + i \sin \theta) - (\cos \theta - i \sin \theta) = 2i \sin \theta \\
+\sin \theta = \frac{e^{i \theta} - e^{-i\theta}}{2i} \quad \square
+$$
 ****
 \(\quad \text{(i)}\) Use the complex exponential to derive trigonometric identities such as
 $$
