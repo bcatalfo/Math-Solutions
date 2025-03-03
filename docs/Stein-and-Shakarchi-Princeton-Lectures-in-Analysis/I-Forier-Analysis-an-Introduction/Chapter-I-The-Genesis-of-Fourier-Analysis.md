@@ -284,6 +284,8 @@ z = \sqrt{x^2 + y^2} \cdot ( \cos \theta + i \sin \theta) = re^{i\theta} \quad \
 $$
 ****
 \(\quad \text{(g)}\) In particular, \(i = e^{i \pi / 2}\). What is the geometric meaning of multiplying a complex number by \(i\)? Or by \(e^{i \theta}\) for any \(\theta \in \R\)
+**Solution**
+Multiplying by $i$ is rotating $\pi / 2$ radians, in general multipling by $e^{i \theta}$ is rotating by $\theta$ radians.
 ****
 \(\quad \text{(h)}\) Given \(\theta \in \R\), show that
 $$
