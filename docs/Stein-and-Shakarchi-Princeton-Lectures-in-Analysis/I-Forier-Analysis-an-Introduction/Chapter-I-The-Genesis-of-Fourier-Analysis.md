@@ -233,6 +233,15 @@ whenever \(x, y \in \R\), and show that
 $$
 \left| e^{x + iy}  \right| = e^{x}
 $$
+**Solution**
+Combining parts $\text{(b)}$ and $\text{(c)}$ gives
+$$
+e^{x + iy} = e^x \cdot e^{iy} = e^x ( \cos y + i \sin y)
+$$
+and we can calculate that 
+$$
+|e^{x + iy}| = |e^x (\cos y + i \sin y)| = |e^x| |\cos y + \sin y| = e^x \quad \square
+$$
 ****
 \(\quad \text{(e)}\) Prove that \(e^z = 1\) if and only if \(z = 2 \pi k i\) for some integer \(k\).
 ****
