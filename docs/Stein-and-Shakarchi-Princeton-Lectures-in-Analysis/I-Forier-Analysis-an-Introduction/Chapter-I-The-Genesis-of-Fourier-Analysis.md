@@ -308,7 +308,7 @@ $$
 $$
 and then show that
 $$
-2 \sin \theta \sin \phi  = \cos(\theta - \phi) - \cos(\theta + \phi),
+2 \sin \theta \sin \phi  = \cos(\theta - \phi) - \cos(\theta + \phi), \\
 2 \sin \theta \cos \phi = \sin(\theta + \phi) + \sin(\theta - \phi).
 $$
 This calculation connects the solution given by d'Alember in terms of traveling waves and the solution in terms of superposition of standing waves.
@@ -338,7 +338,16 @@ $$
   2i \sin(\theta + \phi) &= e^{i (\theta + \phi)} - e^{-i (\theta + \phi)} = e^{i\theta}e^{i\phi} - e^{i(-\theta)}e^{i(-\phi)} \\
   &= (\cos \theta \cos \phi + i \cos \theta \sin \phi + i \sin \theta \cos \phi - \sin \theta \sin \phi) \\
   &- (\cos \theta \cos \phi - i \cos \theta \sin \phi - i \sin \theta \cos \phi - \sin \theta \sin \phi) \\
-  &= 2i \cos \theta \sin \phi 
+  &= 2i \cos \theta \sin \phi + 2i\sin \theta \cos \phi \\
+\end{aligned} \\
+\sin(\theta + \phi) = \cos \theta \sin \phi + \sin \theta \cos \phi
+$$
+We can now solve the last identity
+$$
+\begin{aligned}
+  \sin(\theta + \phi) + \sin(\theta - \phi) &= (\cos \theta \sin \phi + \sin \theta \cos \phi) + (\cos \theta \sin (-\phi) + \sin \theta \cos (-\phi)) \\
+  &= (\cos \theta \sin \phi + \sin \theta \cos \phi) + (-\cos \theta \sin \phi + \sin \theta \cos \phi) \\
+  &= 2\sin \theta \cos \phi \quad \square
 \end{aligned}
 $$
 ****
