@@ -244,6 +244,24 @@ $$
 $$
 ****
 \(\quad \text{(e)}\) Prove that \(e^z = 1\) if and only if \(z = 2 \pi k i\) for some integer \(k\).
+**Solution**
+Let $z = x + iy$ with $x, y \in \R$
+$$
+1 = e^z = e^{x+iy} = e^x(\cos y + i \sin y) \\
+\iff e^x \cos y = 1 \text{ and } \sin y \cdot e^x = 0 
+$$
+Remember that $x$ and $y$ are real so 
+$$
+\sin y \cdot e^x = 0 \iff \sin y = 0 \iff y = 2 \pi k \text{, for some integer } k
+$$
+We can now plug in $y$ to the other equation to find $x$
+$$
+e^x \cos y = 1 \iff e^x \cos 2\pi k = 1 \iff e^x = 1 \iff x = 0 
+$$
+So in conclusion
+$$
+e^z = 1 \iff y = 2 \pi k i \text{ and } x = 0 \iff z = 2\pi ki \quad \square
+$$
 ****
 \(\quad \text{(f)}\) Show that every complex number \(z = x + iy\) can be written in the form
 $$
