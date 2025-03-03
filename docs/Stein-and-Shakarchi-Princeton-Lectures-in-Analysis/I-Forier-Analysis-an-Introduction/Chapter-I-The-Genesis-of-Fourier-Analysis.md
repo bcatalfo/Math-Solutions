@@ -260,7 +260,7 @@ e^x \cos y = 1 \iff e^x \cos 2\pi k = 1 \iff e^x = 1 \iff x = 0
 $$
 So in conclusion
 $$
-e^z = 1 \iff y = 2 \pi k i \text{ and } x = 0 \iff z = 2\pi ki \quad \square
+e^z = 1 \iff y = 2 \pi k \text{ and } x = 0 \iff z = 2\pi ki \quad \square
 $$
 ****
 \(\quad \text{(f)}\) Show that every complex number \(z = x + iy\) can be written in the form
@@ -312,4 +312,33 @@ $$
 2 \sin \theta \cos \phi = \sin(\theta + \phi) + \sin(\theta - \phi).
 $$
 This calculation connects the solution given by d'Alember in terms of traveling waves and the solution in terms of superposition of standing waves.
+**Solution**
+First calculate that 
+$$
+\begin{aligned}
+  2 \cos(\theta + \phi) &= e^{i(\theta + \phi)} + e^{-i(\theta + \phi)} = e^{i\theta}e^{i\phi} + e^{-i\theta}e^{-i\phi} \\
+  &= (\cos \theta + i \sin \theta) (\cos \phi + i \sin \phi) + (\cos \theta - i \sin \theta)(\cos \phi - i \sin \phi) \\ 
+  &= (\cos\theta \cos\phi + i \cos\theta \sin\phi + i \sin \theta \cos \phi - \sin \theta \sin \phi)  \\ 
+  &+ (\cos \theta \cos \phi - i \cos \theta \sin \phi - i \sin \theta \cos \phi - \sin \theta \sin \phi) \\
+  &= 2 \cos \theta \cos \phi - 2 \sin \theta \sin \phi \quad \square
+\end{aligned}
+$$
+Using this formula
+$$
+\begin{aligned}
+  \cos(\theta - \phi) - \cos(\theta + \phi) &= \cos(\theta + (-\phi)) - \cos(\theta + \phi) \\
+  &= (\cos \theta \cos (- \phi) - \sin \theta \sin (-\phi)) - (\cos \theta \cos \phi - \sin \theta \sin \phi) \\
+  &= \cos \theta \cos \phi + \sin \theta \sin \phi - \cos \theta \cos \phi + \sin \theta \sin \phi \\
+  &= 2 \sin \theta \sin \phi \quad \square
+\end{aligned}
+$$
+Now let's calculate sine's angle addition formula
+$$
+\begin{aligned}
+  2i \sin(\theta + \phi) &= e^{i (\theta + \phi)} - e^{-i (\theta + \phi)} = e^{i\theta}e^{i\phi} - e^{i(-\theta)}e^{i(-\phi)} \\
+  &= (\cos \theta \cos \phi + i \cos \theta \sin \phi + i \sin \theta \cos \phi - \sin \theta \sin \phi) \\
+  &- (\cos \theta \cos \phi - i \cos \theta \sin \phi - i \sin \theta \cos \phi - \sin \theta \sin \phi) \\
+  &= 2i \cos \theta \sin \phi 
+\end{aligned}
+$$
 ****
