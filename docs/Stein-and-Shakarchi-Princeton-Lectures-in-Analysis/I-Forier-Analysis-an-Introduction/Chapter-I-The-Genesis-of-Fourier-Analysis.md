@@ -207,6 +207,23 @@ $$
 e^{iy} = \cos y + i \sin y.
 $$
 This is Euler's identity. [Hint: Use power series.]
+**Solution**
+The general idea is
+$$
+e^{iy} = \sum_{n=0}^{\infty}\frac{(iy)^n}{n!} = 1 + (iy) + \frac{(iy)^2}{2} + \frac{(iy)^3}{6} + \cdots \\
+= 1 + iy - \frac{y^2}{2} -\frac{iy^3}{6} + \cdots \\
+= (1 - \frac{y^2}{2} + \cdots) + (y - \frac{y^3}{6} + \cdots)i \\
+= \cos y + i \sin y
+$$
+More rigorously,
+$$
+e^{iy} = \sum_{n=0}^{\infty}\frac{(iy)^n}{n!} = \sum_{n=0 \text{, } n \text { is even}}^{\infty}\frac{(iy)^n}{n!} + \sum_{n=0 \text{, } n \text{ is odd}}^{\infty}\frac{(iy)^n}{n!} \\
+= \sum_{n=0}^{\infty} \frac{(iy)^{2n}}{(2n)!} + \sum_{n=0}^{\infty} \frac{(iy)^{2n+1}}{(2n+1)!}  \\
+= \sum_{n=0}^{\infty} \frac{i^{2n}(y)^{2n}}{(2n)!} + \sum_{n=0}^{\infty} \frac{i^{2n+1}(y)^{2n+1}}{(2n+1)!} \\
+= \sum_{n=0}^{\infty} \frac{i^{2n}(y)^{2n}}{(2n)!} + i\sum_{n=0}^{\infty} \frac{i^{2n}(y)^{2n+1}}{(2n+1)!} \\
+= \sum_{n=0}^{\infty} \frac{(-1)^{n}(y)^{2n}}{(2n)!} + i\sum_{n=0}^{\infty} \frac{(-1)^{n}(y)^{2n+1}}{(2n+1)!} \\
+= \cos y + i \sin y \quad \square
+$$
 ****
 \(\quad \text{(d)}\) More generally,
 $$
