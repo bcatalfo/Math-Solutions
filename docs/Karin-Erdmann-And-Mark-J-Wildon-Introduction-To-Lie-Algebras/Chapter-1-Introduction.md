@@ -255,3 +255,6 @@ xy - yx = \begin{pmatrix}
 \end{pmatrix}
 $$
 Since for all $\lambda \in F_2$ we have $\lambda + \lambda = 0$, in $F_2$ we clearly have $xy - yx = 0$, so $x \in Z(\mathrm{sl}(2, F_2))$. Of course we always have $0 \in Z(\mathrm{sl}(2,F))$ for all fields $F$, and when the characteristic of $F$ is not 2, this is the only element. $\quad \square$
+****
+**Exercise 1.6**
+Show that if $\varphi : L_1 \to L_2$ is a homomorphism, then the kernel of $\varphi$, $\ker \varphi$, is an ideal of $L_1$, and the image of $\varphi$, $\text{im} \varphi$, is a Lie subalgebra of $L_2$.
