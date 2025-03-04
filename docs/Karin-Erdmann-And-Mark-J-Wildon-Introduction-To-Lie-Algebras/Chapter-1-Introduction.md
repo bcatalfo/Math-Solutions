@@ -150,3 +150,108 @@ are inherited from $\mathrm{gl}(n,F)$. $\quad \square$
 ****
 **Exercise 1.5**
 Find $Z(L)$ when $L = \mathrm{sl}(2,F)$. You should find that the answer depends on the characteristic of $F$.
+**Solution**
+First let's just plug in
+$$
+Z(\mathrm{sl}(2,F)) = \{ x \in \mathrm{sl}(2,F): xy - yx = 0 \text{ for all } y \in \mathrm{sl}(2,F) \} 
+$$
+Now since $x,y \in \mathrm{sl}(2,F)$ we know that their trace is zero
+$$
+x = \begin{pmatrix}
+  x_{11} & x_{12} \\
+  x_{21} & -x_{11}
+\end{pmatrix}, y = \begin{pmatrix}
+  y_{11} & y_{12} \\
+  y_{21} & -y_{11}
+\end{pmatrix} \\[4pt]
+xy = \begin{pmatrix}
+  x_{11} & x_{12} \\
+  x_{21} & -x_{11}
+\end{pmatrix} \cdot \begin{pmatrix}
+  y_{11} & y_{12} \\
+  y_{21} & -y_{11}
+\end{pmatrix} = \begin{pmatrix}
+  x_{11}y_{11} + x_{12}y_{21} & x_{11}y_{12} - x_{12}y_{11} \\
+  x_{21}y_{11} - x_{11}y_{21} & x_{21}y_{12} + x_{11}y_{11}
+\end{pmatrix} \\[4pt]
+yx = \begin{pmatrix}
+  y_{11} & y_{12} \\
+  y_{21} & -y_{11}
+\end{pmatrix} \cdot \begin{pmatrix}
+  x_{11} & x_{12} \\
+  x_{21} & -x_{11}
+\end{pmatrix} = \begin{pmatrix}
+  y_{11}x_{11} + y_{12}x_{21} & y_{11}x_{12} - y_{12}x_{11} \\
+  y_{21}x_{11} - y_{11}x_{21} & y_{21}x_{12} + y_{11}x_{11}
+\end{pmatrix} \\[4pt]
+xy - yx = \begin{pmatrix}
+  x_{12}y_{21} - y_{12}x_{21} & 2x_{11}y_{12} - 2x_{12}y_{11} \\
+  2x_{21}y_{11} - 2x_{11}y_{21} & x_{21}y_{12} - y_{21}x_{12}
+\end{pmatrix}
+$$
+So when is $xy - yx = 0$? Can we come up with some generators for this set? Keep in mind we are only picking for $x$, $y$ can be anything.
+$$
+x_{12}y_{21} = y_{12}x_{21} \\
+2x_{11}y_{12} = 2x_{12}y_{11} \\
+2x_{21}y_{21} = 2x_{11}y_{21} \\
+x_{21}y_{12} = y_{21}x_{12}
+$$
+Let's look at some examples. Let *F* be the field of two elements. Then the only requirements for the center become
+$$
+x_{12}y_{21} = y_{12}x_{21} \\
+x_{21}y_{12} = y_{21}x_{12}
+$$
+So consider the matrix
+$$
+x = \begin{pmatrix}
+  1 & 0 \\
+  0 & -1 
+\end{pmatrix}
+$$
+This matrix solves the equations above, to show it is in the center explicitly we can show
+$$
+\begin{pmatrix}
+  1 & 0 \\
+  0 & -1 
+\end{pmatrix} \cdot \begin{pmatrix}
+  y_{11} & y_{12} \\
+  y_{21} & -y_{11}
+\end{pmatrix} = \begin{pmatrix}
+  y_{11} & y_{12} \\
+  -y_{21} & y_{11}
+\end{pmatrix} \\[4pt]
+\begin{pmatrix}
+  y_{11} & y_{12} \\
+  y_{21} & -y_{11} 
+\end{pmatrix} \cdot \begin{pmatrix}
+  1 & 0 \\
+  0 & -1
+\end{pmatrix} = \begin{pmatrix}
+  y_{11} & -y_{12} \\
+  -y_{21} & y_{11}
+\end{pmatrix} \\[4pt]
+xy - yx = \begin{pmatrix}
+  1 & 0 \\
+  0 & -1 
+\end{pmatrix} \cdot \begin{pmatrix}
+  y_{11} & y_{12} \\
+  y_{21} & -y_{11}
+\end{pmatrix} - \begin{pmatrix}
+  y_{11} & y_{12} \\
+  y_{21} & -y_{11} 
+\end{pmatrix} \cdot \begin{pmatrix}
+  1 & 0 \\
+  0 & -1
+\end{pmatrix}\\[4pt]
+= \begin{pmatrix}
+  y_{11} & y_{12} \\
+  -y_{21} & y_{11}
+\end{pmatrix} - \begin{pmatrix}
+  y_{11} & -y_{12} \\
+  -y_{21} & y_{11}
+\end{pmatrix} = \begin{pmatrix}
+  0 & y_{12} + y_{12} \\
+  0 & 0
+\end{pmatrix}
+$$
+Since for all $\lambda \in F_2$ we have $\lambda + \lambda = 0$, in $F_2$ we clearly have $xy - yx = 0$, so $x \in Z(\mathrm{sl}(2, F_2))$. Of course we always have $0 \in Z(\mathrm{sl}(2,F))$ for all fields $F$, and when the characteristic of $F$ is not 2, this is the only element. $\quad \square$
