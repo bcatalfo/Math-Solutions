@@ -258,3 +258,10 @@ Since for all $\lambda \in F_2$ we have $\lambda + \lambda = 0$, in $F_2$ we cle
 ****
 **Exercise 1.6**
 Show that if $\varphi : L_1 \to L_2$ is a homomorphism, then the kernel of $\varphi$, $\ker \varphi$, is an ideal of $L_1$, and the image of $\varphi$, $\text{im} \varphi$, is a Lie subalgebra of $L_2$.
+**Solution**
+First let's show that $\ker \varphi$ is an ideal of $L_1$. The definition of a kernel gives us
+$$
+\ker \varphi = \{x \in L_1: \varphi(x)=0 \}.
+$$
+We wish to show that $\ker \varphi$ is an ideal of $L_1$. 
+First we must show that it is a subspace of $L_1$. This amounts to showing that $\ker \varphi$ contains the zero vector, and is closed under both vector addition and scalar multiplication. $0 \in \ker \varphi \iff \varphi(0) = 0$, the latter following from $\varphi$ being a homomorphism, so $\ker \phi$ contains the zero vector. Let $x, y \in \ker \varphi$ and $c \in F$ (where $F$ is the common field of scalars shared by $L_1$ and $L_2$). Then $\varphi(x + y) = \varphi(x) + \varphi(y) = 0$ and $\varphi(c \cdot x) = c \cdot \varphi(x) = 0$. We conclude that $\ker \varphi$ is a subspace of $L_1$
