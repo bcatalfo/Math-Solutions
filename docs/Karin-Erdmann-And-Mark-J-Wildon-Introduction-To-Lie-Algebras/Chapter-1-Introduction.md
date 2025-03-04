@@ -283,3 +283,5 @@ $$
 [y_1, y_2] = [\varphi(x_1), \varphi(x_2)] = \varphi([x_1, x_2]) \qquad \square
 $$
 ****
+**Exercise 1.7**
+Let $L$ be a Lie algebra. Show that the Lie bracket is associative, that is, $[x, [y, z]] = [[x,y],z]$ for all $x, y, z \in L$, if and only if for all $a, b \in L$ the commutator $[a, b]$ lies in $Z(L)$.
