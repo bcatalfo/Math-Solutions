@@ -139,22 +139,11 @@ Let $\mathrm{b}(n,F)$ be the upper triangular matrices in $\mathrm{gl}(n,F)$. (A
 
 Similarly, let $\mathrm{n}(n,F)$ be the strictly upper triangular matrices in $\mathrm{gl}(n,F)$. (a matrix $x$ is said to be strictly upper triangular if $x_{ij}=0$ whenever $i \geq j$) Again this is a Lie algebra with the same Lie bracket as $\mathrm{gl}(n,F)$.
 **Solution**
-*Proposition* The product of two upper-triangular matrices is upper-triangular.
-*Proof* Let $x, y$ be upper-triangular matrices. Then
+Let $x, y$ be upper-triangular matrices. Recall from linear algebra that upper triangular matrices and strictly upper triangular matrices are subspaces of the vector space formed by all square matricies. Therefore $(xy - yx)$ forms a Lie Algebra over $\mathrm{b}(n,F)$ and $\mathrm{n}(n,F)$, because the required properties of being a bilinear map $[:]:L \to L$ satisfying the properties
 $$
-(xy)_{ij} = (x_{i1}, x_{i2}, \dots, x_{in}) \cdot (y_{1j}, y_{2j}, \dots, y_{nj}) = \sum_{k=0}^{n} x_{ik}y_{kj}
+\begin{aligned}
+[x,x]=0 \quad\text{for all } x \in L, \qquad &(L1) \\
+[x,[y,z]] + [y,[z,x]] + [z,[x,y]]=0 \quad \text{for all } x,y,z \in L \qquad &(L2)
+\end{aligned}
 $$
-If $i > k$ then $x_{ik} = 0$ and if $k > j$ then $y_{kj} = 0$ so
-$$
-x_{ik}y_{kj} \neq 0 \implies i \leq k \text{ and } k \leq j
-$$ 
-Take $i > j$. Then there is no $k$ such that $i \leq k \leq j$, so for each $k \in \{1, \dots, n\}$ we have $x_{ik}y_{kj}=0$. Therefore
-$$
-i > j \implies (xy)_{ij} = \sum_{k=0}^n x_{ik}y_{kj} = 0
-$$
-and so by definition $xy$ is an upper triangular matrix.
-*Proposition* The product of two strictly upper-triangular matrices is strictly upper-triangular
-Let $x, y$ be upper-triangular matrices. Let $i > j$, then
-$$
-(xy - yx)_{ij} = (xy)_{ij} - (yx)_{ij}
-$$
+are inherited from $\mathrm{gl}(n,F)$.
