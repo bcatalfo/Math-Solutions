@@ -146,4 +146,7 @@ $$
 [x,[y,z]] + [y,[z,x]] + [z,[x,y]]=0 \quad \text{for all } x,y,z \in L \qquad &(L2)
 \end{aligned}
 $$
-are inherited from $\mathrm{gl}(n,F)$.
+are inherited from $\mathrm{gl}(n,F)$. $\quad \square$
+****
+**Exercise 1.5**
+Find $Z(L)$ when $L = \mathrm{sl}(2,F)$. You should find that the answer depends on the characteristic of $F$.
