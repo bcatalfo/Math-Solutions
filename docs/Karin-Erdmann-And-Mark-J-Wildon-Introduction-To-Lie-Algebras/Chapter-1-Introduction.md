@@ -133,3 +133,8 @@ e_{ij}e_{kl} = \delta_{jk} \cdot e_{il}
 $$
 As by definition \( (e_{il})_{ab} = \delta_{ai} \cdot \delta_{lb}\). Rearranging symbols gives \( e_{kl}e_{ij} = \delta_{li}e_{kj}\), combining the results finishes the proof. \( \square \)
 ****
+**Exercise 1.4**
+Check the following assertions:
+Let $\mathrm{b}(n,F)$ be the upper triangular matrices in $\mathrm{gl}(n,F)$. (A matrix $x$ is said to be upper triangular if $x_{ij}=0$ whenever $i > j$.) This is a Lie algebra with the same Lie bracket as $\mathrm{gl}(n,F)$. 
+
+Similarly, let $\mathrm{n}(n,F)$ be the strictly upper triangular matrices in $\mathrm{gl}(n,F)$. (a matrix $x$ is said to be strictly upper triangular if $x_{ij}=0$ whenever $i \geq j$) Again this is a Lie algebra with the same Lie bracket as $\mathrm{gl}(n,F)$.
