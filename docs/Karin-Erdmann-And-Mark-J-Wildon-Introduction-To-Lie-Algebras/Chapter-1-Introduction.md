@@ -265,3 +265,21 @@ $$
 $$
 We wish to show that $\ker \varphi$ is an ideal of $L_1$. 
 First we must show that it is a subspace of $L_1$. This amounts to showing that $\ker \varphi$ contains the zero vector, and is closed under both vector addition and scalar multiplication. $0 \in \ker \varphi \iff \varphi(0) = 0$, the latter following from $\varphi$ being a homomorphism, so $\ker \phi$ contains the zero vector. Let $x, y \in \ker \varphi$ and $c \in F$ (where $F$ is the common field of scalars shared by $L_1$ and $L_2$). Then $\varphi(x + y) = \varphi(x) + \varphi(y) = 0$ and $\varphi(c \cdot x) = c \cdot \varphi(x) = 0$. We conclude that $\ker \varphi$ is a subspace of $L_1$
+Let $x \in L_1$ and $y \in \ker \varphi$. To show that $\ker \varphi$ is an ideal of $L_1$, we need to show that $[x, y] \in \ker \varphi$. Calculate that
+$$
+\varphi ([x,y]) = [\varphi(x), \varphi(y)] = [\varphi(x), 0] = 0 \quad \square
+$$
+Next we show that $\text{im} \varphi$ is a Lie subalgebra of $L_2$. Recall that
+$$
+\text{im} \varphi =  \{ y \in L_2: y = \varphi(x), \text{ for some } x \in L_1 \}.
+$$
+To prove that $\text{im} \varphi$ is a Lie subalgebra of $L_2$, we first need to show that $\text{im} \varphi$ is a vector subspace of $L_2$. Since $\varphi(0)=0$, $0 \in \text{im} \varphi$. If $y_1 = \varphi(x_1), y_2 = \varphi(x_2), c \in F, x_1, x_2 \in L_1$, then $y_1 + y_2 = \varphi(x_1) + \varphi(x_2) = \varphi(x_1 + x_2)$ and $cy_1 = c \varphi(x_1) = \varphi(cx_1)$, so $\text{im} \varphi$ is closed under vector addition and scalar multiplication. We conclude that $\text{im} \varphi$ is a vector subspace of $L_2$.
+To show that $\text{im} \varphi$ is a Lie subalgebra of $L_2$, it remains to show that 
+$$
+[y_1, y_2] \in \text{im} \varphi \qquad \text{for all } y_1,y_2 \in \text{im} \varphi
+$$
+So let $y_1 = \varphi(x_1), y_2 = \varphi(x_2)$. Calculate that
+$$
+[y_1, y_2] = [\varphi(x_1), \varphi(x_2)] = \varphi([x_1, x_2]) \qquad \square
+$$
+****
