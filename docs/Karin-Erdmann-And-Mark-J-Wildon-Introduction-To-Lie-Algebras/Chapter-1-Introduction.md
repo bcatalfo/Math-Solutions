@@ -285,3 +285,19 @@ $$
 ****
 **Exercise 1.7**
 Let $L$ be a Lie algebra. Show that the Lie bracket is associative, that is, $[x, [y, z]] = [[x,y],z]$ for all $x, y, z \in L$, if and only if for all $a, b \in L$ the commutator $[a, b]$ lies in $Z(L)$.
+**Solution**
+First note that
+$$
+\quad [a,b] \in Z(L) \text{ for all } a,b \in L \iff [[a,b],c] = 0 \text{ for all } a,b,c \in L 
+$$
+Then calculate that
+$$
+[[a,b],c] = 0 \text{ for all } a,b,c \in L \implies [x,[y,z]] = [[x,y],z] = 0
+$$
+and that
+$$
+[x, [y, z]] = [[x,y],z] \text{ for all } x,y,z \in L \\
+\implies [[x,y],z] = [x, [y,z]] = -[[y,z],x] = -[y, [z,x]] = [[z,x],y] = [z,[x,y]] = -[[x,y],z] \\
+\implies [[x,y],z] = -[[x,y],z] \\
+\implies 1 + 1 = 0 \text{ or } [[x,y],z] = 0 \quad \square
+$$
