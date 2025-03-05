@@ -301,3 +301,8 @@ $$
 \implies [[x,y],z] = -[[x,y],z] \\
 \implies 1 + 1 = 0 \text{ or } [[x,y],z] = 0 \quad \square
 $$
+****
+**Exercise 1.8**
+Let $D$ and $E$ be derviations of an algebra $A$.
+(i) Show that $[D,E] = D \circ E - E \circ D$ is also a derivation.
+(ii) Show that $D \circ E$ need not be a derivation.
