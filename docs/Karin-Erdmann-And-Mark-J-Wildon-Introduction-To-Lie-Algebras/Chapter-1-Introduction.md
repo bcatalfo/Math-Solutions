@@ -305,4 +305,22 @@ $$
 **Exercise 1.8**
 Let $D$ and $E$ be derviations of an algebra $A$.
 (i) Show that $[D,E] = D \circ E - E \circ D$ is also a derivation.
+**Solution**
+Let $a,b \in A$, by the definition of a derivation we have
+$$
+D(ab) = aD(b) + D(a)b \\
+E(ab) = aE(b) + E(a)b
+$$
+so
+$$
+[D, E](ab) = D(E(ab)) - E(D(ab)) = D(aE(b)+E(a)b) - E(aD(b) + D(a)b) \\
+= D(aE(b)) + D(E(a)b) - E(aD(b)) - E(D(a)b)
+$$
+We need to show that
+$$
+[D,E](ab) = a[D,E](b) + [D,E](a)b = a(D(E(b)) - E(D(b))) + (D(E(a))-E(D(a)))b
+$$
+The result follows from rearranging terms. $\quad \square$
+****
+
 (ii) Show that $D \circ E$ need not be a derivation.
