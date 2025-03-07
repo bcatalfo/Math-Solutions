@@ -351,3 +351,5 @@ $$
 $$
 and of course in $\R$ we have $0 \neq 2$ and this counterexample shows that the composition of two derivations is not necessarily a derivation. $\quad \square$
 ****
+**Exercise 1.9**
+Let $L_1$ and $L_2$ be Lie algebras. Show that $L_1$ is isomporphic to $L_2$ if and only if there is a basis $B_1$ of $L_1$ and a basis $B_2$ of $L_2$ such that the structure constants of $L_1$ with respect to $B_1$ is equal to the structure constants of $L_2$ with respect to $B_2$.
