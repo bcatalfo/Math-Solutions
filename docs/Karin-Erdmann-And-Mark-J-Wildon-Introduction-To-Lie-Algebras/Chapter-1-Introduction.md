@@ -322,5 +322,32 @@ $$
 $$
 The result follows from rearranging terms. $\quad \square$
 ****
-
 (ii) Show that $D \circ E$ need not be a derivation.
+**Solution**
+By definition $D \circ E$ being a derivation means that for all $a, b \in A$ we have
+$$
+(D \circ E) (ab) = a(D \circ E)(b) + (D \circ E)(a)b \\
+\iff D(E(ab)) = aD(E(b)) + D(E(a))b \\
+\iff D(aE(b) + E(a)b) = aD(E(b)) + D(E(a))b \\
+\iff D(aE(b)) + D(E(a)b) = aD(E(b)) + D(E(a))b \\ 
+\iff aD(E(b)) + D(a)E(b) + E(a)D(b) + D(E(a))b = aD(E(b)) + D(E(a))b \\
+\iff D(a)E(b) + E(a)D(b)  = 0
+$$
+Let $D$ be ordinary differentiation in the associative algebra $A=C^{\infty}\R$ of infinitely differentiable functions $f,g: \R \to \R$, where the product $fg$ is given by pointwise multiplication: $(fg)(x) = f(x)g(x)$. Then $D \circ D$ being a derivation if and only if for every $a, b \in A$
+$$
+D(a)D(b) + D(a)D(b) = 0
+$$
+Take $a,b$ to be the identity functions that is $a(x) = x$, $b(x) = x$ for all $x \in \R$. Then
+$$
+D(a)D(b) + D(a)D(b) = 1 \cdot 1 + 1 \cdot 1 = 2 \neq 0.
+$$
+Indeed, we can check explicitly that
+$$
+(D \circ D)(a^2) = D(D(a^2)) = D(2a) = 2.
+$$
+If $D \circ D$ was a derivation we would have
+$$
+(D \circ D)(aa) = a (D \circ D)(a) + (D \circ D)(a) a = 0,
+$$
+and of course in $\R$ we have $0 \neq 2$ and this counterexample shows that the composition of two derivations is not necessarily a derivation. $\quad \square$
+****
