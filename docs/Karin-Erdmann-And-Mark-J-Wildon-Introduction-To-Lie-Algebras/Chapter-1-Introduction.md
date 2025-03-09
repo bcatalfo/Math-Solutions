@@ -354,9 +354,59 @@ and of course in $\R$ we have $0 \neq 2$ and this counterexample shows that the 
 **Exercise 1.9**
 Let $L_1$ and $L_2$ be Lie algebras. Show that $L_1$ is isomorphic to $L_2$ if and only if there is a basis $B_1$ of $L_1$ and a basis $B_2$ of $L_2$ such that the structure constants of $L_1$ with respect to $B_1$ is equal to the structure constants of $L_2$ with respect to $B_2$.
 **Solution**
-$\left( \implies \right)$ Let $f: L_1 \to L_2$ be an isomorphism, and let $x_{11}, x_{12}, \ldots, x_{1n}$ be a basis of $L_1$ (*hold up- do we know that $L_1$ is finite dimensional?*). (*Check that you can do this*) Then $f(x_1), \ldots, f(x_n)$ is a basis of $L_2$. $L_1$ has structure constants $a_{ij}^k$ such that
+$\left( \implies \right)$ Let $f: L_1 \to L_2$ be an isomorphism, and let $x_{1}, x_{2}, \ldots, x_{n}$ be a basis of $L_1$ (*hold up- do we know that $L_1$ is finite dimensional?*). (*Check that you can do this*) Then $f(x_1), \ldots, f(x_n)$ is a basis of $L_2$. $L_1$ has structure constants $a_{ij}^k$ such that
 $$
 [x_i, x_j] = \sum_{n=0}^k a_{ij}^k x_{k} \\[4px]
 f([x_i, x_j]) = f\left(\sum_{n=0}^k a_{ij}^k x_{k}\right) \\[4px]
 [f(x_i), f(x_j)] = \sum_{n=0}^k f(a_{ij}^k x_k) = \sum_{n=0}^k a_{ij}^k f(x_k) \quad \square \\[4px] 
 $$
+$\left( \impliedby \right)$ Let $B_1 = (x_1, \ldots, x_n)$ be a basis of $L_1$ and let $B_2 = (y_1, \ldots, y_n)$ be a basis of $L_2$, with a shared set of structure constants $a_{ij}^k$. Let $f$ be the unique linear function satisfying
+$$
+f(x_i) = y_i
+$$
+Of course $f$ is an isomorphism of vector spaces, what we need to show is that $f$ is also an isomorphism of Lie algebras, that is that $f$ commutes with $[-,-]$, meaning that for all $a, b \in L_1$ 
+$$
+f([a,b]) = [f(a), f(b)]
+$$
+Use our basis to get
+$$
+a = \lambda_1 x_1 + \cdots + \lambda_n x_n \\
+b =\mu_1 x_1 + \cdots \mu_n x_n
+$$
+Calculate that 
+$$
+f([a,b]) = f([\lambda_1x_1 + \cdots + \lambda_n x_n, \mu_1 x_1 + \cdots \mu_n x_n]) \\[4px]
+= f\left(\left[\lambda_1x_1, \sum_{i=1}^n \mu_i x_i \right] + \cdots + \left[\lambda_nx_n, \sum_{i=1}^n \mu_i x_i \right] \right) \\[8px]
+= f\left(\sum_{i=1}^n \left[ \lambda_i x_i, \sum_{j=1}^n \mu_j x_j  \right]  \right) 
+= f\left(\sum_{i=1}^n \sum_{j=1}^n [\lambda_i x_i, \mu_jx_j]\right) \\[8px]
+= f\left(\sum_{i=1}^n \sum_{j=1}^n \lambda_i \mu_j [x_i, x_j]\right)
+= \sum_{i=1}^n \sum_{j=1}^n \lambda_i \mu_j f([x_i,x_j]) \\[8px]
+$$
+Recall that by the definition of a structure constant
+$$
+[x_i, x_j] = \sum_{k=1}^n a_{ij}^k x_k
+$$
+So we get
+$$
+f([a,b]) = \sum_{i=1}^n \sum_{j=1}^n \lambda_i \mu_j \sum_{k=1}^n a_{ij}^k x_k
+$$
+Separately calculate that
+$$
+[f(a),f(b)] = \left[f\left(\sum_{i=1}^n \lambda_i x_i \right),f\left(\sum_{j=1}^n \mu_j y_j\right)\right]
+= \left[ \sum_{i=1}^n \lambda_i f(x_i), \sum_{j=1}^n \mu_j f(x_j) \right] \\[8px]
+= \sum_{i=1}^n \sum_{j=1}^n [\lambda_i f(x_i), \mu_j f(x_j)]
+= \sum_{i=1}^n \sum_{j=1}^n \lambda_i \mu_j [f(x_i), f(x_j)]
+$$
+By the definition of $f$ we get
+$$
+[f(a), f(b)] = \sum_{i=1}^n \sum_{j=1}^n  \lambda_i \mu_j [y_i, y_j]
+$$
+By the hypothesis $B_1 = (x_1, \dots, x_n)$ and $B_2 = (y_1, \dots, y_n)$ share the same structure constants $a_{ij}^k$ so
+$$
+[f(a), f(b)] = \sum_{i=1}^n \sum_{j=1}^n \lambda_i \mu_j \sum_{k=1}^n a_{ij}^k x_k
+$$
+We conclude that for each $a, b \in L_1$ we have
+$$
+f([a,b]) = [f(a), f(b)] \quad \square
+$$
+****
