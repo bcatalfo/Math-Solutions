@@ -410,3 +410,5 @@ $$
 f([a,b]) = [f(a), f(b)] \quad \square
 $$
 ****
+**Exercise 1.10**
+Let $L$ be a Lie algebra with a basis $(x_1, \dots, x_n)$. What conditions does the Jacobi identity impose on the structure constants $x_{ij}^k$?
