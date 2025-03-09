@@ -412,3 +412,24 @@ $$
 ****
 **Exercise 1.10**
 Let $L$ be a Lie algebra with a basis $(x_1, \dots, x_n)$. What conditions does the Jacobi identity impose on the structure constants $x_{ij}^k$?
+**Solution**
+Recall that the Jacobi identity states that for all $x, y, z \in L$ we have
+$$
+[x, [y, z]] + [y, [z, x]] + [z, [x, y]] = 0
+$$
+and that, for each $i, j \in {1, \dots, n}$, the structure constants satisfy the equation
+$$
+[x_i, x_j] = \sum_{k=0}^n a_{ij}^k x_k
+$$
+Use the basis to get 
+$$
+x = \sum_{i=0}^n \lambda_i x_i, \quad
+y = \sum_{j=0}^n \mu_j x_j, \quad
+z = \sum_{k=0}^n \nu_k x_k
+$$
+Plug in
+$$
+0 = [x, [y, z]] + [y, [z, x]] + [z, [x, y]] \\[6px]
+= \left[\sum,\left[\sum,\sum\right]\right] + \left[\sum,\left[\sum,\sum\right]\right] + \left[\sum,\left[\sum,\sum\right]\right]
+$$
+****
