@@ -139,7 +139,7 @@ Let $\mathrm{b}(n,F)$ be the upper triangular matrices in $\mathrm{gl}(n,F)$. (A
 
 Similarly, let $\mathrm{n}(n,F)$ be the strictly upper triangular matrices in $\mathrm{gl}(n,F)$. (a matrix $x$ is said to be strictly upper triangular if $x_{ij}=0$ whenever $i \geq j$) Again this is a Lie algebra with the same Lie bracket as $\mathrm{gl}(n,F)$.
 **Solution**
-Let $x, y$ be upper-triangular matrices. Recall from linear algebra that upper triangular matrices and strictly upper triangular matrices are subspaces of the vector space formed by all square matricies. Therefore $(xy - yx)$ forms a Lie Algebra over $\mathrm{b}(n,F)$ and $\mathrm{n}(n,F)$, because the required properties of being a bilinear map $[:]:L \to L$ satisfying the properties
+Let $x, y$ be upper-triangular matrices. Recall from linear algebra that upper triangular matrices and strictly upper triangular matrices are subspaces of the vector space formed by all square matrices. Therefore, $(xy - yx)$ forms a Lie Algebra over $\mathrm{b}(n,F)$ and $\mathrm{n}(n,F)$, because the required properties of being a bilinear map $[:]:L \to L$ satisfying the properties
 $$
 \begin{aligned}
 [x,x]=0 \quad\text{for all } x \in L, \qquad &(L1) \\
@@ -254,7 +254,7 @@ xy - yx = \begin{pmatrix}
   0 & 0
 \end{pmatrix}
 $$
-Since for all $\lambda \in F_2$ we have $\lambda + \lambda = 0$, in $F_2$ we clearly have $xy - yx = 0$, so $x \in Z(\mathrm{sl}(2, F_2))$. Of course we always have $0 \in Z(\mathrm{sl}(2,F))$ for all fields $F$, and when the characteristic of $F$ is not 2, this is the only element. $\quad \square$
+Since for all $\lambda \in F_2$ we have $\lambda + \lambda = 0$, in $F_2$ we clearly have $xy - yx = 0$, so $x \in Z(\mathrm{sl}(2, F_2))$. Of course, we always have $0 \in Z(\mathrm{sl}(2,F))$ for all fields $F$, and when the characteristic of $F$ is not 2, this is the only element. $\quad \square$
 ****
 **Exercise 1.6**
 Show that if $\varphi : L_1 \to L_2$ is a homomorphism, then the kernel of $\varphi$, $\ker \varphi$, is an ideal of $L_1$, and the image of $\varphi$, $\text{im} \varphi$, is a Lie subalgebra of $L_2$.
@@ -303,7 +303,7 @@ $$
 $$
 ****
 **Exercise 1.8**
-Let $D$ and $E$ be derviations of an algebra $A$.
+Let $D$ and $E$ be derivations of an algebra $A$.
 (i) Show that $[D,E] = D \circ E - E \circ D$ is also a derivation.
 **Solution**
 Let $a,b \in A$, by the definition of a derivation we have
@@ -352,4 +352,11 @@ $$
 and of course in $\R$ we have $0 \neq 2$ and this counterexample shows that the composition of two derivations is not necessarily a derivation. $\quad \square$
 ****
 **Exercise 1.9**
-Let $L_1$ and $L_2$ be Lie algebras. Show that $L_1$ is isomporphic to $L_2$ if and only if there is a basis $B_1$ of $L_1$ and a basis $B_2$ of $L_2$ such that the structure constants of $L_1$ with respect to $B_1$ is equal to the structure constants of $L_2$ with respect to $B_2$.
+Let $L_1$ and $L_2$ be Lie algebras. Show that $L_1$ is isomorphic to $L_2$ if and only if there is a basis $B_1$ of $L_1$ and a basis $B_2$ of $L_2$ such that the structure constants of $L_1$ with respect to $B_1$ is equal to the structure constants of $L_2$ with respect to $B_2$.
+**Solution**
+$\left( \implies \right)$ Let $f: L_1 \to L_2$ be an isomorphism, and let $x_{11}, x_{12}, \ldots, x_{1n}$ be a basis of $L_1$ (*hold up- do we know that $L_1$ is finite dimensional?*). (*Check that you can do this*) Then $f(x_1), \ldots, f(x_n)$ is a basis of $L_2$. $L_1$ has structure constants $a_{ij}^k$ such that
+$$
+[x_i, x_j] = \sum_{n=0}^k a_{ij}^k x_{k} \\[4px]
+f([x_i, x_j]) = f\left(\sum_{n=0}^k a_{ij}^k x_{k}\right) \\[4px]
+[f(x_i), f(x_j)] = \sum_{n=0}^k f(a_{ij}^k x_k) = \sum_{n=0}^k a_{ij}^k f(x_k) \quad \square \\[4px] 
+$$
