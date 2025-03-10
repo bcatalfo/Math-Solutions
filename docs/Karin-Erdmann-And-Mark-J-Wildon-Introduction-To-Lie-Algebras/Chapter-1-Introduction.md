@@ -441,3 +441,5 @@ $$
 \sum_{l=1}^n  a_{ij}^l a_{il}^m + a_{ki}^l a_{jl}^m + a_{ij}^l a_{ik}^m = 0
 $$
 ****
+**Exercise 1.11**
+Let $L_1$ and $L_2$ be two abelian Lie algebras. Show that $L_1$ and $L_2$ are isomorphic if and only if they have the same dimension.
