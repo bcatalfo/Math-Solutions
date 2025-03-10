@@ -421,47 +421,7 @@ and that, for each $i, j \in {1, \dots, n}$, the structure constants satisfy the
 $$
 [x_i, x_j] = \sum_{k=1}^n a_{ij}^k x_k
 $$
-Use the basis to get 
-$$
-x = \sum_{i=1}^n \lambda_i x_i, \quad
-y = \sum_{j=1}^n \mu_j x_j, \quad
-z = \sum_{k=1}^n \nu_k x_k
-$$
-Plug in
-$$
-\begin{aligned}
-0 &= [x, [y, z]] + [y, [z, x]] + [z, [x, y]] \\[6px]
-&=
-\left[ \sum_{i=1}^n \lambda_i x_i, \left[ \sum_{j=1}^n \mu_j x_j, \sum_{k=1}^n \nu_k x_k \right] \right] + 
-\left[ \sum_{j=1}^n \mu_j x_j, \left[ \sum_{k=1}^n \nu_k x_k, \sum_{i=1}^n \lambda_i x_i \right] \right] + 
-\left[ \sum_{k=1}^n \nu_k x_k, \left[ \sum_{i=1}^n \lambda_i x_i , \sum_{j=1}^n \mu_j x_j \right] \right] \\[8px]
-&=
-\sum_{i=1}^n \sum_{j=1}^n \sum_{k=1}^n \left[ \lambda_i x_i, \left[ \mu_j x_j, \nu_k x_k \right] \right] + 
-\left[ \mu_j x_j, \left[ \nu_k x_k, \lambda_i x_i \right] \right] + 
-\left[ \nu_k x_k, \left[ \lambda_i x_i , \mu_j x_j \right] \right] \\[8px]
-&=
-\sum_{i=1}^n \sum_{j=1}^n \sum_{k=1}^n \lambda_i \mu_j \nu_k (\left[ x_i, \left[ x_j, x_k \right] \right] + 
-\left[ x_j, \left[ x_k, x_i \right] \right] + 
-\left[ x_k, \left[ x_i , x_j \right] \right]) \\[8px]
-&=
-\sum_{i=1}^n \sum_{j=1}^n \sum_{k=1}^n \lambda_i \mu_j \nu_k \left( \left[ x_i, \sum_{l=1}^n a_{jk}^l x_l \right] + 
-\left[ x_j, \sum_{l=1}^n a_{ki}^l x_l \right] + 
-\left[ x_k, \sum_{l=1}^n a_{ij}^l x_l \right] \right) \\[8px]
-&=
-\sum_{i=1}^n \sum_{j=1}^n \sum_{k=1}^n \sum_{l=1}^n \lambda_i \mu_j \nu_k \left( \left[ x_i, a_{jk}^l x_l \right] + 
-\left[ x_j,  a_{ki}^l x_l \right] + 
-\left[ x_k,  a_{ij}^l x_l \right] \right)  \text{ is this legal? } \\[8px]
-&= 
-\sum_{i=1}^n \sum_{j=1}^n \sum_{k=1}^n \sum_{l=1}^n (\lambda_i \mu_j \nu_k(a_{jk}^l + a_{ki}^l + a_{ij}^l)) \left(
-  [x_i, x_l] + [x_j, x_l] + [x_k, x_l]
-  \right) \\[8px]
-\end{aligned}
-$$
-(*Check that you can do this*) So we must have
-$$
-a_{jk}^l + a_{ki}^l + a_{ij}^l = 0
-$$
-There is probably a simpler way of proving this. Take $x = x_i$, $y = x_j$, $z = x_k$. Then
+Take $x = x_i$, $y = x_j$, $z = x_k$. Then
 $$
 0 = [x,[y,z]] + [y,[z,x]] + [z, [x, y]] = [x_i, [x_j, x_k]] + [x_j, [x_k, x_i]] + [x_k, [x_i, x_j]] \\[8px]
 = \left[x_i, \sum_{l=1}^n a_{jk}^l x_l \right] + 
@@ -471,6 +431,13 @@ $$
 \sum_{l=1}^n a_{ki}^l [x_j,  x_l ] + 
 \sum_{l=1}^n a_{ij}^l[x_k,  x_l ] \\
 = \sum_{l=1}^n a_{ij}^l [x_i, x_l] + a_{ki}^l [x_j,  x_l ] + a_{ij}^l[x_k, x_l] \\
-= \sum_{l=1}^n a_{ij}^l \sum_{m=1}^n a_{il}^m x_m + a_{ki}^l [x_j,  x_l ] + a_{ij}^l[x_k, x_l] \\
+= \sum_{l=1}^n a_{ij}^l \sum_{m=1}^n a_{il}^m x_m + a_{ki}^l \sum_{m=1}^n a_{jl}^mx_m + a_{ij}^l \sum_{m=1}^n a_{ik}^m x_m \\
+= \sum_{l=1}^n \sum_{m=1}^n a_{ij}^l  a_{il}^m x_m + a_{ki}^l a_{jl}^mx_m + a_{ij}^l a_{ik}^m x_m \\
+= \sum_{m=1}^n \sum_{l=1}^n a_{ij}^l  a_{il}^m x_m + a_{ki}^l a_{jl}^mx_m + a_{ij}^l a_{ik}^m x_m \\
+= \sum_{m=1}^n \sum_{l=1}^n (a_{ij}^l  a_{il}^m + a_{ki}^l a_{jl}^m + a_{ij}^l a_{ik}^m)x_m \\
+$$
+Since $(x_1, \dots, x_n)$ forms a basis they are linearly independent, so for each $m \in 1, \dots, n$ we must have
+$$
+\sum_{l=1}^n  a_{ij}^l a_{il}^m + a_{ki}^l a_{jl}^m + a_{ij}^l a_{ik}^m = 0
 $$
 ****
