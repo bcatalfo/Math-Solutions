@@ -443,3 +443,19 @@ $$
 ****
 **Exercise 1.11**
 Let $L_1$ and $L_2$ be two abelian Lie algebras. Show that $L_1$ and $L_2$ are isomorphic if and only if they have the same dimension.
+**Solution**
+$(\implies)$ If $L_1$ and $L_2$ are isomorphic as Lie algebras than they must be isomorphic as vector spaces $\iff$ they have the same dimension
+$(\impliedby)$ If $L_1$ and $L_2$ are the same dimension then we get a vector space isomorphism $f: L_1 \to L_2$. To show that this is a Lie algebra isomorphism, we need to show that for each $a, b \in L_1$ we have
+$$
+f([a,b]) = [f(a),f(b)]
+$$
+Since $L_1$ is abelian we have
+$$
+f([a,b]) = f(0) = 0,
+$$
+with the last equality coming from the fact that $f$ is a vector space isomorphism. $L_2$ is abelian as well, so
+$$
+[f(a), f(b)] = 0.
+$$
+We conclude that $f([a,b]) = [f(a),f(b)]$ for each $a, b \in L_1$, as desired. $\quad \square$
+****
