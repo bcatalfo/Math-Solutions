@@ -5,6 +5,7 @@ export_on_save:
 <style>
 .katex-display { overflow: auto hidden }
 img {display: block; margin: 0 auto;}
+p.dot { display: flex; justify-content: center; }
 </style>
 **3.1.** \(\triangleright\) Let \(\mathsf{C}\) be a category. Consider a structure \(\mathsf{C}^{op}\) with
 * \(\text{Obj}(\mathsf{C}^{op}) \coloneqq \text{Obj}(\mathsf{C})\);
@@ -57,17 +58,72 @@ It 'feels' like the category of finite dimensional vector spaces, as each object
 **Solution**
 Let \(\mathsf{C}\) be a category and \(A \in \text{Obj}(\mathsf{C})\). We define the co-slice category \(\mathsf{C}_A\) as follows:
 * \(\text{Obj}(\mathsf{C}_A) = \{f \in \text{Hom}_{\mathsf{C}}(A, Z): Z \in \text{Obj}(\mathsf{C})\} \). Diagrammatically,
-![](../../assets/2024-12-13-14-34-03.png)
+```dot 
+digraph {
+  {
+    node [shape=none fontsize=18]
+    A [label=<<i>A</i>>]
+    Z [label=<<i>Z</i>>]
+  }
+  A -> Z [label=<  <i>f</i>>]
+}
+```
 
 * If \(f_1, f_2 \in \text{Obj}(\mathsf{C}_A)\), diagrammatically
-![](../../assets/2024-12-13-14-35-03.png)
+```dot
+digraph { 
+  {
+    node [shape=none fontsize=18]
+    A [label=<<i>A</i>>]
+    Z_1 [label=<<i>Z</i><sub>1</sub>>]
+    Z_2 [label=<<i>Z</i><sub>2</sub>>]
+  }
+  A -> Z_1 [xlabel=<<I>f</I><SUB>1</SUB>  >]
+  A -> Z_2 [label=<  <I>f</I><SUB>2</SUB> >]
+}
+```
 
 
 Then elements of \(\text{Hom}_{\mathsf{C}_A}(f_1, f_2)\) are commutative diagrams like
-![](../../assets/2024-12-13-15-51-10.png)
+```dot
+digraph {
+  {
+    node [shape=none fontsize=18]
+    A [label=<<i>A</i>>];
+    Z_1 [label=<<i>Z</i><sub>1</sub>>];
+    Z_2 [label=<<i>Z</i><sub>2</sub>>];
+  }
+  A -> Z_1 [xlabel=<<i>f</i><sub>1</sub> >];
+  A -> Z_2 [label=< <i>f</i><sub>2</sub>>];
+  {Z_1 -> Z_2 [xlabel=<  &sigma;>]; rank=same;}
+}
+```
 
 And if we were to take two morphisms, \(\sigma: f_1 \to f_2\) and \(\tau: f_2 \to f_3\) pictured below
-![](../../assets/2024-12-13-15-51-56.png)
+```dot
+digraph {
+  label="(1)"
+  {
+    node [shape=none fontsize=18]
+    A [label=<<i>A</i>>];
+    Z_1 [label=<<i>Z</i><sub>1</sub>>];
+    Z_2 [label=<<i>Z</i><sub>2</sub>>];
+    _A [label=<<i>A</i>>];
+    _Z_2 [label=<<i>Z</i><sub>2</sub>>];
+    _Z_3 [label=<<i>Z</i><sub>3</sub>>]
+  }
+  subgraph {
+    A -> Z_1 [xlabel=<<i>f</i><sub>1</sub> >];
+    A -> Z_2 [label=< <i>f</i><sub>2</sub>>];
+    {Z_1 -> Z_2 [xlabel=<  &sigma;>]; rank=same;}
+  }
+  subgraph {
+    _A -> _Z_2 [xlabel=<<i>f</i><sub>2</sub> >];
+    _A -> _Z_3 [label=< <i>f</i><sub>3</sub>>];
+    {_Z_2 -> _Z_3 [xlabel=<  &tau;>]; rank=same;}
+  }
+}
+```
 
 we can define their composition by first putting the diagrams side-by-side
 ![](../../assets/2024-12-13-15-52-34.png)

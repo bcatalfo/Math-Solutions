@@ -27,6 +27,7 @@
 <style>
 .katex-display { overflow: auto hidden }
 img {display: block; margin: 0 auto;}
+p.dot { display: flex; justify-content: center; }
 </style>
 <p><strong>3.1.</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>▹</mo></mrow><annotation encoding="application/x-tex">\triangleright</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">▹</span></span></span></span> Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">C</mi></mrow><annotation encoding="application/x-tex">\mathsf{C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathsf">C</span></span></span></span> be a category. Consider a structure <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="sans-serif">C</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\mathsf{C}^{op}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord"><span class="mord mathsf">C</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">o</span><span class="mord mathnormal mtight">p</span></span></span></span></span></span></span></span></span></span></span></span> with</p>
 <ul>
@@ -68,20 +69,235 @@ It 'feels' like the category of finite dimensional vector spaces, as each object
 <strong>Solution</strong><br>
 Let <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="sans-serif">C</mi></mrow><annotation encoding="application/x-tex">\mathsf{C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathsf">C</span></span></span></span> be a category and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∈</mo><mtext>Obj</mtext><mo stretchy="false">(</mo><mi mathvariant="sans-serif">C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A \in \text{Obj}(\mathsf{C})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Obj</span></span><span class="mopen">(</span><span class="mord mathsf">C</span><span class="mclose">)</span></span></span></span>. We define the co-slice category <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="sans-serif">C</mi><mi>A</mi></msub></mrow><annotation encoding="application/x-tex">\mathsf{C}_A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathsf">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> as follows:</p>
 <ul>
-<li>
-<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Obj</mtext><mo stretchy="false">(</mo><msub><mi mathvariant="sans-serif">C</mi><mi>A</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><mi>f</mi><mo>∈</mo><msub><mtext>Hom</mtext><mi mathvariant="sans-serif">C</mi></msub><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>Z</mi><mo stretchy="false">)</mo><mo>:</mo><mi>Z</mi><mo>∈</mo><mtext>Obj</mtext><mo stretchy="false">(</mo><mi mathvariant="sans-serif">C</mi><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\text{Obj}(\mathsf{C}_A) = \{f \in \text{Hom}_{\mathsf{C}}(A, Z): Z \in \text{Obj}(\mathsf{C})\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Obj</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord text"><span class="mord">Hom</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathsf mtight">C</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Obj</span></span><span class="mopen">(</span><span class="mord mathsf">C</span><span class="mclose">)}</span></span></span></span>. Diagrammatically,<br>
-<img src="../../assets/2024-12-13-14-34-03.png" alt=""></p>
-</li>
-<li>
-<p>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>f</mi><mn>2</mn></msub><mo>∈</mo><mtext>Obj</mtext><mo stretchy="false">(</mo><msub><mi mathvariant="sans-serif">C</mi><mi>A</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f_1, f_2 \in \text{Obj}(\mathsf{C}_A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Obj</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>, diagrammatically<br>
-<img src="../../assets/2024-12-13-14-35-03.png" alt=""></p>
-</li>
+<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Obj</mtext><mo stretchy="false">(</mo><msub><mi mathvariant="sans-serif">C</mi><mi>A</mi></msub><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">{</mo><mi>f</mi><mo>∈</mo><msub><mtext>Hom</mtext><mi mathvariant="sans-serif">C</mi></msub><mo stretchy="false">(</mo><mi>A</mi><mo separator="true">,</mo><mi>Z</mi><mo stretchy="false">)</mo><mo>:</mo><mi>Z</mi><mo>∈</mo><mtext>Obj</mtext><mo stretchy="false">(</mo><mi mathvariant="sans-serif">C</mi><mo stretchy="false">)</mo><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\text{Obj}(\mathsf{C}_A) = \{f \in \text{Hom}_{\mathsf{C}}(A, Z): Z \in \text{Obj}(\mathsf{C})\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Obj</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord text"><span class="mord">Hom</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathsf mtight">C</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">Z</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Obj</span></span><span class="mopen">(</span><span class="mord mathsf">C</span><span class="mclose">)}</span></span></span></span>. Diagrammatically,</li>
 </ul>
-<p>Then elements of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>Hom</mtext><msub><mi mathvariant="sans-serif">C</mi><mi>A</mi></msub></msub><mo stretchy="false">(</mo><msub><mi>f</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>f</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{Hom}_{\mathsf{C}_A}(f_1, f_2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0003em;vertical-align:-0.2503em;"></span><span class="mord"><span class="mord text"><span class="mord">Hom</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathsf mtight">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3567em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1433em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2503em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> are commutative diagrams like<br>
-<img src="../../assets/2024-12-13-15-51-10.png" alt=""></p>
-<p>And if we were to take two morphisms, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>:</mo><msub><mi>f</mi><mn>1</mn></msub><mo>→</mo><msub><mi>f</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\sigma: f_1 \to f_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>:</mo><msub><mi>f</mi><mn>2</mn></msub><mo>→</mo><msub><mi>f</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\tau: f_2 \to f_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> pictured below<br>
-<img src="../../assets/2024-12-13-15-51-56.png" alt=""></p>
-<p>we can define their composition by first putting the diagrams side-by-side<br>
+<p class="dot"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 9.0.0 (20230911.1827)
+ -->
+<!-- Pages: 1 -->
+<svg width="62pt" height="133pt" viewBox="0.00 0.00 62.00 132.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 128.8)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-128.8 58,-128.8 58,4 -4,4"></polygon>
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<text text-anchor="start" x="21.5" y="-102.4" font-family="Times,serif" font-style="italic" font-size="18.00">A</text>
+</g>
+<!-- Z -->
+<g id="node2" class="node">
+<title>Z</title>
+<text text-anchor="start" x="21.99" y="-13.6" font-family="Times,serif" font-style="italic" font-size="18.00">Z</text>
+</g>
+<!-- A&#45;&gt;Z -->
+<g id="edge1" class="edge">
+<title>A-&gt;Z</title>
+<path fill="none" stroke="black" d="M27,-89.06C27,-77.25 27,-61.14 27,-47.34"></path>
+<polygon fill="black" stroke="black" points="30.5,-47.49 27,-37.49 23.5,-47.49 30.5,-47.49"></polygon>
+<text text-anchor="start" x="27" y="-59.2" font-family="Times,serif" font-size="14.00"> &nbsp;</text>
+<text text-anchor="start" x="34" y="-59.2" font-family="Times,serif" font-style="italic" font-size="14.00">f</text>
+</g>
+</g>
+</svg>
+</p><ul>
+<li>If <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>f</mi><mn>2</mn></msub><mo>∈</mo><mtext>Obj</mtext><mo stretchy="false">(</mo><msub><mi mathvariant="sans-serif">C</mi><mi>A</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f_1, f_2 \in \text{Obj}(\mathsf{C}_A)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Obj</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathsf">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>, diagrammatically</li>
+</ul>
+<p class="dot"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 9.0.0 (20230911.1827)
+ -->
+<!-- Pages: 1 -->
+<svg width="134pt" height="133pt" viewBox="0.00 0.00 134.00 132.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 128.8)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-128.8 130,-128.8 130,4 -4,4"></polygon>
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<text text-anchor="start" x="57.5" y="-102.4" font-family="Times,serif" font-style="italic" font-size="18.00">A</text>
+</g>
+<!-- Z_1 -->
+<g id="node2" class="node">
+<title>Z_1</title>
+<text text-anchor="start" x="17.49" y="-13.6" font-family="Times,serif" font-style="italic" font-size="18.00">Z</text>
+<text text-anchor="start" x="27.51" y="-13.6" font-family="Times,serif" baseline-shift="sub" font-size="18.00">1</text>
+</g>
+<!-- A&#45;&gt;Z_1 -->
+<g id="edge1" class="edge">
+<title>A-&gt;Z_1</title>
+<path fill="none" stroke="black" d="M56.06,-89.06C51.06,-77.01 44.21,-60.49 38.41,-46.51"></path>
+<polygon fill="black" stroke="black" points="41.69,-45.27 34.62,-37.38 35.22,-47.96 41.69,-45.27"></polygon>
+<text text-anchor="start" x="27.04" y="-67.44" font-family="Times,serif" font-style="italic" font-size="14.00">f</text>
+<text text-anchor="start" x="30.93" y="-67.44" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<text text-anchor="start" x="37.93" y="-67.44" font-family="Times,serif" font-size="14.00"> &nbsp;</text>
+</g>
+<!-- Z_2 -->
+<g id="node3" class="node">
+<title>Z_2</title>
+<text text-anchor="start" x="89.49" y="-13.6" font-family="Times,serif" font-style="italic" font-size="18.00">Z</text>
+<text text-anchor="start" x="99.51" y="-13.6" font-family="Times,serif" baseline-shift="sub" font-size="18.00">2</text>
+</g>
+<!-- A&#45;&gt;Z_2 -->
+<g id="edge2" class="edge">
+<title>A-&gt;Z_2</title>
+<path fill="none" stroke="black" d="M69.94,-89.06C74.94,-77.01 81.79,-60.49 87.59,-46.51"></path>
+<polygon fill="black" stroke="black" points="90.78,-47.96 91.38,-37.38 84.31,-45.27 90.78,-47.96"></polygon>
+<text text-anchor="start" x="84" y="-59.2" font-family="Times,serif" font-size="14.00"> &nbsp;</text>
+<text text-anchor="start" x="91" y="-59.2" font-family="Times,serif" font-style="italic" font-size="14.00">f</text>
+<text text-anchor="start" x="94.89" y="-59.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<text text-anchor="start" x="101.89" y="-59.2" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+</g>
+</svg>
+</p><p>Then elements of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mtext>Hom</mtext><msub><mi mathvariant="sans-serif">C</mi><mi>A</mi></msub></msub><mo stretchy="false">(</mo><msub><mi>f</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>f</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{Hom}_{\mathsf{C}_A}(f_1, f_2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0003em;vertical-align:-0.2503em;"></span><span class="mord"><span class="mord text"><span class="mord">Hom</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathsf mtight">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3567em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">A</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1433em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2503em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> are commutative diagrams like</p>
+<p class="dot"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 9.0.0 (20230911.1827)
+ -->
+<!-- Pages: 1 -->
+<svg width="152pt" height="133pt" viewBox="0.00 0.00 152.00 132.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 128.8)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-128.8 148,-128.8 148,4 -4,4"></polygon>
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<text text-anchor="start" x="65.5" y="-102.4" font-family="Times,serif" font-style="italic" font-size="18.00">A</text>
+</g>
+<!-- Z_1 -->
+<g id="node2" class="node">
+<title>Z_1</title>
+<text text-anchor="start" x="17.49" y="-13.6" font-family="Times,serif" font-style="italic" font-size="18.00">Z</text>
+<text text-anchor="start" x="27.51" y="-13.6" font-family="Times,serif" baseline-shift="sub" font-size="18.00">1</text>
+</g>
+<!-- A&#45;&gt;Z_1 -->
+<g id="edge1" class="edge">
+<title>A-&gt;Z_1</title>
+<path fill="none" stroke="black" d="M62.52,-89.06C56.35,-76.89 47.86,-60.16 40.73,-46.09"></path>
+<polygon fill="black" stroke="black" points="43.94,-44.67 36.29,-37.33 37.69,-47.83 43.94,-44.67"></polygon>
+<text text-anchor="start" x="34.56" y="-67.51" font-family="Times,serif" font-style="italic" font-size="14.00">f</text>
+<text text-anchor="start" x="38.45" y="-67.51" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<text text-anchor="start" x="45.45" y="-67.51" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- Z_2 -->
+<g id="node3" class="node">
+<title>Z_2</title>
+<text text-anchor="start" x="107.49" y="-13.6" font-family="Times,serif" font-style="italic" font-size="18.00">Z</text>
+<text text-anchor="start" x="117.51" y="-13.6" font-family="Times,serif" baseline-shift="sub" font-size="18.00">2</text>
+</g>
+<!-- A&#45;&gt;Z_2 -->
+<g id="edge2" class="edge">
+<title>A-&gt;Z_2</title>
+<path fill="none" stroke="black" d="M79.87,-89.06C86.32,-76.89 95.19,-60.16 102.64,-46.09"></path>
+<polygon fill="black" stroke="black" points="105.7,-47.79 107.29,-37.32 99.52,-44.52 105.7,-47.79"></polygon>
+<text text-anchor="start" x="98" y="-59.2" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="101.5" y="-59.2" font-family="Times,serif" font-style="italic" font-size="14.00">f</text>
+<text text-anchor="start" x="105.39" y="-59.2" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+</g>
+<!-- Z_1&#45;&gt;Z_2 -->
+<g id="edge3" class="edge">
+<title>Z_1-&gt;Z_2</title>
+<path fill="none" stroke="black" d="M53.72,-18C62.1,-18 70.49,-18 78.87,-18"></path>
+<polygon fill="black" stroke="black" points="78.79,-21.5 88.79,-18 78.79,-14.5 78.79,-21.5"></polygon>
+<text text-anchor="start" x="57.8" y="-22.2" font-family="Times,serif" font-size="14.00"> &nbsp;σ</text>
+</g>
+</g>
+</svg>
+</p><p>And if we were to take two morphisms, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi><mo>:</mo><msub><mi>f</mi><mn>1</mn></msub><mo>→</mo><msub><mi>f</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\sigma: f_1 \to f_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi><mo>:</mo><msub><mi>f</mi><mn>2</mn></msub><mo>→</mo><msub><mi>f</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\tau: f_2 \to f_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> pictured below</p>
+<p class="dot"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 9.0.0 (20230911.1827)
+ -->
+<!-- Pages: 1 -->
+<svg width="314pt" height="158pt" viewBox="0.00 0.00 314.00 157.60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 153.6)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-153.6 310,-153.6 310,4 -4,4"></polygon>
+<text text-anchor="middle" x="153" y="-8.2" font-family="Times,serif" font-size="14.00">(1)</text>
+<!-- A -->
+<g id="node1" class="node">
+<title>A</title>
+<text text-anchor="start" x="67.5" y="-127.2" font-family="Times,serif" font-style="italic" font-size="18.00">A</text>
+</g>
+<!-- Z_1 -->
+<g id="node2" class="node">
+<title>Z_1</title>
+<text text-anchor="start" x="17.49" y="-38.4" font-family="Times,serif" font-style="italic" font-size="18.00">Z</text>
+<text text-anchor="start" x="27.51" y="-38.4" font-family="Times,serif" baseline-shift="sub" font-size="18.00">1</text>
+</g>
+<!-- A&#45;&gt;Z_1 -->
+<g id="edge1" class="edge">
+<title>A-&gt;Z_1</title>
+<path fill="none" stroke="black" d="M64.13,-113.86C57.68,-101.69 48.81,-84.96 41.36,-70.89"></path>
+<polygon fill="black" stroke="black" points="44.48,-69.32 36.71,-62.12 38.3,-72.59 44.48,-69.32"></polygon>
+<text text-anchor="start" x="35.56" y="-92.31" font-family="Times,serif" font-style="italic" font-size="14.00">f</text>
+<text text-anchor="start" x="39.45" y="-92.31" font-family="Times,serif" baseline-shift="sub" font-size="14.00">1</text>
+<text text-anchor="start" x="46.45" y="-92.31" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- Z_2 -->
+<g id="node3" class="node">
+<title>Z_2</title>
+<text text-anchor="start" x="107.49" y="-38.4" font-family="Times,serif" font-style="italic" font-size="18.00">Z</text>
+<text text-anchor="start" x="117.51" y="-38.4" font-family="Times,serif" baseline-shift="sub" font-size="18.00">2</text>
+</g>
+<!-- A&#45;&gt;Z_2 -->
+<g id="edge2" class="edge">
+<title>A-&gt;Z_2</title>
+<path fill="none" stroke="black" d="M81.48,-113.86C87.65,-101.69 96.14,-84.96 103.27,-70.89"></path>
+<polygon fill="black" stroke="black" points="106.31,-72.63 107.71,-62.13 100.06,-69.47 106.31,-72.63"></polygon>
+<text text-anchor="start" x="99" y="-84" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="102.5" y="-84" font-family="Times,serif" font-style="italic" font-size="14.00">f</text>
+<text text-anchor="start" x="106.39" y="-84" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+</g>
+<!-- Z_1&#45;&gt;Z_2 -->
+<g id="edge3" class="edge">
+<title>Z_1-&gt;Z_2</title>
+<path fill="none" stroke="black" d="M53.72,-42.8C62.1,-42.8 70.49,-42.8 78.87,-42.8"></path>
+<polygon fill="black" stroke="black" points="78.79,-46.3 88.79,-42.8 78.79,-39.3 78.79,-46.3"></polygon>
+<text text-anchor="start" x="57.8" y="-47" font-family="Times,serif" font-size="14.00"> &nbsp;σ</text>
+</g>
+<!-- _A -->
+<g id="node4" class="node">
+<title>_A</title>
+<text text-anchor="start" x="213.5" y="-127.2" font-family="Times,serif" font-style="italic" font-size="18.00">A</text>
+</g>
+<!-- _Z_2 -->
+<g id="node5" class="node">
+<title>_Z_2</title>
+<text text-anchor="start" x="179.49" y="-38.4" font-family="Times,serif" font-style="italic" font-size="18.00">Z</text>
+<text text-anchor="start" x="189.51" y="-38.4" font-family="Times,serif" baseline-shift="sub" font-size="18.00">2</text>
+</g>
+<!-- _A&#45;&gt;_Z_2 -->
+<g id="edge4" class="edge">
+<title>_A-&gt;_Z_2</title>
+<path fill="none" stroke="black" d="M213.22,-113.86C209.05,-101.81 203.34,-85.29 198.51,-71.31"></path>
+<polygon fill="black" stroke="black" points="201.94,-70.52 195.36,-62.21 195.32,-72.81 201.94,-70.52"></polygon>
+<text text-anchor="start" x="189.55" y="-92.24" font-family="Times,serif" font-style="italic" font-size="14.00">f</text>
+<text text-anchor="start" x="193.44" y="-92.24" font-family="Times,serif" baseline-shift="sub" font-size="14.00">2</text>
+<text text-anchor="start" x="200.44" y="-92.24" font-family="Times,serif" font-size="14.00"> </text>
+</g>
+<!-- _Z_3 -->
+<g id="node6" class="node">
+<title>_Z_3</title>
+<text text-anchor="start" x="269.49" y="-38.4" font-family="Times,serif" font-style="italic" font-size="18.00">Z</text>
+<text text-anchor="start" x="279.51" y="-38.4" font-family="Times,serif" baseline-shift="sub" font-size="18.00">3</text>
+</g>
+<!-- _A&#45;&gt;_Z_3 -->
+<g id="edge5" class="edge">
+<title>_A-&gt;_Z_3</title>
+<path fill="none" stroke="black" d="M230.57,-113.86C239.15,-101.46 251,-84.3 260.84,-70.07"></path>
+<polygon fill="black" stroke="black" points="263.59,-72.24 266.4,-62.03 257.84,-68.26 263.59,-72.24"></polygon>
+<text text-anchor="start" x="254" y="-84" font-family="Times,serif" font-size="14.00"> </text>
+<text text-anchor="start" x="257.5" y="-84" font-family="Times,serif" font-style="italic" font-size="14.00">f</text>
+<text text-anchor="start" x="261.39" y="-84" font-family="Times,serif" baseline-shift="sub" font-size="14.00">3</text>
+</g>
+<!-- _Z_2&#45;&gt;_Z_3 -->
+<g id="edge6" class="edge">
+<title>_Z_2-&gt;_Z_3</title>
+<path fill="none" stroke="black" d="M215.72,-42.8C224.1,-42.8 232.49,-42.8 240.87,-42.8"></path>
+<polygon fill="black" stroke="black" points="240.79,-46.3 250.79,-42.8 240.79,-39.3 240.79,-46.3"></polygon>
+<text text-anchor="start" x="219.8" y="-47" font-family="Times,serif" font-size="14.00"> &nbsp;τ</text>
+</g>
+</g>
+</svg>
+</p><p>we can define their composition by first putting the diagrams side-by-side<br>
 <img src="../../assets/2024-12-13-15-52-34.png" alt=""></p>
 <p>And then removing the middle and composing <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>τ</mi></mrow><annotation encoding="application/x-tex">\tau</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.1132em;">τ</span></span></span></span><br>
 <img src="../../assets/2024-12-13-15-53-02.png" alt=""></p>
