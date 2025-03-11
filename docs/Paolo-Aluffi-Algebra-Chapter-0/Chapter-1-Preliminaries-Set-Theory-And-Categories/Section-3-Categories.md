@@ -126,10 +126,39 @@ digraph {
 ```
 
 we can define their composition by first putting the diagrams side-by-side
-![](../../assets/2024-12-13-15-52-34.png)
+```dot
+digraph {
+  label="(1)"
+  {
+    node [shape=none fontsize=18]
+    A [label=<<i>A</i>>];
+    Z_1 [label=<<i>Z</i><sub>1</sub>>];
+    Z_2 [label=<<i>Z</i><sub>2</sub>>];
+    Z_3 [label=<<i>Z</i><sub>3</sub>>]
+  }
+    A -> Z_1 [xlabel=<<i>f</i><sub>1</sub> >];
+    A -> Z_2 [label=< <i>f</i><sub>2</sub>>];
+    {Z_1 -> Z_2 [xlabel=<  &sigma;>]; rank=same;}
+    A -> Z_3 [label=< <i>f</i><sub>3</sub>>];
+    {Z_2 -> Z_3 [xlabel=<  &tau;>]; rank=same;}
+}
+```
 
 And then removing the middle and composing \(\sigma\) and \(\tau\)
-![](../../assets/2024-12-13-15-53-02.png)
+```dot
+digraph {
+  label="(1)"
+  {
+    node [shape=none fontsize=18]
+    A [label=<<i>A</i>>];
+    Z_1 [label=<<i>Z</i><sub>1</sub>>];
+    Z_3 [label=<<i>Z</i><sub>3</sub>>]
+  }
+    A -> Z_1 [xlabel=<<i>f</i><sub>1</sub> >];
+    A -> Z_3 [label=< <i>f</i><sub>3</sub>>];
+    {Z_1 -> Z_3 [label=<<i>&tau;&sigma;</i>>] rank=same}
+}
+```
 
 The above diagram commutes because 
 $$
