@@ -15,7 +15,7 @@ Intuitively, the 'opposite' category \(\mathsf{C}^{op}\) is simply obtained by '
 
 **Solution**
 First we'll define an identity morphism. Since \(\mathsf{C}\) is a category, for every object \(A\) of \(\mathsf{C}\), there exists an identity morphism \(1_A \in \text{Hom}_\mathsf{C}(A, A)\). By our definition of \(\mathsf{C}^{op}\) we have \(\text{Obj}(\mathsf{C}^{op}) = \text{Obj}(\mathsf{C})\) and \(\text{Hom}_{\mathsf{C}^{op}}(A, A) = \text{Hom}_\mathsf{C}(A, A)\), so we can just use \(1_A\) as is for \(C^{op}\).
-Now for the heart of the matter, defining the composition of morphisms in \(\mathsf{C}^{op}\) and verifying the properties of \(\S 3.1\). Let \(A, B\) be objects of \(\mathsf{C}^{op}\) (which is the same as being an object of \(\mathsf{C}\)), and let \(f \in \text{Hom}_{\mathsf{C}^{op}}(A, B)\) and \(g \in \text{Hom}_{\mathsf{C}^{op}}(B, C)\). By definition we have \(f \in \text{Hom}_{\mathsf{C}}(B, A)\) and \(g \in \text{Hom}_{\mathsf{C}}(C, B)\). This gives us \(fg \in \text{Hom}_{\mathsf{C}}(C, A) = \text{Hom}_{\mathsf{C}^{op}}(A, C)\) by composition. Define \(gf = fg\). This notation is a bit confusing because the LHS is composition in \(\mathsf{C}^{op}\) and the RHS is composition in \(\mathsf{C}\). We proceed by verifying that this composition is associative and respects the identity.
+Now for the heart of the matter, defining the composition of morphisms in \(\mathsf{C}^{op}\) and verifying the properties of \(\S 3.1\). Let \(A, B\) be objects of \(\mathsf{C}^{op}\) (which is the same as being an object of \(\mathsf{C}\)), and let \(f \in \text{Hom}_{\mathsf{C}^{op}}(A, B)\) and \(g \in \text{Hom}_{\mathsf{C}^{op}}(B, C)\). By definition, we have \(f \in \text{Hom}_{\mathsf{C}}(B, A)\) and \(g \in \text{Hom}_{\mathsf{C}}(C, B)\). This gives us \(fg \in \text{Hom}_{\mathsf{C}}(C, A) = \text{Hom}_{\mathsf{C}^{op}}(A, C)\) by composition. Define \(gf = fg\). This notation is a bit confusing because the LHS is composition in \(\mathsf{C}^{op}\) and the RHS is composition in \(\mathsf{C}\). We proceed by verifying that this composition is associative and respects the identity.
 Let \(f \in \text{Hom}_{\mathsf{C}^{op}}(A, B)\), \(g \in \text{Hom}_{\mathsf{C}^{op}}(B, C)\), and \(h \in \text{Hom}_{\mathsf{C}^{op}}(C, D)\). Then \((hg)f = (gh)f\), where now on the RHS we are using composition in \(\mathsf{C}\) in the parentheses. Applying the definition of composition in \(\mathsf{C}^{op}\) again we get \((hg)f = f(gh)\). Now that on the RHS we are entirely in \(\mathsf{C}\) we can use associativity in \(\mathsf{C}\) to get \((hg)f = (fg)h\). Then using the definition of composition in \(\mathsf{C}^{op}\) twice we get \((hg)f = (fg)h = (gf)h = h(gf)\) proving associativity.
 This is a bit unclear, so let me rewrite this denoting composition in \(\mathsf{C}^{op}\) as \(\circ '\) and composition in \(\mathsf{C}\) as \(\circ\). Then
 $$
@@ -56,10 +56,10 @@ It 'feels' like the category of finite dimensional vector spaces, as each object
 **3.7.** \(\triangleright\) Define carefully objects and morphisms in Example 3.7, and draw the diagram corresponding to composition. \(\left[\S 3.2\right]\)
 **Solution**
 Let \(\mathsf{C}\) be a category and \(A \in \text{Obj}(\mathsf{C})\). We define the co-slice category \(\mathsf{C}_A\) as follows:
-* \(\text{Obj}(\mathsf{C}_A) = \{f \in \text{Hom}_{\mathsf{C}}(A, Z): Z \in \text{Obj}(\mathsf{C})\} \). Diagramatically,
+* \(\text{Obj}(\mathsf{C}_A) = \{f \in \text{Hom}_{\mathsf{C}}(A, Z): Z \in \text{Obj}(\mathsf{C})\} \). Diagrammatically,
 ![](../../assets/2024-12-13-14-34-03.png)
 
-* If \(f_1, f_2 \in \text{Obj}(\mathsf{C}_A)\), diagramatically
+* If \(f_1, f_2 \in \text{Obj}(\mathsf{C}_A)\), diagrammatically
 ![](../../assets/2024-12-13-14-35-03.png)
 
 
