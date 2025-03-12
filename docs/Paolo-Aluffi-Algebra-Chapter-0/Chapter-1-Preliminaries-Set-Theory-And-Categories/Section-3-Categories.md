@@ -65,7 +65,7 @@ digraph {
     A [label=<<i>A</i>>]
     Z [label=<<i>Z</i>>]
   }
-  A -> Z [label=<  <i>f</i>>]
+  A -> Z [label=<  <i><b>f</b></i>>]
 }
 ```
 
@@ -78,8 +78,8 @@ digraph {
     Z_1 [label=<<i>Z</i><sub>1</sub>>]
     Z_2 [label=<<i>Z</i><sub>2</sub>>]
   }
-  A -> Z_1 [xlabel=<<I>f</I><SUB>1</SUB>  >]
-  A -> Z_2 [label=<  <I>f</I><SUB>2</SUB> >]
+  A -> Z_1 [xlabel=<<I><b>f</b></I><SUB>1</SUB>  >]
+  A -> Z_2 [label=<  <I><b>f</b></I><SUB>2</SUB> >]
 }
 ```
 
@@ -93,9 +93,9 @@ digraph {
     Z_1 [label=<<i>Z</i><sub>1</sub>>];
     Z_2 [label=<<i>Z</i><sub>2</sub>>];
   }
-  A -> Z_1 [xlabel=<<i>f</i><sub>1</sub> >];
-  A -> Z_2 [label=< <i>f</i><sub>2</sub>>];
-  {Z_1 -> Z_2 [xlabel=<  &sigma;>]; rank=same;}
+  A -> Z_1 [xlabel=<<i><b>f</b></i><sub>1</sub> >];
+  A -> Z_2 [label=< <i><b>f</b></i><sub>2</sub>>];
+  {Z_1 -> Z_2 [xlabel=< <i><b> &sigma;    </b></i>>]; rank=same;}
 }
 ```
 
@@ -113,14 +113,14 @@ digraph {
     _Z_3 [label=<<i>Z</i><sub>3</sub>>]
   }
   subgraph {
-    A -> Z_1 [xlabel=<<i>f</i><sub>1</sub> >];
-    A -> Z_2 [label=< <i>f</i><sub>2</sub>>];
-    {Z_1 -> Z_2 [xlabel=<  &sigma;>]; rank=same;}
+    A -> Z_1 [xlabel=<<i><b>f</b></i><sub>1</sub> >];
+    A -> Z_2 [label=< <i><b>f</b></i><sub>2</sub>>];
+    {Z_1 -> Z_2 [xlabel=<  <i><b>&sigma;     </b></i>>]; rank=same;}
   }
   subgraph {
-    _A -> _Z_2 [xlabel=<<i>f</i><sub>2</sub> >];
-    _A -> _Z_3 [label=< <i>f</i><sub>3</sub>>];
-    {_Z_2 -> _Z_3 [xlabel=<  &tau;>]; rank=same;}
+    _A -> _Z_2 [xlabel=<<i><b>f</b></i><sub>2</sub> >];
+    _A -> _Z_3 [label=< <i><b>f</b></i><sub>3</sub>>];
+    {_Z_2 -> _Z_3 [xlabel=<  <i><b>&tau;    </b></i>>]; rank=same;}
   }
 }
 ```
@@ -128,7 +128,6 @@ digraph {
 we can define their composition by first putting the diagrams side-by-side
 ```dot
 digraph {
-  label="(1)"
   {
     node [shape=none fontsize=18]
     A [label=<<i>A</i>>];
@@ -136,27 +135,26 @@ digraph {
     Z_2 [label=<<i>Z</i><sub>2</sub>>];
     Z_3 [label=<<i>Z</i><sub>3</sub>>]
   }
-    A -> Z_1 [xlabel=<<i>f</i><sub>1</sub> >];
-    A -> Z_2 [label=< <i>f</i><sub>2</sub>>];
-    {Z_1 -> Z_2 [xlabel=<  &sigma;>]; rank=same;}
-    A -> Z_3 [label=< <i>f</i><sub>3</sub>>];
-    {Z_2 -> Z_3 [xlabel=<  &tau;>]; rank=same;}
+    A -> Z_1 [xlabel=<<i><b>f</b></i><sub>1</sub> >];
+    A -> Z_2 [label=< <i><b>f</b></i><sub>2</sub>>];
+    {Z_1 -> Z_2 [xlabel=<  <i><b>&sigma;    </b></i>>]; rank=same;}
+    A -> Z_3 [label=< <i><b>f</b></i><sub>3</sub>>];
+    {Z_2 -> Z_3 [xlabel=<  <i><b>&tau;    </b></i>>]; rank=same;}
 }
 ```
 
 And then removing the middle and composing \(\sigma\) and \(\tau\)
 ```dot
 digraph {
-  label="(1)"
   {
     node [shape=none fontsize=18]
     A [label=<<i>A</i>>];
     Z_1 [label=<<i>Z</i><sub>1</sub>>];
     Z_3 [label=<<i>Z</i><sub>3</sub>>]
   }
-    A -> Z_1 [xlabel=<<i>f</i><sub>1</sub> >];
-    A -> Z_3 [label=< <i>f</i><sub>3</sub>>];
-    {Z_1 -> Z_3 [label=<<i>&tau;&sigma;</i>>] rank=same}
+    A -> Z_1 [xlabel=<<i><b>f</b></i><sub>1</sub> >];
+    A -> Z_3 [label=< <i><b>f</b></i><sub>3</sub>>];
+    {Z_1 -> Z_3 [xlabel=<<i><b>&tau;&sigma;    </b></i>>] rank=same}
 }
 ```
 
@@ -170,17 +168,106 @@ $$
 $$
 due to the commutative diagrams in (1). 
 Composition in \(\mathsf{C}_A\) is associative because (**TODO: FIX THIS ARGUMENT**) the following diagram commutes 
-![](../../assets/2024-12-13-16-28-21.png)
+```dot
+digraph {
+  {
+    node [shape=none fontsize=18]
+    A [label=<<i>A</i>>];
+    Z_1 [label=<<i>Z</i><sub>1</sub>>];
+    Z_2 [label=<<i>Z</i><sub>2</sub>>];
+    Z_3 [label=<<i>Z</i><sub>3</sub>>]
+    Z_4 [label=<<i>Z</i><sub>4</sub>>];
+  }
+  A -> Z_1 [label=<<i><b>f</b></i><sub>1</sub>>]
+  A -> Z_2 [label=<<i><b>f</b></i><sub>2</sub>>]
+  A -> Z_3 [label=< <i><b>f</b></i><sub>3</sub>>]
+  A -> Z_4 [label=< <i><b>f</b></i><sub>4</sub>>]
+  {
+    Z_1 -> Z_2 [xlabel=< <i><b> &sigma;   </b></i>>]
+    Z_2 -> Z_3 [xlabel=< <i><b> &tau;    </b></i>>]
+    Z_3 -> Z_4 [xlabel=< <i><b> &nu;    </b></i>>]
+    rank=same
+  }
+}
+```
 so \((\sigma \tau) \upsilon = \sigma (\tau \upsilon)\). 
 For every \(f: A \to Z\) in \(\mathsf{C}_A\), the identity \(1_f\) is the following commutative diagram
-![](../../assets/2024-12-13-16-15-02.png)
+```dot
+digraph {
+  node [shape=none fontsize=18]
+
+  A [label=<<i>A</i>>]
+  Z [label=<<i>Z</i>>]
+
+  A -> Z [label=<<i>  <b>f</b></i>>]
+  Z -> Z [label=<  <b>1</b><sub><i>Z</i></sub>>]
+}
+```
 which commutes because \(\mathsf{C}\) is a category. 
 Finally, the identity is an identity with respect to our composition. To show this first take the diagram earlier for \(\sigma\), representing an arbitrary morphism in \(\mathsf{C}_A\), and put the identity diagram with it side-by-side
-![](../../assets/2024-12-13-16-48-31.png)
+```dot
+digraph {
+  node [shape=none fontsize=18]
+
+  A [label=<<i>A</i>>]
+  Z_1 [label=<<table border="0">
+  <tr><td port="start"></td><td rowspan="2" colspan="3"><i>Z</i><sub>1</sub></td></tr>
+  <tr><td port="end"></td></tr>
+  </table>>]
+  Z_2 [label=<<i>Z</i><sub>2</sub>>]
+
+  A -> Z_1 [xlabel=<<i><b>f</b></i><sub>1</sub> >]
+  A -> Z_2 [label=< <i><b>f</b></i><sub>2</sub> >]
+  Z_1:start -> Z_1:end [label=<
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr><td rowspan="2">  <font point-size="20"><b>1</b></font></td><td> </td></tr>
+    <tr><td><i>Z</i><sub>1</sub></td></tr>
+  </table>
+  > ]
+  { Z_1 -> Z_2 [xlabel=<<table border="0"><tr><td><b><i><font point-size="18">    &sigma;    </font></i></b></td></tr></table>> ] rank=same  }
+}
+```
 then, as per the definition of composition in \(\mathsf{C}_A\), we remove the middle and compose \(\sigma\) and \(1_{Z_1}\)
-![](../../assets/2024-12-13-16-53-18.png)
+```dot
+digraph {
+  node [shape=none fontsize=18]
+
+  A [label=<<i>A</i>>]
+  Z_1 [label=<<i>Z</i><sub>1</sub>>]
+  Z_2 [label=<<i>Z</i><sub>2</sub>>]
+
+  A -> Z_1 [xlabel=<<i><b>f</b></i><sub>1</sub> >]
+  A -> Z_2 [label=< <i><b>f</b></i><sub>2</sub> >]
+  { Z_1 -> Z_2 [xlabel=<
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td rowspan="2"><b><i><font point-size="18">&sigma;</font></i></b></td>
+      <td rowspan="2"><b> <font point-size="18">1</font></b> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><i>Z</i><sub>1</sub></td>
+    </tr>
+  </table>
+  > ] rank=same  }
+}
+```
 The diagram above is by definition \(\sigma 1_{f_1}\). Because \(\mathsf{C}\) is a category \(\sigma 1_{Z_1} = \sigma\) so \(\sigma 1_{f_1}\) is equal to the below diagram
-![](../../assets/2024-12-13-16-56-12.png)
+```dot
+digraph {
+  node [shape=none fontsize=18]
+
+  A [label=<<i>A</i>>]
+  Z_1 [label=<<i>Z</i><sub>1</sub>>]
+  Z_2 [label=<<i>Z</i><sub>2</sub>>]
+
+  A -> Z_1 [xlabel=<<i><b>f</b></i><sub>1</sub> >]
+  A -> Z_2 [label=< <i><b>f</b></i><sub>2</sub> >]
+  { Z_1 -> Z_2 [xlabel=<
+      <b><i><font point-size="18">&sigma;     </font></i></b>
+  > ] rank=same  }
+}
+```
 which is the original diagram for \(\sigma\), so we can conclude that \(\sigma 1_{f_1} = \sigma\). The argument that \(1_{f_2}\sigma = \sigma\) is similar. \(\square\)
 ****
 **3.8.** \(\triangleright\) A *subcategory* \(\mathsf{C}'\) of a category \(\mathsf{C}\) consists of a collection of objects of \(\mathsf{C}\) with sets of morphisms \(\text{Hom}_{\mathsf{C}'}(A, B) \subseteq \text{Hom}_{\mathsf{C}}(A, B)\) for all objects \(A, B\) in \(\text{Obj}(\mathsf{C}')\), such that identities and compositions in \(\mathsf{C}\) make \(\mathsf{C'}\) into a category. A subcategory \(\mathsf{C'}\) is *full* if \(\text{Hom}_{\mathsf{C'}}(A,B) = \text{Hom}_{\mathsf{C}}(A,B)\) for all \(A, B\) in \(\text{Obj}(\mathsf{C'})\). Construct a category of *infinite sets* and explain how it may be viewed as a full subcategory of \(\mathsf{Set}\). \(\left[4.4, \S \mathrm{VI}.1.1, \S \mathrm{VIII}.1.3\right]\)
