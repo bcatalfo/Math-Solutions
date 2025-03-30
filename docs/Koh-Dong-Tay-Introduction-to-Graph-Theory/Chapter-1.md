@@ -72,3 +72,43 @@ graph {
     y -- z
 }
 ```
+
+---
+
+**Question 1.2.4** Let $G$ be the multigraph shown below.
+
+```dot
+graph {
+    {
+        v1 [label=<<i>v</i><sub>1</sub>>]
+    }
+    {
+        rank = same
+        v2 [label=<<i>v</i><sub>2</sub>>]
+        v5 [label=<<i>v</i><sub>5</sub>>]
+    }
+    {
+        rank = same
+        v3 [label=<<i>v</i><sub>3</sub>>]
+        v4 [label=<<i>v</i><sub>4</sub>>]
+    }
+    v1 -- v2
+    v1 -- v3
+    v1 -- v3
+    v1 -- v3
+    v1 -- v5
+    v2 -- v3
+    v3 -- v5
+    v3 -- v4
+    v4 -- v5
+}
+```
+
+$(i)\>$ Find $A(G)$
+$(ii)\>$ Is $A(G)$ symmetric (i.e., $(i,j)$-entry = $(j,i)$=entry)?
+$(iii)\>$ What is the sum of the values of the entries in each row (respectively, column)?
+$(iv)\>$ What is your interpretation of the 'sum' obtained in $(iii)$?
+
+**Solution**
+
+---
