@@ -111,4 +111,20 @@ $(iv)\>$ What is your interpretation of the 'sum' obtained in $(iii)$?
 
 **Solution**
 
+$(i)$
+
+$$
+A(G) = \begin{pmatrix}
+0 & 1 & 3 & 0 & 1 \\
+1 & 0 & 1 & 0 & 0 \\
+3 & 1 & 0 & 1 & 1 \\
+0 & 0 & 1 & 0 & 1 \\
+1 & 0 & 1 & 1 & 0
+\end{pmatrix}
+$$
+
+$(ii)\>$ Yes, $A(G)$ is symmetric.
+$(iii)\>$ $5, 2, 6, 2, 3$
+$(iv)\>$ The sum of the values of the entries in each row corresponds to the total number of edges that vertex is incident with.
+
 ---
