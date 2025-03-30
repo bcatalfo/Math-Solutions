@@ -45,3 +45,30 @@ e(G) = 7
 $$
 
 ---
+
+**Question 1.2.3.** Let $H$ be the graph with $V(H) = \{a,b,c,x,y,z\}$ and $E(H) = \{ab, ay, bx, by, cx, cz, xz, yz\}$. Find $v(H)$ and $e(H)$, and draw a diagram of $H$.
+
+**Solution**
+$v(H) = 6$
+$e(H) = 8$
+
+```dot
+graph {
+    {
+        a [label=<<i>a</i>>]
+        b [label=<<i>b</i>>]
+        c [label=<<i>c</i>>]
+        x [label=<<i>x</i>>]
+        y [label=<<i>y</i>>]
+        z [label=<<i>z</i>>]
+    }
+    a -- b
+    a -- y
+    b -- x
+    b -- y
+    c -- x
+    c -- z
+    x -- z
+    y -- z
+}
+```
