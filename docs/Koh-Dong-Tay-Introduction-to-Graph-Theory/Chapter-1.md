@@ -167,3 +167,52 @@ graph {
     v3 -- v5
 }
 ```
+
+---
+
+## **Exercise 1.2**
+
+(1) Let $G$ be the multigraph representing the following diagram. Determine $V(G)$, $E(G)$, $v(G)$, and $e(G)$. Is $G$ a simple graph?
+
+```dot
+graph {
+    {
+        rank = same
+        w [label=<<i>w</i>>]
+        m [label=<<i>m</i>>]
+    }
+    {
+        rank = same
+        x [label=<<i>x</i>>]
+        y [label=<<i>y</i>>]
+    }
+    {
+        rank = same
+        n [label=<<i>n</i>>]
+    }
+    {
+        rank = same
+        ordering = "in"
+        u [label=<<i>u</i>>]
+        v [label=<<i>v</i>>]
+        z [label=<<i>z</i>>]
+        edge [style=invis]
+        v -- z
+    }
+    w -- u
+    w -- x
+
+    m -- y
+
+    x -- u
+    x -- v
+    x -- z
+
+    y -- v
+    y -- z
+
+    u -- v
+}
+```
+
+---
