@@ -128,3 +128,18 @@ $(iii)\>$ $5, 2, 6, 2, 3$
 $(iv)\>$ The sum of the values of the entries in each row corresponds to the total number of edges that vertex is incident with.
 
 ---
+
+**Question 1.2.5** The adjacency matrix of a multigraph $G$ is given below:
+
+$$
+A = \begin{pmatrix}
+    0 & 2 & 1 & 0 & 1 \\
+    2 & 0 & 1 & 0 & 0 \\
+    1 & 1 & 0 & 3 & 2 \\
+    0 & 0 & 3 & 0 & 0 \\
+    1 & 0 & 2 & 0 & 0 \\
+\end{pmatrix}
+$$
+
+Draw a diagram of $G$
+**Solution**
