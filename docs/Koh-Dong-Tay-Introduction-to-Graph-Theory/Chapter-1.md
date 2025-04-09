@@ -215,4 +215,11 @@ graph {
 }
 ```
 
+$$
+V(G) = \{w, m, n, x, y, u, v, z\} \\
+E(G) = \{ wu, wx, my, xu, xv, xz, yv, yz, uv \} \\
+v(G) = 8\\
+e(G) = 9
+$$
+
 ---
