@@ -244,4 +244,40 @@ $$
 
 (Note that you may use A to represent Asuncion, B to represent Beijing, C to represent Canberra, etc. )
 
+**Solution**
+
+```dot
+graph {
+    A -- L
+    A -- H
+    B -- C
+
+    B -- K
+    B -- L
+    B -- S
+
+    B -- P
+    D -- K
+    D -- S
+
+    D -- C
+    H -- L
+    L -- W
+
+    K -- L
+    K -- P
+
+    K -- S
+    K -- W
+
+    L -- N
+    P -- S
+    L -- S
+
+    L -- Z
+    S -- W
+    H -- N
+}
+```
+
 ---
