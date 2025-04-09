@@ -285,3 +285,74 @@ graph {
 ```
 
 ---
+
+(3) Define a graph $G$ such that $V(G) = \{ 2, 3, 4, 5, 11, 12, 13, 14 \}$ and two vertices $s$ and $t$ are adjacent if and only if $\text{gcd}\{s, t\} = 1$. Draw a diagram of $G$ and find its size $e(G)$.
+
+**Solution**
+First we draw the graph $G$
+
+```dot
+graph {
+    2 -- 3
+    2 -- 5
+    2 -- 11
+    2 -- 13
+
+    3 -- 4
+    3 -- 5
+    3 -- 11
+    3 -- 13
+    3 -- 14
+
+    4 -- 5
+    4 -- 11
+    4 -- 13
+
+    5 -- 11
+    5 -- 12
+    5 -- 13
+    5 -- 14
+
+    11 -- 12
+    11 -- 13
+    11 -- 14
+
+    12 -- 13
+}
+```
+
+To find $e(G)$ we simply count all the edges.
+
+```dot
+graph {
+    2 -- 3  [label=1]
+    2 -- 5 [label=2]
+    2 -- 11 [label=3]
+    2 -- 13 [label=4]
+
+    3 -- 4 [label=5]
+    3 -- 5 [label=6]
+    3 -- 11 [label=7]
+    3 -- 13 [label=8]
+    3 -- 14 [label=9]
+
+    4 -- 5 [label=10]
+    4 -- 11 [label=11]
+    4 -- 13 [label=12]
+
+    5 -- 11 [label=13]
+    5 -- 12 [label=14]
+    5 -- 13 [label=15]
+    5 -- 14 [label=16]
+
+    11 -- 12 [label=17]
+    11 -- 13 [label=18]
+    11 -- 14 [label=19]
+
+    12 -- 13 [label=20]
+}
+```
+
+We conclude that $e(G) = 20$.
+
+---
