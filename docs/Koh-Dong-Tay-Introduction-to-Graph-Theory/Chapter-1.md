@@ -223,3 +223,25 @@ e(G) = 9
 $$
 
 ---
+
+(2) Draw the graph $G$ modeling the flight connectivity between twelve capital cities with the following vertex set $V(G)$ and edge set $E(G)$.
+
+$$
+\begin{aligned}
+V(G) = &\{ \text{Asuncion}, \text{Beijing}, \text{Canberra},  \text{Dili}, \text{Havana}, \text{Kuala Lumpur}, \\
+&\text{London}, \text{Nairobi}, \text{Phnom Penh}, \text{Singapore}, \text{Wellington}, \text{Zagreb} \}. \\
+E(G) = &\{\text{Asuncion-London}, \text{Asuncion-Havana}, \text{Beijing-Canberra} \\
+    &\text{Beijing-Kuala Lumpur}, \text{Beiijng-London}, \text{Beijing-Singapore} \\
+    &\text{Beijing-Phnom Penh}, \text{Dili-Kuala Lumpur}, \text{Dili-Singapore} \\
+    &\text{Dili-Canberra}, \text{Havana-London}, \text{London-Wellington} \\
+    &\text{Kuala Lumpur-London}, \text{Kuala Lumpur-Phnom Penh} \\
+    &\text{Kuala Lumpur-Singapore}, \text{Kuala Lumpur-Wellington} \\
+    &\text{London-Nairobi}, \text{Phnom Penh-Singapore}, \text{London-Singapore} \\
+    &\text{London-Zagreb}, \text{Singapore-Wellington}, \text{Havana-Nairobi}
+ \}.
+\end{aligned}
+$$
+
+(Note that you may use A to represent Asuncion, B to represent Beijing, C to represent Canberra, etc. )
+
+---
