@@ -174,6 +174,8 @@ graph {
 
 (1) Let $G$ be the multigraph representing the following diagram. Determine $V(G)$, $E(G)$, $v(G)$, and $e(G)$. Is $G$ a simple graph?
 
+**Solution**
+
 ```dot
 graph {
     {
@@ -221,6 +223,8 @@ E(G) = \{ wu, wx, my, xu, xv, xz, yv, yz, uv \} \\
 v(G) = 8\\
 e(G) = 9
 $$
+
+$G$ is a simple graph.
 
 ---
 
