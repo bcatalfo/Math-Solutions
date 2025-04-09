@@ -174,8 +174,6 @@ graph {
 
 (1) Let $G$ be the multigraph representing the following diagram. Determine $V(G)$, $E(G)$, $v(G)$, and $e(G)$. Is $G$ a simple graph?
 
-**Solution**
-
 ```dot
 graph {
     {
@@ -216,6 +214,8 @@ graph {
     u -- v
 }
 ```
+
+**Solution**
 
 $$
 V(G) = \{w, m, n, x, y, u, v, z\} \\
