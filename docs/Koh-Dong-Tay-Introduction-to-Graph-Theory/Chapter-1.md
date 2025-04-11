@@ -356,3 +356,8 @@ graph {
 We conclude that $e(G) = 20$.
 
 ---
+
+(4) The following diagram is a map of the road system in a town. Draw a multigraph to model the road system, using a vertex to represent a junction and an edge to represent a road joining two junctions.
+![Road Map Diagram](image.png)
+
+---
