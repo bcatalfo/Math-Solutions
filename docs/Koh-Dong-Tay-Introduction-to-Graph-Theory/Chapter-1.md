@@ -6,6 +6,7 @@ export_on_save:
 <style>
 .katex-display { overflow: auto hidden }
 p.dot { display: flex; justify-content: center; }
+img {display: block; margin: 0 auto;}
 </style>
 
 **Question 1.2.2** Let $G$ be the multigraph shown below. Find $V(G)$, $E(G)$, $v(G)$, and $e(G)$.
@@ -358,6 +359,81 @@ We conclude that $e(G) = 20$.
 ---
 
 (4) The following diagram is a map of the road system in a town. Draw a multigraph to model the road system, using a vertex to represent a junction and an edge to represent a road joining two junctions.
-![Road Map Diagram](image.png)
+![Road Map Diagram](../assets/image.png)
+
+**Solution**
+Start by labeling all the junctions
+![Labeled Road Map Diagram](../assets/image-1.png)
+Here's the graph
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+        3
+    }
+    {
+        rank = same
+        4
+        5
+        6
+        7
+        8
+        9
+    }
+    {
+        rank = same
+        10
+        11
+    }
+    {
+        rank = same
+        12
+        13
+        14
+        15
+    }
+    1 -- 2
+    1 -- 4
+    1 -- 5
+
+    2 -- 6
+    2 -- 7
+    2 -- 3
+
+    3 -- 7
+    3 -- 8
+    3 -- 9
+
+    4 -- 5
+    4 -- 12
+
+    5 -- 6
+    5 -- 13
+
+    6 -- 10
+
+    7 -- 10
+    7 -- 8
+
+    8 -- 9
+    8 -- 11
+
+    9 -- 11
+    9 -- 14
+
+    10 -- 14
+
+    11 -- 15
+
+    12 -- 13
+
+    13 -- 14
+
+    14 -- 15
+}
+```
 
 ---
