@@ -629,3 +629,7 @@ graph {
 $$
 e(G) = 9
 $$
+
+---
+
+(7) Let $G$ be a graph with $V(G) = \{1, 2, \cdots, 10\}$, such that two numbers $i$ and $j$ in $V(G)$ are adjacent if and only if $i \times j$ is a multiple of $10$. Draw the graph $G$ and determine $e(G)$.
