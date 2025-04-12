@@ -905,3 +905,30 @@ graph {
 (i) Find the degree of each vertex in $G$ of Figure 1.9.
 (ii) Find $N(x)$ for each vertex $x$ in $G$ of Figure 1.9.
 (iii) By definition, is it true that $d(v) = |N(v)|$?
+
+**Solution**
+(i)
+
+$$
+d(a) = 3 \\
+d(b) = 4 \\
+d(c) = 3 \\
+d(u) = 2 \\
+d(v) = 5 \\
+d(w) = 1
+$$
+
+(ii)
+
+$$
+N(a) = \{u, v, b\} \\
+N(b) = \{a, v, c\} \\
+N(c) = \{b, v, w\} \\
+N(u) = \{a, v\} \\
+N(v) = \{a, b, c, u\} \\
+N(w) = \{c\}
+$$
+
+(iii) It is not always true that $d(v) = |N(v)|$. For example $d(v) = 5$ but $|N(v)| = 4$. This happens because of multiple edges- there are two $bv$ edges but because sets don't allow duplications $N(v)$ only contains $b$ once.
+
+---
