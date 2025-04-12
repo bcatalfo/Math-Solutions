@@ -864,3 +864,44 @@ $$
 $$
 
 ---
+
+```dot
+graph {
+    label = "Figure 1.9"
+    node [ordering=out]
+
+    {
+        rank = same
+        a [label=<<i>a</i>>]
+        b [label=<<i>b</i>>]
+    }
+    {
+        rank = same
+        c [label=<<i>c</i>>]
+        w [label=<<i>w</i>>]
+    }
+    {
+        rank = same
+        u [label=<<i>u</i>>]
+        v [label=<<i>v</i>>]
+    }
+
+    a -- u
+    a -- v
+    a -- b
+
+    b -- v
+    b -- v
+    b -- c
+
+    c -- v
+    c -- w
+
+    u -- v
+}
+```
+
+**Question 1.3.1**
+(i) Find the degree of each vertex in $G$ of Figure 1.9.
+(ii) Find $N(x)$ for each vertex $x$ in $G$ of Figure 1.9.
+(iii) By definition, is it true that $d(v) = |N(v)|$?
