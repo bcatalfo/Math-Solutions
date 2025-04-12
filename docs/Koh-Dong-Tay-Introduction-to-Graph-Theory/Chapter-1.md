@@ -757,3 +757,33 @@ $$
 $$
 
 Draw a diagram of $G$
+
+**Solution**
+
+```dot
+graph {
+    v1 [label=<<i>v</i><sub>1</sub>>]
+    v2 [label=<<i>v</i><sub>2</sub>>]
+    v3 [label=<<i>v</i><sub>3</sub>>]
+    v4 [label=<<i>v</i><sub>4</sub>>]
+    v5 [label=<<i>v</i><sub>5</sub>>]
+
+    v1 -- v2
+    v1 -- v4
+    v1 -- v4
+    v1 -- v5
+    v1 -- v5
+    v1 -- v5
+
+    v2 -- v3
+    v2 -- v4
+    v2 -- v4
+    v2 -- v5
+    v2 -- v5
+
+    v3 -- v4
+    v3 -- v5
+
+    v4 -- v5
+}
+```
