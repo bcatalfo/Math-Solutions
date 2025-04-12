@@ -633,3 +633,67 @@ $$
 ---
 
 (7) Let $G$ be a graph with $V(G) = \{1, 2, \cdots, 10\}$, such that two numbers $i$ and $j$ in $V(G)$ are adjacent if and only if $i \times j$ is a multiple of $10$. Draw the graph $G$ and determine $e(G)$.
+
+**Solution**
+
+First we draw the graph $G$
+
+```dot
+graph {
+    1 -- 10
+
+    2 -- 5
+    2 -- 10
+
+    3 -- 10
+
+    4 -- 5
+    4 -- 10
+
+    5 -- 6
+    5 -- 8
+    5 -- 10
+
+    6 -- 10
+
+    7 -- 10
+
+    8 -- 10
+
+    9 -- 10
+}
+```
+
+Next count the edges
+
+```dot
+graph {
+    1 -- 10 [label=1]
+
+    2 -- 5 [label=2]
+    2 -- 10 [label=3]
+
+    3 -- 10 [label=4]
+
+    4 -- 5 [label=5]
+    4 -- 10 [label=6]
+
+    5 -- 6 [label=7]
+    5 -- 8 [label=8]
+    5 -- 10 [label=9]
+
+    6 -- 10 [label=10]
+
+    7 -- 10 [label=11]
+
+    8 -- 10 [label=12]
+
+    9 -- 10 [label=13]
+}
+```
+
+$$
+e(G) = 13
+$$
+
+---
