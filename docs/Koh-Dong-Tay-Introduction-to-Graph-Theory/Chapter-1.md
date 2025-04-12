@@ -588,6 +588,44 @@ First we draw $G$
 
 ```dot
 graph {
+    1 -- 3
+    1 -- 7
 
+    2 -- 6
+    2 -- 10
+
+    3 -- 5
+    3 -- 9
+
+    4 -- 8
+
+    5 -- 7
+
+    6 -- 10
 }
 ```
+
+Next label the edges
+
+```dot
+graph {
+    1 -- 3 [label=1]
+    1 -- 7 [label=2]
+
+    2 -- 6 [label=3]
+    2 -- 10 [label=4]
+
+    3 -- 5 [label=5]
+    3 -- 9 [label=6]
+
+    4 -- 8 [label=7]
+
+    5 -- 7 [label=8]
+
+    6 -- 10 [label=9]
+}
+```
+
+$$
+e(G) = 9
+$$
