@@ -979,11 +979,11 @@ So clearly $e(G) = 9$. Next we find the sum of the degrees of the six vertices.
 
 $$
 \begin{aligned}
-\sum_{v \in G} d(v) &= d(a) + d(b) + d(c) + d(u) + d(v) + d(w)  \\
+\sum_{v \in V(G)} d(v) &= d(a) + d(b) + d(c) + d(u) + d(v) + d(w)  \\
 &= 3 + 4 + 3 + 2 + 5 + 1 = 18
 \end{aligned}
 $$
 
-Here we have $\sum_{v \in G} d(v) = 2 e(G)$ and by the Handshaking Lemma this holds in general.
+Here we have $\sum_{v \in V(G)} d(v) = 2 e(G)$ and by the Handshaking Lemma this holds in general.
 
 ---
