@@ -987,3 +987,48 @@ $$
 Here we have $\sum_{v \in V(G)} d(v) = 2 e(G)$ and by the Handshaking Lemma this holds in general.
 
 ---
+
+```dot
+graph {
+    label = "Figure 1.10"
+    node [ordering=out]
+    {
+        j
+        p
+    }
+    {
+        rank = same
+        a
+        z
+    }
+    {
+        rank = same
+        b
+        y
+    }
+    a -- x
+
+    b -- x
+    b -- c
+
+    c -- x
+    c -- y
+
+    w -- x
+    w -- x
+    w -- y
+    w -- z
+
+    x -- y
+    x -- z
+
+    y -- z
+}
+```
+
+**Question 1.3.3** &nbsp; &nbsp; (1) How many odd vertices are there in each of the multigraphs in the previous examples?
+(2) Can you construct a multigraph containing
+&nbsp; &nbsp; (i) exactly one odd vertex?
+&nbsp; &nbsp; (ii) exactly three odd vertices?
+
+---
