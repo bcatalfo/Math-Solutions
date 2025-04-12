@@ -796,7 +796,7 @@ graph {
 | ------- | -------------- | --------------------- |
 | 1       | Scout          | 5, 7, 10              |
 | 2       | Scout          | -                     |
-| 3       | Scout          | 5,6,8,9,11            |
+| 3       | Scout          | 5, 6, 8, 9, 11        |
 | 4       | Scout          | 8, 12                 |
 | 5       | Signaler       | 1, 3, 9               |
 | 6       | Signaler       | 3, 10, 11             |
@@ -804,9 +804,63 @@ graph {
 | 8       | Signaler       | 3, 4, 9, 10           |
 | 9       | Sniper         | 3, 5, 7, 8            |
 | 10      | Sniper         | 1, 6, 8               |
-| 11      | Sniper         | 3,6                   |
+| 11      | Sniper         | 3, 6                  |
 | 12      | Sniper         | 4, 7                  |
 
 (i) Draw a multigraph to model the situation so that we may see how to form 3-man teams such that each specialization is represented and every member of the team can work with every other. State clearly what the vertices represent and under what condition(s) two vertices are joined by an edge.
 
 (ii) Can you form four 3-man teams such that each specialization if represented and all members of the teams can work with one another?
+
+**Solution**
+(i) Let each vertex represent a solider, and join two vertices by an edge if they can work together. This means that they must be of different specializations and not be on the "cannot cooperate with" section.
+
+```dot
+graph {
+    1 -- 6
+    1 -- 8
+    1 -- 9
+    1 -- 11
+    1 -- 12
+
+    2 -- 5
+    2 -- 6
+    2 -- 7
+    2 -- 8
+    2 -- 9
+    2 -- 10
+    2 -- 11
+    2 -- 12
+
+    3 -- 7
+    3 -- 10
+    3 -- 12
+
+    4 -- 5
+    4 -- 6
+    4 -- 7
+    4 -- 9
+    4 -- 10
+    4 -- 11
+
+    5 -- 10
+    5 -- 11
+    5 -- 12
+
+    6 -- 9
+    6 -- 12
+
+    7 -- 10
+    7 -- 11
+
+    8 -- 11
+    8 -- 12
+}
+```
+
+(ii) From the diagram we can clearly see four 3-man teams that work:
+
+$$
+\{1, 6, 9\}, \{2, 8, 12\}, \{4, 5, 11\}, \{3, 7, 10\}
+$$
+
+---
