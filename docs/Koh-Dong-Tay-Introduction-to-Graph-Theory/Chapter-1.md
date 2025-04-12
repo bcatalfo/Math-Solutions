@@ -697,3 +697,34 @@ e(G) = 13
 $$
 
 ---
+
+(8) Find the adjacency matrix of the following graph $G$.
+
+```dot
+graph {
+    node [ordering=out]
+    {
+        v1 [label=<<i>v</i><sub>1</sub>>]
+    }
+    {
+        rank = same
+        v2 [label=<<i>v</i><sub>2</sub>>]
+        v5 [label=<<i>v</i><sub>5</sub>>]
+    }
+    {
+        rank = same
+        v3 [label=<<i>v</i><sub>3</sub>>]
+        v4 [label=<<i>v</i><sub>4</sub>>]
+    }
+    v1 -- v2
+    v1 -- v3
+    v1 -- v4
+    v1 -- v5
+
+    v2 -- v3
+
+    v3 -- v4
+
+    v4 -- v5
+}
+```
