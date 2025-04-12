@@ -579,3 +579,5 @@ e(G) = 24
 $$
 
 ---
+
+(5) Let $G$ be a graph with $V(G) = \{1, 2, \cdots, 10\}$, such that two numbers $i$ and $j$ in $V(G)$ are adjacent if and only if $|i-j| \leq 3$. Draw the graph $G$ and determine $e(G)$.
