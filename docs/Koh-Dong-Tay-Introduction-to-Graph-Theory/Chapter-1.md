@@ -444,5 +444,138 @@ graph {
 (5) Let $G$ be a graph with $V(G) = \{1, 2, \cdots, 10\}$, such that two numbers $i$ and $j$ in $V(G)$ are adjacent if and only if $|i - j| \leq 3$. Draw the graph $G$ and determine $e(G)$.
 
 **Solution**
+First draw the graph $G$. Note that the author uses the term "graph" to refer to a simple graph.
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+    }
+    {
+        rank = same
+        3
+        4
+    }
+    {
+        rank = same
+        5
+        6
+    }
+    {
+        rank = same
+        7
+        8
+    }
+    {
+        rank = same
+        9
+        10
+    }
+    1 -- 2
+    1 -- 3
+    1 -- 4
+
+    2 -- 3
+    2 -- 4
+    2 -- 5
+
+    3 -- 4
+    3 -- 5
+    3 -- 6
+
+    4 -- 5
+    4 -- 6
+    4 -- 7
+
+    5 -- 6
+    5 -- 7
+    5 -- 8
+
+    6 -- 7
+    6 -- 8
+    6 -- 9
+
+    7 -- 8
+    7 -- 9
+    7 -- 10
+
+    8 -- 9
+    8 -- 10
+
+    9 -- 10
+
+}
+```
+
+Next label all the edges
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+    }
+    {
+        rank = same
+        3
+        4
+    }
+    {
+        rank = same
+        5
+        6
+    }
+    {
+        rank = same
+        7
+        8
+    }
+    {
+        rank = same
+        9
+        10
+    }
+    1 -- 2 [label=1]
+    1 -- 3 [label=2]
+    1 -- 4 [label=3]
+
+    2 -- 3 [xlabel=4]
+    2 -- 4 [label=5]
+    2 -- 5 [label=6]
+
+    3 -- 4 [label=7]
+    3 -- 5 [label=8]
+    3 -- 6 [label=9]
+
+    4 -- 5 [label=10]
+    4 -- 6 [label=11]
+    4 -- 7 [label=12]
+
+    5 -- 6 [label=13]
+    5 -- 7 [label=14]
+    5 -- 8 [label=15]
+
+    6 -- 7 [label=16]
+    6 -- 8 [label=17]
+    6 -- 9 [label=18]
+
+    7 -- 8 [label=19]
+    7 -- 9 [label=20]
+    7 -- 10 [label=21]
+
+    8 -- 9 [label=22]
+    8 -- 10 [label=23]
+
+    9 -- 10 [label=24]
+
+}
+```
+
+$$
+e(G) = 24
+$$
 
 ---
