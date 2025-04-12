@@ -935,3 +935,55 @@ $$
 
 **Question 1.3.2** &nbsp; Consider the multigraph $G$ of Figure 1.9. Find $e(G)$ and the sum of the degrees of the six vertices. Is the sum twice of $e(G)$?
 &nbsp; &nbsp; In general, is the sum of the degrees of the vertices in a multigraph always double its size?
+
+**Solution**
+To find $e(G)$ simply label the edges
+
+```dot
+graph {
+    label = "Figure 1.9"
+    node [ordering=out]
+
+    {
+        rank = same
+        a [label=<<i>a</i>>]
+        b [label=<<i>b</i>>]
+    }
+    {
+        rank = same
+        c [label=<<i>c</i>>]
+        w [label=<<i>w</i>>]
+    }
+    {
+        rank = same
+        u [label=<<i>u</i>>]
+        v [label=<<i>v</i>>]
+    }
+
+    a -- u [label=1]
+    a -- v [label=2]
+    a -- b [label=3]
+
+    b -- v [label=4]
+    b -- v [label=5]
+    b -- c [label=6]
+
+    c -- v [label=7]
+    c -- w [label=8]
+
+    u -- v [label=9]
+}
+```
+
+So clearly $e(G) = 9$. Next we find the sum of the degrees of the six vertices.
+
+$$
+\begin{aligned}
+\sum_{v \in G} d(v) &= d(a) + d(b) + d(c) + d(u) + d(v) + d(w)  \\
+&= 3 + 4 + 3 + 2 + 5 + 1 = 18
+\end{aligned}
+$$
+
+Here we have $\sum_{v \in G} d(v) = 2 e(G)$ and by the Handshaking Lemma this holds in general.
+
+---
