@@ -743,3 +743,17 @@ A(G) =
 $$
 
 ---
+
+(9) The adjacency matrix of a multigraph $G$ is shown below:
+
+$$
+\begin{pmatrix}
+    0 & 1 & 0 & 2 & 3 \\
+    1 & 0 & 1 & 2 & 2 \\
+    0 & 1 & 0 & 1 & 1 \\
+    2 & 2 & 1 & 0 & 1 \\
+    3 & 2 & 1 & 1 & 0
+\end{pmatrix}
+$$
+
+Draw a diagram of $G$
