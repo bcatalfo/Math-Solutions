@@ -1173,3 +1173,57 @@ Among the (simple) graphs $G$ of a fixed order $n$, at one extreme, the null gra
 The largest possible size that $G$ can have is $n + (n-1) + \cdot + 0 = \frac{n(n-1)}{2}$, which happens when each vertex is adjacent to every other vertex.
 
 ---
+
+## Exercise 1.3
+
+$(1) \>$ In the following multigraph $G$, find
+$\quad (i) \>$ the size of $G$,
+$\quad (ii) \>$ the degree of each vertex,
+$\quad (iii) \>$ the sum $\sum \{ d(v) | v \in V(G) \}$,
+$\quad (iv) \>$ the number of odd vertices,
+$\quad (v) \>$ $\Delta(G)$, and
+$\quad (vi)>$ $\delta(G)$.
+
+```dot
+graph {
+    node [ordering=out]
+    {
+        rank = same
+        a [label=<<i>a</i>>]
+        e [label=<<i>e</i>>]
+        g [label=<<i>g</i>>]
+    }
+    {
+        rank = same
+        b [label=<<i>b</i>>]
+        w [label=<<i>w</i>>]
+        y [label=<<i>y</i>>]
+        b -- w -- y [style=invis]
+    }
+    {
+        rank = same
+        c [label=<<i>c</i>>]
+        x [label=<<i>x</i>>]
+        z [label=<<i>z</i>>]
+    }
+    a -- b
+    a -- c
+    a -- c
+    a -- x
+    a -- e
+
+    b -- e
+    b -- c
+
+    c -- e
+    c -- y
+
+    e -- y
+    e -- z
+    e -- g
+
+    g -- y
+}
+```
+
+Is your answer for $(iii)$ double your answer for $(i)$? Is your answer for $(iv)$ an even number?
