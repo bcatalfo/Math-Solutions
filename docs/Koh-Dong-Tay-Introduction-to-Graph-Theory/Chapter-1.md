@@ -1227,3 +1227,81 @@ graph {
 ```
 
 Is your answer for $(iii)$ double your answer for $(i)$? Is your answer for $(iv)$ an even number?
+
+**Solution**
+
+$(i) \>$ To find the size of $G$ we count all the edges
+
+```dot
+graph {
+    node [ordering=out]
+    {
+        rank = same
+        a [label=<<i>a</i>>]
+        e [label=<<i>e</i>>]
+        g [label=<<i>g</i>>]
+    }
+    {
+        rank = same
+        b [label=<<i>b</i>>]
+        w [label=<<i>w</i>>]
+        y [label=<<i>y</i>>]
+        b -- w -- y [style=invis]
+    }
+    {
+        rank = same
+        c [label=<<i>c</i>>]
+        x [label=<<i>x</i>>]
+        z [label=<<i>z</i>>]
+    }
+    a -- b [label=1]
+    a -- c [label=2]
+    a -- c [label=3]
+    a -- x [label=4]
+    a -- e [label=5]
+
+    b -- e [label=6]
+    b -- c [label=7]
+
+    c -- e [label=8]
+    c -- y [label=9]
+
+    e -- y [label=10]
+    e -- z [label=11]
+    e -- g [label=12]
+
+    g -- y [label=13]
+}
+```
+
+Clearly $e(G) = 13$.
+
+$(ii) \>$ Let's make a table to see the degree of each vertex
+
+| Vertex | Degree |
+| ------ | ------ |
+| $a$    | 5      |
+| $b$    | 3      |
+| $c$    | 5      |
+| $e$    | 6      |
+| $g$    | 2      |
+| $w$    | 0      |
+| $x$    | 1      |
+| $y$    | 3      |
+| $z$    | 1      |
+
+$(iii) \>$ Simply add the degree column to get the sum of the degrees
+
+$$
+5 + 3 + 5 + 6 + 2 + 0 + 1 + 3 + 1 = 26
+$$
+
+$(iv) \>$ The odd vertices are $a$, $b$, $c$, $x$, $y$, $z$, so there are $6$ odd vertices.
+
+$(v) \>$ The highest degree vertex is $e$ with a degree of $6$ so $\Delta(G) = 6$.
+
+$(vi) \>$ The lowest degree vertex is $w$ with a degree of $0$ so $\delta(G) = 0$.
+
+The answer to $(iii)$ is double the answer of $(i)$ and the answer for $(iv)$ is an even number.
+
+---
