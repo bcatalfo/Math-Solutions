@@ -1307,3 +1307,31 @@ The answer to $(iii)$ is double the answer of $(i)$ and the answer for $(iv)$ is
 ---
 
 $(2) \>$ Construct a multigraph of order $6$ and size $7$ in which every vertex is odd.
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+        3
+        1 -- 2 -- 3 [style=invis]
+    }
+    {
+        rank = same
+        4
+        5
+        6
+        4 -- 5 -- 6 [style=invis]
+    }
+    1 -- 4
+    1 -- 4
+    1 -- 4
+
+    2 -- 5
+    2 -- 5
+    2 -- 5
+
+    3 -- 6
+}
+```
