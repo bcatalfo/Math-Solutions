@@ -1536,3 +1536,112 @@ $$
 ---
 
 $(6) \>$ Let $G$ be a graph of order $14$ and size $30$ in which every vertex is of degree $4$ or $5$. How many vertices of degree $5$ does $G$ have? Construct one such graph $G$.
+
+**Solution**
+Let $A$ be the set of vertices that are degree $5$. By the Handshaking Lemma,
+
+$$
+\begin{aligned}
+2 \times 30 &= \sum_{v \in A} d(v) + \sum_{v \notin A} d(v) = 5 \times |A| + 4 \times (14 - |A|) \\
+&= 56 + |A|
+\end{aligned} \\
+|A| = 4. \quad \square
+$$
+
+Here is one such graph
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+        3
+        4
+        1 -- 2 -- 3 -- 4 [style=invis]
+    }
+    {
+        rank = same
+        5
+        6
+        7
+        8
+        9
+        5 -- 6 -- 7 -- 8 -- 9 [style=invis]
+    }
+    {
+        rank = same
+        10
+        11
+        12
+        10 -- 11 -- 12  [style=invis]
+    }
+    {
+        rank = same
+        13
+        14
+        13 -- 14 [style=invis]
+    }
+    1 -- 5
+    1 -- 6
+    1 -- 7
+    1 -- 8
+    1 -- 9
+
+    2 -- 5
+    2 -- 6
+    2 -- 7
+    2 -- 8
+    2 -- 9
+
+    3 -- 5
+    3 -- 6
+    3 -- 7
+    3 -- 8
+    3 -- 9
+
+    4 -- 5
+    4 -- 6
+    4 -- 7
+    4 -- 8
+    4 -- 9
+
+    10 -- 11
+    10 -- 12
+    10 -- 13
+    10 -- 14
+
+    11 -- 12
+    11 -- 13
+    11 -- 14
+
+    12 -- 13
+    12 -- 14
+
+    13 -- 14
+
+}
+```
+
+Let's check the degrees of each vertex
+
+| Vertex | Degree |
+| ------ | ------ |
+| $1$    | 5      |
+| $2$    | 5      |
+| $3$    | 5      |
+| $4$    | 5      |
+| $5$    | 4      |
+| $6$    | 4      |
+| $7$    | 4      |
+| $8$    | 4      |
+| $9$    | 4      |
+| $10$   | 4      |
+| $11$   | 4      |
+| $12$   | 4      |
+| $13$   | 4      |
+| $14$   | 4      |
+
+Clearly exactly four vertices are degree $5$ and the rest are degree $4$, and the sum of their degree is $60$, so we know that the size of $G$ is $30$.
+
+---
