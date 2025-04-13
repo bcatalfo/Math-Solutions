@@ -1477,4 +1477,30 @@ This must be double the number of edges, so we conclude that $e(G) = 15$.
 
 Finally, since $r_1$, $r_4$, and $r_6$ sum up to 5, vertices $1$, $4$, and $6$ have degree five, so our $G$ has $3$ vertices of degree five.
 
-Now, why must all graphs $G$ have $3$ vertices of degree five? Well we know that
+Now, why must all graphs $G$ have $3$ vertices of degree five? Well know that $G$ is of order $8$ and size $15$ so by the Handshaking Lemma
+
+$$
+\sum_{i=1}^8 d(v_i) = 2 \times 15 = 30
+$$
+
+We also know that each vertex is degree $3$ or $5$. Let $A$ be the set of vertices of degree $3$ and $B$ be the set of vertices with degree $5$. Then
+
+$$
+30 = \sum_{v \in A} d(v) + \sum_{v \in B} d(v) = 3 |A| + 5 |B|
+$$
+
+Of course since we are order $8$ and every vertex is in $A$ or $B$ but not both so $V(G) = A \sqcup B $, that is the union is disjoint so
+
+$$
+|A| + |B| = 8
+$$
+
+Plugging in,
+
+$$
+30 = 3|A| + 5 (8 - |A|) = 40 - 2 |A| \\
+|A| = 5 \\
+|B| = 8 - |A| = 3. \quad \square
+$$
+
+---
