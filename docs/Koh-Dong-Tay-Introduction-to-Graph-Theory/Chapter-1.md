@@ -1506,3 +1506,31 @@ $$
 ---
 
 $(5) \>$ Let $H$ be a graph of order $10$ such that $3 \leq d(v) \leq 5$ for each vertex $v$ in $H$. Not every vertex is even. No two odd vertices are of the same degree. What is the size of $H$?
+
+**Solution**
+By the Handshaking Lemma we have
+
+$$
+\sum_{v \in V(H)} d(v) = 2 e(H)
+$$
+
+It would be impossible to have one vertex be degree $3$ and the rest be even because then we would have
+
+$$
+2e(H) = 3 + 9 \times 4 = 39
+$$
+
+Similarly, it would be impossible to have one vertex be degree $5$ and the rest be even because then we would have
+
+$$
+2e(H) = 5 + 9 \times 4 = 41
+$$
+
+We conclude that we must have on degree $3$ vertex, one degree $5$ vertex, and that the rest are even. So we calculate that
+
+$$
+2 e(H) = 3 + 5 + 8 \times 4 = 40 \\
+e(H) = 20. \quad \square
+$$
+
+---
