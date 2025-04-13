@@ -1031,4 +1031,75 @@ graph {
 &nbsp; &nbsp; (i) exactly one odd vertex?
 &nbsp; &nbsp; (ii) exactly three odd vertices?
 
+**Solution**
+
+(1) First let's take a look at Figure 1.10 and plot the vertices and their respective degrees:
+
+| Vertex | Degree |
+| ------ | ------ |
+| $a$    | 1      |
+| $b$    | 2      |
+| $c$    | 3      |
+| $j$    | 0      |
+| $p$    | 0      |
+| $w$    | 4      |
+| $x$    | 7      |
+| $y$    | 4      |
+| $z$    | 3      |
+
+We can see from this table that four vertices, $a$, $c$, $x$, and $z$, have odd degree.
+
+Next let's take a look at Figure 1.9, pictured again here
+
+```dot
+graph {
+    label = "Figure 1.9"
+    node [ordering=out]
+
+    {
+        rank = same
+        a [label=<<i>a</i>>]
+        b [label=<<i>b</i>>]
+    }
+    {
+        rank = same
+        c [label=<<i>c</i>>]
+        w [label=<<i>w</i>>]
+    }
+    {
+        rank = same
+        u [label=<<i>u</i>>]
+        v [label=<<i>v</i>>]
+    }
+
+    a -- u
+    a -- v
+    a -- b
+
+    b -- v
+    b -- v
+    b -- c
+
+    c -- v
+    c -- w
+
+    u -- v
+}
+```
+
+Let's make a table of the vertices and their degrees
+
+| Vertex | Degree |
+| ------ | ------ |
+| $a$    | 3      |
+| $b$    | 4      |
+| $c$    | 3      |
+| $u$    | 2      |
+| $v$    | 5      |
+| $w$    | 1      |
+
+We can see from this table that four vertices, $a$, $c$, $v$, and $w$, have odd degree.
+
+(2) No for both (i) and (ii) because one and three are odd numbers, and you must have an even number of vertices with odd degree.
+
 ---
