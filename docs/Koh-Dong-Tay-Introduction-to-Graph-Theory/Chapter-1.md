@@ -1504,3 +1504,5 @@ $$
 $$
 
 ---
+
+$(5) \>$ Let $H$ be a graph of order $10$ such that $3 \leq d(v) \leq 5$ for each vertex $v$ in $H$. Not every vertex is even. No two odd vertices are of the same degree. What is the size of $H$?
