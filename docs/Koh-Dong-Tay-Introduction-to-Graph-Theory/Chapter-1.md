@@ -1308,6 +1308,8 @@ The answer to $(iii)$ is double the answer of $(i)$ and the answer for $(iv)$ is
 
 $(2) \>$ Construct a multigraph of order $6$ and size $7$ in which every vertex is odd.
 
+**Solution**
+
 ```dot
 graph {
     {
