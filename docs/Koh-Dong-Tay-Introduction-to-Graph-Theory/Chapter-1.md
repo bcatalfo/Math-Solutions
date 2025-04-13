@@ -1534,3 +1534,5 @@ e(H) = 20. \quad \square
 $$
 
 ---
+
+$(6) \>$ Let $G$ be a graph of order $14$ and size $30$ in which every vertex is of degree $4$ or $5$. How many vertices of degree $5$ does $G$ have? Construct one such graph $G$.
