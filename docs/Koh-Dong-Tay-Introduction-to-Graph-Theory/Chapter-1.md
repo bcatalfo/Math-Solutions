@@ -1182,7 +1182,7 @@ $\quad (ii) \>$ the degree of each vertex,
 $\quad (iii) \>$ the sum $\sum \{ d(v) | v \in V(G) \}$,
 $\quad (iv) \>$ the number of odd vertices,
 $\quad (v) \>$ $\Delta(G)$, and
-$\quad (vi)>$ $\delta(G)$.
+$\quad (vi) \>$ $\delta(G)$.
 
 ```dot
 graph {
