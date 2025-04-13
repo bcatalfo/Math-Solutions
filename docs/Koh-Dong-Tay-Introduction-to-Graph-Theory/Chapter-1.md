@@ -1103,3 +1103,5 @@ We can see from this table that four vertices, $a$, $c$, $v$, and $w$, have odd 
 (2) No for both (i) and (ii) because one and three are odd numbers, and you must have an even number of vertices with odd degree.
 
 ---
+
+**Question 1.3.4.** &nbsp; &nbsp; Construct a $5$-regular graph of order $10$. What is its size?
