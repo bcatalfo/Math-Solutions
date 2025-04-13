@@ -1170,6 +1170,6 @@ Among the (simple) graphs $G$ of a fixed order $n$, at one extreme, the null gra
 
 **Solution**
 
-The largest possible size that $G$ can have is $n^2$, which happens when each vertex is adjacent to every other vertex.
+The largest possible size that $G$ can have is $n + (n-1) + \cdot + 0 = \frac{n(n-1)}{2}$, which happens when each vertex is adjacent to every other vertex.
 
 ---
