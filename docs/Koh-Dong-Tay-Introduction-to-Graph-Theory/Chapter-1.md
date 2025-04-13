@@ -1335,3 +1335,7 @@ graph {
     3 -- 6
 }
 ```
+
+---
+
+$(3) \>$ Let $G$ be a multigraph with $V(G) = \{v_1, v_2, \cdots, v_n\}$. Prove that the sum of all the entries in the $i$th row of the adjacency matrix $A(G)$ is the degree of the vertex $v_i$ for each $i = 1, 2, \cdots, n$.
