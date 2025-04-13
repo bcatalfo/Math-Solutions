@@ -1105,3 +1105,61 @@ We can see from this table that four vertices, $a$, $c$, $v$, and $w$, have odd 
 ---
 
 **Question 1.3.4.** &nbsp; &nbsp; Construct a $5$-regular graph of order $10$. What is its size?
+
+**Solution**
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+        3
+        4
+        5
+        1 -- 2 -- 3 -- 4 -- 5 [style=invis]
+    }
+    {
+        rank = same
+        6
+        7
+        8
+        9
+        10
+        6 -- 7 -- 8 -- 9 -- 10 [style=invis]
+    }
+    1 -- 6
+    1 -- 7
+    1 -- 8
+    1 -- 9
+    1 -- 10
+
+    2 -- 6
+    2 -- 7
+    2 -- 8
+    2 -- 9
+    2 -- 10
+
+    3 -- 6
+    3 -- 7
+    3 -- 8
+    3 -- 9
+    3 -- 10
+
+    4 -- 6
+    4 -- 7
+    4 -- 8
+    4 -- 9
+    4 -- 10
+
+    5 -- 6
+    5 -- 7
+    5 -- 8
+    5 -- 9
+    5 -- 10
+}
+```
+
+Of course its size is $50$ because it has $10$ nodes each of which is incident with $5$ edges.
+
+---
