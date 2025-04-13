@@ -1347,3 +1347,5 @@ $$
 $$
 
 ---
+
+$(4) \>$ Let $G$ be a graph of order $8$ and size $15$ in which each vertex is of degree $3$ or $5$. How many vertices of degree $5$ does $G$ have? Construct one such graph $G$.
