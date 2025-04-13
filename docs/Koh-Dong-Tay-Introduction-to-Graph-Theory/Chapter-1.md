@@ -1305,3 +1305,5 @@ $(vi) \>$ The lowest degree vertex is $w$ with a degree of $0$ so $\delta(G) = 0
 The answer to $(iii)$ is double the answer of $(i)$ and the answer for $(iv)$ is an even number.
 
 ---
+
+$(2) \>$ Construct a multigraph of order $6$ and size $7$ in which every vertex is odd.
