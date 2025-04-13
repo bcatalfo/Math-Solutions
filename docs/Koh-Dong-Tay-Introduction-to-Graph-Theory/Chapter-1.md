@@ -1163,3 +1163,7 @@ graph {
 Of course its size is $50$ because it has $10$ nodes each of which is incident with $5$ edges.
 
 ---
+
+Among the (simple) graphs $G$ of a fixed order $n$, at one extreme, the null graph $N_n$ contains no edges (the least possible size). At the other extreme, we may ask:
+
+**Question 1.3.5.** &nbsp; &nbsp; What is the largest possible size that $G$ can have? Which graph has its size attaining this largest possible number?
