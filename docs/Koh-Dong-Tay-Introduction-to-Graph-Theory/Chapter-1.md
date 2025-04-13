@@ -1351,3 +1351,130 @@ $$
 ---
 
 $(4) \>$ Let $G$ be a graph of order $8$ and size $15$ in which each vertex is of degree $3$ or $5$. How many vertices of degree $5$ does $G$ have? Construct one such graph $G$.
+
+**Solution**
+Here is one such graph
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+        3
+        4
+    }
+    {
+        rank = same
+        5
+        6
+        7
+        8
+    }
+    1 -- 2
+    1 -- 4
+    1 -- 4
+    1 -- 6
+    1 -- 8
+
+    2 -- 3
+    2 -- 6
+
+    3 -- 4
+    3 -- 6
+
+    4 -- 5
+    4 -- 7
+
+    5 -- 6
+    5 -- 8
+
+    6 -- 7
+
+    7 -- 8
+}
+```
+
+We can check that it is size $15$ by counting the edges
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+        3
+        4
+    }
+    {
+        rank = same
+        5
+        6
+        7
+        8
+    }
+    1 -- 2 [label=1]
+    1 -- 4 [label=2]
+    1 -- 4 [xlabel=3]
+    1 -- 6 [label=4]
+    1 -- 8 [label=5]
+
+    2 -- 3 [label=6]
+    2 -- 6 [label=7]
+
+    3 -- 4 [label=8]
+    3 -- 6 [label=9]
+
+    4 -- 5 [label=10]
+    4 -- 7 [label=11]
+
+    5 -- 6 [label=12]
+    5 -- 8 [label=13]
+
+    6 -- 7 [label=14]
+
+    7 -- 8 [label=15]
+}
+```
+
+or by observing that the adjacency matrix is
+
+$$
+A(G) = \begin{pmatrix}
+    0 & 1 & 0 & 2 & 0 & 1 & 0 & 1 \\
+    1 & 0 & 1 & 0 & 0 & 1 & 0 & 0 \\
+    0 & 1 & 0 & 1 & 0 & 1 & 0 & 0  \\
+    2 & 0 & 1 & 0 & 1 & 0 & 1 & 0 \\
+    0 & 0 & 0 & 1 & 0 & 1 & 0 & 1 \\
+    1 & 1 & 1 & 0 & 1 & 0 & 1 & 0 \\
+    0 & 0 & 0 & 1 & 0 & 1 & 0 & 1 \\
+    1 & 0 & 0 & 0 & 1 & 0 & 1 & 0 \\
+\end{pmatrix}
+$$
+
+And so the sum of each row / column is
+
+$$
+r_1 = 1 + 2 + 1 + 1 = 5 \\
+r_2 = 1 + 1 + 1 = 3 \\
+r_3 = 1 + 1 + 1 = 3 \\
+r_4 = 2 + 1 + 1 + 1 = 5 \\
+r_5 = 1 + 1 + 1 = 3 \\
+r_6 = 1 + 1 + 1 + 1 + 1 = 5 \\
+r_7 = 1 + 1 + 1 = 3 \\
+r_8 = 1 + 1 + 1 = 3
+$$
+
+(note that this shows that the degree of each vertex is either $3$ or $5$ as desired)
+
+We can add these up to get
+
+$$
+r_1 + r_2 + r_3 + r_4 + r_5 + r_6 + r_7 + r_8 = 5 + 3 + 3 + 5 + 3 + 5 + 3 + 3 = 30
+$$
+
+This must be double the number of edges, so we conclude that $e(G) = 15$.
+
+Finally, since $r_1$, $r_4$, and $r_6$ sum up to 5, vertices $1$, $4$, and $6$ have degree five, so our $G$ has $3$ vertices of degree five.
+
+Now, why must all graphs $G$ have $3$ vertices of degree five? Well we know that
