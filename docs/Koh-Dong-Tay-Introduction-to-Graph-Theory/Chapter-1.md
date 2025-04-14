@@ -1647,3 +1647,26 @@ Clearly exactly four vertices are degree $5$ and the rest are degree $4$, and th
 ---
 
 $(7) \>$ Does there exist a multigraph $G$ of order $8$ such that $\delta(G) = 0$ while $\Delta(G) = 7$? What if "multigraph $G$" is replaced by "graph $G$"?
+
+**Solution**
+Here is one such multigraph $G$:
+
+```dot
+graph {
+    {
+        1
+    }
+    2 -- 3
+    2 -- 3
+    2 -- 4
+    2 -- 5
+    2 -- 6
+    2 -- 7
+    2 -- 8
+
+}
+```
+
+However, no such simple graph can exist. As you can see we need the double edge connection $2$ and $3$ to get the vertex count up to $7$. There are only $8$ total vertices, so if one vertex connects to every other vertex that would be $7$ connections, but it must not connect to one of the vertices because one of the vertices must have degree $0$ because $\delta(G) = 0$. $\quad \square$
+
+---
