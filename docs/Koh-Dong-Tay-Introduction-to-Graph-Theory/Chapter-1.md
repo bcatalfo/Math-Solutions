@@ -1672,3 +1672,49 @@ However, no such simple graph can exist. As you can see we need the double edge 
 ---
 
 $(8) \>$ Characterize the 1-regular graphs.
+
+**Solution**
+
+The 1-regular graphs are graphs $G$ such that for every vertex $v \in V(G)$ we have $d(v) = 1$. By the Handshaking Lemma,
+
+$$
+\sum_{v \in V(G)} d(v) = 2e(G)
+$$
+
+Since $d(v) = 1$ we can simplify this to
+
+$$
+2e(G) = v(G)
+$$
+
+So all 1-regular graphs have an even number of vertices, and have an edge for every two vertices. Here are some examples of 1-regular graphs.
+
+```dot
+graph {
+    1 -- 2
+}
+```
+
+(2 vertices and 1 edge)
+
+```dot
+graph {
+    1 -- 2
+    3 -- 4
+}
+```
+
+(4 vertices and 2 edges)
+
+```dot
+graph {
+    1 -- 2
+    3 -- 4
+    5 -- 6
+}
+```
+
+(6 vertices and 3 edges)
+etc...
+
+---
