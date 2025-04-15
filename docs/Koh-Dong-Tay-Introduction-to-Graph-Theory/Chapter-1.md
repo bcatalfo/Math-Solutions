@@ -1671,4 +1671,4 @@ However, no such simple graph can exist. As you can see we need the double edge 
 
 ---
 
-$(8) \>$ Character the 1-regular graphs.
+$(8) \>$ Characterize the 1-regular graphs.
