@@ -1720,3 +1720,236 @@ etc...
 ---
 
 $(9) \>$ Draw all regular graphs of order $n$, where $2 \leq n \leq 6$.
+
+**Solution**
+
+When $n = 2$ there are two:
+
+a zero-regular:
+
+```dot
+graph {
+    1
+    2
+}
+```
+
+and a $1$-regular:
+
+```dot
+graph {
+    rankdir="LR"
+    1 -- 2
+}
+```
+
+When $n = 3$ are two:
+
+a zero-regular:
+
+```dot
+graph {
+    1
+    2
+    3
+}
+```
+
+and a $2$-regular:
+
+```dot
+graph {
+    1
+    {
+        rank = same
+        2
+        3
+    }
+    1 -- 2
+    2 -- 3
+    3 -- 1
+}
+```
+
+When $n = 4$ there are three:
+
+a zero-regular:
+
+```dot
+graph {
+    1
+    2
+    3
+    4
+}
+```
+
+a $1$-regular:
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+    }
+    {
+        rank = same
+        3
+        4
+    }
+    1 -- 3 [style=invis]
+    1 -- 2
+    3 -- 4
+}
+```
+
+and a $2$-regular:
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+    }
+    {
+        rank = same
+        4
+        3
+    }
+    4 -- 3
+    1 -- 2
+    2 -- 3
+    4 -- 1
+}
+```
+
+When $n = 5$ there are two:
+
+a zero-regular:
+
+```dot
+graph{
+    1
+    2
+    3
+    4
+    5
+}
+```
+
+and a $2$-regular:
+
+```dot
+graph {
+    1
+    {
+        rank = same
+        2
+        5
+    }
+    {
+        rank = same
+        4
+        3
+    }
+    5 -- 2 [style=invis]
+    1 -- 5
+    1 -- 2
+    2 -- 3
+    4 -- 3
+    4 -- 5
+}
+```
+
+Finally, when $n = 6$ there are four:
+
+a zero-regular:
+
+```dot
+graph {
+    1
+    2
+    3
+    4
+    5
+    6
+}
+```
+
+a $1$-regular:
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+    }
+    {
+        rank = same
+        3
+        4
+    }
+    {
+        rank = same
+        5
+        6
+    }
+    1 -- 3 [style=invis]
+    3 -- 5 [style=invis]
+    1 -- 2
+    3 -- 4
+    5 -- 6
+}
+```
+
+a $2$-regular:
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+    }
+    {
+        rank = same
+        3
+        6
+    }
+    {
+        rank = same
+        5
+        4
+    }
+    1 -- 2
+    2 -- 3
+    3 -- 4
+    5 -- 4
+    5 -- 6
+    6 -- 1
+}
+```
+
+and a $3$-regular:
+
+```dot
+graph {
+    rankdir="LR"
+    1 -- 4
+    1 -- 5
+    1 -- 6
+
+    2 -- 4
+    2 -- 5
+    2 -- 6
+
+    3 -- 4
+    3 -- 5
+    3 -- 6
+}
+```
+
+---
