@@ -1956,3 +1956,30 @@ graph {
 
 $(10) \> (i) \>$ Does there exist a graph $G$ of order $5$ such that $\delta(G) = 1$ and $\Delta(G) = 4$?
 $\quad \quad (ii) \>$ Does there exist a graph $G$ of order $5$ which has two vertices of degree $4$ and $\delta(G) = 1$?
+
+**Solution**
+
+$(i) \>$ Yes, as this graph $G$ is order $5$ such that $\delta(G) = 1$ and $\Delta(G) = 4$:
+
+```dot
+graph {
+    1 -- 2
+    1 -- 3
+    1 -- 4
+    1 -- 5
+}
+```
+
+$(ii)$ No such graph $G$ of order $5$ which has two vertices of degree $4$ and $\delta(G) = 1$ exists.
+
+Assume such a graph $G$ did exist. Label the two vertices of degree $4$ as $1$ and $2$. It is sufficient to prove that
+
+$$
+d(n) \geq 2 \text{ for } n = 3, 4, 5
+$$
+
+Let $n = 3, 4, 5$. It is sufficient to prove that the edges $\{1, n\}$ and $\{2, n\}$ exist.
+
+Assume that $\{1, n\} \notin E(G)$. Then $d(1) \leq 3$ (because there are $5$ total vertices, and $1$ can't be connected to itself or $n$), contradicting $d(1) = 4$. Therefore, $\{1, n\} \in E(G)$. We similarly have $\{2, n\} \in E(G)$. $\quad \square$
+
+---
