@@ -1953,3 +1953,6 @@ graph {
 ```
 
 ---
+
+$(10) \> (i) \>$ Does there exist a graph $G$ of order $5$ such that $\delta(G) = 1$ and $\Delta(G) = 4$?
+$\quad \quad (ii) \>$ Does there exist a graph $G$ of order $5$ which has two vertices of degree $4$ and $\delta(G) = 1$?
