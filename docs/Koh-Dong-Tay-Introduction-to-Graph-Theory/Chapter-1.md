@@ -1718,3 +1718,5 @@ graph {
 etc...
 
 ---
+
+$(9) \>$ Draw all regular graphs of order $n$, where $2 \leq n \leq 6$.
