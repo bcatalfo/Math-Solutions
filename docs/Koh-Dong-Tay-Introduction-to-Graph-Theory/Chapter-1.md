@@ -1983,3 +1983,5 @@ Let $n = 3, 4, 5$. It is sufficient to prove that the edges $\{1, n\}$ and $\{2,
 Assume that $\{1, n\} \notin E(G)$. Then $d(1) \leq 3$ (because there are $5$ total vertices, and $1$ can't be connected to itself or $n$), contradicting $d(1) = 4$. Therefore, $\{1, n\} \in E(G)$. We similarly have $\{2, n\} \in E(G)$. $\quad \square$
 
 ---
+
+$(11) \>$ Let $H$ be a graph of order $8$ and size $13$ with $\delta(H) = 2$ and $\Delta(H) = 4$. Denote by $n_i$ the number of vertices in $H$ of degree $i$, where $i = 2,3,4$. Assume that $n_3 \geq 1$. Find all possible answers for $(n_2, n_3, n_4)$. For each of your answers, construct a corresponding graph.
