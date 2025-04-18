@@ -2007,49 +2007,38 @@ $$
 |A| + |B| + |C| = 8
 $$
 
-and sinch each vertice is of degree 2, 3 or 4
+and since each vertex is of degree 2, 3 or 4
 
 $$
 2|A| + 3|B| + 4|C| = 26
 $$
 
-since $\delta(H) = 2$ and $\Delta(H) = 4$,
+since $\delta(H) = 2$, $\Delta(H) = 4$, and $n_3 \geq 1$
 
 $$
-7 \geq |A| \geq 1 \text{ and } 7 \geq |C| \geq 1.
+6 \geq |A|, |B|, |C|, \geq 1.
 $$
 
 So the preliminary pairs of elements of $A$ and $C$
 
 ```dot
 graph {
-    {
-        rank = same
-        1
-        2
-        3
-        4
-    }
-    {
-        rank = same
-        5
-        6
-        7
-        8
-    }
+    rankdir="LR"
     1 -- 2 [label=1]
     1 -- 3 [label=2]
     1 -- 4 [label=3]
     1 -- 5 [label=4]
-    1 -- 6 [label=5]
-    1 -- 7 [label=6]
-    1 -- 8 [label=7]
+
+    2 -- 3 [label=5]
+    3 -- 4 [label=6]
+    4 -- 5 [label=7]
 
     2 -- 8 [label=8]
-    3 -- 8 [label=8]
-    4 -- 8 [label=10]
-    5 -- 8 [label=11]
-    6 -- 8 [label=12]
+    3 -- 8 [label=9]
+    5 -- 8 [label=10]
+
+    5 -- 6 [label=11]
+    6 -- 7 [label=12]
     7 -- 8 [label=13]
 }
 ```
