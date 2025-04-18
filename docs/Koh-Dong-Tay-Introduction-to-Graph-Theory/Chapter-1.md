@@ -4,6 +4,7 @@ export_on_save:
 ---
 
 <style>
+.katex-display { overflow: auto hidden; }
 p.dot { display: flex; justify-content: center; }
 img {display: block; margin: 0 auto;}
 </style>
