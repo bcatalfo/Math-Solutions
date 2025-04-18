@@ -1985,3 +1985,36 @@ Assume that $\{1, n\} \notin E(G)$. Then $d(1) \leq 3$ (because there are $5$ to
 ---
 
 $(11) \>$ Let $H$ be a graph of order $8$ and size $13$ with $\delta(H) = 2$ and $\Delta(H) = 4$. Denote by $n_i$ the number of vertices in $H$ of degree $i$, where $i = 2,3,4$. Assume that $n_3 \geq 1$. Find all possible answers for $(n_2, n_3, n_4)$. For each of your answers, construct a corresponding graph.
+
+**Solution**
+First apply the Handshake Lemma,
+
+$$
+\sum_{v \in V(H)} d(v) = 2 e(H) = 2 \times 13 = 26
+$$
+
+Now what are our vertices like? We know one of them is degree 2 and another is degree four. There are 8 total vertices.
+
+$$
+\sum_{v \in V(H)} d(v) = 2 + 4 + d(v_3) + d(v_4) + d(v_5) + d(v_6) + d(v_7) + d(v_8) \\
+d(v_3) + d(v_4) + d(v_5) + d(v_6) + d(v_7) + d(v_8) = 20 \\
+2 \leq d(v_i) \leq 4 \text { for } i = 3, \dots, 8
+$$
+
+Let $A$ be the vertices degree $2$, $B$ be the vertices degree $3$, and $C$ be the vertices degree $4$. Since there are $8$ total vertices,
+
+$$
+|A| + |B| + |C| = 8
+$$
+
+and sinch each vertice is of degree 2, 3 or 4
+
+$$
+2|A| + 3|B| + 4|C| = 26
+$$
+
+since $\delta(H) = 2$ and $\Delta(H) = 4$,
+
+$$
+A \geq 1 \text{ and } C \geq 1.
+$$
