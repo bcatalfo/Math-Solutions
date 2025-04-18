@@ -4,7 +4,6 @@ export_on_save:
 ---
 
 <style>
-.katex-display { overflow: auto hidden }
 p.dot { display: flex; justify-content: center; }
 img {display: block; margin: 0 auto;}
 </style>
@@ -1987,30 +1986,26 @@ Assume that $\{1, n\} \notin E(G)$. Then $d(1) \leq 3$ (because there are $5$ to
 $(11) \>$ Let $H$ be a graph of order $8$ and size $13$ with $\delta(H) = 2$ and $\Delta(H) = 4$. Denote by $n_i$ the number of vertices in $H$ of degree $i$, where $i = 2,3,4$. Assume that $n_3 \geq 1$. Find all possible answers for $(n_2, n_3, n_4)$. For each of your answers, construct a corresponding graph.
 
 **Solution**
-First apply the Handshake Lemma,
+Let $A$ be the set of vertices degree $2$, $B$ be the set of vertices degree $3$, and $C$ be the set of vertices degree $4$. Since there are $8$ total vertices and for each vertex $v$ the inequality $\delta(H) \leq d(v) \leq \Delta(H)$ holds, we plug in to get $2 \leq d(v) \leq 4$, or equivalently each vertex $v$ is in $A$, $B$, or $C$. Therefore,
 
 $$
-\sum_{v \in V(H)} d(v) = 2 e(H) = 2 \times 13 = 26
+\tag{1} |A| + |B| + |C| = 8.
 $$
 
-Now what are our vertices like? We know one of them is degree 2 and another is degree four. There are 8 total vertices.
+Applying the Handshaking Lemma gives
 
 $$
-\sum_{v \in V(H)} d(v) = 2 + 4 + d(v_3) + d(v_4) + d(v_5) + d(v_6) + d(v_7) + d(v_8) \\
-d(v_3) + d(v_4) + d(v_5) + d(v_6) + d(v_7) + d(v_8) = 20 \\
-2 \leq d(v_i) \leq 4 \text { for } i = 3, \dots, 8
+\begin{align*}
+\sum_{v \in V(H)} d(v) &= 2 e(H) \\
+\sum_{v \in A} d(v) + \sum_{v \in B} d(v) + \sum_{v \in C} d(v) &= 2 \times 13 \\
+\tag{2} 2|A| + 3|B| + 4|C| &= 26 \\
+\end{align*}
 $$
 
-Let $A$ be the vertices degree $2$, $B$ be the vertices degree $3$, and $C$ be the vertices degree $4$. Since there are $8$ total vertices,
+Subtracting $(1)$ twice from $(2)$ yields
 
 $$
-|A| + |B| + |C| = 8
-$$
-
-and since each vertex is of degree 2, 3 or 4
-
-$$
-2|A| + 3|B| + 4|C| = 26
+|B| + 2|C| = 10
 $$
 
 since $\delta(H) = 2$, $\Delta(H) = 4$, and $n_3 \geq 1$
@@ -2019,7 +2014,22 @@ $$
 6 \geq |A|, |B|, |C|, \geq 1.
 $$
 
-So the preliminary pairs of elements of $A$ and $C$
+So the preliminary pairs of $|B|$ and $|C|$ are:
+
+- $|B| = 1 \implies 2|C| = 9$ which contradicts $|C|$ being a natural number
+- $|B| = 2 \implies 2|C| = 8 \implies |C| = 4$
+- $|B| = 3 \implies 2|C| = 7$ which contradicts $|C|$ being a natural number
+- $|B| = 4 \implies 2|C| = 6 \implies |C| = 3$
+- $|B| = 5 \implies 2|C| = 5$ which contradicts $|C|$ being a natural number
+- $|B| = 6 \implies 2|C| = 4 \implies |C| = 2 \implies |A| = 0$ which contradicts $\delta(H) = 2$
+
+This leaves us with the possibilities
+
+- $|B| = 2 \text{ and } |C| = 4 \implies |A| = 2$
+- $|B| = 4 \text{ and } |C| = 3 \implies |A| = 1$
+
+Or in the form $(n_2, n_3, n_4)$ our possibilities are $(2, 2, 4)$ and $(1, 4, 3)$. $\quad \square$
+The following graph is an example of the former.
 
 ```dot
 graph {
@@ -2042,3 +2052,59 @@ graph {
     7 -- 8 [label=13]
 }
 ```
+
+| Vertex | Degree |
+| ------ | ------ |
+| 1      | 4      |
+| 2      | 3      |
+| 3      | 4      |
+| 4      | 3      |
+| 5      | 4      |
+| 6      | 2      |
+| 7      | 2      |
+| 8      | 4      |
+
+$$
+(n_2, n_3, n_4) = (2, 2, 4)
+$$
+
+And the following graph is an example of the latter.
+
+```dot
+graph {
+    rankdir="LR"
+    1 -- 2
+    1 -- 3
+    1 -- 7
+
+    2 -- 3
+    2 -- 4
+    2 -- 5
+
+    3 -- 4
+    3 -- 5
+
+    4 -- 5
+
+    5 -- 6
+
+    6 -- 7
+    6 -- 8
+
+    7 -- 8
+
+}
+```
+
+| Vertex | Degree |
+| ------ | ------ |
+| 1      | 3      |
+| 2      | 4      |
+| 3      | 4      |
+| 4      | 3      |
+| 5      | 4      |
+| 6      | 3      |
+| 7      | 3      |
+| 8      | 2      |
+
+---
