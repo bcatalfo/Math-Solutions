@@ -2016,5 +2016,40 @@ $$
 since $\delta(H) = 2$ and $\Delta(H) = 4$,
 
 $$
-A \geq 1 \text{ and } C \geq 1.
+7 \geq |A| \geq 1 \text{ and } 7 \geq |C| \geq 1.
 $$
+
+So the preliminary pairs of elements of $A$ and $C$
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+        3
+        4
+    }
+    {
+        rank = same
+        5
+        6
+        7
+        8
+    }
+    1 -- 2 [label=1]
+    1 -- 3 [label=2]
+    1 -- 4 [label=3]
+    1 -- 5 [label=4]
+    1 -- 6 [label=5]
+    1 -- 7 [label=6]
+    1 -- 8 [label=7]
+
+    2 -- 8 [label=8]
+    3 -- 8 [label=8]
+    4 -- 8 [label=10]
+    5 -- 8 [label=11]
+    6 -- 8 [label=12]
+    7 -- 8 [label=13]
+}
+```
