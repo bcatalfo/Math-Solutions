@@ -2108,3 +2108,5 @@ graph {
 | 8      | 2      |
 
 ---
+
+$(12) \>$ Suppose $G$ is a $k$-regular graph of order $n$ and size $m$, where $k \geq 0$, $m \geq 0$ and $n \geq 1$. Find a relation linking $k, n$ and $m$. Justify your answer.
