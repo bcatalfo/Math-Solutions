@@ -2111,3 +2111,37 @@ graph {
 ---
 
 $(12) \>$ Suppose $G$ is a $k$-regular graph of order $n$ and size $m$, where $k \geq 0$, $m \geq 0$ and $n \geq 1$. Find a relation linking $k, n$ and $m$. Justify your answer.
+
+Since $G$ is $k$-regular
+
+$$
+d(v) = k \quad \text{for } v \in V(G)
+$$
+
+Since $G$ is order $n$
+
+$$
+v(G) = |V(G)| = n
+$$
+
+Since $G$ is size $m$
+
+$$
+e(G) = |E(G)| = m
+$$
+
+By the Handshaking Lemma
+
+$$
+\sum_{v \in V(G)} d(v) = 2e(G)
+$$
+
+Plugging in
+
+$$
+\sum_{v \in V(G)} k = 2m
+nk = 2m. \quad \square
+$$
+
+---
+
