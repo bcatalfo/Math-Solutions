@@ -2035,6 +2035,26 @@ The following graph is an example of the former.
 ```dot
 graph {
     rankdir="LR"
+    {
+        rank = same
+        1
+        2
+    }
+    {
+        rank = same
+        3
+        4
+    }
+    {
+        rank = same
+        5
+        6
+    }
+    {
+        rank = same
+        7
+        8
+    }
     1 -- 2 [label=1]
     1 -- 3 [label=2]
     1 -- 4 [label=3]
@@ -2070,6 +2090,26 @@ And the following graph is an example of the latter.
 ```dot
 graph {
     rankdir="LR"
+    {
+        rank = same
+        1
+        2
+    }
+    {
+        rank = same
+        3
+        4
+    }
+    {
+        rank = same
+        5
+        6
+    }
+    {
+        rank = same
+        7
+        8
+    }
     1 -- 2 [label=1]
     1 -- 3 [label=2]
     1 -- 7 [label=3]
