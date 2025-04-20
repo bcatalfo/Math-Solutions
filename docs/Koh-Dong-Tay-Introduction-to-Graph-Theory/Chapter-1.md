@@ -2065,34 +2065,30 @@ graph {
 | 7      | 2      |
 | 8      | 4      |
 
-$$
-(n_2, n_3, n_4) = (2, 2, 4)
-$$
-
 And the following graph is an example of the latter.
 
 ```dot
 graph {
     rankdir="LR"
-    1 -- 2
-    1 -- 3
-    1 -- 7
+    1 -- 2 [label=1]
+    1 -- 3 [label=2]
+    1 -- 7 [label=3]
 
-    2 -- 3
-    2 -- 4
-    2 -- 5
+    2 -- 3 [label=4]
+    2 -- 4 [label=5]
+    2 -- 5 [label=6]
 
-    3 -- 4
-    3 -- 5
+    3 -- 4 [label=7]
+    3 -- 5 [label=8]
 
-    4 -- 5
+    4 -- 5 [label=9]
 
-    5 -- 6
+    5 -- 6 [label=10]
 
-    6 -- 7
-    6 -- 8
+    6 -- 7 [label=11]
+    6 -- 8 [label=12]
 
-    7 -- 8
+    7 -- 8 [label=13]
 
 }
 ```
