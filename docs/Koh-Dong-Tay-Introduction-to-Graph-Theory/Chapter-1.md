@@ -2112,6 +2112,8 @@ graph {
 
 $(12) \>$ Suppose $G$ is a $k$-regular graph of order $n$ and size $m$, where $k \geq 0$, $m \geq 0$ and $n \geq 1$. Find a relation linking $k, n$ and $m$. Justify your answer.
 
+**Solution**
+
 Since $G$ is $k$-regular
 
 $$
@@ -2139,7 +2141,7 @@ $$
 Plugging in
 
 $$
-\sum_{v \in V(G)} k = 2m
+\sum_{v \in V(G)} k = 2m \\
 nk = 2m. \quad \square
 $$
 
