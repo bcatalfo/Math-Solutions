@@ -2358,3 +2358,5 @@ $$
 Which is a contradiction. $\quad \square$
 
 ---
+
+$(15) \>$ Let $H$ be a $k$-regular graph of order $n$. If $e(H) = 10$, find all possible values for $k$ and $n$; and for each case, construct one such graph $H$.
