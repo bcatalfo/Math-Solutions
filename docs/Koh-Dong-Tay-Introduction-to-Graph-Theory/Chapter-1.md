@@ -2497,4 +2497,28 @@ graph {
 
 ---
 
-$(16) \>$ $(+)$ Let $G$ be a $3$-regular graph with $e(G) = 2v(G) - 3$. Determine the values of $v(G)$ and $e(G)$. Construct all such graph $G$.
+$(16) \>$ $(+)$ Let $G$ be a $3$-regular graph with $e(G) = 2v(G) - 3$. Determine the values of $v(G)$ and $e(G)$. Construct all such graphs $G$.
+
+**Solution**
+
+$$
+nk = 2m \\
+3n = 2(2n - 3) \\
+3n = 4n - 6 \\
+n = 6 \\
+e(G) = 2v(G) - 3 = 2n - 3 = 2 \times 6 - 3 = 9
+$$
+
+```dot
+graph {
+    1 -- 4
+    1 -- 5
+    1 -- 6
+    2 -- 4
+    2 -- 5
+    2 -- 6
+    3 -- 4
+    3 -- 5
+    3 -- 6
+}
+```
