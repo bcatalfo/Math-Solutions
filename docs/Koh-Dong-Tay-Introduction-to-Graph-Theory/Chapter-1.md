@@ -2526,3 +2526,31 @@ graph {
 ---
 
 $(17) \>$ Find all integers $n$ such that $100 \leq e(K_n) \leq 200$.
+
+---
+
+$(18) \>$ $(+)$ Let $G$ be a multigraph of order $13$ in which each vertex is of degree $7$ or $8$. Show that $G$ contains **at least eight** vertices of degree $7$ or **at least seven vertices** of degree $8$.
+
+---
+
+$(19) \>$ $(+)$ Let $G$ be a graph of order $n$ in which there exist **no** three vertices $u$, $v$ and $w$ such that $uv$, $vw$ and $wu$ are all edges in $G$. Show that $n \geq \delta(G) + \Delta(G)$.
+
+---
+
+$(20) \>$ $(+)$ There were $n \> (\geq 2)$ persons at a party and, as usually happens, some shake hands with others. No one shook hands with the same person more than once. Show that there are at least two persons in the party who had the same number of handshakes.
+
+---
+
+$(21) \>$ The preceding problem says that in any graph order $n \geq 2$, there exists two vertices having the same degree. Is the result still valid for multigraphs?
+
+---
+
+$(22) \>$ $(+)$ Mr. and Mrs. Sany attended an exclusive party where in addition to themselves, there were only another $3$ couples. As usually happens, some shake hands with others. No one shook hands with the same person more than once and no one shook hands with his/her spouse. After all the handshakes had been done, Mr. Samy asked each person, including his wife, how many hands he/she had taken. To everyone's amuesement, each one gave a different answer. How many hands did Mrs. Samy shake?
+
+---
+
+$(23) \>$ $(+)$ In the preceding problem, there were four couples altogether in a party. Solve the general problem where 'four couples' is replacy by '$n \> (\geq 2)$ couples'.
+
+---
+
+$(24) \>$ There are $n \geq 2$ distinct points in the plane such that the distance between any $2$ points is at least one. Prove that there are at most $3n$ pairs of these points at distance exactly one.
