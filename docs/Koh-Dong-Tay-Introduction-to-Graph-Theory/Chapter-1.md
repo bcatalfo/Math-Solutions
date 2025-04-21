@@ -2182,3 +2182,7 @@ nk = 2m. \quad \square
 $$
 
 ---
+
+$(13) \>$ Does there exist a $3$-regular graph with eight vertices? Does there exist a $3$-regular graph with nine vertices?
+
+---
