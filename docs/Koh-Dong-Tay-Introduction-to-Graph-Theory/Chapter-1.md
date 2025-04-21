@@ -2360,3 +2360,139 @@ Which is a contradiction. $\quad \square$
 ---
 
 $(15) \>$ Let $H$ be a $k$-regular graph of order $n$. If $e(H) = 10$, find all possible values for $k$ and $n$; and for each case, construct one such graph $H$.
+
+**Solution**
+
+Let's start with
+
+$$
+nk = 2m
+$$
+
+Plugging in $m = e(H) = 10$
+
+$$
+nk = 20
+$$
+
+The preliminary pairs of $n$ and $k$ are
+
+$$
+(1, 20), (2, 10), (4, 5), (5, 4), (10, 2), (20, 1)
+$$
+
+However we must have $n > k$ so this reduces to
+
+$$
+(5, 4), (10, 2), (20, 1)
+$$
+
+Let's try these one at a time
+
+- $n = 5$, $k = 4$
+
+```dot
+graph {
+    rankdir="LR"
+    1 -- 2
+    1 -- 3
+    1 -- 4
+    1 -- 5
+    2 -- 3
+    2 -- 4
+    2 -- 5
+    3 -- 4
+    3 -- 5
+    4 -- 5
+}
+```
+
+- $n = 10$, $k = 2$
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        10
+    }
+    {
+        rank = same
+        2
+        9
+    }
+    {
+        rank = same
+        3
+        8
+    }
+    {
+        rank = same
+        4
+        7
+    }
+    {
+        rank = same
+        5
+        6
+    }
+    1 -- 2 -- 3 -- 4 -- 5 -- 6 -- 7 -- 8 -- 9 -- 10
+    1 -- 10
+}
+```
+
+- $n = 20$, $k = 1$
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+        3
+        4
+        5
+    }
+    {
+        rank = same
+        6
+        7
+        8
+        9
+        10
+    }
+    {
+        rank = same
+        11
+        12
+        13
+        14
+        15
+    }
+    {
+        rank = same
+        16
+        17
+        18
+        19
+        20
+    }
+    1 -- 2 -- 3 -- 4 -- 5 [style=invis]
+    6 -- 7 -- 8 -- 9 -- 10 [style=invis]
+    11 -- 12 -- 13 -- 14 -- 15 [style=invis]
+    16 -- 17 -- 18 -- 19 -- 20 [style=invis]
+    11 -- 6 [style=invis]
+    1 -- 11
+    2 -- 12
+    3 -- 13
+    4 -- 14
+    5 -- 15
+    6 -- 16
+    7 -- 17
+    8 -- 18
+    9 -- 19
+    10 -- 20
+}
+```
+
+---
