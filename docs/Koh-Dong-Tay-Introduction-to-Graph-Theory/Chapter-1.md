@@ -2231,3 +2231,130 @@ Which can not be true for any integer $m$, contradicting the existence of a $3$-
 $(14) \>$ Construct a cubic graph of order $12$. What is its size? Does there exist a cubic graph of order $11$? Why?
 
 **Solution**
+
+Here is a cubic graph of order $12$
+
+```dot
+graph {
+    rankdir="LR"
+    {
+        rank = same
+        1
+        2
+        3
+    }
+    {
+        rank = same
+        4
+        5
+        6
+    }
+    {
+        rank = same
+        7
+        8
+        9
+    }
+    {
+        rank = same
+        10
+        11
+        12
+    }
+    7 -- 4 [style=invis]
+
+    1 -- 7
+    1 -- 8
+    1 -- 9
+    2 -- 7
+    2 -- 8
+    2 -- 9
+    3 -- 7
+    3 -- 8
+    3 -- 9
+
+    4 -- 10
+    4 -- 11
+    4 -- 12
+    5 -- 10
+    5 -- 11
+    5 -- 12
+    6 -- 10
+    6 -- 11
+    6 -- 12
+}
+```
+
+You can use the formula from $(12)$ to calculate its size
+
+$$
+m = \frac{nk}{2} = \frac{12 \times 3}{2} = 18
+$$
+
+(or you can just count)
+
+```dot
+graph {
+    rankdir="LR"
+    {
+        rank = same
+        1
+        2
+        3
+    }
+    {
+        rank = same
+        4
+        5
+        6
+    }
+    {
+        rank = same
+        7
+        8
+        9
+    }
+    {
+        rank = same
+        10
+        11
+        12
+    }
+    1 -- 2 -- 3  [style=invis]
+    4 -- 5 -- 6  [style=invis]
+    7 -- 8 -- 9  [style=invis]
+    10 -- 11 -- 12  [style=invis]
+    7 -- 4 [style=invis]
+
+    1 -- 7 [label=1]
+    1 -- 8 [label=2]
+    1 -- 9 [label=3]
+    2 -- 7 [label=4]
+    2 -- 8 [label=5]
+    2 -- 9 [label=6]
+    3 -- 7 [label=7]
+    3 -- 8 [label=8]
+    3 -- 9 [label=9]
+
+    4 -- 10 [label=10]
+    4 -- 11 [label=11]
+    4 -- 12 [label=12]
+    5 -- 10 [label=13]
+    5 -- 11 [label=14]
+    5 -- 12 [label=15]
+    6 -- 10 [label=16]
+    6 -- 11 [label=17]
+    6 -- 12 [label=18]
+}
+```
+
+There is no cubic graph of order $11$. To prove it, first assume such a graph did exist. Then
+
+$$
+nk = 2m \\
+11 \times 3 = 2m
+$$
+
+Which is a contradiction. $\quad \square$
+
+---
