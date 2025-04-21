@@ -2496,3 +2496,5 @@ graph {
 ```
 
 ---
+
+$(16) \>$ $(+)$ Let $G$ be a $3$-regular graph with $e(G) = 2v(G) - 3$. Determine the values of $v(G)$ and $e(G)$. Construct all such graph $G$.
