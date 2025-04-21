@@ -2185,4 +2185,45 @@ $$
 
 $(13) \>$ Does there exist a $3$-regular graph with eight vertices? Does there exist a $3$-regular graph with nine vertices?
 
+**Solution**
+
+One does exist for eight vertices
+
+```dot
+graph {
+    rankdir="LR"
+    1 -- 4
+    1 -- 5
+    1 -- 6
+
+    2 -- 5
+    2 -- 6
+    2 -- 7
+
+    3 -- 5
+    3 -- 6
+    3 -- 8
+
+    4 -- 7
+    4 -- 8
+
+    7 -- 8
+
+}
+```
+
+However one does not exist for nine vertices. From $(12)$ we know that
+
+$$
+nk = 2m
+$$
+
+Where $n$ is the order, and $m$ is the size. Plugging in for a $k=3$-regular graph with $n=9$ vertices,
+
+$$
+9 \times 3 = 2m
+$$
+
+Which can not be true for any integer $m$, contradicting the existence of a $3$-regular graph with $9$ vertices. $\quad \square$
+
 ---
