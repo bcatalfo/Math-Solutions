@@ -2227,3 +2227,7 @@ $$
 Which can not be true for any integer $m$, contradicting the existence of a $3$-regular graph with $9$ vertices. $\quad \square$
 
 ---
+
+$(14) \>$ Construct a cubic graph of order $12$. What is its size? Does there exist a cubic graph of order $11$? Why?
+
+**Solution**
