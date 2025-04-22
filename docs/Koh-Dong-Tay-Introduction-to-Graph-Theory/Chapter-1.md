@@ -2527,6 +2527,55 @@ graph {
 
 $(17) \>$ Find all integers $n$ such that $100 \leq e(K_n) \leq 200$.
 
+**Solution**
+
+We know that
+
+$$
+e(K_n) = \binom{n}{2} = \frac{n!}{2!(n-2)!} = \frac{n(n-1)}{2} \\
+100 \leq \frac{n(n-1)}{2} \leq 200 \\
+200 \leq n^2 - n \leq 400
+$$
+
+Let $f(n) = n^2 - n$. Recall that $n > 0$, so $f'(n) = 2n - 1 > 0$ so $f$ is increasing. Calculate that
+
+$$
+14 \times 14 = 14 \times (10 + 4) = 140 + 14 \times 4 = 140 + (10 + 4) \times 4 = 140 + 40 + 16 = 196 \\
+196 - 14 = (100 + 96) - 14 = 100 + (96 - 14) = 100 + (90 + 6 - 10 - 4) \\
+= 100 + 80 + 6 - 4 = 182 \\
+f(14) = 14^2 - 14 = 182 \\
+15 \times 15 = 5 \times 3 \times 5 \times 3 = 25 \times 9 = 25 \times 8 + 25 \\
+= 25 \times 4 \times 2 + 25 = 100 \times 2 + 25 = 225 \\
+225 - 15 = 200 + 25 - 15 = 200 + 10 = 210 \\
+f(15) = 15^2 - 15 = 210 \\
+16 \times 16 = 8 \times 2 \times 8 \times 2 = 64 \times 4 = 60 \times 4 + 4 \times 4 = 240 + 16 = 256 \\
+256 - 16 = 240 \\
+f(16) = 16^2 - 16 = 240 \\
+17 \times 17 = (10 + 7) \times (10 + 7) = 100 + 70 + 70 + 49 \\
+= 100 + 140 + 49 = 100 + 189 = 289 \\
+289 - 17 = 200 + 80 + 9 - 10 - 7 = 200 + 80 - 10 + 9 - 7 = 272 \\
+f(17) = 17^2 - 17 = 272 \\
+18 \times 18 = 9 \times 2 \times 9 \times 2 = 81 \times 4 = 80 \times 4 + 4 = 324 \\
+324 - 18 = 300 + 24 - 18 = 306 \\
+f(18) = 18^2 - 18 = 306 \\
+19 * 19 = (10 + 9) \times 19 = 190 + 9 \times 19 = 190 + 9 \times (10 + 9) \\
+= 190 + 90 + 81 = 190 + 90 + 10 + 71 = 290 + 71 = 290 + 10 + 61 \\
+= 300 + 61 = 361 \\
+19 * 19 - 19 = 361 - 19 = 361 - 20 + 1 = 341 + 1 = 342 \\
+f(19) = 19^2 - 19 = 342 \\
+20 \times 20 - 20 = 400 - 20 = 380 \\
+f(20) = 20^2 - 20 = 380 \\
+21 \times 21 = 21 \times 20 + 21 = 420 + 21 = 441 \\
+21 \times 21 - 21 = 441 - 21 = 420\\
+f(21) = 21 ^ 2 - 21 = 420
+$$
+
+Why did I show all the arithmetic there? I don't know I was just having fun with it. Anyways the answer is integers $n$ such that
+
+$$
+15 \leq n \leq 20. \quad \square
+$$
+
 ---
 
 $(18) \>$ $(+)$ Let $G$ be a multigraph of order $13$ in which each vertex is of degree $7$ or $8$. Show that $G$ contains **at least eight** vertices of degree $7$ or **at least seven vertices** of degree $8$.
