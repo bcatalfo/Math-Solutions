@@ -1776,6 +1776,86 @@ This is a contradiction because $97$ is not an even number. $\quad \square$
 
 $(19) \>$ $(+)$ Let $G$ be a graph of order $n$ in which there exist **no** three vertices $u$, $v$ and $w$ such that $uv$, $vw$ and $wu$ are all edges in $G$. Show that $n \geq \delta(G) + \Delta(G)$.
 
+**Solution**
+
+Let's look at some examples:
+
+```dot
+graph {
+    1 -- 2
+}
+```
+
+$$
+n = 2 \quad \delta(G) = 1 \quad \Delta(G) = 1
+$$
+
+Here there are no triangles and $n \geq \delta(G) + \Delta(G)$
+
+```dot
+graph {
+    1 -- 2
+    2 -- 3
+}
+```
+
+$$
+n = 3 \quad \delta(G) = 1 \quad \Delta(G) = 1
+$$
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+    }
+    1 -- 2 -- 3 -- 1
+}
+```
+
+$$
+n = 3 \quad \delta(G) = 2 \quad \Delta(G) = 2
+$$
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+    }
+    1 -- 2 -- 3 -- 1
+    2 -- 4
+}
+```
+
+$$
+n = 4 \quad \delta(G) = 1 \quad \Delta(G) = 2
+$$
+
+```dot
+graph {
+    {
+        rank = same
+        1
+        2
+    }
+    {
+        rank = same
+        3
+        4
+    }
+    1 -- 2 -- 3 -- 1
+    2 -- 4
+    3 -- 4
+}
+```
+
+$$
+n = 4 \quad \delta(G) = 2 \quad \Delta(G) = 3
+$$
+
 ---
 
 $(20) \>$ $(+)$ There were $n \> (\geq 2)$ persons at a party and, as usually happens, some shake hands with others. No one shook hands with the same person more than once. Show that there are at least two persons in the party who had the same number of handshakes.
