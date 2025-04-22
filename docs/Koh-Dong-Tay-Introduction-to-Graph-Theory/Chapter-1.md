@@ -2580,6 +2580,54 @@ $$
 
 $(18) \>$ $(+)$ Let $G$ be a multigraph of order $13$ in which each vertex is of degree $7$ or $8$. Show that $G$ contains **at least eight** vertices of degree $7$ or **at least seven vertices** of degree $8$.
 
+**Solution**
+
+Let $A$ be the set of vertices degree $7$ and $B$ be the set of vertices degree $8$. Then
+
+$$
+|A| + |B| = 13,
+$$
+
+If we have
+
+$$
+|A| < 8
+$$
+
+Then
+
+$$
+|B| = 13 - |A| > 5
+$$
+
+Our preliminary pairs are
+
+$$
+|A| = 7, |B| = 6  \\
+|A| = 6, |B| = 7 \\
+|A| = 5, |B| = 8 \\
+|A| = 4, |B| = 9 \\
+|A| = 3, |B| = 10 \\
+|A| = 2, |B| = 11 \\
+|A| = 1, |B| = 12 \\
+|A| = 0, |B| = 13 \\
+$$
+
+The only case that would be problematic is
+
+$$
+|A| = 7, |B| = 6
+$$
+
+so we just have to show that this cant happen. Using the Handshaking Lemma
+
+$$
+7|A| + 8|B| = 2e(G) \\
+2e(G) = 7 \times 7 + 8 \times 6 = 49 + 48 = 50 - 1 + 50 - 2 = 100 - 3 = 97
+$$
+
+This is a contradiction because $97$ is not an even number. $\quad \square$
+
 ---
 
 $(19) \>$ $(+)$ Let $G$ be a graph of order $n$ in which there exist **no** three vertices $u$, $v$ and $w$ such that $uv$, $vw$ and $wu$ are all edges in $G$. Show that $n \geq \delta(G) + \Delta(G)$.
