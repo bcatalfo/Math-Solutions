@@ -1838,6 +1838,31 @@ so we can once again apply the Pigeonhole Principle to achieve the desired resul
 
 $(21) \>$ The preceding problem says that in any graph order $n \geq 2$, there exists two vertices having the same degree. Is the result still valid for multigraphs?
 
+**Solution**
+
+No, see this counterexample.
+
+```dot
+graph {
+    {
+        rank = same
+        2
+        3
+    }
+    1 -- 2
+    2 -- 3
+    2 -- 3
+}
+```
+
+| Vertex | Degree |
+| ------ | ------ |
+| 1      | 1      |
+| 2      | 3      |
+| 3      | 2      |
+
+$\square$
+
 ---
 
 $(22) \>$ $(+)$ Mr. and Mrs. Sany attended an exclusive party where in addition to themselves, there were only another $3$ couples. As usually happens, some shake hands with others. No one shook hands with the same person more than once and no one shook hands with his/her spouse. After all the handshakes had been done, Mr. Samy asked each person, including his wife, how many hands he/she had taken. To everyone's amuesement, each one gave a different answer. How many hands did Mrs. Samy shake?
