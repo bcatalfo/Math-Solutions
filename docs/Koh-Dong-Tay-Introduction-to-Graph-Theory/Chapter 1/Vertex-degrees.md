@@ -1778,82 +1778,25 @@ $(19) \>$ $(+)$ Let $G$ be a graph of order $n$ in which there exist **no** thre
 
 **Solution**
 
-Let's look at some examples:
-
-```dot
-graph {
-    1 -- 2
-}
-```
+Let $N(u)$ be the set of vertices incident to $u$, where $d(u) = \Delta(G)$.
+Let $v \in N(u)$. Consider $N(v)$.
+If $w \in N(u)$ then we don't have $w \in N(v)$. Since $|N(u)| = \Delta(G)$,
 
 $$
-n = 2 \quad \delta(G) = 1 \quad \Delta(G) = 1
+|N(v)| \leq n - \Delta(G)
 $$
 
-Here there are no triangles and $n \geq \delta(G) + \Delta(G)$
-
-```dot
-graph {
-    1 -- 2
-    2 -- 3
-}
-```
+Since we obviously have
 
 $$
-n = 3 \quad \delta(G) = 1 \quad \Delta(G) = 1
+\delta(G) \leq |N(v)|
 $$
 
-```dot
-graph {
-    {
-        rank = same
-        1
-        2
-    }
-    1 -- 2 -- 3 -- 1
-}
-```
+We plug in to get
 
 $$
-n = 3 \quad \delta(G) = 2 \quad \Delta(G) = 2
-$$
-
-```dot
-graph {
-    {
-        rank = same
-        1
-        2
-    }
-    1 -- 2 -- 3 -- 1
-    2 -- 4
-}
-```
-
-$$
-n = 4 \quad \delta(G) = 1 \quad \Delta(G) = 2
-$$
-
-```dot
-graph {
-    {
-        rank = same
-        1
-        2
-    }
-    {
-        rank = same
-        3
-        4
-    }
-    1 -- 2 -- 3 -- 1
-    2 -- 4
-    3 -- 4
-}
-```
-
-$$
-n = 4 \quad \delta(G) = 2 \quad \Delta(G) = 3
+\delta(G) \leq n - \Delta(G) \\
+n \geq \delta(G) + \Delta(G). \quad \square
 $$
 
 ---
@@ -1875,3 +1818,7 @@ $(23) \>$ $(+)$ In the preceding problem, there were four couples altogether in 
 ---
 
 $(24) \>$ $(+)$ There are $n \geq 2$ distinct points in the plane such that the distance between any $2$ points is at least one. Prove that there are at most $3n$ pairs of these points at distance exactly one.
+
+```
+
+```
