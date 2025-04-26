@@ -1803,6 +1803,37 @@ $$
 
 $(20) \>$ $(+)$ There were $n \> (\geq 2)$ persons at a party and, as usually happens, some shake hands with others. No one shook hands with the same person more than once. Show that there are at least two persons in the party who had the same number of handshakes.
 
+**Solution**
+Each person is a vertex and two vertices are connected by an edge if they shook hands, so this is a graph, call it $G$.
+Since there are $n \geq 2$ persons, $G$ has order $n$.
+We know that for each $v \in V(G)$,
+
+$$
+\tag{1}0 \leq d(v) \leq n - 1
+$$
+
+Assume that there was a loner, aka someone who shook hands with no one, or in graph-theoretical terms there exists some $v \in V(G)$ such that
+
+$$
+d(v) = 0
+$$
+
+Since no one shook hands with $v$, Inequality $(1)$ become
+
+$$
+0 \leq d(v) \leq n - 2
+$$
+
+Since there are $n$ vertices and $n-1$ possibilities for their degrees, by the Pigeonhole Principle at least one of the degrees must be repeated. This pair of vertices with the same degree corresponds to the people in the party with the same number of handshakes.
+
+This solution relied on assuming that there was a loner, that is a vertex $v \in G$ such that $d(v) = 0$. What if there is no loner? Well then Inequality $(1)$ becomes
+
+$$
+0 < d(v) \leq n - 1
+$$
+
+so we can once again apply the Pigeonhole Principle to achieve the desired result. $\quad \square$
+
 ---
 
 $(21) \>$ The preceding problem says that in any graph order $n \geq 2$, there exists two vertices having the same degree. Is the result still valid for multigraphs?
