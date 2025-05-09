@@ -627,7 +627,8 @@ $$
 First calculate that
 
 $$
-[e, f] = ef - fe = \begin{pmatrix}
+a_{ef}^e e + a_{ef}^f f + a_{ef}^h h = [e, f] = ef - fe \\[4px]
+= \begin{pmatrix}
   0 & 1 \\
   0 & 0
 \end{pmatrix} \begin{pmatrix}
@@ -639,7 +640,73 @@ $$
 \end{pmatrix} \begin{pmatrix}
 0 & 1 \\
 0 & 0
-\end{pmatrix}
+\end{pmatrix} \\[4px]
+= \begin{pmatrix}
+  1 & 0 \\
+  0 & 0
+\end{pmatrix} - \begin{pmatrix}
+0 & 0 \\
+0 & 1
+\end{pmatrix} = \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix} = 0e + 0f + 1h
+$$
+
+Work similarly for the other combinations, avoiding duplicate work by recalling that $[a, b] = -[b,a]$. For $e$ and $h$ we get
+
+$$
+a_{eh}^e e + a_{eh}^f f + a_{eh}^h h = [e, h] = eh - he \\[4px]
+= \begin{pmatrix}
+  0 & 1 \\
+  0 & 0
+\end{pmatrix} \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix} - \begin{pmatrix}
+  1 & 0 \\
+  0 & -1
+\end{pmatrix} \begin{pmatrix}
+  0 & 1 \\
+  0 & 0
+\end{pmatrix} \\
+= \begin{pmatrix}
+  0 & -1 \\
+  0 & 0
+\end{pmatrix} - \begin{pmatrix}
+  0 & 1 \\
+  0 & 0
+\end{pmatrix} = -2e + 0f + 0h \\[4px]
+$$
+
+For $f$ and $h$ we get
+
+$$
+a_{fh}^e e + a_{fh}^f f + a_{fh}^h h = [f, h] = fh - hf \\[4px]
+= \begin{pmatrix}
+  0 & 0 \\
+  1 & 0
+\end{pmatrix} \begin{pmatrix}
+  1 & 0 \\
+  0 & -1
+\end{pmatrix} - \begin{pmatrix}
+  1 & 0 \\
+  0 & -1
+\end{pmatrix} \begin{pmatrix}
+  0 & 0 \\
+  1 & 0
+\end{pmatrix} \\[4px]
+= \begin{pmatrix}
+  0 & 0 \\
+  1 & 0
+\end{pmatrix} - \begin{pmatrix}
+  0 & 0 \\
+  -1 & 0
+\end{pmatrix} = \begin{pmatrix}
+  0 & 0 \\
+  2 & 0
+\end{pmatrix} \\
+= 0e + 2f + 0h.
 $$
 
 ---
