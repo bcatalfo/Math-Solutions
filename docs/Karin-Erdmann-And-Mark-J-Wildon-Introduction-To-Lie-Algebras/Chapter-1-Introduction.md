@@ -604,3 +604,58 @@ $$
 We conclude that $f([a,b]) = [f(a),f(b)]$ for each $a, b \in L_1$, as desired. $\quad \square$
 
 ---
+
+$1.12. \dag \quad$ Find the structure constants of $\textsf{sl}(2, F)$ with respect to the basis given by the matrices
+
+$$
+e = \begin{pmatrix}
+  0 & 1 \\
+  0 & 0
+\end{pmatrix},
+f = \begin{pmatrix}
+  0 & 0 \\
+  1 & 0
+\end{pmatrix},
+h = \begin{pmatrix}
+  1 & 0 \\
+  0 & -1
+\end{pmatrix}.
+$$
+
+---
+
+$1.13 \quad$ Prove that $\textsf{sl}(2, \mathbf{C})$ has no non-trivial ideals.
+
+---
+
+$1.14. \dag \quad$ Let $L$ be the $3$-dimensional _complex_ Lie algebra with basis $(x, y, z)$ and Lie bracket defined by
+
+$$
+[x, y] = z, \> [y, z] = x, \> [z, x] = y.
+$$
+
+(Here $L$ is the "complexification" of the $3$-dimensional real Lie algebra $\mathbf{R}^{3}_{\land})$
+
+$(\text{i})$ Show that $L$ is isomorphic to the Lie subalgebra of $\textsf{gl}(3, \mathbf{C})$ consisting of all $3 \times 3$ antisymmetric matrices with entries in $\mathbf{C}$.
+
+$(\text{ii})$ Find an explicit isomorphism $\textsf{sl}(2, \mathbf{C}) \cong L$.
+
+---
+
+$1.15. \quad$
+
+---
+
+$1.16. \dag \quad$
+
+---
+
+$1.17. \quad$
+
+---
+
+$1.18. \quad$
+
+---
+
+$1.19. \quad$
