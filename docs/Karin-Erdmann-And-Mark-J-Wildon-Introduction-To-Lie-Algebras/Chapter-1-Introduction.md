@@ -148,13 +148,13 @@ $$
 $$
 
 Where \( xy \) is the usual product of the matrices \( x \) and \( y \).
-As a vector space, \( \mathrm{gl}(n, F)\) has a basis consisting of the _matrix units_ \( e*{ij} \) for \( 1 \leq i, j \leq n \). Here \( e*{ij} \) is the \( n \times n \) matrix which has 1 in the \(ij\)-th position and all other entries are 0. We leave it as an exercise to check that
+As a vector space, \( \mathrm{gl}(n, F)\) has a basis consisting of the _matrix units_ $e_{ij}$ for \( 1 \leq i, j \leq n \). Here $e_{ij}$ is the \( n \times n \) matrix which has 1 in the \(ij\)-th position and all other entries are 0. We leave it as an exercise to check that
 
 $$
 [e_{ij}, e_{kl}] = \delta_{jk}e_{il} - \delta_{il}e_{kj}
 $$
 
-where \( \delta \) is the Kronecker delta, defined by \( \delta*{ij} = 1\) if \( i = j \) and \( \delta*{ij} = 0\) otherwise.
+where \( \delta \) is the Kronecker delta, defined by $\delta_{ij} = 1$ if \( i = j \) and $\delta_{ij} = 0$ otherwise.
 **Solution**
 
 $$
@@ -167,7 +167,7 @@ $$
 (e_{ij}e_{kl})_{ab} = \sum_{x = 0}^{n} (e_{ij})_{ax}\cdot(e_{kl})_{xb}
 $$
 
-Whenever \( x \neq j\) by definition we have \( (e*{ij})*{ax} = 0\) so this reduces to
+Whenever \( x \neq j\) by definition we have $(e_{ij})_{ax} = 0$ so this reduces to
 
 $$
 (e_{ij}e_{kl})_{ab} = (e_{ij})_{aj}\cdot(e_{kl})_{jb} = \delta_{ai} \cdot \delta_{kj} \cdot \delta_{lb}
@@ -179,7 +179,7 @@ $$
 e_{ij}e_{kl} = \delta_{jk} \cdot e_{il}
 $$
 
-As by definition \( (e*{il})*{ab} = \delta*{ai} \cdot \delta*{lb}\). Rearranging symbols gives \( e*{kl}e*{ij} = \delta*{li}e*{kj}\), combining the results finishes the proof. \( \square \)
+As by definition $(e_{il})_{ab} = \delta_{ai} \cdot \delta_{lb}$. Rearranging symbols gives $e_{kl}e_{ij} = \delta_{li}e_{kj}$, combining the results finishes the proof. \( \square \)
 
 ---
 
@@ -611,15 +611,35 @@ $$
 e = \begin{pmatrix}
   0 & 1 \\
   0 & 0
-\end{pmatrix},
+\end{pmatrix}, \>
 f = \begin{pmatrix}
   0 & 0 \\
   1 & 0
-\end{pmatrix},
+\end{pmatrix}, \>
 h = \begin{pmatrix}
   1 & 0 \\
   0 & -1
 \end{pmatrix}.
+$$
+
+**Solution**
+
+First calculate that
+
+$$
+[e, f] = ef - fe = \begin{pmatrix}
+  0 & 1 \\
+  0 & 0
+\end{pmatrix} \begin{pmatrix}
+  0 & 0 \\
+  1 & 0
+\end{pmatrix} - \begin{pmatrix}
+0 & 0 \\
+1 & 0
+\end{pmatrix} \begin{pmatrix}
+0 & 1 \\
+0 & 0
+\end{pmatrix}
 $$
 
 ---
