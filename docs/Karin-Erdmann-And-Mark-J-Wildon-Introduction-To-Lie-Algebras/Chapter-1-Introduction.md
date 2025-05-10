@@ -713,6 +713,70 @@ $$
 
 $1.13 \quad$ Prove that $\textsf{sl}(2, \mathbf{C})$ has no non-trivial ideals.
 
+**Solution**
+Let $A$ be an ideal of $\sf{sl}(2, \bf{C})$. By definition, for each $a \in A$ and $b \in \sf{sl}(2, \bf{C})$ we have
+
+$$
+[a, b] \in A
+$$
+
+Using the basis from $1.12$
+
+$$
+a = a_ee + a_ff + a_hh \\
+$$
+
+Calculate that
+
+$$
+[a,e] = [a_ee + a_ff + a_hh, e] = a_e[e,e] + a_f[f,e] + a_h[h,e] \\
+= -a_fh + 2a_h e \\
+[a,f] = [a_ee + a_ff + a_hh, f] = a_e[e,f] + a_f[f,f] + a_h[h,f] \\
+= a_e h - 2a_h f \\
+[a, h] = [a_ee + a_ff + a_hh, h] = a_e[e,h] + a_f[f,h] + a_h[h,h] \\
+= -2a_e e + 2 a_f f
+$$
+
+Any linear combination of these must be in $A$, such as
+
+$$
+a_f[a,f] + a_h[a,h]  \\
+= a_ea_fh - 2a_fa_hf - 2a_ea_he + 2a_fa_hf  \\
+= a_ea_fh - \cancel{2a_fa_hf} - 2a_ea_he + \cancel{2a_fa_hf}  \\
+= a_ea_fh - 2a_ea_he   \\
+$$
+
+Dividing by $a_e$ gives
+
+$$
+a_fh - a_he \in A
+$$
+
+Since
+
+$$
+[a,e] = -a_fh + 2a_he \in A
+$$
+
+Their sum is in the ideal as well,
+
+$$
+a_h e \in A \iff a_h = 0 \text{ or } e \in A
+$$
+
+If $a_h = 0$ then
+
+$$
+[a,e] = -a_fh \in A \\
+[a,f] = a_eh \in A
+$$
+
+So
+
+$$
+a_e = a_f = 0 \text{ or } h \in A
+$$
+
 ---
 
 $1.14. \dag \quad$ Let $L$ be the $3$-dimensional _complex_ Lie algebra with basis $(x, y, z)$ and Lie bracket defined by
