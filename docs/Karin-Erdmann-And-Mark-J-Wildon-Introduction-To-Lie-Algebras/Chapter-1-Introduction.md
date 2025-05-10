@@ -801,6 +801,101 @@ $(\text{i})$ Show that $L$ is isomorphic to the Lie subalgebra of $\textsf{gl}(3
 
 $(\text{ii})$ Find an explicit isomorphism $\textsf{sl}(2, \mathbf{C}) \cong L$.
 
+**Solution**
+
+To solve $(i)$ we can make use of Exercise $1.9$, that is it is sufficient to find a basis of the $3 \times 3$ antisymmetric matricies with entries in $\bf{C}$ $\{x, y, z\}$ such that
+
+$$
+[x,y] = z, \> [y,z] = x, \> [z,x] = y
+$$
+
+Let
+
+$$
+x = \begin{pmatrix}
+  0 & 1 & 0 \\
+  -1 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}, \> y = \begin{pmatrix}
+  0 & 0 & -1 \\
+  0 & 0 & 0 \\
+  1 & 0 & 0
+\end{pmatrix}, \> z = \begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 1 \\
+  0 & -1 & 0
+\end{pmatrix}
+$$
+
+Then
+
+$$
+[x,y] = xy - yx \\[4px]
+= \begin{pmatrix}
+  0 & 1 & 0 \\
+  -1 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} \begin{pmatrix}
+  0 & 0 & -1 \\
+  0 & 0 & 0 \\
+  1 & 0 & 0
+\end{pmatrix}
+-\begin{pmatrix}
+  0 & 0 & -1 \\
+  0 & 0 & 0 \\
+  1 & 0 & 0
+\end{pmatrix} \begin{pmatrix}
+  0 & 1 & 0 \\
+  -1 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} \\[4px]
+= \begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 1 \\
+  0 & 0 & 0\\
+\end{pmatrix} - \begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 1 & 0
+\end{pmatrix}
+= \begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 1 \\
+  0 & -1 & 0
+\end{pmatrix} = z, \\[4px]
+[y,z] = yz - zy \\[4px]
+= \begin{pmatrix}
+  0 & 0 & -1 \\
+  0 & 0 & 0 \\
+  1 & 0 & 0
+\end{pmatrix} \begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 1 \\
+  0 & -1 & 0
+\end{pmatrix} - \begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 1 \\
+  0 & -1 & 0
+\end{pmatrix} \begin{pmatrix}
+  0 & 0 & -1 \\
+  0 & 0 & 0 \\
+  1 & 0 & 0
+\end{pmatrix} \\[4px]
+= \begin{pmatrix}
+  0 & 1 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+\end{pmatrix} - \begin{pmatrix}
+  0 & 0 & 0 \\
+  1 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}  = \begin{pmatrix}
+  0 & 1 & 0 \\
+  -1 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} = x, \\[4px]
+$$
+
 ---
 
 $1.15. \quad$
