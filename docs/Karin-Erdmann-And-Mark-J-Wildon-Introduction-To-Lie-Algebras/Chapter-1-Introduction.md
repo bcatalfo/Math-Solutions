@@ -714,17 +714,19 @@ $$
 $1.13 \quad$ Prove that $\textsf{sl}(2, \mathbf{C})$ has no non-trivial ideals.
 
 **Solution**
-Let $A$ be an ideal of $\sf{sl}(2, \bf{C})$. By definition, for each $a \in A$ and $b \in \sf{sl}(2, \bf{C})$ we have
+Let $A$ be a non-zero ideal of $\sf{sl}(2, \bf{C})$. By definition, for each $a \in A$ and $b \in \sf{sl}(2, \bf{C})$ we have
 
 $$
 [a, b] \in A
 $$
 
-Using the basis from $1.12$
+Using the basis from $1.12$,
 
 $$
-a = a_ee + a_ff + a_hh \\
+a = a_ee + a_ff + a_hh, \\
 $$
+
+for some $a_e, a_f, a_h \in \bf{C}$. Further, since we supposed that $A \neq 0$, we can take $a \neq 0$, so we do not have $a_e = a_f = a_h = 0$.
 
 Calculate that
 
@@ -776,6 +778,14 @@ So
 $$
 a_e = a_f = 0 \text{ or } h \in A
 $$
+
+However $a_e = a_f = 0$ is a contradiction (since we already have $a_h = 0$ and explicitly can not have $a_e = a_f = a_h = 0$). Therefore we have $h \in A$.
+
+Since $h \in A$ then $[e, h] = -2e \in A$ and $[f,h] = 2f \in A$. So we have $e, f, h \in A \implies A = \sf{sl}(2,\bf{C})$ since $\{e, f, h\}$ is a basis for $\sf{sl}(2,\bf{C})$.
+
+We have shown that if $a_h = 0$ then $A = \sf{sl}(2, \bf{C})$. If $a_h \neq 0$ then $e \in A$, so $[e,f] = h \in A$ so we also have $A = \sf{sl}(2, \bf{C})$.
+
+We have now shown that any non-zero ideal of $\sf{sl}(2,\bf{C})$ is equal to $\sf{sl}(2,\bf{C})$ itself. Therefore $\sf{sl}(2,\bf{C})$ has no non-trivial ideals. $\quad \square$
 
 ---
 
