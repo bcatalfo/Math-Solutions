@@ -803,7 +803,7 @@ $(\text{ii})$ Find an explicit isomorphism $\textsf{sl}(2, \mathbf{C}) \cong L$.
 
 **Solution**
 
-To solve $(i)$ we can make use of Exercise $1.9$, that is it is sufficient to find a basis of the $3 \times 3$ antisymmetric matricies with entries in $\bf{C}$ $\{x, y, z\}$ such that
+To solve $(\text{i})$ we can make use of Exercise $1.9$, which tells us that it is sufficient to find a basis of the $3 \times 3$ antisymmetric matrices with entries in $\bf{C}$ $\{x, y, z\}$ such that
 
 $$
 [x,y] = z, \> [y,z] = x, \> [z,x] = y
@@ -824,10 +824,26 @@ x = \begin{pmatrix}
   0 & 0 & 0 \\
   0 & 0 & 1 \\
   0 & -1 & 0
-\end{pmatrix}
+\end{pmatrix},
 $$
 
-Then
+then $\{x, y, z\}$ is a basis for the $3 \times 3$ antisymmetric matrices because they are clearly linearly independent and
+
+$$
+\begin{pmatrix}
+  0 & a & -b \\
+  -a & 0 & c \\
+  b & -c & 0
+\end{pmatrix} = ax + by + cz,
+$$
+
+so it is sufficient to show that
+
+$$
+[x,y] = z, \> [y,z] = x, \> [z,x] = y.
+$$
+
+Calculate that
 
 $$
 [x,y] = xy - yx \\[4px]
@@ -894,7 +910,41 @@ $$
   -1 & 0 & 0 \\
   0 & 0 & 0
 \end{pmatrix} = x, \\[4px]
+[z,x] = zx - xz \\[4px]
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 1 \\
+  0 & -1 & 0
+\end{pmatrix} \begin{pmatrix}
+  0 & 1 & 0 \\
+  -1 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} - \begin{pmatrix}
+  0 & 1 & 0 \\
+  -1 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+  0 & 0 & 0 \\
+0 & 0 & 1 \\
+0 & -1 & 0
+\end{pmatrix} \\[4px]
+= \begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  1 & 0 & 0
+\end{pmatrix} - \begin{pmatrix}
+  0 & 0 & 1 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} = \begin{pmatrix}
+  0 & 0 & -1 \\
+  0 & 0 & 0 \\
+  1 & 0 & 0
+\end{pmatrix} = y.
 $$
+
+This completes $\text{(i)}$. Recall that $\text{(ii)}$ asks for an explicit isomorphism $\varphi: \sf{sl(2,\bf{C})}  \to \mathnormal{L}$.
 
 ---
 
