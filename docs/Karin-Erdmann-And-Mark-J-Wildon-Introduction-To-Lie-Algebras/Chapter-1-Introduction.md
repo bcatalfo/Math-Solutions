@@ -944,7 +944,56 @@ $$
 \end{pmatrix} = y.
 $$
 
-This completes $\text{(i)}$. Recall that $\text{(ii)}$ asks for an explicit isomorphism $\varphi: \sf{sl(2,\bf{C})}  \to \mathnormal{L}$.
+This completes $\text{(i)}$. Recall that $\text{(ii)}$ asks for an explicit isomorphism $\varphi: \sf{sl(2,\bf{C})}  \to \mathnormal{L}$. If we let $u = \varphi(h)$ then
+
+$$
+\text{ad}(u)(\varphi(f)) = [u, \varphi(f)] = [\varphi(h), \varphi(f)] = \varphi([h,f]) \\
+= -\varphi([f,h]) = -\varphi(2f) = -2\varphi(f)
+$$
+
+and
+
+$$
+\text{ad}(u)(\varphi(e)) = [u, \varphi(e)] = [\varphi(h), \varphi(e)] = \varphi([h,e]) \\
+= - \varphi([e,h]) = -\varphi(-2e) = 2\varphi(e)
+$$
+
+and also
+
+$$
+\text{ad}(u)(\varphi(h)) = [u, \varphi(h)] = [\varphi(h), \varphi(h)] = 0
+$$
+
+So $\text{ad}(u)$ has eigenvectors $\varphi(f), \varphi(e), $ and $\varphi(h)$ with eigenvalues of $-2, 2$ and $0$.
+Using our basis
+
+$$
+u = u_xx + u_yy + u_zz
+= \begin{pmatrix}
+  0 & u_x & -u_y \\
+  -u_x & 0 & u_z \\
+  u_y & -u_z & 0
+\end{pmatrix}
+$$
+
+With characteristic polynomial
+
+$$
+p(\lambda) = \text{det} \begin{pmatrix}
+  -\lambda & u_x & -u_y \\
+  -u_x & -\lambda & u_z \\
+  u_y & -u_z & -\lambda
+\end{pmatrix} \\
+ = -\lambda (\lambda^2 + u_z^2) - u_x(\lambda u_x - u_zu_y) - u_y(u_xu_z + \lambda u_y) \\
+ = -\lambda^3 - u_z^2\lambda - \lambda u_x^2 + u_zu_yu_x - u_yu_xu_z - \lambda u_y^2 \\
+ = -\lambda^3 - \lambda(u_x^2 + u_y^2 + u_z^2) = -\lambda (\lambda^2 + u_x^2 + u_y^2 + u_z^2)
+$$
+
+Check this: why does the adjoint have to have the same eigenvalues as that of the original matrix? Anyways assuming they do
+
+$$
+u_x^2 + u_y^2 + u_z^2 = -4
+$$
 
 ---
 
