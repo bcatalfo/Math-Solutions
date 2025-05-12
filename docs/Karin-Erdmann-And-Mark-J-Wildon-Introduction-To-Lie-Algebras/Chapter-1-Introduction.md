@@ -944,55 +944,75 @@ $$
 \end{pmatrix} = y.
 $$
 
-This completes $\text{(i)}$. Recall that $\text{(ii)}$ asks for an explicit isomorphism $\varphi: \sf{sl(2,\bf{C})}  \to \mathnormal{L}$. If we let $u = \varphi(h)$ then
+This completes $\text{(i)}$. Recall that $\text{(ii)}$ asks for an explicit isomorphism $\varphi: \sf{sl}(2,\bf{C})  \to \mathnormal{L}$. In other words, $\varphi$ has to be a linear bijective map that respects the Lie bracket, so for each $u, v \in \sf{sl}(2, \bf{C})$
 
 $$
-\text{ad}(u)(\varphi(f)) = [u, \varphi(f)] = [\varphi(h), \varphi(f)] = \varphi([h,f]) \\
-= -\varphi([f,h]) = -\varphi(2f) = -2\varphi(f)
+[\varphi(u), \varphi(v)] = \varphi([u, v])
 $$
 
-and
+Recall from $1.12$ that
 
 $$
-\text{ad}(u)(\varphi(e)) = [u, \varphi(e)] = [\varphi(h), \varphi(e)] = \varphi([h,e]) \\
-= - \varphi([e,h]) = -\varphi(-2e) = 2\varphi(e)
+\left\{
+  e = \begin{pmatrix}
+    0 & 1 \\
+    0 & 0
+  \end{pmatrix}, \> f = \begin{pmatrix}
+    0 & 0 \\
+    1 & 0
+  \end{pmatrix}, \> h = \begin{pmatrix}
+    1 & 0 \\
+    0 & -1
+  \end{pmatrix}
+\right\}
 $$
 
-and also
+is a basis for $\sf{sl}(2, \bf{C})$ and that
 
 $$
-\text{ad}(u)(\varphi(h)) = [u, \varphi(h)] = [\varphi(h), \varphi(h)] = 0
+[e,f] = h, \> [e, h] = -2e, \> [f,h] = 2f,
 $$
 
-So $\text{ad}(u)$ has eigenvectors $\varphi(f), \varphi(e), $ and $\varphi(h)$ with eigenvalues of $-2, 2$ and $0$.
-Using our basis
+so it is sufficient to show that (prove this?)
 
 $$
-u = u_xx + u_yy + u_zz
-= \begin{pmatrix}
-  0 & u_x & -u_y \\
-  -u_x & 0 & u_z \\
-  u_y & -u_z & 0
-\end{pmatrix}
+[\varphi(e), \varphi(f)] = \varphi([e, f]) = \varphi(h), \\
+[\varphi(e), \varphi(h)] = \varphi([e,h]) = -2 \varphi(e), \\
+[\varphi(f), \varphi(h)] = \varphi([f,h]) = 2 \varphi(f).
 $$
 
-With characteristic polynomial
+The key insight comes from the following calculation
 
 $$
-p(\lambda) = \text{det} \begin{pmatrix}
-  -\lambda & u_x & -u_y \\
-  -u_x & -\lambda & u_z \\
-  u_y & -u_z & -\lambda
-\end{pmatrix} \\
- = -\lambda (\lambda^2 + u_z^2) - u_x(\lambda u_x - u_zu_y) - u_y(u_xu_z + \lambda u_y) \\
- = -\lambda^3 - u_z^2\lambda - \lambda u_x^2 + u_zu_yu_x - u_yu_xu_z - \lambda u_y^2 \\
- = -\lambda^3 - \lambda(u_x^2 + u_y^2 + u_z^2) = -\lambda (\lambda^2 + u_x^2 + u_y^2 + u_z^2)
+[ix + z, ix - z] = [ix, ix - z] + [z, ix - z] \\
+ = [ix, ix] - [ix, z] + [z, ix] - [z,z] \\
+ = -2i [x,z] = 2iy
 $$
 
-Check this: why does the adjoint have to have the same eigenvalues as that of the original matrix? Anyways assuming they do
+So take (prove that this is well defined and a bijection? Enough to show that these are three linearly independent elements?)
 
 $$
-u_x^2 + u_y^2 + u_z^2 = -4
+\varphi(e) = ix + z, \> \varphi(f) = ix - z, \> \varphi(h) = 2iy.
+$$
+
+The previous calculation verified that
+
+$$
+[\varphi(e), \varphi(f)] = \varphi(h),
+$$
+
+so one equation down, to go. Calculate that
+
+$$
+[\varphi(e), \varphi(h)] = [ix + z, 2iy] = [ix, 2iy] + [z, 2iy] \\
+= -[x,y] + 2i [z,y] = -2ix - z = -2 \varphi(e).
+$$
+
+One more to go!
+
+$$
+[\varphi(f), \varphi(h)] = [ix - z, 2iy] = [ix, 2iy] - [z, 2iy] \\
+= -2[x,y] - 2i [z,y] = 2ix - 2z = 2(ix - z) = 2 \varphi(f). \quad \square
 $$
 
 ---
