@@ -1025,7 +1025,7 @@ $(\text{i}) \>$ Show that $\mathsf{gl}_S(n, F)$ is a Lie subalgebra of $\mathsf{
 $(\text{ii}) \>$ Find $\mathsf{gl}_S(2, \bf{R})$ if $S = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$.
 $(\text{iii}) \>$ Does there exist a matrix $S$ such that $\mathsf{gl}_S(2,\bf{R})$ is equal to the set of all diagonal matrices in $\mathsf{gl}(2,\bf{R})$?
 $(\text{iv}) \>$ Find a matrix $S$ such that $\mathsf{gl}_S (3,\bf{R})$ is isomorphic to the Lie algebra $\mathbf{R}^3_\land$ defined in $\S 1.2$, Example 1.
-_Hint_: Part $(\text{i})$ of Exercise 1.14 is relevant.
+_Hint_: Part $(\text{i})$ of Exercise $1.14$ is relevant.
 
 ---
 
