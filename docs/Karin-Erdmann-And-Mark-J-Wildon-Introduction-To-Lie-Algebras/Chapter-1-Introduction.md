@@ -1029,16 +1029,20 @@ _Hint_: Part $(\text{i})$ of Exercise $1.14$ is relevant.
 
 ---
 
-$1.16. \dag \quad$
+$1.16. \dag \quad$ Show, by giving an example, that if $F$ is a field of characteristic $2$, there are algebras over $F$ which satisfy $(\text{L}1')$ and $(\text{L}2)$ but are not Lie algebras.
 
 ---
 
-$1.17. \quad$
+$1.17. \quad$ Let $V$ be an $n$-dimensional complex vector space and let $L = \mathsf{gl}(V)$. Suppose that $x \in L$ is diagonalisable, with eigenvalues $\lambda_1, \dots, \lambda_n$. Show that $\text{ad } x \in \mathsf{gl}(L)$ is also diagonalisable, and that its eigenvalues are $\lambda_i - \lambda_j$ for $1 \leq i, j \leq n$.
 
 ---
 
-$1.18. \quad$
+$1.18. \quad$ Let $L$ be a Lie algebra. We saw in $\S 1.6$, Example $1.2(2)$ that the maps $\text{ad } x: L \to L$ for $x \in L$ are derivations of $L$; these are known as _inner derivations_. Show that if $\text{IDer } L$ is the set of inner derivations of $L$, then $\text{IDer } L$ is an ideal of $\text{Der } L$.
 
 ---
 
-$1.19. \quad$
+$1.19. \quad$ Let $A$ be an algebra and let $\delta: A \to A$ be a derivation. Prove that $\delta$ satisfies the Leibniz rule
+
+$$
+\delta^n(xy) = \sum_{r = 0}^n \binom{n}{r} \delta^r(x) \delta^{n-r}(y) \quad \text{for all } x,y \in A
+$$
