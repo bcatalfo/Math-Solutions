@@ -1027,6 +1027,43 @@ $(\text{iii}) \>$ Does there exist a matrix $S$ such that $\mathsf{gl}_S(2,\bf{R
 $(\text{iv}) \>$ Find a matrix $S$ such that $\mathsf{gl}_S (3,\bf{R})$ is isomorphic to the Lie algebra $\mathbf{R}^3_\land$ defined in $\S 1.2$, Example 1.
 _Hint_: Part $(\text{i})$ of Exercise $1.14$ is relevant.
 
+**Solution**
+
+$\text{(i)} \>$In order to show that $\mathsf{gl}_S(n,F)$ is a Lie subalgebra of $\mathsf{gl}(n,F)$, we must first show that it is a vector subspace.
+Let $\lambda \in F$ and $a, b \in \mathsf{gl}_S(n,F)$. It suffices to show that $a + \lambda b \in \mathsf{gl}_S(n,F)$.
+By the definition of $\mathsf{gl}_S(n,F)$ we have
+
+$$
+\tag{1} a^tS = -Sa, \> b^tS = -Sb
+$$
+
+Since matrix transposition is linear
+
+$$
+(a + \lambda b)^t = a^t + \lambda b^t
+$$
+
+Multiplying by $S$
+
+$$
+(a + \lambda b)^tS = (a^t + \lambda b^t)S = a^tS + \lambda b^t S
+$$
+
+Plugging in $(1)$
+
+$$
+= -Sa - \lambda Sb = -S(a + \lambda b)
+$$
+
+This shows that $\mathsf{gl}_S(n,F)$ is a vector subspace of $\mathsf{gl}(n,F)$. To show that it is a Lie subalgebra it remains to show that $[a,b] \in \mathsf{gl}_S(n,F)$. Calculate that
+
+$$
+[a,b]^t S = (ab - ba)^t S = (ab)^tS - (ba)^tS \\
+= b^ta^tS - a^tb^tS = b^t (-Sa) - a^t (-Sb) \\
+= (a^t S)b - (b^tS)a = -Sab - (-Sb)a \\
+= Sba - Sab = S (ba - ab) = -S(ab - ba) = -S [a,b]. \quad \square
+$$
+
 ---
 
 $1.16. \dag \quad$ Show, by giving an example, that if $F$ is a field of characteristic $2$, there are algebras over $F$ which satisfy $(\text{L}1')$ and $(\text{L}2)$ but are not Lie algebras.
