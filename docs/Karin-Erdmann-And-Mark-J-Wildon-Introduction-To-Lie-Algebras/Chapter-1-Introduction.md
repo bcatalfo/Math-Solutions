@@ -1067,12 +1067,12 @@ $$
 $\text{(ii)} \>$ Let $S = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$, we need to find $\mathsf{gl}_S(2,\mathbf{R})$. Let $x = \begin{pmatrix} x_{11} & x_{12} \\ x_{21} & x_{22} \end{pmatrix}$. Calculate that
 
 $$
-x^tS = -Sx \\
-\iff \begin{pmatrix} x_{11} & x_{21} \\ x_{12} & x_{22}\end{pmatrix} \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = - \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} x_{11} & x_{12} \\ x_{21} & x_{22} \end{pmatrix} \\
+x^tS = -Sx \\[4px]
+\iff \begin{pmatrix} x_{11} & x_{21} \\ x_{12} & x_{22}\end{pmatrix} \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = - \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} x_{11} & x_{12} \\ x_{21} & x_{22} \end{pmatrix} \\[4px]
 \iff x_{21} = -x_{12}
 $$
 
-We can conclude that $\mathsf{gl}_S(2,R) = \text{span}\left(\left\{\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}\right\}\right)$. $\quad \square$
+We can conclude that $\mathsf{gl}_S(2,\mathbf{R}) = \text{span}\left(\left\{\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}\right\}\right)$. $\quad \square$
 
 ---
 
