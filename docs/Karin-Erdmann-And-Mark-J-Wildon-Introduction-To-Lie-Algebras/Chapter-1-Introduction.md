@@ -1029,7 +1029,7 @@ _Hint_: Part $(\text{i})$ of Exercise $1.14$ is relevant.
 
 **Solution**
 
-$\text{(i)} \>$In order to show that $\mathsf{gl}_S(n,F)$ is a Lie subalgebra of $\mathsf{gl}(n,F)$, we must first show that it is a vector subspace.
+$\text{(i)} \>$ In order to show that $\mathsf{gl}_S(n,F)$ is a Lie subalgebra of $\mathsf{gl}(n,F)$, we must first show that it is a vector subspace.
 Let $\lambda \in F$ and $a, b \in \mathsf{gl}_S(n,F)$. It suffices to show that $a + \lambda b \in \mathsf{gl}_S(n,F)$.
 By the definition of $\mathsf{gl}_S(n,F)$ we have
 
@@ -1063,6 +1063,16 @@ $$
 = (a^t S)b - (b^tS)a = -Sab - (-Sb)a \\
 = Sba - Sab = S (ba - ab) = -S(ab - ba) = -S [a,b]. \quad \square
 $$
+
+$\text{(ii)} \>$ Let $S = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$, we need to find $\mathsf{gl}_S(2,\mathbf{R})$. Let $x = \begin{pmatrix} x_{11} & x_{12} \\ x_{21} & x_{22} \end{pmatrix}$. Calculate that
+
+$$
+x^tS = -Sx \\
+\iff \begin{pmatrix} x_{11} & x_{21} \\ x_{12} & x_{22}\end{pmatrix} \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = - \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} x_{11} & x_{12} \\ x_{21} & x_{22} \end{pmatrix} \\
+\iff x_{21} = -x_{12}
+$$
+
+We can conclude that $\mathsf{gl}_S(2,R) = \text{span}\left(\left\{\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}\right\}\right)$. $\quad \square$
 
 ---
 
