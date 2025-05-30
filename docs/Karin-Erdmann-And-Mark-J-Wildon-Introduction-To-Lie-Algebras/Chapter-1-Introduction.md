@@ -1069,10 +1069,21 @@ $\text{(ii)} \>$ Let $S = \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix}$, we need
 $$
 x^tS = -Sx \\[4px]
 \iff \begin{pmatrix} x_{11} & x_{21} \\ x_{12} & x_{22}\end{pmatrix} \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = - \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} \begin{pmatrix} x_{11} & x_{12} \\ x_{21} & x_{22} \end{pmatrix} \\[4px]
-\iff x_{21} = -x_{12}
+\iff \begin{pmatrix}
+  0 & x_{11} \\
+  0 & x_{12}
+\end{pmatrix}
+= - \begin{pmatrix}
+  x_{21} & x_{22} \\
+  0 & 0
+\end{pmatrix} \\[4px]
+\iff \begin{pmatrix}
+  x_{21} & x_{11} + x_{22} \\
+  0 & x_{12}
+\end{pmatrix} = 0
 $$
 
-We can conclude that $\mathsf{gl}_S(2,\mathbf{R}) = \text{span}\left(\left\{\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}\right\}\right)$. $\quad \square$
+So we can conclude that $\mathsf{gl}_S(2,\mathbf{R}) = \text{span}\left\{\begin{pmatrix}1 & 0 \\ 0 & -1\end{pmatrix}\right\}$. $\quad \square$
 
 $\text{(iii)} \>$ We need to find or prove that their doesn't exist a matrix $S$ such that $\mathsf{gl}_S(2,\mathbf{R}) = \text{span}\left(\left\{\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix},\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}\right\}\right)$.
 
