@@ -1074,6 +1074,91 @@ $$
 
 We can conclude that $\mathsf{gl}_S(2,\mathbf{R}) = \text{span}\left(\left\{\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}\right\}\right)$. $\quad \square$
 
+$\text{(iii)} \>$ We need to find or prove that their doesn't exist a matrix $S$ such that $\mathsf{gl}_S(2,\mathbf{R}) = \text{span}\left(\left\{\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix},\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}\right\}\right)$.
+
+$$
+x^tS = -Sx \\
+\begin{pmatrix}
+  x_{11} & x_{12} \\
+  x_{21} & x_{22}
+\end{pmatrix}^\intercal
+\begin{pmatrix}
+  S_{11} & S_{12} \\
+  S_{21} & S_{22}
+\end{pmatrix}
+= - \begin{pmatrix}
+  S_{11} & S_{12} \\
+  S_{21} & S_{22}
+\end{pmatrix}
+\begin{pmatrix}
+  x_{11} & x_{12} \\
+  x_{21} & x_{22} \\
+\end{pmatrix} \\[4px]
+\begin{pmatrix}
+  x_{11} & x_{21} \\
+  x_{12} & x_{22}
+\end{pmatrix}
+\begin{pmatrix}
+  S_{11} & S_{12} \\
+  S_{21} & S_{22}
+\end{pmatrix}
+= - \begin{pmatrix}
+  S_{11} & S_{12} \\
+  S_{21} & S_{22}
+\end{pmatrix}
+\begin{pmatrix}
+  x_{11} & x_{12} \\
+  x_{21} & x_{22} \\
+\end{pmatrix} \\[4px]
+\begin{pmatrix}
+  x_{11}S_{11} + x_{21}S_{21} & x_{11}S_{12} + x_{21}S_{22} \\
+  x_{12}S_{11} + x_{22}S_{21} & x_{12}S_{12} + x_{22}S_{22}
+\end{pmatrix} \\ = -
+\begin{pmatrix}
+  S_{11}x_{11} + S_{12}x_{21} & S_{11}x_{12} + S_{12}x_{22} \\
+  S_{21}x_{11} + S_{22}x_{21} & S_{21}x_{12} + S_{22}x_{22}
+\end{pmatrix} \\
+x_{11}S_{11} + x_{21}S_{21} + S_{11}x_{11} + S_{12}x_{21} = 0 \\
+x_{11}S_{12} + x_{21}S_{22} + S_{11}x_{12} + S_{12}x_{22} = 0 \\
+x_{12}S_{11} + x_{22}S_{21} + S_{21}x_{11} + S_{22}x_{21} = 0 \\
+x_{12}S_{12} + x_{22}S_{22} + S_{21}x_{12} + S_{22}x_{22} = 0
+$$
+
+We need to choose $S$ such that this reduces to
+
+$$
+x_{12} = x_{21} = 0
+$$
+
+The last equation can be rewritten as
+
+$$
+(S_{12} + S_{21})x_{12} + 2S_{22}x_{22} = 0
+$$
+
+And the first as
+
+$$
+(S_{12} + S_{21})x_{21} + 2S_{11}x_{11} = 0
+$$
+
+So we must have
+
+$$
+S_{11} = S_{22} = 0
+$$
+
+Plugging in
+
+$$
+x_{21}(S_{21} + S_{12}) = 0 \\
+x_{11}S_{12} + x_{22}S_{12} = 0 \\
+x_{22}S_{21} + x_{11}S_{21} = 0 \\
+x_{12}(S_{12} + S_{21}) = 0
+$$
+
+so we would need to also have $S_{12} = S_{21}$, but this doesn't give us the desired result, so no such matrix $S$ exists. $\quad \square$
+
 ---
 
 $1.16. \dag \quad$ Show, by giving an example, that if $F$ is a field of characteristic $2$, there are algebras over $F$ which satisfy $(\text{L}1')$ and $(\text{L}2)$ but are not Lie algebras.
