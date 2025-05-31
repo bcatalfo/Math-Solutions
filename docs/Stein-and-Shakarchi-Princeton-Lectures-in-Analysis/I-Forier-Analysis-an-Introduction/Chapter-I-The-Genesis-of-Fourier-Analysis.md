@@ -544,7 +544,26 @@ $$
 
 ---
 
-**8.**
+**8.** Suppose $F$ is a function on $(a,b)$ with two continuous derivatives. Show that whenever $x$ and $x + h$ belong to $(a,b)$, one may write
+
+$$
+F(x+h) = F(x) + hF'(x) + \frac{h^2}{2}F''(x) + h^2\varphi (h),
+$$
+
+where $\varphi(h) \to 0$ as $h \to 0$.
+Deduce that
+
+$$
+\frac{F(x+h) + F(x-h) - 2F(x)}{h^2} \to F''(x) \quad \text{as } h \to 0.
+$$
+
+_Hint_: This is simply a Taylor expansion. It may be obtained by noting that]
+
+$$
+F(x+h) - F(x) = \int_{x}^{x+h} F'(y) \, dy,
+$$
+
+and then writing $F'(y) = F'(x) + (y-x)F''(x) + (y-x)\psi(y-x)$, where $\psi(h) \to 0$ as $h \to 0$.
 
 ---
 
