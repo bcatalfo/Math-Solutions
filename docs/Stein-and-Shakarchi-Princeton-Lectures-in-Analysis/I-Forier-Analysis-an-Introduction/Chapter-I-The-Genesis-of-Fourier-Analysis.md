@@ -538,6 +538,32 @@ $$
 
 so by definition $f$ is periodic with period $2 \pi$.
 
+Next we need to show that
+
+$$
+\frac{1}{2\pi} \int_{-\pi}^{\pi} e^{inx} \, dx = \begin{cases}
+  1 \quad \text{if } n = 0, \\
+  0 \quad \text{if } n \neq 0.
+\end{cases}
+$$
+
+Calculate that
+
+$$
+\int_{-\pi}^{\pi} e^{inx} \, dx = \int_{-\pi}^{\pi} \cos(nx) + i \sin(nx) \, dx \\
+= \int_{-\pi}^{\pi} \cos(nx) \, dx + i \int_{-\pi}^{\pi} \sin(nx) \, dx
+$$
+
+If $n \neq 0$ then
+
+$$
+= \left. \frac{\sin(nx)}{n} \right|_{-\pi}^{\pi} - i \left. \frac{\cos(nx)}{n} \right|_{-\pi}^{\pi} \\[4px]
+= \frac{\sin(n\pi) - \sin(-n\pi)}{n} - i \frac{\cos(n\pi) - \cos(-n\pi)}{n} = 0,
+$$
+
+the last equality following from $\sin(n\pi) = 0$ and $\cos(x) = \cos(-x)$.
+The case of $n=0$ is trivial because $e^{inx} = 1$.
+
 ---
 
 **6.** Prove that if $f$ is a twice continuously differentiable function on $\R$ which is a solution of the equation
