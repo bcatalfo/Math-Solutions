@@ -514,7 +514,19 @@ $$
 
 ---
 
-**6.**
+**6.** Prove that if $f$ is a twice continuously differentiable function on $\R$ which is a solution of the equation
+
+$$
+f''(t) + c^2f(t) = 0,
+$$
+
+then there exist constants $a$ and $b$ such that
+
+$$
+f(t) = a \cos ct + b \sin ct.
+$$
+
+This can be done by differentiating the two functions $g(t) = f(t) \cos ct - c^{-1}f'(t)\sin ct$ and $h(t) = f(t) \sin ct + c^{-1}f'(t)\cos ct$.
 
 ---
 
