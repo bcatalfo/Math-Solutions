@@ -578,7 +578,23 @@ For what position of $p$ are the second, fourth, $\dots$ harmonics missing? For 
 
 ---
 
-**10.**
+**10.** Show that the expression of the Laplacian
+
+$$
+\triangle = \frac{\partial^2}{\partial x^2} + \frac{\partial^2}{\partial y^2}
+$$
+
+is given in polar coordinates by the formula
+
+$$
+\triangle = \frac{\partial^2}{\partial r^2} + \frac{1}{r}\frac{\partial}{\partial r} + \frac{1}{r^2}\frac{\partial^2}{\partial \theta^2}.
+$$
+
+Also, prove that
+
+$$
+\left|\frac{\partial u}{\partial x}\right|^2 + \left| \frac{\partial u}{\partial y} \right|^2 = \left| \frac{\partial u}{\partial r} \right|^2 + \frac{1}{r^2} \left| \frac{\partial u}{\partial \theta} \right|^2 .
+$$
 
 ---
 
