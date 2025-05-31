@@ -541,7 +541,7 @@ so by definition $f$ is periodic with period $2 \pi$.
 Next we need to show that
 
 $$
-\frac{1}{2\pi} \int_{-\pi}^{\pi} e^{inx} \, dx = \begin{cases}
+\tag{2} \frac{1}{2\pi} \int_{-\pi}^{\pi} e^{inx} \, dx = \begin{cases}
   1 \quad \text{if } n = 0, \\
   0 \quad \text{if } n \neq 0.
 \end{cases}
@@ -563,6 +563,71 @@ $$
 
 the last equality following from $\sin(n\pi) = 0$ and $\cos(x) = \cos(-x)$.
 The case of $n=0$ is trivial because $e^{inx} = 1$.
+
+Next we need to show that if $n, m \geq 1$ then
+
+$$
+\frac{1}{\pi} \int_{-\pi}^{\pi} \cos nx \cos mx \, dx =
+\begin{cases}
+  0 \quad \text{if } n \neq m \\
+  1 \quad \text{if } n = m.
+\end{cases}
+$$
+
+Using the hint,
+
+$$
+e^{inx}e^{-imx} + e^{inx}e^{imx} \\
+= (\cos(nx) + i \sin(nx))(\cos(-mx) + i \sin(-mx)) \\ + (\cos(nx) + i\sin(nx))(\cos(mx) + i \sin(mx)) \\
+= (\cos nx \cos mx - i\cos nx \sin mx + i\sin nx\cos mx + \sin nx \sin mx ) \\ + ( \cos nx \cos mx + i \cos nx \sin mx + i \sin nx \cos mx - \sin nx \sin mx ) \\
+= 2\cos nx \cos mx + 2i \sin nx \cos mx,
+$$
+
+and similarly
+
+$$
+e^{inx}e^{-imx} - e^{inx}e^{imx} = 2 \sin nx \sin mx - 2i \cos nx \sin mx.
+$$
+
+Integrate both sides to get
+
+$$
+\int_{-\pi}^{\pi} e^{i(n-m)x} \, dx + \int_{-\pi}^{\pi} e^{i(n+m)x} \, dx \\
+= 2\int_{-\pi}^{\pi} \cos nx \cos mx \, dx + 2i\int_{-\pi}^{\pi} \sin nx \cos mx \, dx,
+$$
+
+and similarly
+
+$$
+\int_{-\pi}^{\pi} e^{i(n-m)x} \, dx - \int_{-\pi}^{\pi} e^{i(n+m)x} \, dx \\
+= 2\int_{-\pi}^{\pi} \sin nx \sin mx \, dx - 2i\int_{-\pi}^{\pi} \cos nx \sin mx \, dx.
+$$
+
+If $n = m$ then of course $n - m = 0$, so we can plug into $(2)$ to get
+
+$$
+2 \pi =  2\int_{-\pi}^{\pi} \cos nx \cos mx \, dx + 2i\int_{-\pi}^{\pi} \sin nx \cos mx \, dx
+$$
+
+and similarly
+
+$$
+2 \pi = 2\int_{-\pi}^{\pi} \sin nx \sin mx \, dx - 2i\int_{-\pi}^{\pi} \cos nx \sin mx \, dx.
+$$
+
+If $n \neq m$ then we get
+
+$$
+0 =  2\int_{-\pi}^{\pi} \cos nx \cos mx \, dx + 2i\int_{-\pi}^{\pi} \sin nx \cos mx \, dx,
+$$
+
+and similarly
+
+$$
+0 =  2\int_{-\pi}^{\pi} \sin nx \sin mx \, dx - 2i\int_{-\pi}^{\pi} \cos nx \sin mx \, dx.
+$$
+
+The result follows from equating real and imaginary parts. $\quad \square$
 
 ---
 
