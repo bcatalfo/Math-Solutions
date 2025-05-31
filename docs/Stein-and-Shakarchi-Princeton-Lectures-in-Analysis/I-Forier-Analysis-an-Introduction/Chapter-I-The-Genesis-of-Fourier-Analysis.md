@@ -635,3 +635,32 @@ _Hint_: If $F$ solves the equation, write $F(r) = g(r)r^n$, find the equation sa
 ```
 
 ## Problem
+
+**1.** Consider the Dirichlet problem illustrated above.
+More precisely, we look for a solution of the steady-state heat equation $\triangle u = 0$ in the rectangle $R = \{(x,y): 0 \leq x \leq \pi, 0 \leq y \leq 1 \}$ that vanishes on the vertical sides of $R$, and so that
+
+$$
+u(x,0) = f_0(x) \quad \text{and} \quad u(x,1) = f_1(x),
+$$
+
+where $f_0$ and $f_1$ are the initial data which fix the temperature distribution on the horizontal sides of the rectangle.
+
+Use separation of variables to show that if $f_0$ and $f_1$ have Fourier expansions
+
+$$
+f_0(x) = \sum_{k=1}^{\infty} A_k \sin kx \quad \text{and} \quad f_1(x) = \sum_{k=1}^{\infty} B_k \sin kx,
+$$
+
+then
+
+$$
+u(x,y) = \sum_{k=1}^{\infty} \left( \frac{\sinh k(1-y)}{\sinh k}A_k + \frac{\sinh ky}{\sinh k}B_k \right) \sin kx.
+$$
+
+We recall the definitions of the hyperbolic sine and cosine functions:
+
+$$
+\sinh x = \frac{e^x - e^{-x}}{2} \quad \text{and} \quad \cosh x = \frac{e^x + e^{-x}}{2}.
+$$
+
+Compare this result with the solution of the Dirichlet problem in the strip obtained in Problem 3, Chapter 5.
