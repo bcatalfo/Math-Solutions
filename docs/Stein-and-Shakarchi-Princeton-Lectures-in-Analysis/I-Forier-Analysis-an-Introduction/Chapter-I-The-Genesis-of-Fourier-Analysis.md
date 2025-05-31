@@ -583,20 +583,22 @@ and then writing $F'(y) = F'(x) + (y-x)F''(x) + (y-x)\psi(y-x)$, where $\psi(h) 
 ```tikz {kroki=true}
 \usepackage{tikz}
 \begin{document}
+\Large{
 \begin{tikzpicture}
   \node at (0.25,0.25) {$0$};
   \draw[thick,->] (0,.5) -- (8,.5);
-  \node at (-.1,1.75) {$u=0$};
-  \node at (3.25,.2) {$u=f_0$};
+  \node at (-.25,1.75) {$u=0$};
+  \node at (3.25,.15) {$u=f_0$};
   \node at (3.25,1.75) {$\triangle u = 0$};
   \node at (.25, 3) {$1$};
-  \node at (3.25,3.25) {$u=f_1$};
+  \node at (3.25,3.35) {$u=f_1$};
   \draw[thick,->] (.5,0) -- (.5,4);
   \draw (.5,3) -- (6,3);
   \draw (6,3) -- (6,.5);
-  \node at (6.5,1.75) {$u=0$};
+  \node at (6.75,1.75) {$u=0$};
   \node at (6,.2) {$\pi$};
 \end{tikzpicture}
+}
 \end{document}
 ```
 
