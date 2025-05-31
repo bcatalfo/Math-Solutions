@@ -568,7 +568,13 @@ and then writing $F'(y) = F'(x) + (y-x)F''(x) + (y-x)\psi(y-x)$, where $\psi(h) 
 
 ---
 
-**9.**
+**9.** In the case of the plucked string, use the formula for the Fourier sine coefficients to show that
+
+$$
+A_m = \frac{2h}{m^2} \frac{\sin mp}{p(\pi - p)}.
+$$
+
+For what position of $p$ are the second, fourth, $\dots$ harmonics missing? For what position of $p$ are the third, sixth, $\dots$ harmonics missing?
 
 ---
 
