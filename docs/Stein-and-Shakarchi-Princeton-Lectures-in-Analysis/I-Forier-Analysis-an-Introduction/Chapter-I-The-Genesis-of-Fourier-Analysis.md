@@ -8,7 +8,10 @@ export_on_save:
 .tikz { display: flex; justify-content: center; align-items: center}
 </style>
 
-**Exercises**
+# Chapter 1. The Genesis of Fourier Analysis
+
+## Exercises
+
 **1.** If \(z = x + iy\) is a complex number with \(x, y \in \mathbb{R}\), we define
 
 $$
