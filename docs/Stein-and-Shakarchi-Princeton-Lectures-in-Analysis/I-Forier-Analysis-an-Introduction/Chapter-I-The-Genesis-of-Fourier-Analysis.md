@@ -510,7 +510,7 @@ $$
 \int_{-\pi}^{\pi} \sin nx \cos mx \, dx = 0 \quad \text{for any } n, m.
 $$
 
-[Hint: Calculate $e^{inx}e^{-im} + e^{inx}e^{imx}$ and $e^{inx}e^{-imx} - e^{inx}e^{-imx} - e^{inx}e^{imx}$.]
+[Hint: Calculate $e^{inx}e^{-imx} + e^{inx}e^{imx}$ and $e^{inx}e^{-imx} - e^{inx}e^{imx}$.]
 
 ---
 
