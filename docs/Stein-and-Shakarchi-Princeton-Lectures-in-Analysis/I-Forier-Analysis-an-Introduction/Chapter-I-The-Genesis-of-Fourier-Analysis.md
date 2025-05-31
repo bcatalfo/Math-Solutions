@@ -585,17 +585,17 @@ and then writing $F'(y) = F'(x) + (y-x)F''(x) + (y-x)\psi(y-x)$, where $\psi(h) 
 \begin{document}
 \begin{tikzpicture}
   \node at (0.25,0.25) {$0$};
-  \draw[thick,->] (0,.5) -- (5,.5);
-  \node[align=right] at (-.1,1.25) {$u=0$};
-  \node[align=center] at (2.25,.2) {$u=f_0$};
-  \node[align=center] at (2.25,1.25) {$\triangle u = 0$};
-  \node[align=center] at (.25, 2) {$1$};
-  \node[align=center] at (2.25,2.25) {$u=f_1$};
-  \draw[thick,->] (.5,0) -- (.5,3);
-  \draw (.5,2) -- (4,2);
-  \draw (4,2) -- (4,.5);
-  \node at (4.5,1.25) {$u=0$};
-  \node at (4,.2) {$\pi$};
+  \draw[thick,->] (0,.5) -- (8,.5);
+  \node at (-.1,1.75) {$u=0$};
+  \node at (3.25,.2) {$u=f_0$};
+  \node at (3.25,1.75) {$\triangle u = 0$};
+  \node at (.25, 3) {$1$};
+  \node at (3.25,3.25) {$u=f_1$};
+  \draw[thick,->] (.5,0) -- (.5,4);
+  \draw (.5,3) -- (6,3);
+  \draw (6,3) -- (6,.5);
+  \node at (6.5,1.75) {$u=0$};
+  \node at (6,.2) {$\pi$};
 \end{tikzpicture}
 \end{document}
 ```
