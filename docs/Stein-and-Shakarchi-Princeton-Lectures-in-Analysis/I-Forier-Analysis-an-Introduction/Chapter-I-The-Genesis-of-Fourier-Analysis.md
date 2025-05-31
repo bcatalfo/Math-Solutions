@@ -530,7 +530,17 @@ This can be done by differentiating the two functions $g(t) = f(t) \cos ct - c^{
 
 ---
 
-**7.**
+**7.** Show that if $a$ and $b$ are real, then one can write
+
+$$
+a \cos ct + b \sin ct = A \cos (ct - \phi),
+$$
+
+where $A = \sqrt{a^2 + b^2}$, and $\varphi$ is chose so that
+
+$$
+\cos \varphi = \frac{a}{\sqrt{a^2+b^2}} \quad \text{and} \quad \sin \varphi = \frac{b}{\sqrt{a^2+b^2}}.
+$$
 
 ---
 
