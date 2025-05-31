@@ -598,7 +598,14 @@ $$
 
 ---
 
-**11.**
+**11.** Show that if $n \in \Z$ the only solutions of the differential equation
+
+$$
+r^2 F''(r) + rF'(r) - n^2F(r) = 0,
+$$
+
+which are twice differentiable when $r > 0$, are given by linear combinations of $r^n$ and $r^{-n}$ when $n \neq 0$, and $1$ and $\log r$ when $n = 0$.
+_Hint_: If $F$ solves the equation, write $F(r) = g(r)r^n$, find the equation satisfied by $g$, and conclude that $rg'(r) + 2ng(r) = c$ where $c$ is a constant.
 
 ---
 
