@@ -516,6 +516,28 @@ $$
 
 [Hint: Calculate $e^{inx}e^{-imx} + e^{inx}e^{imx}$ and $e^{inx}e^{-imx} - e^{inx}e^{imx}$.]
 
+**Solution**
+
+First we need to show that $f(x) = e^{inx}$ is periodic with period $2 \pi$. Plug in and use $4(\text{b})$ to get
+
+$$
+\tag{1} f(x + 2\pi) = e^{in(x + 2\pi)} = e^{inx + 2\pi in} = f(x)e^{2\pi in}.
+$$
+
+By Euler's identity $\left(4 (\text{c})\right)$
+
+$$
+e^{2\pi i n} = \cos(2\pi n) + i \sin(2\pi n) = 1,
+$$
+
+plugging this into $(1)$ gives
+
+$$
+f(x + 2 \pi) = f(x),
+$$
+
+so by definition $f$ is periodic with period $2 \pi$.
+
 ---
 
 **6.** Prove that if $f$ is a twice continuously differentiable function on $\R$ which is a solution of the equation
