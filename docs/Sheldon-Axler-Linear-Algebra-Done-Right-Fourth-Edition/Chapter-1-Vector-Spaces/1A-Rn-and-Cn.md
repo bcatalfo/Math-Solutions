@@ -37,6 +37,32 @@ $$
 
 **3** &nbsp; Show that $(\alpha \beta)\lambda = \alpha(\beta \lambda)$ for all $\alpha, \beta, \lambda \in \mathbf{C}$.
 
+**Solution**
+
+Let $\alpha = a + bi$, $\beta = c + di$, and $\lambda = e + fi$. Then
+
+$$
+(\alpha \beta) \lambda = ((a + bi)(c + di)) (e + fi) \\
+= ((ac - bd) + (ad + bc)i)(e + fi) \\
+= ((ac - bd)e - (ad + bc)f) + ((ac - bd)f + (ad + bc)e)i \\
+= (ace - bde - adf - bcf) + (acf - bdf + ade + bce)i.
+$$
+
+Calculate separately that
+
+$$
+\alpha (\beta \lambda) = (a + bi)((c + di)(e + fi)) \\
+= (a + bi)((ce - df) + (cf + de)i) \\
+= (a(ce - df) - b(cf + de)) + (a(cf+de) + b(ce-df))i \\
+= (ace - adf - bcf - bde) + (acf + ade + bce - bdf)i.
+$$
+
+Rearranging terms shows that
+
+$$
+(\alpha \beta) \lambda = \alpha (\beta \lambda). \quad \square
+$$
+
 ---
 
 **4** &nbsp; Show that $\lambda (\alpha + \beta) = \lambda \alpha + \lambda \beta$ for all $\lambda, \alpha, \beta \in \mathbf{C}$.
