@@ -96,6 +96,27 @@ $$
 
 **5** &nbsp; Show that for every $\alpha \in \mathbf{C}$, there exists a unique $\beta \in \mathbf{C}$ such that $\alpha + \beta = 0$.
 
+**Solution**
+
+Let $\alpha = a + bi$. Let $\beta = -a - bi$. Clearly $\alpha + \beta = 0$. Let $\beta' = c + di$ satisfy
+$$\alpha + \beta' = 0.$$
+
+Plug in,
+
+$$
+(a + bi) + (c + di) = 0 \\
+(a + c) + (b + d)i = 0 \\
+c = -a, \quad d = -b,
+$$
+
+so we have
+
+$$
+\beta' = \beta
+$$
+
+proving uniqueness. $\quad \square$
+
 ---
 
 **6** &nbsp; Show that for every $\alpha \in \mathbf{C}$ with $\alpha \neq 0$, there exists a unique $\beta \in \mathbf{C}$ such that $\alpha \beta = 1$.
