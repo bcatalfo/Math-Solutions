@@ -20,3 +20,71 @@ $$
 $$
 
 ---
+
+**2** &nbsp; Show that $(\alpha + \beta) + \lambda = \alpha + (\beta + \lambda)$ for all $\alpha, \beta, \lambda \in \mathbf{C}$.
+
+---
+
+**3** &nbsp; Show that $(\alpha \beta)\lambda = \alpha(\beta \lambda)$ for all $\alpha, \beta, \lambda \in \mathbf{C}$.
+
+---
+
+**4** &nbsp; Show that $\lambda (\alpha + \beta) = \lambda \alpha + \lambda \beta$ for all $\lambda, \alpha, \beta \in \mathbf{C}$.
+
+---
+
+**5** &nbsp; Show that for every $\alpha \in \mathbf{C}$, there exists a unique $\beta \in \mathbf{C}$ such that $\alpha + \beta = 0$.
+
+---
+
+**6** &nbsp; Show that for every $\alpha \in \mathbf{C}$ with $\alpha \neq 0$, there exists a unique $\beta \in \mathbf{C}$ such that $\alpha \beta = 1$.
+
+---
+
+**7** &nbsp; Show that
+
+$$
+\frac{-1 + \sqrt{3}i}{2}
+$$
+
+is a cube root of $1$ (meaning that its cube equals $1$).
+
+---
+
+**8** &nbsp; Find two distinct square roots of $i$.
+
+---
+
+**9** &nbsp; Find $x \in \mathbf{R}^4$ such that
+
+$$
+(4,-3,1,7) + 2x = (5,9,-6,8).
+$$
+
+---
+
+**10** &nbsp; Explain why there does not exist $\lambda \in \mathbf{C}$ such that
+
+$$
+\lambda(2-3i,5+4i,-6+7i)=(12-5i,7+22i,-32,-9i).
+$$
+
+---
+
+**11** &nbsp; Show that $(x+y)+z = x+(y+z)$ for all $x,y,z \in \mathbf{F}^n$.
+
+---
+
+**12** &nbsp; Show that $(ab)x = a(bx)$ for all $x \in \mathbf{F}^n$ and all $a,b \in \mathbf{F}$.
+
+---
+
+**13** &nbsp; Show that $1x = x$ for all $x \in \mathbf{F}^n$.
+
+---
+
+**14** &nbsp; Show that $\lambda(x+y) = \lambda x + \lambda y$ for all $\lambda \in \mathbf{F}$ and all $x,y \in \mathbf{F}^n$.
+
+---
+
+**15** &nbsp; Show that $(a+b)x = ax + bx$ for all $a,b \in \mathbf{F}$ and all $x \in \mathbf{F}^n$.
