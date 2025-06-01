@@ -23,6 +23,16 @@ $$
 
 **2** &nbsp; Show that $(\alpha + \beta) + \lambda = \alpha + (\beta + \lambda)$ for all $\alpha, \beta, \lambda \in \mathbf{C}$.
 
+**Solution**
+
+Let $\alpha = a + bi$, $\beta = c + di$, and $\lambda = e + fi$. Then
+
+$$
+(\alpha + \beta) + \lambda = (a + bi + c + di) + e + fi \\
+= ((a + c) + (b + d)i) + (e + fi) = (a + c + e) + (b + d + f)i \\
+= (a + bi) + ((c + e) + (d + f)i) = \alpha + (\beta + \lambda). \quad \square
+$$
+
 ---
 
 **3** &nbsp; Show that $(\alpha \beta)\lambda = \alpha(\beta \lambda)$ for all $\alpha, \beta, \lambda \in \mathbf{C}$.
