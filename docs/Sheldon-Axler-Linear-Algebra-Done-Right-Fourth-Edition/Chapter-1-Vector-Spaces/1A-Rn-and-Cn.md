@@ -67,6 +67,31 @@ $$
 
 **4** &nbsp; Show that $\lambda (\alpha + \beta) = \lambda \alpha + \lambda \beta$ for all $\lambda, \alpha, \beta \in \mathbf{C}$.
 
+**Solution**
+
+Let $\alpha = a + bi$, $\beta = c + di$, and $\lambda = e + fi$. Then
+
+$$
+\lambda (\alpha + \beta) = (e + fi)((a + bi) + (c + di)) \\
+= (e + fi)((a+c) + (b+d)i) \\
+= (e(a+c) - f(b+d)) + (e(b+d) + f(a+c))i \\
+= (ea + ec -fb - fd) + (eb + ed + fa + fc)i.
+$$
+
+Calculate separately that
+
+$$
+\lambda \alpha + \lambda \beta = (e + fi)(a + bi) + (e + fi)(c + di) \\
+= ((ea - bf) + (eb + fa)i) + ((ec - fd) + (ed + fc)i) \\
+= (ea - bf + ec - fd) + (eb + fa + ed + fc)i.
+$$
+
+Rearranging terms and the commutative property for reals gives
+
+$$
+\lambda(\alpha + \beta) = \lambda \alpha + \lambda \beta. \quad \square
+$$
+
 ---
 
 **5** &nbsp; Show that for every $\alpha \in \mathbf{C}$, there exists a unique $\beta \in \mathbf{C}$ such that $\alpha + \beta = 0$.
