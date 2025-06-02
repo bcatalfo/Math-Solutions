@@ -125,6 +125,42 @@ $$
 
 With these operations of addition and scalar multiplication, is $\mathbf{R} \cup \{\infty, -\infty\}$ a vector space over $\mathbf{R}$? Explain.
 
+**Solution**
+
+As defined above $\mathbf{R} \cup \{\infty, -\infty\}$ does not form a vector space.
+Assume for the purpose of contradiction that $\mathbf{R} \cup \{\infty, -\infty\}$ is a vector space over $\mathbf{R}$.
+By the above definition we have
+
+$$
+\infty + \infty = \infty
+$$
+
+Add $-\infty$ to both sides
+
+$$
+(\infty + \infty) + (-\infty) = \infty + (-\infty)
+$$
+
+Since $\infty$ and $-\infty$ are vectors and vector addition is by definition associative,
+
+$$
+\infty + (\infty + (-\infty)) = \infty + (-\infty)
+$$
+
+it is defined above that $\infty + -\infty = 0$ so we can plug this in to get
+
+$$
+\infty + 0 = 0,
+$$
+
+however by the definition of an additive identity in a vector space this becomes
+
+$$
+\infty = 0,
+$$
+
+contradicting the above assertion that $\infty$ is a distinct object.
+
 ---
 
 **7** &nbsp; Suppose $S$ is a nonempty set. Let $V^S$ denote the set of functions from $S$ to $V$. Define a natural addition and scalar multiplication on $V^S$, and show that $V^S$ is a vector space with these definitions.
