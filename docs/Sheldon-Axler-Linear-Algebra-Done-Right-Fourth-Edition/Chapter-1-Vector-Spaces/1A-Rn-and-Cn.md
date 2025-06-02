@@ -231,7 +231,66 @@ $$
 **10** &nbsp; Explain why there does not exist $\lambda \in \mathbf{C}$ such that
 
 $$
-\lambda(2-3i,5+4i,-6+7i)=(12-5i,7+22i,-32,-9i).
+\lambda(2-3i,5+4i,-6+7i)=(12-5i,7+22i,-32   -9i).
+$$
+
+**Solution**
+
+Let $\lambda = a + bi$. Then
+
+$$
+12 - 5i = (a + bi)(2 - 3i) = (2a + 3b) + (-3a + 2b)i \\
+12 = 2a + 3b \\
+-5 = -3a + 2b
+$$
+
+Multiply the top equation by three and the bottom by two
+
+$$
+36 = 6a + 9b \\
+-10 = -6a + 4b,
+$$
+
+add both equations together to get
+
+$$
+13b = 26 \\
+b = 2 \\
+12 = 2a + 3 \times 2 \\
+12 = 2a + 6 \\
+2a = 6 \\
+a = 3
+$$
+
+So we must have $\lambda = 3 + 2i$. To double check our work calculate that
+
+$$
+(3 + 2i)(2 - 3i) = (6 + 6) + (-9 + 4)i = 12 - 5i.
+$$
+
+We also need to have
+
+$$
+\lambda(5 + 4i) = 7 + 22i.
+$$
+
+Calculate that
+
+$$
+(3 + 2i)(5 + 4i) = (15 - 8) + (12 + 10)i = 7 + 22i.
+$$
+
+Okay, so that one works, but we still got one more to go! We still need
+
+$$
+\lambda (-6 + 7i) = -32 - 9i.
+$$
+
+Calculate that
+
+$$
+(3 + 2i) (-6 + 7i) = (-18 - 14) + (21 - 12)i \\
+= -32 + 9i \neq -32 - 9i \quad \square
 $$
 
 ---
