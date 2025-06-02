@@ -19,7 +19,7 @@ export_on_save:
 
 ---
 
-**4** &nbsp; The empty set is not a vector space. The empty set fails to satisft only one of the reqirements listed in the definition of a vector space (1.20). Which one?
+**4** &nbsp; The empty set is not a vector space. The empty set fails to satisfy only one of the reqirements listed in the definition of a vector space (1.20). Which one?
 
 ---
 
