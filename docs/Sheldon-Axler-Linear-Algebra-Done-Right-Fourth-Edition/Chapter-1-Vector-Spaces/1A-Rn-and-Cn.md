@@ -196,6 +196,21 @@ Therefore $x^3 = 1$. $\quad \square$
 
 **8** &nbsp; Find two distinct square roots of $i$.
 
+**Solution**
+
+$$
+(a+bi)(a+bi) = i \\
+\iff (a^2-b^2) + (ab + ba)i = i \\
+\iff a^2 = b^2 \quad \text{and} \quad 2ab = 1
+$$
+
+Consider $\frac{1}{\sqrt{2}} + \frac{1}{\sqrt{2}}i$ and $-\frac{1}{\sqrt{2}} - \frac{1}{\sqrt{2}}i$. Verify that indeed
+
+$$
+\left( \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{2}}i \right) \left( \frac{1}{\sqrt{2}} + \frac{1}{\sqrt{2}}i \right) \\[4px]
+= \left(\frac{1}{2} - \frac{1}{2}\right) + \left(\frac{1}{2} + \frac{1}{2}\right)i = i. \quad \square
+$$
+
 ---
 
 **9** &nbsp; Find $x \in \mathbf{R}^4$ such that
