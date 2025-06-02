@@ -85,6 +85,16 @@ Here the $0$ on the left side is the number $0$, and the $0$ on the right side i
 
 _The phrase a "condition can be replaced" in a definition means that the collection of objects satisfying the definition is unchanged if the original condition is replaced with the new condition._
 
+**Solution**
+
+Let $V$ be a vector space. By 1.30 we know that $0v = 0$ for all $v \in V$.
+Alternatively, let $V$ satisfy all the requirements of a vector space, with the replacement of the additive inverse condition by the condition that $0v = 0$ for all $v \in V$. We need to show that $V$ satisfies the additive inverse condition.
+Let $v \in V$. Calculate that
+
+$$
+v + (-1)v = 1v + (-1)v = (1-1)v = 0v = 0. \quad \square
+$$
+
 ---
 
 **6** &nbsp; Let $\infty$ and $-\infty$ denote two distinct objects, neither of which is in $\mathbf{R}$. Define an addition and scalar multiplication on $\mathbf{R} \cup \{\infty, -\infty\}$ as you could guess from the notation. Specifically, the sum and product of two real numbers is as usual, and for $t \in \mathbf{R}$ define
