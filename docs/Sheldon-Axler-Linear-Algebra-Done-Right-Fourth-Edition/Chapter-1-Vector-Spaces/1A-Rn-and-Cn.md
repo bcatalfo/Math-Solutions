@@ -314,6 +314,15 @@ $$
 
 **12** &nbsp; Show that $(ab)x = a(bx)$ for all $x \in \mathbf{F}^n$ and all $a,b \in \mathbf{F}$.
 
+**Solution**
+
+Let $x = (x_1, \dots, x_n)$. Then
+
+$$
+(ab)x = (ab)(x_1, \dots, x_n) = ((ab)x_1, \dots, (ab)x_n) \\
+= (a(bx_1), \dots, a(bx_n)) = a(bx_1, \dots, bx_n) = a(bx). \quad \square
+$$
+
 ---
 
 **13** &nbsp; Show that $1x = x$ for all $x \in \mathbf{F}^n$.
