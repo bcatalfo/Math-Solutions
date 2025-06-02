@@ -327,6 +327,14 @@ $$
 
 **13** &nbsp; Show that $1x = x$ for all $x \in \mathbf{F}^n$.
 
+**Solution**
+
+Let $x = (x_1, \dots, x_n)$. Then
+
+$$
+1x = (1x_1, \dots, 1x_n) = (x_1, \dots, x_n) = x. \quad \square
+$$
+
 ---
 
 **14** &nbsp; Show that $\lambda(x+y) = \lambda x + \lambda y$ for all $\lambda \in \mathbf{F}$ and all $x,y \in \mathbf{F}^n$.
