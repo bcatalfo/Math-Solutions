@@ -121,6 +121,49 @@ proving uniqueness. $\quad \square$
 
 **6** &nbsp; Show that for every $\alpha \in \mathbf{C}$ with $\alpha \neq 0$, there exists a unique $\beta \in \mathbf{C}$ such that $\alpha \beta = 1$.
 
+**Solution**
+
+Let $\alpha = a + bi$. Then
+
+$$
+\alpha \times \overline{\alpha} = (a + bi)(a - bi) = a^2 + b^2
+$$
+
+Assume for the purpose of contradiction that $a^2 + b^2 = 0$. Then $a = b = 0$. Then by definition $\alpha = 0$. But we are given $\alpha \neq 0$, a contradiction. Therefore $a^2 + b^2 \neq 0$.
+
+Let
+
+$$
+\beta = \frac{a - bi}{a^2 + b^2},
+$$
+
+which is well-defined because $a^2 + b^2 \neq 0$. Clearly $\alpha \beta = 1$. What remains to be shown is uniqueness.
+
+Let $\beta' = c + di$ satisfy
+
+$$
+\alpha \beta' = 1.
+$$
+
+Plug in to get
+
+$$
+(a + bi)(c + di) = 1 \\
+\iff (ac - bd) + (ad + bc)i = 1 \\
+\iff ac - bd = 1 \quad \text{and} \quad ad + bc = 0
+$$
+
+$$
+ac = 1 + bd \\[4px]
+c = \frac{1 + bd}{a} \\[4px]
+0 = ad + bc = ad + \frac{b + b^2d}{a} \\
+0 = a^2d + b + b^2d \\
+a^2d + b^2d = -b \\
+d = \frac{-b}{a^2+b^2} \\[4px]
+c = \frac{1 + bd}{a} = \frac{1 - \frac{b^2}{a^2+b^2}}{a} = \frac{a^2 + b^2 - b^2}{a(a^2 + b^2)} \\
+= \frac{a}{a^2 + b^2}. \quad \square
+$$
+
 ---
 
 **7** &nbsp; Show that
