@@ -9,6 +9,32 @@ export_on_save:
 
 **1** &nbsp; Prove that $-(-v) = v$ for every $v \in V$.
 
+**Solution**
+
+Let $v \in V$. By the definition of an additive inverse $-v$ is the unique solution to the equation
+
+$$
+\tag{1} v + (-v) = 0.
+$$
+
+Similarly, $-(-v)$ is the unique solution to the equation
+
+$$
+\tag{2}(-v) + -(-v) = 0.
+$$
+
+Using the commutative property on $(1)$ we get
+
+$$
+(-v) + v = 0.
+$$
+
+Plugging into $(2)$ yields
+
+$$
+-(-v) = v. \quad \square
+$$
+
 ---
 
 **2** &nbsp; Suppose $a \in \mathbf{F}$, $v \in V$, and $av = 0$. Prove that $a = 0$ or $v = 0$.
