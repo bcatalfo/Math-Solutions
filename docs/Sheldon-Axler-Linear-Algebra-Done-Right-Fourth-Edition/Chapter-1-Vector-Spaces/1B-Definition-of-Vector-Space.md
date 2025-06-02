@@ -51,6 +51,20 @@ We have shown that $a \neq 0 \implies v = 0$ and $v \neq 0 \implies a = 0$. Ther
 
 **3** &nbsp; Suppose $v,w \in V$. Explain why there exists a unique $x \in V$ such that $v + 3x = w$.
 
+**Solution**
+
+Of course $x = \frac{1}{3}(w-v)$ is a solution to $v + 3x = w$. Suppose there exists $x' \in V$ such that
+
+$$
+v + 3x' = w.
+$$
+
+Subtracting $v$ and dividing by $3$ yields
+
+$$
+x' = \frac{1}{3}(w-v). \quad \square
+$$
+
 ---
 
 **4** &nbsp; The empty set is not a vector space. The empty set fails to satisfy only one of the reqirements listed in the definition of a vector space (1.20). Which one?
