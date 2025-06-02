@@ -69,6 +69,10 @@ $$
 
 **4** &nbsp; The empty set is not a vector space. The empty set fails to satisfy only one of the reqirements listed in the definition of a vector space (1.20). Which one?
 
+**Solution**
+
+The additive identity requires an element $0 \in V$, contradicting $V = \emptyset$. $\quad \square$
+
 ---
 
 **5** &nbsp; Show that in the definition of a vector space (1.20), the additive inverse condition can be replaced with the condition that
