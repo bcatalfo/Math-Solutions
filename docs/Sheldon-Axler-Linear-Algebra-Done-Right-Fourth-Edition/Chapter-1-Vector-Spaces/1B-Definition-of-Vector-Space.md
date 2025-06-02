@@ -39,6 +39,14 @@ $$
 
 **2** &nbsp; Suppose $a \in \mathbf{F}$, $v \in V$, and $av = 0$. Prove that $a = 0$ or $v = 0$.
 
+**Solution**
+
+Assume that $a \neq 0$. Then we divide the equation $av = 0$ by $a$ to get $v = 0$.
+
+Alternatively, assume that $v \neq 0$. We know that $av = 0$. Assume for the purpose of contradiction that $a \neq 0$. Then divide by $a$ to get $v = 0$, a contradiction. Therefore $a = 0$.
+
+We have shown that $a \neq 0 \implies v = 0$ and $v \neq 0 \implies a = 0$. Therefore either $a = 0$ or $v = 0$. $\quad \square$
+
 ---
 
 **3** &nbsp; Suppose $v,w \in V$. Explain why there exists a unique $x \in V$ such that $v + 3x = w$.
