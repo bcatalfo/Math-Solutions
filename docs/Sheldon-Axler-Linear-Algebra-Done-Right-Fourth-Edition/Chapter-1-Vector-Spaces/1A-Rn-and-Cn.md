@@ -339,6 +339,16 @@ $$
 
 **14** &nbsp; Show that $\lambda(x+y) = \lambda x + \lambda y$ for all $\lambda \in \mathbf{F}$ and all $x,y \in \mathbf{F}^n$.
 
+**Solution**
+
+Let $x = (x_1, \dots, x_n)$ and $y = (y_1, \dots, y_n)$. Then
+
+$$
+\lambda(x+y) = \lambda(x_1 + y_1, \dots, x_n + y_n) \\
+= (\lambda(x_1 + y_1), \dots, \lambda(x_n + y_n)) = (\lambda x_1 + \lambda y_1, \dots, \lambda x_n + \lambda y_n) \\
+= (\lambda x_1, \dots, \lambda x_n) + (\lambda y_1, \dots, \lambda y_n) = \lambda x + \lambda y. \quad \square
+$$
+
 ---
 
 **15** &nbsp; Show that $(a+b)x = ax + bx$ for all $a,b \in \mathbf{F}$ and all $x \in \mathbf{F}^n$.
