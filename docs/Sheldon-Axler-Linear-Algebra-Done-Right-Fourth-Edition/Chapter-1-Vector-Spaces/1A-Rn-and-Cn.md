@@ -174,6 +174,24 @@ $$
 
 is a cube root of $1$ (meaning that its cube equals $1$).
 
+**Solution**
+Let $x = \frac{-1 + \sqrt{3}i}{2}$. Calculate that
+
+$$
+\left(-1 + \sqrt{3}i\right) \left(-1 + \sqrt{3}i\right) = (1 - 3) + (-\sqrt{3}-\sqrt{3})i \\
+= -2 - 2\sqrt{3}i.
+$$
+
+And so
+
+$$
+\\[1px]
+\left(-1 + \sqrt{3}i\right)^3 = \left(-2 - 2\sqrt{3}i\right)\left(-1 + \sqrt{3}i\right) \\
+= (2 + 2 \times 3) + \left(-2\sqrt{3} + 2\sqrt{3}\right)i = 8.
+$$
+
+Therefore $x^3 = 1$. $\quad \square$
+
 ---
 
 **8** &nbsp; Find two distinct square roots of $i$.
