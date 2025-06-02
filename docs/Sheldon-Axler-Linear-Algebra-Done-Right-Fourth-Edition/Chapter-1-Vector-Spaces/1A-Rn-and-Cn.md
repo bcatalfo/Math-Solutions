@@ -352,3 +352,13 @@ $$
 ---
 
 **15** &nbsp; Show that $(a+b)x = ax + bx$ for all $a,b \in \mathbf{F}$ and all $x \in \mathbf{F}^n$.
+
+**Solution**
+
+Let $x = (x_1, \dots, x_n)$. Then
+
+$$
+(a+b)x = (a+b)(x_1, \dots, x_n) = ((a+b)x_1, \dots, (a+b)x_n) \\
+= (ax_1 + bx_1, \dots, ax_n + bx_n) = (ax_1, \dots, ax_n) + (bx_1, \dots, bx_n) \\
+= a(x_1, \dots, x_n) + b(x_1, \dots, x_n) = ax + bx. \quad \square
+$$
