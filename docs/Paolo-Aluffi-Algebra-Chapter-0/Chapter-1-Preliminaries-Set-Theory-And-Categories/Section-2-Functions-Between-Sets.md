@@ -91,3 +91,7 @@ g(a) = \begin{cases}
 \end{cases}
 $$
 It is evident by our construction of \(f\) that \(f(g) = B\). In detail, if \(a \in f(g)\) then \(a \in B\) by definition of \(g\), and if \(a \in B\) then \(g(a) = 1\) by the definition of \(g\) and then by the definition of \(f\) we have \(a \in f(g)\). \(\square\)
+
+$$
+\\
+$$

@@ -111,3 +111,7 @@ $$
 \lim_{h \to 0^+} \frac{f^{(k+1)}(h)}{h} = \lim_{y \to \infty} \frac{p_{2k+3}(y)}{e^{y}} = 0
 $$
 The last equality following from repeated applications of L'Hospital's Rule.
+
+$$
+\\
+$$

@@ -30,3 +30,7 @@ Show that a \((n + k) \times (n + k)\) real matrix \( A \) belongs to \( O(n; k)
 $$
 g A^T g = A^{-1}.
 $$
+
+$$
+\\
+$$

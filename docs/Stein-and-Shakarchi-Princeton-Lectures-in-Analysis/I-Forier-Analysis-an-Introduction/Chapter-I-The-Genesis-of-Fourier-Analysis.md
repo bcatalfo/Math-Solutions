@@ -777,3 +777,7 @@ $$
 $$
 
 Compare this result with the solution of the Dirichlet problem in the strip obtained in Problem 3, Chapter 5.
+
+$$
+\\
+$$

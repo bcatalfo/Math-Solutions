@@ -1189,3 +1189,7 @@ $1.19. \quad$ Let $A$ be an algebra and let $\delta: A \to A$ be a derivation. P
 $$
 \delta^n(xy) = \sum_{r = 0}^n \binom{n}{r} \delta^r(x) \delta^{n-r}(y) \quad \text{for all } x,y \in A
 $$
+
+$$
+\\
+$$

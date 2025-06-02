@@ -182,3 +182,7 @@ contradicting the above assertion that $\infty$ is a distinct object.
   for all $a,b\in \mathbf{R}$ and all $u,v \in V$.
 
 Prove that with the definitions of addition and scalar multiplication as above, $V_{\mathbf{C}}$ is a complex vector space.
+
+$$
+\\
+$$

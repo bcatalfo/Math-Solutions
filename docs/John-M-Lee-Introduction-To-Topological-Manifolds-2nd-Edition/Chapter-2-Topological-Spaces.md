@@ -190,4 +190,7 @@ Let \(x \in \overline{A}\). By part (d) we know that every neighborhood of \(x\)
 * \(A = \overline{A}\).
 * \(A\) contains all of its boundary points.
 * Every point of \(X \setminus A\) has a neighborhood contained in \(X \setminus A\).
-****
+
+$$
+\\
+$$

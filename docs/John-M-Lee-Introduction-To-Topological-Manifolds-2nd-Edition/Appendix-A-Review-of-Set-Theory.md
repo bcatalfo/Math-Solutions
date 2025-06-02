@@ -70,3 +70,7 @@ Let \(x, y, z \in X\). First we show that \(x \sim x\). This is obvious because,
 **Solution**
 Assume \(x \nsim y\), so there is some equivalence relation \(\sim' \supseteq R\) such that \(x \nsim' y\). We can not have \(x = y\), because it would contadict \(x \sim' x\) (since \(\sim'\) is an equivalence relation). Since \(\sim' \supseteq R\), we have \(x \> R' \> y \implies x \> R \> y \text{ or } y \> R \> x \implies x \sim' y \text{ or } y \sim' x \implies x \sim' y\), so we can not have \(x \> R' \> y\). Similarly, \(x \> R' \> z_1 \>  R' \cdots R' \> z_n \> R' \> y \implies x \sim' z_1 \sim' \cdots \sim' z_n \sim' y \implies x \sim' y\), so we can not have \(x \> R' \> z_1 \>  R' \cdots R' \> z_n \> R' \> y\). 
 Alternatively, assume that none of the three conditions are true. We need to show that \(x \nsim y\), and we can do this by constructing an equivalence relation \(\sim' \supseteq R\) such that \(x \nsim' y\). Use the three conditions to construct the equivalence relation. This construction is indeed an equivalence relation (does this need a quick verification?) and does not contain \((x, y)\). \(\square\)
+
+$$
+\\
+$$

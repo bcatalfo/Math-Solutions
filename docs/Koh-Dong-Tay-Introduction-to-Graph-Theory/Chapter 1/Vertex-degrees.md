@@ -1875,6 +1875,6 @@ $(23) \>$ $(+)$ In the preceding problem, there were four couples altogether in 
 
 $(24) \>$ $(+)$ There are $n \geq 2$ distinct points in the plane such that the distance between any $2$ points is at least one. Prove that there are at most $3n$ pairs of these points at distance exactly one.
 
-```
-
-```
+$$
+\\
+$$

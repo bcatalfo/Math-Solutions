@@ -24,3 +24,7 @@ Let's start by proving that \(\sim\) is an equivalence relation:
 * *symmetry* \((\forall a \in \R)\) \((\forall b \in \R)\) \(a \sim b \implies b - a \in \Z \implies a - b \in \Z \implies b \sim a\);
 * *transitivity* \((\forall a \in \R)\) \((\forall b \in \R)\) \((\forall c \in \R)\), \((a \sim b \text{ and } b \sim c) \implies \left(b - a \in \Z \text{ and } c - b \in \Z \right) \implies \left(c - a \in \Z\right) \implies a \sim c\).
 The argument for \(\approx\) is similar (should just amount to repeating the above twice). I am lazy and also I don't know what 'compelling' description Mr. Aluffi is looking for. \(\square\)
+
+$$
+\\
+$$

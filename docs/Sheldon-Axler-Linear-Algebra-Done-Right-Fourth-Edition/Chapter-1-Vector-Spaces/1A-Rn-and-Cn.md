@@ -362,3 +362,7 @@ $$
 = (ax_1 + bx_1, \dots, ax_n + bx_n) = (ax_1, \dots, ax_n) + (bx_1, \dots, bx_n) \\
 = a(x_1, \dots, x_n) + b(x_1, \dots, x_n) = ax + bx. \quad \square
 $$
+
+$$
+\\
+$$

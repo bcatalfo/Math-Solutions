@@ -275,3 +275,7 @@ which is the original diagram for \(\sigma\), so we can conclude that \(\sigma 1
 **3.9.** \(\triangleright\) An alternative to the notion of *multiset* introduced in \(\S 2.2\) is obtained by considering sets endowed with equivalence relations; equivalent elements are taken to be multiple instances of elements 'of the same kind'. Define a notion of morphism between such enhanced sets, obtaining a category \(\mathsf{MSet}\) containing (a 'copy' of) \(\mathsf{Set}\) as a full subcategory. (There may be more than one reasonable way to do this! This is intentionally an open-ended exercise.) Which objects in \(\mathsf{MSet}\) determine the ordinary multisets as defined in \(\S2.2\) and how? Spell out what a morphism of multisets would be from this point of view. (There are several natural notions of morphisms of multisets. Try to define morphisms in \(\mathsf{MSet}\) so that the notion you obtain for ordinary multisets captures your intuitive understanding of these objects.) \(\left[\S2.2, \S3.2, 4.5\right]\)
 ****
 **3.11.** \(\triangleright\) Draw the relevant diagrams and define composition and identities for the category \(\mathsf{C}^{A, B}\) mentioned in Example 3.9. Do the same for the category \(\mathsf{C}^{\alpha, \beta}\) mentioned in Example 3.10. \(\left[\S5.5, 5.12\right]\)
+
+$$
+\\
+$$
