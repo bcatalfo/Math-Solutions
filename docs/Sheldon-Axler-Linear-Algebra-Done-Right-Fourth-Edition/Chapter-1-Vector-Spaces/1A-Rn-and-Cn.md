@@ -219,6 +219,13 @@ $$
 (4,-3,1,7) + 2x = (5,9,-6,8).
 $$
 
+**Solution**
+
+$$
+2x = (1, 12, -7, 1) \\
+x = (0.5, 6, -3.5, 0.5). \quad \square
+$$
+
 ---
 
 **10** &nbsp; Explain why there does not exist $\lambda \in \mathbf{C}$ such that
