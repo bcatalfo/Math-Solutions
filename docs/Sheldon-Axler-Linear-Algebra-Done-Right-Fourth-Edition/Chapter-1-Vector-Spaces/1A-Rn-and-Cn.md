@@ -297,6 +297,19 @@ $$
 
 **11** &nbsp; Show that $(x+y)+z = x+(y+z)$ for all $x,y,z \in \mathbf{F}^n$.
 
+**Solution**
+
+Let $x = (x_1, \dots, x_n)$, $y = (y_1, \dots, y_n)$, and $z = (z_1, \dots, z_n)$. Calculate that
+
+$$
+(x + y) + z = ((x_1, \dots, x_n) + (y_1, \dots, y_n)) + (z_1, \dots, z_n) \\
+= (x_1 + y_1, \dots, x_n + y_n) + (z_1, \dots, z_n) \\
+= (x_1 + y_1 + z_1, \dots, x_n + y_n + z_n) \\
+= (x_1 + (y_1 + z_1), \dots, x_n + (y_n + z_n)) \\
+= (x_1, \dots, x_n) + (y_1 + z_1, \dots, y_n + z_n) \\
+= x + (y + z). \quad \square
+$$
+
 ---
 
 **12** &nbsp; Show that $(ab)x = a(bx)$ for all $x \in \mathbf{F}^n$ and all $a,b \in \mathbf{F}$.
