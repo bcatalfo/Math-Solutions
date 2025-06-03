@@ -246,6 +246,64 @@ $$
 
 Prove that with the definitions of addition and scalar multiplication as above, $V_{\mathbf{C}}$ is a complex vector space.
 
+**Solution**
+
+Again, we go one by one through the axioms.
+
+_commutativity_
+
+$$
+(u_1 + iv_1) + (u_2 + iv_2) = (u_1 + u_2) + i(v_1 + v_2) \\
+ = (u_2 + u_1) + i(v_2 + v_1) = (u_2 + iv_2) + (u_1 + iv_1)
+$$
+
+_associativity_
+
+$$
+((u_1 + iv_1) + (u_2 + iv_2)) + (u_3 + iv_3) \\
+ = ((u_1 + u_2) + i(v_1 + v_2)) + (u_3 + iv_3) \\
+ = (u_1 + u_2 + u_3) + i(v_1 + v_2 + v_3) \\
+ = (u_1 + (u_2 + u_3)) + i(v_1 + (v_2 + v_3)) \\
+ = (u_1 + iv_1) + ((u_2 + u_3) + i(v_2 + v_3)) \\
+ = (u_1 + iv_1) + ((u_2 + iv_2) + (u_3 + iv_3))
+$$
+
+_additive identity_
+
+$$
+(u + iv)+ (0 + 0i) = (u + 0) + i(v + 0) = u + iv
+$$
+
+_additive inverse_
+
+$$
+(u + iv) + (-u + i(-v)) = (u + -u) + i(v + -v) = 0 + 0i = 0
+$$
+
+_multiplicative identity_
+
+$$
+1(u+iv) = (1 + 0i)(u+iv) = (1u - 0v) + i(1v + 0u) = u + iv 
+$$
+
+_distributive properties_
+
+$$
+(a + bi)((u_1 + iv_1) + (u_2 + iv_2)) = (a+bi)((u_1+u_2)+i(v_1+v_2)) \\
+= (a(u_1+u_2) - b(v_1+v_2)) + i(a(v_1+v_2) + b(u_1+u_2)) \\
+= ((au_1 - bv_1) + (au_2 - bv_2)) + i((av_1+bu_1)+(av_2+bu_2)) \\
+= ((au_1 - bv_1) + i(av_1 + bu_1)) + ((au_2 - bv_2) + i(av_2+bu_2)) \\
+= (a+bi)(u_1 + iv_1) + (a+bi)(u_2+iv_2)
+$$
+
+$$
+((a + bi) + (c+di))(u + iv) = ((a+c)+i(b+d))(u+iv) \\
+((a+c)u - (b+d)v) + i((a+c)v + (b+d)u) \\
+= ((au - bv) + (cu-dv)) + i((av + bu) + (cv + du)) \\
+= ((au-bv) + i(av+bu)) + ((cu - dv) + i(cv + du)) \\
+= (a+bi)(u + iv) + (c+di)(u+iv) \quad \square
+$$
+
 $$
 \\
 $$
