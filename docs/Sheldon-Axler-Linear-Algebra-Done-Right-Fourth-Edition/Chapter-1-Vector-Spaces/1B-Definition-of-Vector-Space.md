@@ -159,7 +159,7 @@ $$
 \infty = 0,
 $$
 
-contradicting the above assertion that $\infty$ is a distinct object.
+contradicting the above assertion that $\infty$ is a distinct object. $\quad \square$
 
 ---
 
