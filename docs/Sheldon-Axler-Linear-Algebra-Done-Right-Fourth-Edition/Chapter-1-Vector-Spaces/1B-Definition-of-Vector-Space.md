@@ -165,6 +165,69 @@ contradicting the above assertion that $\infty$ is a distinct object. $\quad \sq
 
 **7** &nbsp; Suppose $S$ is a nonempty set. Let $V^S$ denote the set of functions from $S$ to $V$. Define a natural addition and scalar multiplication on $V^S$, and show that $V^S$ is a vector space with these definitions.
 
+**Solution**
+
+Let $f,g,h \in V^S$, so $f,g,h: S \to V$ are vectors. Let $\lambda, \mu$ be scalars. Define vector addition and scalar multiplication as follows
+
+$$
+(f+g)(x) = f(x) + g(x), \\
+(\lambda f)(x) = \lambda f(x).
+$$
+
+We proceed to verify the vector space axioms. Let $x \in S$.
+
+_commutativity_
+
+$$
+(f + g)(x) = f(x) + g(x) = g(x) + f(x) = (g + f)(x) \\
+f + g = g + f
+$$
+
+_associativity_
+
+$$
+((f + g) + h)(x) = (f+g)(x) + h(x) = f(x) + g(x) + h(x) \\
+= f(x) + (g(x) + h(x)) = f(x) + (g + h)(x) = (f + (g+h))(x) \\
+(f + g) + h = f + (g+h)\\[4px]
+((\lambda \mu) f)(x) = (\lambda \mu)f(x) = \lambda(\mu f(x)) = \lambda (\mu f)(x) \\
+(\lambda \mu)f = \lambda (\mu f)
+$$
+
+_additive identity_
+
+Define $0 \in V^S$ as the function $0(x) = 0$. Then
+
+$$
+(f + 0)(x) = f(x) + 0 = f(x) \\
+f + 0 = f
+$$
+
+_additive inverse_
+
+Define $-f$ by $(-f)(x) = -f(x)$. Then 
+
+$$
+(f + -f)(x) = f(x) + -f(x) = 0 \\
+f + -f = 0
+$$
+
+_multiplicative identity_
+
+$$
+(1f)(x) = 1 f(x) = f(x) \\
+1f = f
+$$
+
+_distributive properties_
+
+$$
+(\lambda (f + g))(x) = \lambda (f+g)(x) = \lambda (f(x) + g(x)) = \lambda f(x) + \lambda g(x) \\
+\lambda (f + g) = \lambda f + \lambda g \\[4px]
+((\lambda + \mu)f)(x) = (\lambda + \mu)f(x) = \lambda f(x) + \mu f(x) \\
+(\lambda + \mu)f = \lambda f + \mu f \quad \square
+$$
+
+
 ---
 
 **8** &nbsp; Suppose $V$ is a real vector space.
