@@ -645,6 +645,33 @@ $$
 
 This can be done by differentiating the two functions $g(t) = f(t) \cos ct - c^{-1}f'(t)\sin ct$ and $h(t) = f(t) \sin ct + c^{-1}f'(t)\cos ct$.
 
+**Solution**
+
+Let's start by following the hint. First we differentiate $g(t)$,
+
+$$
+g'(t) = \frac{d}{dt} \left[ f(t)\cos ct \right] - c^{-1}\frac{d}{dt} \left[ f'(t) \sin ct \right] \\[4px]
+= \left(f'(t)\cos ct + f(t) \cdot -c\sin ct\right) - c^{-1}\left(f''(t)\sin ct + f'(t) \cdot c \cos ct\right) \\
+= \left(f'(t)\cos ct - c f(t) \sin ct \right) - c^{-1} \left( -c^2 f(t) \sin ct + cf'(t) \cos ct \right) \\
+= f'(t) \cos ct - c f(t) \sin ct + c f(t) \sin ct -f'(t) \cos ct = 0.
+$$
+
+Then we differentiate $h(t)$,
+
+$$
+h'(t) = \frac{d}{dt} \left[ f(t) \sin ct \right] + c^{-1} \frac{d}{dt} \left[ f'(t) \cos ct \right] \\
+= \left(f'(t) \sin ct + f(t) \cdot c \cdot \cos ct \right) + c^{-1}\left( f''(t) \cos ct + f'(t) \cdot (-c) \cdot \sin ct \right) \\
+= \left(f'(t) \sin ct + f(t) \cdot c \cdot \cos ct \right) + c^{-1}\left( -c^2 f(t) \cos ct + f'(t) \cdot (-c) \cdot \sin ct \right) \\
+= f'(t) \sin ct + f(t) \cdot c \cdot \cos ct - c f(t) \cos ct - f'(t) \cdot \sin ct = 0.  \\
+$$
+
+Therefore there exist constants $a$ and $b$ such that
+
+$$
+g(t) = a, \quad h(t) = b \\
+f(t) \cos ct - c^{-1}f'(t)\sin ct = a, \quad f(t) \sin ct + c^{-1}f'(t)\cos ct = b
+$$
+
 ---
 
 **7.** Show that if $a$ and $b$ are real, then one can write
