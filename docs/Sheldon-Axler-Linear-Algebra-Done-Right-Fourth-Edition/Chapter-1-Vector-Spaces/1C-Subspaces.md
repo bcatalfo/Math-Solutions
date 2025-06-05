@@ -58,6 +58,35 @@ so $au = (au_1, au_2, au_3) \in U$, so 3. _closed under scalar multiplication_ h
 
 We conclude that $U$ is a subspace. $\quad \square$
 
+(b) &nbsp; $U = \{ (x_1,x_2,x_3) \in \mathbf{F}^3: x_1 + 2x_2 + 3x_3 = 4 \}$
+
+$U$ is not a subspace because it doesn't contain $0$. $\quad \square$
+
+(c) &nbsp; $U = \{ (x_1,x_2,x_3) \in \mathbf{F}^3:  x_1x_2x_3 = 0 \}$
+
+$U$ is not a subspace because it isn't closed under addition. $(1, 0, 1) \in U$ and $(0,1,0) \in U$ but $(1,0,1) + (0,1,0) = (1,1,1) \notin U$. $\quad \square$
+
+(d) &nbsp; $U = \{ (x_1,x_2,x_3) \in \mathbf{F}^3: x_1 = 5x_3 \}$
+
+Clearly $0 \in U$ so 1. _additive identity_ holds.
+
+If $u = (u_1, u_2, u_3), w = (w_1, w_2, w_3) \in U$. Then
+
+$$
+u_1 + w_1 = 5u_3 + 5w_3 = 5(u_3 + w_3) = 5 \cdot 0 = 0,
+$$
+
+so 2. _closed under addition_ holds.
+
+If $a \in \mathbf{F}$ then 
+
+$$
+au_1 = a(5u_3) = 5(au_3),
+$$
+
+so $au \in \mathbf{F}$, and therefore 3. _closed under scalar multiplication_ holds.
+
+We conclude that $U$ is a subspace. $\quad \square$
 
 ---
 
