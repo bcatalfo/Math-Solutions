@@ -90,7 +90,23 @@ We conclude that $U$ is a subspace. $\quad \square$
 
 ---
 
-**2** &nbsp; Verify all assertions about subspaces in Example 1.35.
+**2** &nbsp; Verify the following assertions about subspaces:
+
+$\text{(a)} \>$ If $b \in \mathbf{F}$, then 
+
+$$
+\{(x_1,x_2,x_3,x_4) \in \mathbf{F}^4: x_3 = 5x_4 + b\}
+$$
+
+is a subspace of $\mathbf{F}^4$ if and only if $b=0$.
+
+$\text{(b)} \>$ The set of continuous real-valued functions on the interval $[0,1]$ is a subspace of $\mathbf{R}^{[0,1]}$.
+
+$\text{(c)} \>$ The set of differentiable real-valued functions on $\mathbf{R}$ is a subspace of $\mathbf{R}^\mathbf{R}$.
+
+$\text{(d)} \>$ The set of differentiable real-valued functions $f$ on the interval $(0,3)$ such that $f'(2) = b$ is a subspace of $\mathbf{R}^{(0,3)}$ if and only if $b=0$.
+
+$\text{(e)} \>$ The set of all sequences of complex numbers with limit $0$ is a subspace of $\mathbf{C}^\infty$.
 
 ---
 
