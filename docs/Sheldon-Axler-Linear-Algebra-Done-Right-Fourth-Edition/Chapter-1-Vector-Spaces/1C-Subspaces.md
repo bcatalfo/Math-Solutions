@@ -60,51 +60,107 @@ export_on_save:
 
 ---
 
-**13** &nbsp; 
+**13** &nbsp; Prove that the union of three subspaces of $V$ is a subspace of $V$ if and only if one of the subspaces contains the other two.
+
+_This exercise is surprisingly harder than Exercise 12, possibly because this exercise is not true if we replace $\mathbf{F}$ with a field containing only two elements._
 
 ---
 
-**14** &nbsp; 
+**14** &nbsp; Suppose
+
+$$
+U = \{(x,-x,2x)\in \mathbf{F}^3: x \in \mathbf{F}\} \quad \text{and} \quad W = \{(x,x,2x) \in \mathbf{F}^3:x \in F\}.
+$$
+
+Describe $U + W$ using symbols, and also give a description of $U+W$ that uses no symbols.
 
 ---
 
-**15** &nbsp; 
+**15** &nbsp; Suppose $U$ is a subspace of $V$. What is $U + U$?
 
 ---
 
-**16** &nbsp; 
+**16** &nbsp; Is the operation of addition on the subspaces of $V$ commutative? In other words, if $U$ and $W$ are subspaces of $V$, is $U + W = W + U$?
 
 ---
 
-**17** &nbsp; 
+**17** &nbsp; Is the operation of addition on the subspaces of $V$ associative? In other words, if $V_1$, $V_2$, $V_3$ are subspaces of $V$, is
+
+$$
+(V_1 + V_2) + V_3 = V_1 + (V_2 + V_3)?
+$$
 
 ---
 
-**18** &nbsp; 
+**18** &nbsp; Does this operation of addition on the subspaces of $V$ have an additive identity? Which subspaces have additive inverses?
 
 ---
 
-**19** &nbsp; 
+**19** &nbsp; Prove or give a counterexample: If $V_1$, $V_2$, $U$ are subspaces of $V$ such that 
+
+$$
+V_1 + U = V_2 + U,
+$$
+
+then $V_1 = V_2$.
 
 ---
 
-**20** &nbsp; 
+**20** &nbsp; Suppose 
+
+$$
+U = \{ (x,x,y,y): \in \mathbf{F}^4: x,y \in \mathbf{F} \}.
+$$
+
+Find a subspace $W$ of $\mathbf{F}^4$ such that $\mathbf{F}^4 = U \oplus W$.
 
 ---
 
-**21** &nbsp; 
+**21** &nbsp; Suppose
+
+$$
+U = \{ (x,y,x+y,x-y,2x): \in \mathbf{F}^5: x,y \in \mathbf{F} \}.
+$$
+
+Find a subspace $W$ of $\mathbf{F}^5$ such that $\mathbf{F}^5 = U \oplus W$.
 
 ---
 
-**22** &nbsp; 
+**22** &nbsp; Suppose
+
+$$
+U = \{(x,y,x+y,x-y,2x)\in \mathbf{F}^5: x,y\in\mathbf{F}\}.
+$$
+
+Find three subspaces $W_1$, $W_2$, $W_3$ of $\mathbf{F}^5$, none of which equals $\{0\}$, such that $\mathbf{F}^5 = U \oplus W_1 \oplus W_2 \oplus W_3$.
 
 ---
 
-**23** &nbsp; 
+**23** &nbsp; Prove or give a counterexample: If $V_1$, $V_2$, $U$ are subspaces of $V$ such that
+
+$$
+V = V_1 \oplus U \quad \text{and} \quad V = V_2 \oplus U,
+$$
+
+then $V_1 = V_2$.
+
+_Hint: When trying to discover whether a conjecture in linear algebra is true or false, it is often useful to start by experimenting in $\mathbf{F}^2$._
 
 ---
 
-**24** &nbsp; 
+**24** &nbsp; A function $f: \mathbf{R} \to \mathbf{R}$ is called _even_ if
+
+$$
+f(-x) = f(x)
+$$
+
+for all $x \in \mathbf{R}$. A function $f: \mathbf{R} \to \mathbf{R}$ is called _odd_ if
+
+$$
+f(-x) = -f(x)
+$$
+
+for all $x \in \mathbf{R}$. Let $V_\text{e}$ denote the set of real-valued even functions on $\mathbf{R}$ and let $V_\text{o}$ denote the set of real-valued odd functions on $\mathbf{R}$. Show that $\mathbf{R}^\mathbf{R} = V_\text{e} \oplus V_\text{o}$.
 
 
 $$
