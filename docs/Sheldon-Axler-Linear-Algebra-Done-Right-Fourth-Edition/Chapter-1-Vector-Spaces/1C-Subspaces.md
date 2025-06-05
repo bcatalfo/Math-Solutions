@@ -13,6 +13,52 @@ export_on_save:
 (c) &nbsp; $\{ (x_1,x_2,x_3) \in \mathbf{F}^3:  x_1x_2x_3 = 0 \}$
 (d) &nbsp; $\{ (x_1,x_2,x_3) \in \mathbf{F}^3: x_1 = 5x_3 \}$
 
+**Solution**
+
+Recall that three conditions are necessary and sufficient to show that a subset $U$ of a vector space $V$ over a field $\mathbf{F}$ is a subspace:
+
+1. _additive identity_
+
+$$
+0 \in U
+$$
+
+2. _closed under addition_
+
+$$
+u, w \in U \implies u + w \in U
+$$
+
+3. _closed under scalar multiplication_
+
+$$
+a \in \mathbf{F} \land a \in U \implies au \in U
+$$
+
+(a) &nbsp; $U = \{ (x_1,x_2,x_3) \in \mathbf{F}^3: x_1 + 2x_2 + 3x_3 = 0 \}$
+
+Clearly $0 = (0,0,0) \in U$ as $0 + 2 \times 0 + 3 \times 0 = 0$ so 1. _additive identity_ holds.
+
+Let $u = (u_1, u_2, u_3), w = (w_1, w_2, w_3) \in U$. Then
+
+$$
+(u_1 + w_1) + 2(u_2 + w_2)  + 3(u_3 + w_3) \\
+= (u_1 + 2u_2 + 3u_3) + (w_1 + 2w_2 + 3w_3) = 0 + 0 = 0,
+$$
+
+so 2. _closed under addition_ holds.
+
+Let $a \in \mathbf{F}$. Then
+
+$$
+(au_1) + 2(au_2) + 3(au_3) = a (u_1 + 2u_2 + 3u_3) = a \cdot 0 = 0,
+$$
+
+so $au = (au_1, au_2, au_3) \in U$, so 3. _closed under scalar multiplication_ holds.
+
+We conclude that $U$ is a subspace. $\quad \square$
+
+
 ---
 
 **2** &nbsp; Verify all assertions about subspaces in Example 1.35.
