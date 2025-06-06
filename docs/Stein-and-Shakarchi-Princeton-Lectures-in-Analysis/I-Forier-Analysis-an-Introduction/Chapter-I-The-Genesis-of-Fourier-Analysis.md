@@ -669,7 +669,19 @@ Therefore there exist constants $a$ and $b$ such that
 
 $$
 g(t) = a, \quad h(t) = b \\
-f(t) \cos ct - c^{-1}f'(t)\sin ct = a, \quad f(t) \sin ct + c^{-1}f'(t)\cos ct = b
+f(t) \cos ct - c^{-1}f'(t)\sin ct = a, \quad f(t) \sin ct + c^{-1}f'(t)\cos ct = b \\[4px]
+c^{-1}f'(t) \sin ct = f(t) \cos ct - a, \quad f(t) = \frac{b - c^{-1}f'(t)\cos ct}{\sin ct}
+$$
+
+Plug the right into the left
+
+$$
+c^{-1}f'(t)\sin ct = \frac{b - c^{-1}f'(t)\cos ct}{\sin ct}\cos ct - a \\[4px]
+c^{-1}f'(t)\sin^2 ct = b\cos ct - c^{-1}f'(t) \cos^2 ct - a \sin ct \\
+c^{-1}f'(t)\sin^2 ct + c^{-1}f'(t) \cos^2 ct = b\cos ct - a \sin ct \\
+c^{-1}f'(t) (\sin^2 ct + \cos^2 ct) = b\cos ct - a \sin ct \\
+c^{-1}f'(t) = b\cos ct - a \sin ct \\
+f'(t) = cb\cos ct - ca \sin ct
 $$
 
 ---
