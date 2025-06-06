@@ -681,7 +681,9 @@ c^{-1}f'(t)\sin^2 ct = b\cos ct - c^{-1}f'(t) \cos^2 ct - a \sin ct \\
 c^{-1}f'(t)\sin^2 ct + c^{-1}f'(t) \cos^2 ct = b\cos ct - a \sin ct \\
 c^{-1}f'(t) (\sin^2 ct + \cos^2 ct) = b\cos ct - a \sin ct \\
 c^{-1}f'(t) = b\cos ct - a \sin ct \\
-f'(t) = cb\cos ct - ca \sin ct
+f'(t) = cb\cos ct - ca \sin ct \\
+\int_{0}^{t} f'(\tau) \, d\tau = b \int_{0}^{t}c \cos c\tau \, d\tau - a \int_{0}^{t} c \sin c \tau \, d\tau \\
+f(t) + C = b\left.\sin c\tau \right|_{0}^{t} + \left.a \cos c \tau \right|_{0}^{t}
 $$
 
 ---
