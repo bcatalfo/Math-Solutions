@@ -234,7 +234,8 @@ The key insight of the double-counting method is that there are two different wa
 If we add all the rows we get
 
 $$
-\sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} = 1 + (a + b) + \left(\frac{a^2}{2} + ab + \frac{b^2}{2}\right) + \left( \frac{a^3}{6} + \frac{a^2b}{2} + \frac{ab^2}{2} + \frac{b^3}{6} \right) + \cdots \\
+\sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} \\
+ = 1 + (a + b) + \left(\frac{a^2}{2} + ab + \frac{b^2}{2}\right) + \left( \frac{a^3}{6} + \frac{a^2b}{2} + \frac{ab^2}{2} + \frac{b^3}{6} \right) + \cdots \\
 = \frac{(a + b)^0}{0!} + \frac{(a + b)^1}{1!} + \frac{(a + b)^2}{2!} + \frac{(a + b)^3}{3!} + \cdots \\
 = \sum_{n=0}^{\infty} \frac{(a + b)^n}{n!} = e^{a + b}
 $$
@@ -243,7 +244,8 @@ If we add all the columns we get
 
 $$
 \begin{aligned}
-  \sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} &= \left(1 + a + \frac{a^2}{2} + \frac{a^3}{6} + \cdots \right) + \left( b + ab + \frac{a^2b}{2} + \cdots \right) \\
+  &\sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} \\
+   &= \left(1 + a + \frac{a^2}{2} + \frac{a^3}{6} + \cdots \right) + \left( b + ab + \frac{a^2b}{2} + \cdots \right) \\
   &+ \left( \frac{b^2}{2} + \frac{ab^2}{2} + \cdots \right) + \left(\frac{b^3}{6} + \cdots\right) + \cdots \\
   &= \sum_{n=0}^{\infty} \frac{a^n}{n!} + b\sum_{n=0}^{\infty}\frac{a^n}{n!} + \frac{b^2}{2}\sum_{n=0}^{\infty}\frac{a^n}{n!} + \frac{b^3}{6}\sum_{n=0}^{\infty} \frac{a^n}{n!} + \cdots \\
   &= \sum_{n=0}^{\infty}\frac{a^n}{n!} \left( 1 + b + \frac{b^2}{2} + \frac{b^3}{6} + \cdots \right) \\
@@ -272,7 +274,8 @@ $$
 which holds because both the LHS and RHS are summing over each $k, n \in \N$ such that $k \leq n$. Plugging in $f(n,k)=\frac{a^{n-k}b^{k}}{(n-k)!k!}$ to the identity yields
 
 $$
-\sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} = \sum_{k=0}^{\infty}\sum_{n=k}^{\infty} \frac{a^{n-k}b^k}{(n-k)!k!} = \sum_{k=0}^{\infty} \frac{b^k}{k!} \sum_{n=k}^{\infty} \frac{a^{n-k}}{(n-k)!} = \sum_{k=0}^{\infty} \frac{b^k}{k!} \sum_{n=0}^{\infty} \frac{a^n}{n!} = e^a \cdot e^b \qquad \square
+\sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} = \sum_{k=0}^{\infty}\sum_{n=k}^{\infty} \frac{a^{n-k}b^k}{(n-k)!k!} \\
+= \sum_{k=0}^{\infty} \frac{b^k}{k!} \sum_{n=k}^{\infty} \frac{a^{n-k}}{(n-k)!} = \sum_{k=0}^{\infty} \frac{b^k}{k!} \sum_{n=0}^{\infty} \frac{a^n}{n!} = e^a \cdot e^b \qquad \square
 $$
 
 ---
