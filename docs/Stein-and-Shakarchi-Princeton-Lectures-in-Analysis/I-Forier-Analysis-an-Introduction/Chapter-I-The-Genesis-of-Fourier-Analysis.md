@@ -381,12 +381,16 @@ $$
 whenever these formulas make sense.
 **Solution**
 
-Start by dividing out the radius,
+Start by dividing out the radius $r = |z| = \sqrt{x^2 + y^2}$ from $z$,
 
 $$
 z = x + iy \\
-\frac{z}{\sqrt{x^2 + y^2}} = \frac{x}{\sqrt{x^2 + y^2}} + i \frac{y}{\sqrt{x^2+y^2}} \\
-z = \sqrt{x^2 + y^2} \left( \frac{x}{\sqrt{x^2+y^2}} + i \frac{y}{\sqrt{x^2+y^2}} \right)
+\frac{z}{r} = \frac{x}{r} + i \frac{y}{r} \\
+$$
+
+Multiply by $r$ but don't cancel on the right hand side,
+$$
+z = r \left( \frac{x}{r} + i \frac{y}{r} \right)
 $$
 
 Next, consider the following right triangle.
@@ -402,17 +406,17 @@ Next, consider the following right triangle.
   \draw[thick] (0,0) -- (3,3);
   \node at (1.75,-.25) {$x$};
   \node at (3.25, 1.25) {$y$};
-  \node at (1,2) {$x^2 + y^2$};
+  \node at (1.5,1.75) {$r$};
   \node at (.75, .35) {$\theta$};
 \end{tikzpicture}
 }
 \end{document}
 ```
 
-By the diagram and basic trig we have $\cos \theta = \frac{x}{\sqrt{x^2 + y^2}}$, $\sin \theta \ = \frac{y}{\sqrt{x^2+y^2}}$, and $\theta = \arctan (y/x)$. Plugging in,
+By the diagram and basic trig we have $\cos \theta = \frac{x}{r}$, $\sin \theta \ = \frac{y}{r}$, and $\theta = \arctan (y/x)$. Plugging in,
 
 $$
-z = \sqrt{x^2 + y^2} \cdot ( \cos \theta + i \sin \theta) = re^{i\theta} \quad \square
+z = r \cdot ( \cos \theta + i \sin \theta) = re^{i\theta} \quad \square
 $$
 
 ---
