@@ -381,13 +381,35 @@ $$
 whenever these formulas make sense.
 **Solution**
 
+Start by dividing out the radius,
+
 $$
 z = x + iy \\
 \frac{z}{\sqrt{x^2 + y^2}} = \frac{x}{\sqrt{x^2 + y^2}} + i \frac{y}{\sqrt{x^2+y^2}} \\
 z = \sqrt{x^2 + y^2} \left( \frac{x}{\sqrt{x^2+y^2}} + i \frac{y}{\sqrt{x^2+y^2}} \right)
 $$
 
-Now by making a right triangle with bases of $x$ and $y$ it is clear that there is $\theta$ such that $\cos \theta = \frac{x}{\sqrt{x^2 + y^2}}$ and $\sin \theta \ = \frac{y}{\sqrt{x^2+y^2}}$, and for such $\theta$ we have $\arctan(\theta) = y/x$. Plugging in,
+Next, consider the following right triangle.
+
+
+```tikz {kroki=true}
+\usepackage{tikz}
+\begin{document}
+\Large{
+\begin{tikzpicture}
+  \draw[thick] (0,0) -- (3,0);
+  \draw[thick] (3,0) -- (3,3);
+  \draw[thick] (0,0) -- (3,3);
+  \node at (1.75,-.25) {$x$};
+  \node at (3.25, 1.25) {$y$};
+  \node at (1,2) {$x^2 + y^2$};
+  \node at (.75, .35) {$\theta$};
+\end{tikzpicture}
+}
+\end{document}
+```
+
+By the diagram and basic trig we have $\cos \theta = \frac{x}{\sqrt{x^2 + y^2}}$, $\sin \theta \ = \frac{y}{\sqrt{x^2+y^2}}$, and $\theta = \arctan (y/x)$. Plugging in,
 
 $$
 z = \sqrt{x^2 + y^2} \cdot ( \cos \theta + i \sin \theta) = re^{i\theta} \quad \square
