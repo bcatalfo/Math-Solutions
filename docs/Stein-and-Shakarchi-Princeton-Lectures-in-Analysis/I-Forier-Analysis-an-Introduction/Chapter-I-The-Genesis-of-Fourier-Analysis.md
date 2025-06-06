@@ -160,7 +160,7 @@ $$
 
 ---
 
-A series \(\sum\_{n=1}^\infty z_n\) of complex numbers is said to converge if the sequence formed by the partial sums
+A series \(\sum_{n=1}^\infty z_n\) of complex numbers is said to converge if the sequence formed by the partial sums
 
 $$
 S_N = \sum_{n=1}^N z_n
