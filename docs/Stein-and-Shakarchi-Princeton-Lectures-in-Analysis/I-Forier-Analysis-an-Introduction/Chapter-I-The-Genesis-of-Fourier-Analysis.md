@@ -104,7 +104,7 @@ If \(z\) belongs to the unit circle that means that \(|z| = 1\). Using part \(\t
 
 ---
 
-**3.** A sequence of complex numbers \(\{w*n\}*{n=1}^{\infty}\) is said to converge if there exists \(w \in \mathbb{C}\) such that
+**3.** A sequence of complex numbers \(\{w_n\}_{n=1}^{\infty}\) is said to converge if there exists \(w \in \mathbb{C}\) such that
 
 $$
 \lim_{n \to \infty} |w_n - w| = 0,
@@ -113,7 +113,7 @@ $$
 and we say that \(w\) is a limit of the sequence.
 \(\quad \text{(a)}\) Show that a converging sequence of complex numbers has a unique limit.
 **Solution**
-Let \(x, y\) be limits of \(\{w*n\}*{n=1}^\infty\)
+Let \(x, y\) be limits of \(\{w_n\}_{n=1}^\infty\)
 
 $$
 0 = \lim_{n \to \infty}|w_n - x| = \lim_{n \to \infty}|w_n - y| \\
@@ -135,7 +135,7 @@ This shows that \(|x - y| \leq 0\), we also have \(|x - y| \geq 0\) by the defin
 
 ---
 
-The sequence \(\{w*n\}*{n=1}^\infty\) is said to be a **Cauchy sequence** if for every \(\epsilon > 0\) there exists a positive integer \(N\) such that
+The sequence \(\{w_n\}_{n=1}^\infty\) is said to be a **Cauchy sequence** if for every \(\epsilon > 0\) there exists a positive integer \(N\) such that
 
 $$
 |w_n - w_m| < \epsilon \quad \text{whenever } n, m > N.
@@ -166,16 +166,16 @@ $$
 S_N = \sum_{n=1}^N z_n
 $$
 
-converges. Let \(\{a*n\}*{n=1}^\infty\) be a sequence of non-negative real numbers such that the series \(\sum*{n}a_n\) converges.
-\(\quad \text{(c)}\) Show that if \(\{z_n\}*{n=1}^\infty\) is a sequence of complex numbers satisfying \(|z*n| \leq a_n\) for all \(n\), then the series \(\sum*{n} z*n\) converges. [Hint: Use the Cauchy criterion.]
+converges. Let \(\{a_n\}_{n=1}^\infty\) be a sequence of non-negative real numbers such that the series \(\sum_{n}a_n\) converges.
+\(\quad \text{(c)}\) Show that if \(\{z_n\}_{n=1}^\infty\) is a sequence of complex numbers satisfying \(|z_n| \leq a_n\) for all \(n\), then the series \(\sum_{n} z_n\) converges. [Hint: Use the Cauchy criterion.]
 **Solution**
-Start with the Cauchy criterion for \(\sum*{n}a_n\). For any \(\epsilon > 0\) there exists \(n\) such that for all \(N, M > K\) we have
+Start with the Cauchy criterion for \(\sum_{n}a_n\). For any \(\epsilon > 0\) there exists \(n\) such that for all \(N, M > K\) we have
 
 $$
 \epsilon > |A_N - A_M| = \left|\sum_{n=1}^N a_n - \sum_{m=1}^M a_m \right| = \left|\sum_{j=\text{min}(N, M)}^{\text{max}(N, M)} a_j\right|
 $$
 
-Finish with the Cauchy criterion for \(\sum\_{n}z_n\)
+Finish with the Cauchy criterion for \(\sum_{n}z_n\)
 
 $$
 |S_N - S_M| = \left|\sum_{n=1}^N z_n - \sum_{m=1}^M z_m\right| = \left|\sum_{j=\text{min}(N, M)}^{\text{max}(N, M)} z_j\right| \\
