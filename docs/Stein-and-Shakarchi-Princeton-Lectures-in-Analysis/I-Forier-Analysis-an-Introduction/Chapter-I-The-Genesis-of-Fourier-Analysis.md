@@ -716,7 +716,27 @@ c^{-1}f'(t) (\sin^2 ct + \cos^2 ct) = b\cos ct - a \sin ct \\
 c^{-1}f'(t) = b\cos ct - a \sin ct \\
 f'(t) = cb\cos ct - ca \sin ct \\
 \int_{0}^{t} f'(\tau) \, d\tau = b \int_{0}^{t}c \cos c\tau \, d\tau - a \int_{0}^{t} c \sin c \tau \, d\tau \\
-f(t) + C = b\left.\sin c\tau \right|_{0}^{t} + \left.a \cos c \tau \right|_{0}^{t}
+f(t) - f(0) = b\left.\sin c\tau \right|_{0}^{t} + \left.a \cos c \tau \right|_{0}^{t} \\
+f(t) - f(0) = b \sin ct + a \cos ct - a
+$$
+
+It suffices to show that
+
+$$
+f(0) = a
+$$
+
+We know that 
+
+$$
+f\left(\frac{\pi}{2c}\right) = \frac{b - c^{-1}f'(t)\cos \frac{\pi}{2}}{\sin \frac{\pi}{2}} = b
+$$
+
+We can plug this in to get
+
+$$
+f\left(\frac{\pi}{2c}\right) - f(0) = b \sin \frac{\pi}{2} + a \cos \frac{\pi}{2} - a = b-a \\
+f(0) = a \quad \square
 $$
 
 ---
