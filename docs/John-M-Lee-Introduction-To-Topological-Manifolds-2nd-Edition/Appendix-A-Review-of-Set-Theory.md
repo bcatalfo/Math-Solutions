@@ -138,6 +138,10 @@ $\blacktriangleright \>$ **Exercise A.10.** Show that if $f: X \to Y$ is bijecti
 
 $\blacktriangleright \>$ **Exercise A.11.** Show that the real numbers are unique, in the sense that any complete ordered field admits a bijection with $\R$ that preserves addition, multiplication, and order.
 
+---
+
+$\blacktriangleright \>$ **Exercise A.12.** &nbsp; Show that an interval must be one of the nine types of sets $[a,b]$, $(a,b)$, $[a,b)$, $(a,b]$, $(-\infty,b]$, $(-\infty,b)$, $[a,\infty)$, $(a,\infty)$, or $(-\infty, \infty)$.
+
 ### Indexed Families
 
 $$
