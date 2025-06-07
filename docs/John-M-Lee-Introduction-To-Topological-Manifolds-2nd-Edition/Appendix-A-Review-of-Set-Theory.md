@@ -104,6 +104,15 @@ $\quad \text{(n)} \quad S \cup f^{-1}(T) \subseteq f^{-1}(f(S) \cup T)$.
 $\quad \text{(o)} \quad (f \circ g)^{-1}(T) = g^{-1}(f^{-1}(T))$.
 $\quad \text{(p)} \quad (f \circ g)(R) = f(g(R))$.
 
+---
+
+$\blacktriangleright \>$ **Exercise A.5.** With notation as in the previous exercise, give counterexamples to show that the following equalities do not necessarily hold true.
+
+$\quad \text{(a)} \quad T = f(f^{-1}(T))$.
+$\quad \text{(b)} \quad S=f^{-1}(f(S))$.
+$\quad \text{(c)} \quad f(S \cap S') = f(S) \cap f(S')$.
+$\quad \text{(d)} \quad f(S \setminus S') = f(S) \setminus f(S')$.
+
 ### Number Systems and Cardinality
 
 ### Indexed Families
