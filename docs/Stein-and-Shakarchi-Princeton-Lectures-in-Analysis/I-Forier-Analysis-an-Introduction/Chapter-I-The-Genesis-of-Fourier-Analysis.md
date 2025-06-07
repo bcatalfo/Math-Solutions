@@ -744,14 +744,61 @@ $$
 **7.** Show that if $a$ and $b$ are real, then one can write
 
 $$
-a \cos ct + b \sin ct = A \cos (ct - \varphi),
+a \cos ct + b \sin ct = A \cos (ct - \phi),
 $$
 
-where $A = \sqrt{a^2 + b^2}$, and $\varphi$ is chose so that
+where $A = \sqrt{a^2 + b^2}$, and $\phi$ is chosen so that
 
 $$
-\cos \varphi = \frac{a}{\sqrt{a^2+b^2}} \quad \text{and} \quad \sin \varphi = \frac{b}{\sqrt{a^2+b^2}}.
+\cos \phi = \frac{a}{\sqrt{a^2+b^2}} \quad \text{and} \quad \sin \phi = \frac{b}{\sqrt{a^2+b^2}}.
 $$
+
+**Solution**
+
+First use the cosine angle addition formula from $4(i)$ to calculate that
+
+$$
+\begin{aligned}
+\cos (ct - \phi) &= \cos(ct) \cos (-\phi) - \sin(ct) \sin(-\phi) \\
+&= \cos ct \cos \phi + \sin ct \sin \phi.
+\end{aligned}
+$$
+
+Using the following right triangle
+
+```tikz {kroki=true}
+\usepackage{tikz}
+\begin{document}
+\Large{
+\begin{tikzpicture}
+  \draw[thick] (0,0) -- (3,0);
+  \draw[thick] (3,0) -- (3,3);
+  \draw[thick] (0,0) -- (3,3);
+  \draw (2.5, 0) -- (2.5, .5);
+  \draw (2.5, .5) -- (3, .5);
+  \node at (1.5, -.25) {$a$};
+  \node at (3.25, 1.5) {$b$};
+  \node at (.75, 2) {$\sqrt{a^2 + b^2}$};
+  \node at (1, .45) {$\phi$};
+  \draw[radius=.75] (.75,0) arc [start angle = 0, end angle = 45];
+\end{tikzpicture}
+}
+\end{document}
+```
+
+we can choose $\phi$ such that $\cos \phi = \frac{a}{\sqrt{a^2+b^2}}$ and $\sin \phi = \frac{b}{\sqrt{a^2+b^2}}$. Plugging in,
+
+$$
+\cos(ct - \phi) = \frac{a}{\sqrt{a^2+b^2}} \cos ct + \frac{b}{\sqrt{a^2+b^2}} \sin ct
+$$
+
+Multiply both sides by $A = \sqrt{a^2+b^2}$ to get the desired result,
+
+$$
+A\cos(ct - \phi) = a \cos ct + b \sin ct. \quad \square
+$$
+
+---
 
 **8.** Suppose $F$ is a function on $(a,b)$ with two continuous derivatives. Show that whenever $x$ and $x + h$ belong to $(a,b)$, one may write
 
