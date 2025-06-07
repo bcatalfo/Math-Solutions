@@ -13,7 +13,7 @@ export_on_save:
 
 ### Basic Concepts
 
-\(\blacktriangleright\) **Exercise A.1** Suppose \(A\) is a set and \(\mathscr{C}\) is a collection of sets. Prove the following properties of unions and intersections.
+\(\blacktriangleright\) **Exercise A.1** &nbsp; Suppose \(A\) is a set and \(\mathscr{C}\) is a collection of sets. Prove the following properties of unions and intersections.
 (a) \(\textrm{Distributive Laws}\):
 
 $$
@@ -62,7 +62,7 @@ Combining the four subset relations at the end of each paragraph gives the two d
 
 #### Relations
 
-\(\blacktriangleright\) **Exercise A.2.** Given an equivalence relation \(\sim\) on a set \(X\), show that the set \(X/\sim\) of equivalence classes is a partition of \(X\). Conversely, given a partition of \(X\), show that there is a unique equivalence relation whose set of equivalence classes is exactly the original partition.
+\(\blacktriangleright\) **Exercise A.2.** &nbsp; Given an equivalence relation \(\sim\) on a set \(X\), show that the set \(X/\sim\) of equivalence classes is a partition of \(X\). Conversely, given a partition of \(X\), show that there is a unique equivalence relation whose set of equivalence classes is exactly the original partition.
 
 **Solution**
 First, we need to show that \(X/\sim\) is a partition of \(X\). By the definition of a partition we need to show that \(X\) is the disjoint union of the sets in \(X/\sim\).  By the definition of a disjoint union we need to show that \(A, B \in X/\sim \text{ and } A \neq B \implies A \cap B = \emptyset\) (this is the "disjoint") and that \(\{y \in [x]: x \in X\} = X\) (this is the "union").
@@ -73,7 +73,7 @@ Let \(y \in \{y \in [x]: x \in X\}\), then for some \(x \in X\) we have \(y \in 
 
 Conversely, let \(\mathscr{C}\) be a partition of \(X\). Let \(\sim\) be a relation on \(X\) such that \(a \sim b \iff \exists U \in C \text{ s.t. } a, b \in U\). We need to show that \(\sim\) is an equivalence relation. Let \(a, b, c \in X\). Since \(X\) is the disjoint union of the sets of \(\mathscr{C}\), there must exist some \(U \in C\) such that \(a \in U\), so \(a \sim a\). It is trivial that \(a \sim b \implies b \sim a\). If \(a \sim b\) and \(b \sim c\), then there must exist \(U, V \in \mathscr{C}\) such that \(a, b \in U\) and \(b, c \in V\). Since \(U \cap V \neq \emptyset\) we must have \(U = V\) (this is the contrapositive of the disjoint rule), so \(a \sim c\). Therefore \(\sim\) is an equivalence relation as desired. \(\square\)
 ****
-\(\blacktriangleright\) **Exercise A.3.** Let \(R \subseteq X \times X\) be any relation on \(X\), and define \(\sim\) to be the intersection of all equivalence relations in \(X \times X\) that contain \(R\).
+\(\blacktriangleright\) **Exercise A.3.** &nbsp; Let \(R \subseteq X \times X\) be any relation on \(X\), and define \(\sim\) to be the intersection of all equivalence relations in \(X \times X\) that contain \(R\).
 \(\quad \text{(a)}\) Show that \(\sim\) is an equivalence relation.
 **Solution**
 Let \(x, y, z \in X\). First we show that \(x \sim x\). This is obvious because, for each equivalence relation \(\sim' \supseteq R\), we have \((x, x) \in \sim'\), so we have \((x, x) \in \bigcap_{\sim' \supseteq R, \sim' \text{an equiv relation}} \sim' = \sim\). The same argument works for showing symmetry and trasitivity.
@@ -86,7 +86,7 @@ Alternatively, assume that none of the three conditions are true. We need to sho
 
 #### Functions
 
-$\blacktriangleright \>$ **Exercise A.4.** Let $f:X \to Y$ and $g:W \to X$ be maps, and suppose $R \subseteq W,S,S' \subseteq X$, and $T,T' \subseteq Y$. Prove the following:
+$\blacktriangleright \>$ **Exercise A.4.** &nbsp; Let $f:X \to Y$ and $g:W \to X$ be maps, and suppose $R \subseteq W,S,S' \subseteq X$, and $T,T' \subseteq Y$. Prove the following:
 $\quad \text{(a)} \quad T \supseteq f(f^{-1}(T))$.
 $\quad \text{(b)} \quad T \subseteq T' \implies f^{-1}(T) \subseteq f^{-1}(T')$.
 $\quad \text{(c)} \quad f^{-1}(T \cup T') = f^{-1}(T) \cup f^{-1}(T')$.
@@ -106,7 +106,7 @@ $\quad \text{(p)} \quad (f \circ g)(R) = f(g(R))$.
 
 ---
 
-$\blacktriangleright \>$ **Exercise A.5.** With notation as in the previous exercise, give counterexamples to show that the following equalities do not necessarily hold true.
+$\blacktriangleright \>$ **Exercise A.5.** &nbsp; With notation as in the previous exercise, give counterexamples to show that the following equalities do not necessarily hold true.
 
 $\quad \text{(a)} \quad T = f(f^{-1}(T))$.
 $\quad \text{(b)} \quad S=f^{-1}(f(S))$.
@@ -115,28 +115,28 @@ $\quad \text{(d)} \quad f(S \setminus S') = f(S) \setminus f(S')$.
 
 ---
 
-$\blacktriangleright \>$ **Exercise A.6.** Show that a composition of injective functions is injective, a composition of surjective functions is surjective, and a composition of bijective functions is bijective.
+$\blacktriangleright \>$ **Exercise A.6.** &nbsp; Show that a composition of injective functions is injective, a composition of surjective functions is surjective, and a composition of bijective functions is bijective.
 
 ---
 
-$\blacktriangleright \>$ **Exercise A.7.** Show that equality $\text{(a)}$ in Exercise A.5. holds for every $T \subseteq Y$ if and only if $f$ is surjective, and each of the equalities $\text{(b)—(d)}$ holds for every $S,S' \subseteq X$ if and only if $f$ is injective.
+$\blacktriangleright \>$ **Exercise A.7.** &nbsp; Show that equality $\text{(a)}$ in Exercise A.5. holds for every $T \subseteq Y$ if and only if $f$ is surjective, and each of the equalities $\text{(b)—(d)}$ holds for every $S,S' \subseteq X$ if and only if $f$ is injective.
 
 ---
 
-$\blacktriangleright \>$ **Exercise A.8.** Let $f: X \to Y$ be a function.
+$\blacktriangleright \>$ **Exercise A.8.** &nbsp; Let $f: X \to Y$ be a function.
 $\quad \text{(a)} \quad$ Show that $f$ has an inverse if and only if it is bijective.
 $\quad \text{(b)} \quad$ Show that if $f$ has an inverse, its inverse is unique.
 $\quad \text{(c)} \quad$ Show that if $f: X \to Y$ and $g: Y \to Z$ are both bijective, then $(g \circ f)^{-1} = f^{-1}\circ g^{-1}$.
 
 ---
 
-$\blacktriangleright \>$ **Exercise A.10.** Show that if $f: X \to Y$ is bijective, then any left or right inverse for $f$ is equal to $f^{-1}$.
+$\blacktriangleright \>$ **Exercise A.10.** &nbsp; Show that if $f: X \to Y$ is bijective, then any left or right inverse for $f$ is equal to $f^{-1}$.
 
 ---
 
 ### Number Systems and Cardinality
 
-$\blacktriangleright \>$ **Exercise A.11.** Show that the real numbers are unique, in the sense that any complete ordered field admits a bijection with $\R$ that preserves addition, multiplication, and order.
+$\blacktriangleright \>$ **Exercise A.11.** &nbsp; Show that the real numbers are unique, in the sense that any complete ordered field admits a bijection with $\R$ that preserves addition, multiplication, and order.
 
 ---
 
