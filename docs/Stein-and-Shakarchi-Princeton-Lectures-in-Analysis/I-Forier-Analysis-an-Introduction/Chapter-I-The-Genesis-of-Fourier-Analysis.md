@@ -813,7 +813,7 @@ $$
 \frac{F(x+h) + F(x-h) - 2F(x)}{h^2} \to F''(x) \quad \text{as } h \to 0.
 $$
 
-_Hint_: This is simply a Taylor expansion. It may be obtained by noting that]
+_Hint_: This is simply a Taylor expansion. It may be obtained by noting that
 
 $$
 F(x+h) - F(x) = \int_{x}^{x+h} F'(y) \, dy,
