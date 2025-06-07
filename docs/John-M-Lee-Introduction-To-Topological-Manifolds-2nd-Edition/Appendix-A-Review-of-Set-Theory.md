@@ -119,6 +119,7 @@ $\blacktriangleright \>$ **Exercise A.6.** Show that a composition of injective 
 
 ---
 
+$\blacktriangleright \>$ **Exercise A.7.** Show that equality $\text{(a)}$ in Exercise A.5. holds for every $T \subseteq Y$ if and only if $f$ is surjective, and each of the equalities $\text{(b)—(d)}$ holds for every $S,S' \subseteq X$ if and only if $f$ is injective.
 
 ### Number Systems and Cardinality
 
