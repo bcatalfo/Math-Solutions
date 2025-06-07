@@ -130,11 +130,13 @@ $\quad \text{(c)} \quad$ Show that if $f: X \to Y$ and $g: Y \to Z$ are both bij
 
 ---
 
-$\blacktriangleright \quad$ **Exercise A.10.** Show that if $f: X \to Y$ is bijective, then any left or right inverse for $f$ is equal to $f^{-1}$.
+$\blacktriangleright \>$ **Exercise A.10.** Show that if $f: X \to Y$ is bijective, then any left or right inverse for $f$ is equal to $f^{-1}$.
 
 ---
 
 ### Number Systems and Cardinality
+
+$\blacktriangleright \>$ **Exercise A.11.** Show that the real numbers are unique, in the sense that any complete ordered field admits a bijection with $\R$ that preserves addition, multiplication, and order.
 
 ### Indexed Families
 
