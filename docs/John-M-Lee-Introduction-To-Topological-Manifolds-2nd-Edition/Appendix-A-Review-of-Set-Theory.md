@@ -121,6 +121,15 @@ $\blacktriangleright \>$ **Exercise A.6.** Show that a composition of injective 
 
 $\blacktriangleright \>$ **Exercise A.7.** Show that equality $\text{(a)}$ in Exercise A.5. holds for every $T \subseteq Y$ if and only if $f$ is surjective, and each of the equalities $\text{(b)—(d)}$ holds for every $S,S' \subseteq X$ if and only if $f$ is injective.
 
+---
+
+$\blacktriangleright \>$ **Exercise A.8.** Let $f: X \to Y$ be a function.
+$\quad \text{(a)} \quad$ Show that $f$ has an inverse if and only if it is bijective.
+$\quad \text{(b)} \quad$ Show that if $f$ has an inverse, its inverse is unique.
+$\quad \text{(c)} \quad$ Show that if $f: X \to Y$ and $g: Y \to Z$ are both bijective, then $(g \circ f)^{-1} = f^{-1}\circ g^{-1}$.
+
+---
+
 ### Number Systems and Cardinality
 
 ### Indexed Families
