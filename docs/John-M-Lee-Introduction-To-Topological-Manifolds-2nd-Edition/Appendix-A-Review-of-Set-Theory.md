@@ -82,7 +82,27 @@ Let \(x, y, z \in X\). First we show that \(x \sim x\). This is obvious because,
 Assume \(x \nsim y\), so there is some equivalence relation \(\sim' \supseteq R\) such that \(x \nsim' y\). We can not have \(x = y\), because it would contadict \(x \sim' x\) (since \(\sim'\) is an equivalence relation). Since \(\sim' \supseteq R\), we have \(x \> R' \> y \implies x \> R \> y \text{ or } y \> R \> x \implies x \sim' y \text{ or } y \sim' x \implies x \sim' y\), so we can not have \(x \> R' \> y\). Similarly, \(x \> R' \> z_1 \>  R' \cdots R' \> z_n \> R' \> y \implies x \sim' z_1 \sim' \cdots \sim' z_n \sim' y \implies x \sim' y\), so we can not have \(x \> R' \> z_1 \>  R' \cdots R' \> z_n \> R' \> y\). 
 Alternatively, assume that none of the three conditions are true. We need to show that \(x \nsim y\), and we can do this by constructing an equivalence relation \(\sim' \supseteq R\) such that \(x \nsim' y\). Use the three conditions to construct the equivalence relation. This construction is indeed an equivalence relation (does this need a quick verification?) and does not contain \((x, y)\). \(\square\)
 
+---
+
 #### Functions
+
+$\blacktriangleright \>$ **Exercise A.4.** Let $f:X \to Y$ and $g:W \to X$ be maps, and suppose $R \subseteq W,S,S' \subseteq X$, and $T,T' \subseteq Y$. Prove the following:
+$\quad \text{(a)} \quad T \supseteq f(f^{-1}(T))$.
+$\quad \text{(b)} \quad T \subseteq T' \implies f^{-1}(T) \subseteq f^{-1}(T')$.
+$\quad \text{(c)} \quad f^{-1}(T \cup T') = f^{-1}(T) \cup f^{-1}(T')$.
+$\quad \text{(d)} \quad f^{-1}(T \cap T') = f^{-1}(T) \cap f^{-1}(T')$.
+$\quad \text{(e)} \quad f^{-1}(T \setminus T') = f^{-1}(T) \setminus f^{-1}(T')$.
+$\quad \text{(f)} \quad S \subseteq f^{-1}(f(S))$.
+$\quad \text{(g)} \quad S \subseteq S' \implies f(S) \subseteq f(S')$.
+$\quad \text{(h)} \quad f(S \cup S') = f(S) \cup f(S')$.
+$\quad \text{(i)} \quad f(S \cap S') \subseteq f(S) \cap f(S')$.
+$\quad \text{(j)} \quad f(S \setminus S') \supseteq f(S) \setminus f(S')$.
+$\quad \text{(k)} \quad f(S) \cap T = f(S \cap f^{-1}(T))$.
+$\quad \text{(l)} \quad f(S) \cup T \supseteq f(S \cup f^{-1}(T))$.
+$\quad \text{(m)} \quad S \cap f^{-1}(T) \subseteq f^{-1}(f(S) \cap T)$.
+$\quad \text{(n)} \quad S \cup f^{-1}(T) \subseteq f^{-1}(f(S) \cup T)$.
+$\quad \text{(o)} \quad (f \circ g)^{-1}(T) = g^{-1}(f^{-1}(T))$.
+$\quad \text{(p)} \quad (f \circ g)(R) = f(g(R))$.
 
 ### Number Systems and Cardinality
 
