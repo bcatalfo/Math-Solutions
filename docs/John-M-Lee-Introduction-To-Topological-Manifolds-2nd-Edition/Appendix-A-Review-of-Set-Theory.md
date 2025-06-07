@@ -113,6 +113,13 @@ $\quad \text{(b)} \quad S=f^{-1}(f(S))$.
 $\quad \text{(c)} \quad f(S \cap S') = f(S) \cap f(S')$.
 $\quad \text{(d)} \quad f(S \setminus S') = f(S) \setminus f(S')$.
 
+---
+
+$\blacktriangleright \>$ **Exercise A.6.** Show that a composition of injective functions is injective, a composition of surjective functions is surjective, and a composition of bijective functions is bijective.
+
+---
+
+
 ### Number Systems and Cardinality
 
 ### Indexed Families
