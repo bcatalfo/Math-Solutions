@@ -7,6 +7,12 @@ export_on_save:
 .katex-display { overflow: auto hidden }
 </style>
 
+# Introduction to Topological Manifolds, John M. Lee, Second Edition
+
+## Appendix A: Review of Set Theory
+
+### Basic Concepts
+
 \(\blacktriangleright\) **Exercise A.1** Suppose \(A\) is a set and \(\mathscr{C}\) is a collection of sets. Prove the following properties of unions and intersections.
 (a) \(\textrm{Distributive Laws}\):
 
@@ -51,6 +57,11 @@ Let \( x \in \bigcap_{X \in \mathscr{C}} (A \smallsetminus X) \). Clearly \(x \i
 
 Combining the four subset relations at the end of each paragraph gives the two desired set equalities. \( \square \)
 ****
+
+### Cartesian Products, Relations, and Functions
+
+#### Relations
+
 \(\blacktriangleright\) **Exercise A.2.** Given an equivalence relation \(\sim\) on a set \(X\), show that the set \(X/\sim\) of equivalence classes is a partition of \(X\). Conversely, given a partition of \(X\), show that there is a unique equivalence relation whose set of equivalence classes is exactly the original partition.
 
 **Solution**
@@ -70,6 +81,12 @@ Let \(x, y, z \in X\). First we show that \(x \sim x\). This is obvious because,
 **Solution**
 Assume \(x \nsim y\), so there is some equivalence relation \(\sim' \supseteq R\) such that \(x \nsim' y\). We can not have \(x = y\), because it would contadict \(x \sim' x\) (since \(\sim'\) is an equivalence relation). Since \(\sim' \supseteq R\), we have \(x \> R' \> y \implies x \> R \> y \text{ or } y \> R \> x \implies x \sim' y \text{ or } y \sim' x \implies x \sim' y\), so we can not have \(x \> R' \> y\). Similarly, \(x \> R' \> z_1 \>  R' \cdots R' \> z_n \> R' \> y \implies x \sim' z_1 \sim' \cdots \sim' z_n \sim' y \implies x \sim' y\), so we can not have \(x \> R' \> z_1 \>  R' \cdots R' \> z_n \> R' \> y\). 
 Alternatively, assume that none of the three conditions are true. We need to show that \(x \nsim y\), and we can do this by constructing an equivalence relation \(\sim' \supseteq R\) such that \(x \nsim' y\). Use the three conditions to construct the equivalence relation. This construction is indeed an equivalence relation (does this need a quick verification?) and does not contain \((x, y)\). \(\square\)
+
+#### Functions
+
+### Number Systems and Cardinality
+
+### Indexed Families
 
 $$
 \\
