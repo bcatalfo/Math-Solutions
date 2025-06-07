@@ -744,7 +744,7 @@ $$
 **7.** Show that if $a$ and $b$ are real, then one can write
 
 $$
-a \cos ct + b \sin ct = A \cos (ct - \phi),
+a \cos ct + b \sin ct = A \cos (ct - \varphi),
 $$
 
 where $A = \sqrt{a^2 + b^2}$, and $\varphi$ is chose so that
@@ -752,8 +752,6 @@ where $A = \sqrt{a^2 + b^2}$, and $\varphi$ is chose so that
 $$
 \cos \varphi = \frac{a}{\sqrt{a^2+b^2}} \quad \text{and} \quad \sin \varphi = \frac{b}{\sqrt{a^2+b^2}}.
 $$
-
----
 
 **8.** Suppose $F$ is a function on $(a,b)$ with two continuous derivatives. Show that whenever $x$ and $x + h$ belong to $(a,b)$, one may write
 
