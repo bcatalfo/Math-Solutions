@@ -35,6 +35,8 @@ Let \(x \in \bigcup_{X \in \mathscr{C}} (A \cap X)\). Then for some \(X' \in \ma
 
 Combining the four subset relations at the end of each paragraph gives the two desired set equalities. \( \square \)
 
+---
+
 (b) \(\textrm{De Morgan's Laws}\):
 
 $$
@@ -77,6 +79,9 @@ Conversely, let \(\mathscr{C}\) be a partition of \(X\). Let \(\sim\) be a relat
 \(\quad \text{(a)}\) Show that \(\sim\) is an equivalence relation.
 **Solution**
 Let \(x, y, z \in X\). First we show that \(x \sim x\). This is obvious because, for each equivalence relation \(\sim' \supseteq R\), we have \((x, x) \in \sim'\), so we have \((x, x) \in \bigcap_{\sim' \supseteq R, \sim' \text{an equiv relation}} \sim' = \sim\). The same argument works for showing symmetry and trasitivity.
+
+---
+
 \(\quad \text{(b)}\) Show that \(x \sim y\) if and only if at least one of the following statements is true: \(x = y\), or \(x \> R' \> y\), or there is a finite sequence of elements \(z_1, \dots, z_n \in X\) such that \(x \> R' \> z_1 \>  R' \cdots R' \> z_n \> R' \> y\), where \(x \> R' \> y\) means "\(x \> R \> y\) or \(y \> R \> x\)." 
 **Solution**
 Assume \(x \nsim y\), so there is some equivalence relation \(\sim' \supseteq R\) such that \(x \nsim' y\). We can not have \(x = y\), because it would contadict \(x \sim' x\) (since \(\sim'\) is an equivalence relation). Since \(\sim' \supseteq R\), we have \(x \> R' \> y \implies x \> R \> y \text{ or } y \> R \> x \implies x \sim' y \text{ or } y \sim' x \implies x \sim' y\), so we can not have \(x \> R' \> y\). Similarly, \(x \> R' \> z_1 \>  R' \cdots R' \> z_n \> R' \> y \implies x \sim' z_1 \sim' \cdots \sim' z_n \sim' y \implies x \sim' y\), so we can not have \(x \> R' \> z_1 \>  R' \cdots R' \> z_n \> R' \> y\). 
@@ -88,20 +93,65 @@ Alternatively, assume that none of the three conditions are true. We need to sho
 
 $\blacktriangleright \>$ **Exercise A.4.** &nbsp; Let $f:X \to Y$ and $g:W \to X$ be maps, and suppose $R \subseteq W,S,S' \subseteq X$, and $T,T' \subseteq Y$. Prove the following:
 $\quad \text{(a)} \quad T \supseteq f(f^{-1}(T))$.
+
+---
+
 $\quad \text{(b)} \quad T \subseteq T' \implies f^{-1}(T) \subseteq f^{-1}(T')$.
+
+---
+
 $\quad \text{(c)} \quad f^{-1}(T \cup T') = f^{-1}(T) \cup f^{-1}(T')$.
+
+---
+
 $\quad \text{(d)} \quad f^{-1}(T \cap T') = f^{-1}(T) \cap f^{-1}(T')$.
+
+---
+
 $\quad \text{(e)} \quad f^{-1}(T \setminus T') = f^{-1}(T) \setminus f^{-1}(T')$.
+
+---
+
 $\quad \text{(f)} \quad S \subseteq f^{-1}(f(S))$.
+
+---
+
 $\quad \text{(g)} \quad S \subseteq S' \implies f(S) \subseteq f(S')$.
+
+---
+
 $\quad \text{(h)} \quad f(S \cup S') = f(S) \cup f(S')$.
+
+---
+
 $\quad \text{(i)} \quad f(S \cap S') \subseteq f(S) \cap f(S')$.
+
+---
+
 $\quad \text{(j)} \quad f(S \setminus S') \supseteq f(S) \setminus f(S')$.
+
+---
+
 $\quad \text{(k)} \quad f(S) \cap T = f(S \cap f^{-1}(T))$.
+
+---
+
 $\quad \text{(l)} \quad f(S) \cup T \supseteq f(S \cup f^{-1}(T))$.
+
+---
+
 $\quad \text{(m)} \quad S \cap f^{-1}(T) \subseteq f^{-1}(f(S) \cap T)$.
+
+---
+
 $\quad \text{(n)} \quad S \cup f^{-1}(T) \subseteq f^{-1}(f(S) \cup T)$.
+
+---
+
 $\quad \text{(o)} \quad (f \circ g)^{-1}(T) = g^{-1}(f^{-1}(T))$.
+
+---
+
 $\quad \text{(p)} \quad (f \circ g)(R) = f(g(R))$.
 
 ---
@@ -109,8 +159,17 @@ $\quad \text{(p)} \quad (f \circ g)(R) = f(g(R))$.
 $\blacktriangleright \>$ **Exercise A.5.** &nbsp; With notation as in the previous exercise, give counterexamples to show that the following equalities do not necessarily hold true.
 
 $\quad \text{(a)} \quad T = f(f^{-1}(T))$.
+
+---
+
 $\quad \text{(b)} \quad S=f^{-1}(f(S))$.
+
+---
+
 $\quad \text{(c)} \quad f(S \cap S') = f(S) \cap f(S')$.
+
+---
+
 $\quad \text{(d)} \quad f(S \setminus S') = f(S) \setminus f(S')$.
 
 ---
@@ -125,7 +184,13 @@ $\blacktriangleright \>$ **Exercise A.7.** &nbsp; Show that equality $\text{(a)}
 
 $\blacktriangleright \>$ **Exercise A.8.** &nbsp; Let $f: X \to Y$ be a function.
 $\quad \text{(a)} \quad$ Show that $f$ has an inverse if and only if it is bijective.
+
+---
+
 $\quad \text{(b)} \quad$ Show that if $f$ has an inverse, its inverse is unique.
+
+---
+
 $\quad \text{(c)} \quad$ Show that if $f: X \to Y$ and $g: Y \to Z$ are both bijective, then $(g \circ f)^{-1} = f^{-1}\circ g^{-1}$.
 
 ---
