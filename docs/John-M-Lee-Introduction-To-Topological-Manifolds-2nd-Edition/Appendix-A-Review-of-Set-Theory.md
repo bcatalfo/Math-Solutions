@@ -150,7 +150,19 @@ $\blacktriangleright \>$ **Exercise A.13.** &nbsp; Prove that any susbset of a c
 
 $\blacktriangleright \>$ **Exercise A.14.** &nbsp; Prove that the Cartesian product of two countable sets is countable.
 
+---
+
 ### Indexed Families
+
+$\blacktriangleright \>$ **Exercise A.15.** &nbsp; Complete the proof of Lemma A.9 by showing that every surjective function has a right inverse.
+
+---
+
+$\blacktriangleright \>$ **Exercise A.16.** &nbsp; Prove that if there exists a surjective map from a countable set onto $S$, then $S$ is countable.
+
+---
+
+$\blacktriangleright \>$ **Exercise A.17.** &nbsp; Prove that the union of a countable collection of countable sets is countable.
 
 $$
 \\
