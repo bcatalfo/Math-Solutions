@@ -142,6 +142,10 @@ $\blacktriangleright \>$ **Exercise A.11.** &nbsp; Show that the real numbers ar
 
 $\blacktriangleright \>$ **Exercise A.12.** &nbsp; Show that an interval must be one of the nine types of sets $[a,b]$, $(a,b)$, $[a,b)$, $(a,b]$, $(-\infty,b]$, $(-\infty,b)$, $[a,\infty)$, $(a,\infty)$, or $(-\infty, \infty)$.
 
+---
+
+$\blacktriangleright \>$ **Exercise A.13.** &nbsp; Prove that any susbset of a countable set is countable.
+
 ### Indexed Families
 
 $$
