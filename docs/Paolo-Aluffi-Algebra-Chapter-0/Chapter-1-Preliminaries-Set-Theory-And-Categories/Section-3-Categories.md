@@ -271,6 +271,15 @@ digraph {
 which is the original diagram for \(\sigma\), so we can conclude that \(\sigma 1_{f_1} = \sigma\). The argument that \(1_{f_2}\sigma = \sigma\) is similar. \(\square\)
 ****
 **3.8.** \(\triangleright\) A *subcategory* \(\mathsf{C}'\) of a category \(\mathsf{C}\) consists of a collection of objects of \(\mathsf{C}\) with sets of morphisms \(\text{Hom}_{\mathsf{C}'}(A, B) \subseteq \text{Hom}_{\mathsf{C}}(A, B)\) for all objects \(A, B\) in \(\text{Obj}(\mathsf{C}')\), such that identities and compositions in \(\mathsf{C}\) make \(\mathsf{C'}\) into a category. A subcategory \(\mathsf{C'}\) is *full* if \(\text{Hom}_{\mathsf{C'}}(A,B) = \text{Hom}_{\mathsf{C}}(A,B)\) for all \(A, B\) in \(\text{Obj}(\mathsf{C'})\). Construct a category of *infinite sets* and explain how it may be viewed as a full subcategory of \(\mathsf{Set}\). \(\left[4.4, \S \mathrm{VI}.1.1, \S \mathrm{VIII}.1.3\right]\)
+
+**Solution**
+
+Let $\mathsf{C} = \mathsf{Set}$. Then by the definition of $\mathsf{Set}$,
+- $\text{Obj}(\mathsf{\mathsf{C}}) = \text{the class of all sets}$
+- For $A,B \in \text{Obj}(\mathsf{C}), \text{Hom}_{\textsf{C}}(A,B) = B^A$
+
+Let $\text{Obj}(\mathsf{C'}) = \text{the class of all infinite sets}$. For $A,B \in \text{Obj}(\mathsf{C'})$, let $\text{Hom}_{\mathsf{C'}}(A,B) = \text{Hom}_{\mathsf{C'}}(A,B) = B^A$. We must show that identities and compositions in $\mathsf{C}$ make $\mathsf{C'}$ into a category. This is obvious as all of the properties are inherited from $\mathsf{C}$. $\quad \square$
+
 ****
 **3.9.** \(\triangleright\) An alternative to the notion of *multiset* introduced in \(\S 2.2\) is obtained by considering sets endowed with equivalence relations; equivalent elements are taken to be multiple instances of elements 'of the same kind'. Define a notion of morphism between such enhanced sets, obtaining a category \(\mathsf{MSet}\) containing (a 'copy' of) \(\mathsf{Set}\) as a full subcategory. (There may be more than one reasonable way to do this! This is intentionally an open-ended exercise.) Which objects in \(\mathsf{MSet}\) determine the ordinary multisets as defined in \(\S2.2\) and how? Spell out what a morphism of multisets would be from this point of view. (There are several natural notions of morphisms of multisets. Try to define morphisms in \(\mathsf{MSet}\) so that the notion you obtain for ordinary multisets captures your intuitive understanding of these objects.) \(\left[\S2.2, \S3.2, 4.5\right]\)
 ****
