@@ -6,6 +6,7 @@ export_on_save:
 .katex-display { overflow: auto hidden }
 img {display: block; margin: 0 auto;}
 p.dot { display: flex; justify-content: center; }
+.tikz { display: flex; justify-content: center; align-items: center}
 </style>
 **3.1.** \(\triangleright\) Let \(\mathsf{C}\) be a category. Consider a structure \(\mathsf{C}^{op}\) with
 * \(\text{Obj}(\mathsf{C}^{op}) \coloneqq \text{Obj}(\mathsf{C})\);
@@ -281,8 +282,44 @@ Let $\mathsf{C} = \mathsf{Set}$. Then by the definition of $\mathsf{Set}$,
 Let $\text{Obj}(\mathsf{C'}) = \text{the class of all infinite sets}$. For $A,B \in \text{Obj}(\mathsf{C'})$, let $\text{Hom}_{\mathsf{C'}}(A,B) = \text{Hom}_{\mathsf{C'}}(A,B) = B^A$. We must show that identities and compositions in $\mathsf{C}$ make $\mathsf{C'}$ into a category. This is obvious as all of the properties are inherited from $\mathsf{C}$. $\quad \square$
 
 ****
+
 **3.9.** \(\triangleright\) An alternative to the notion of *multiset* introduced in \(\S 2.2\) is obtained by considering sets endowed with equivalence relations; equivalent elements are taken to be multiple instances of elements 'of the same kind'. Define a notion of morphism between such enhanced sets, obtaining a category \(\mathsf{MSet}\) containing (a 'copy' of) \(\mathsf{Set}\) as a full subcategory. (There may be more than one reasonable way to do this! This is intentionally an open-ended exercise.) Which objects in \(\mathsf{MSet}\) determine the ordinary multisets as defined in \(\S2.2\) and how? Spell out what a morphism of multisets would be from this point of view. (There are several natural notions of morphisms of multisets. Try to define morphisms in \(\mathsf{MSet}\) so that the notion you obtain for ordinary multisets captures your intuitive understanding of these objects.) \(\left[\S2.2, \S3.2, 4.5\right]\)
+
+**Solution**
+
+In $\mathsf{MSet}$ our objects are surjective projections that send $a \in A$ to its equivalence class $[a]_\sim$,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim
+\end{tikzcd}
+\end{document}
+```
+
+and our morphisms are diagrams like
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "f"] \\
+  B \arrow[r, twoheadrightarrow] & B / \sim' 
+\end{tikzcd} 
+\end{document}
+```
+
+where $f$ takes as equivalence class $[a]_\sim$ where $a \in A$ and outputs an equivalence class $[b]_{\sim'}$ where $b\in B$.
+
 ****
+
 **3.11.** \(\triangleright\) Draw the relevant diagrams and define composition and identities for the category \(\mathsf{C}^{A, B}\) mentioned in Example 3.9. Do the same for the category \(\mathsf{C}^{\alpha, \beta}\) mentioned in Example 3.10. \(\left[\S5.5, 5.12\right]\)
 
 $$
