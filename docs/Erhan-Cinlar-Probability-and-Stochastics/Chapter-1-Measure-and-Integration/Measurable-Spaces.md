@@ -65,6 +65,14 @@ If $V$ is empty then $\bigcap_{v\in V}B_v = \R$ and so the whole union is just t
 
 Anyways after having showed that \(\mathcal{E}\) is a \(\sigma\)-algebra the rest of this problem is trivial. \(\mathcal{C} \subset \mathcal{E}\) is obvious by construction, so by the definition of a \(\sigma\)-algebra being generated we have \(\sigma \mathcal{C} \subset \mathcal{E}\). \(\mathcal{E} \subset \sigma \mathcal{C}\) is trivial because \(\sigma\)-algebras are closed under finite unions and complements. $\quad \square$
 
+---
+
+1.10 &nbsp; _Comparisons_. Let $\mathcal{C}$ and $\mathcal{D}$ be two collections of subsets of $E$. Show the following:
+$\quad \text{a)} \quad$ If $\mathcal{C} \subset \mathcal{D}$ then $\sigma \mathcal{C} \subset \sigma \mathcal{D}$
+$\quad \text{b)} \quad$ If $\mathcal{C} \subset \sigma \mathcal{D}$ then $\sigma C \subset \sigma D$
+$\quad \text{c)} \quad$ If $C \subset \sigma \mathcal{D}$ and $\mathcal{D} \subset \sigma \mathcal{C}$, then $\sigma \mathcal{C} = \sigma \mathcal{D}$
+$\quad \text{d)} \quad$ If $\mathcal{C} \subset \mathcal{D} \subset \sigma \mathcal{C}$, then $\sigma \mathcal{C} = \sigma \mathcal{D}$
+
 $$
 \\
 $$
