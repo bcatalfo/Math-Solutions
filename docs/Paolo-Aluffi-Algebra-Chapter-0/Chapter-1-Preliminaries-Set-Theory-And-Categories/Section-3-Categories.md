@@ -316,7 +316,281 @@ and our morphisms are diagrams like
 \end{document}
 ```
 
-where $f$ takes as equivalence class $[a]_\sim$ where $a \in A$ and outputs an equivalence class $[b]_{\sim'}$ where $b\in B$.
+where $f$ takes an equivalence class $[a]_\sim$ where $a \in A$ as input and outputs an equivalence class $[b]_{\sim'}$ where $b\in B$.
+
+Given two morphisms $f: A / \sim \, \to B  /\sim'$ and $g: B / \sim' \, \to C / \sim''$, to combine them we stack them,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "f"] \\
+  B \arrow[r, twoheadrightarrow] & B / \sim' \arrow[d,"g"] \\
+  C \arrow[r, twoheadrightarrow] & C / \sim'' 
+\end{tikzcd} 
+\end{document}
+```
+
+compose $f$ and $g$ to get $g \circ f$ and remove the middle, as shown below.
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "g \circ f"] \\
+  C \arrow[r, twoheadrightarrow] & C / \sim'' 
+\end{tikzcd} 
+\end{document}
+```
+
+the identity morphism is the diagram below,
+
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "1"] \\
+  A \arrow[r, twoheadrightarrow] & A / \sim 
+\end{tikzcd} 
+\end{document}
+```
+
+where $1$ is of course the identity on $A / \sim$. Since $f \circ 1 = f$ this identity morphism is an identity with respect to composition, following the steps we first stack the diagrams for $1$ and for $f$,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "1"] \\
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d,"f"] \\
+  B \arrow[r, twoheadrightarrow] & B / \sim' 
+\end{tikzcd} 
+\end{document}
+```
+
+compose $f \circ 1 = f$ and remove the middle to get 
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "f"] \\
+  B \arrow[r, twoheadrightarrow] & B / \sim' 
+\end{tikzcd} 
+\end{document}
+```
+
+which is the original morphism. This also works in the other direction: consider the right-sided identity morphism,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  B \arrow[r, twoheadrightarrow] & B / \sim' \arrow[d, "1"] \\
+  B \arrow[r, twoheadrightarrow] & B / \sim' 
+\end{tikzcd} 
+\end{document}
+```
+
+stack the morphism for $f$ on top of it,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "f"] \\
+  B \arrow[r, twoheadrightarrow] & B / \sim' \arrow[d,"1"] \\
+  B \arrow[r, twoheadrightarrow] & B / \sim' 
+\end{tikzcd} 
+\end{document}
+```
+
+remove the middle and compose $1 \circ f = f$ to get the original diagram for $f$,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "f"] \\
+  B \arrow[r, twoheadrightarrow] & B / \sim' 
+\end{tikzcd} 
+\end{document}
+```
+
+showing that indeed *both* indentity morphisms do function as identities with respect to composing morphisms.
+
+Finally we need to show that with respect to morphisms we have associativity, for this we need a new morphism $h: C / \sim'' \to D / \sim'''$ and to show that
+
+$$
+(hg)f = h(gf).
+$$
+
+First we find $hg$, which by definition involves first stacking $g$ and $h$,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  B \arrow[r,twoheadrightarrow] & B / \sim' \arrow[d,"g"] \\
+  C \arrow[r,twoheadrightarrow] & C / \sim'' \arrow[d,"h"] \\
+  D \arrow[r,twoheadrightarrow] & D / \sim''' 
+\end{tikzcd}
+\end{document}
+```
+
+then removing the middle and composing $g$ and $h$ to get $h \circ g$
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  B \arrow[r, twoheadrightarrow] & B / \sim' \arrow[d, "h \circ g"] \\
+  D \arrow[r,twoheadrightarrow] & D / \sim'''
+\end{tikzcd}
+\end{document}
+```
+
+so to find the morphism $(hg)f$ we have to first stack the morphism for $f$ onto the above morphism for $hg$,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "f"] \\
+  B \arrow[r, twoheadrightarrow] & B / \sim' \arrow[d, "h \circ g"] \\
+  D \arrow[r,twoheadrightarrow] & D / \sim'''
+\end{tikzcd}
+\end{document}
+```
+
+then composing $f$ with $h \circ g$ to get $(h \circ g) \circ f = h \circ g \circ f$, and removing the middle to get the below diagram.
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "h \circ g \circ f"] \\
+  D \arrow[r,twoheadrightarrow] & D / \sim'''
+\end{tikzcd}
+\end{document}
+```
+
+Now we need to show that the morphism $h(gf)$ is the above diagram. We start by taking the diagram for $gf$, which is by definition the below diagram,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "g \circ f"] \\
+  C \arrow[r,twoheadrightarrow] & C / \sim''
+\end{tikzcd}
+\end{document}
+```
+
+and stack on the diagram for $h$,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  C \arrow[r, twoheadrightarrow] & C / \sim'' \arrow[d, "h"] \\
+  D \arrow[r,twoheadrightarrow] & D / \sim'''
+\end{tikzcd}
+\end{document}
+```
+
+to get the following
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "g \circ f"] \\
+  C \arrow[r, twoheadrightarrow] & C / \sim'' \arrow[d, "h"] \\
+  D \arrow[r,twoheadrightarrow] & D / \sim'''
+\end{tikzcd}
+\end{document}
+```
+
+and then remove the middle and compose $g \circ f$ with $h$ to get $h \circ (g \circ f) = h \circ g \circ f$,
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / \sim \arrow[d, "h \circ g \circ f"] \\
+  D \arrow[r,twoheadrightarrow] & D / \sim'''
+\end{tikzcd}
+\end{document}
+```
+
+and we have the desired diagram, so we have shown that the composition of our morphisms is associative.
+
+We conclude that as defined $\mathsf{MSet}$ is indeed a category. It has $\mathsf{Set}$ as a full subcategory by only considering objects of the type
+
+
+```tikz {kroki=true}
+\documentclass[preview]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{cd}
+\begin{document}
+\Large
+\begin{tikzcd}
+  A \arrow[r, twoheadrightarrow] & A / = \\
+\end{tikzcd}
+\end{document}
+```
+
+Where $=$ is the standard equivalence relation, that only elements of a set that are normally considered equal are considered equal. $\quad \square$
 
 ****
 
