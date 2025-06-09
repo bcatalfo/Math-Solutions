@@ -101,6 +101,16 @@ Moreover, in each case, $x$ and $y$ can be limited to rationals.
 
 ---
 
+1.14 &nbsp; _Lemma 1.7_. Prove.
+
+1.7 &nbsp; Lemma. Let $\mathcal{D}$ be a d-system on $E$. Fix $D$ in $\mathcal{D}$ and let 
+
+$$
+\hat{\mathcal{D}} = \{A \in \mathcal{D}: A \cap D \in \mathcal{D}\}
+$$
+
+Then, $\hat{\mathcal{D}}$ is again a d-system.
+
 $$
 \\
 $$
