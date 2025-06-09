@@ -111,6 +111,16 @@ $$
 
 Then, $\hat{\mathcal{D}}$ is again a d-system.
 
+---
+
+1.15 &nbsp; _Trace spaces_. Let $(E, \mathcal{E})$ be a measurable space. Fix $D \subset E$ and let
+
+$$
+\mathcal{D} = \mathcal{E} \cap D = \{A \cap D: A \in \mathcal{E}\}.
+$$
+
+Show that $\mathcal{D}$ is a $\sigma$-algebra on $D$. It is called the _trace_ on $\mathcal{E}$ on $D$, and $(D,\mathcal{D})$ is called the _trace_ of $(E,\mathcal{E})$ on $D$.
+
 $$
 \\
 $$
