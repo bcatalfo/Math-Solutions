@@ -46,9 +46,24 @@ First we show that \(\mathcal{E}\) is indeed a \(\sigma\)-algebra. By definition
 * \(A \in \mathcal{E} \implies \R \setminus A \in \mathcal{E}\)
 This is obvious from construction.
 * \(A_1, A_2, \dots \in \mathcal{E} \implies \bigcup_{n}A_n \in \mathcal{E}\)
-Harder to show. Figure out some other time.
+Some examples
+$\{1,\frac{1}{2}\} \cup \{\pi\} = \{1, \frac{1}{2}, \pi\}$, which is countable
+$\{1,2,3, \dots,\} \cup \{2\}^c = \R$, which is the complement of $\emptyset$
+Let $I$ be a countable set and consider $\bigcup_{i \in I}A_i$. Let $I = U \cup V$, where this union is disjoint and if $u \in U$ then $A_u$ is countable and if $v \in V$ then $A_v$ is the complement of a countable set. Then 
+$$
+\bigcup_{i \in I} A_i = \bigcup_{u \in U} A_u \cup \bigcup_{v \in V} A_v 
+$$
+Since each $A_v$ is the complement of a countable set we can write $A_v = (B_v)^{c}$ where $B_v$ is a countable subset of $\R$. Plugging in
+$$
+= \bigcup_{u \in U}A_u \cup \bigcup_{v \in V} (B_v)^{c}
+$$
+applying DeMorgan's Law
+$$
+= \bigcup_{u \in U}A_u \cup \left(\bigcap_{v \in V} B_v\right)^{c}
+$$
+If $V$ is empty then $\bigcap_{v\in V}B_v = \R$ and so the whole union is just the countable $\bigcup_{u \in U} A_u$. Otherwise $\bigcap_{v\in V}B_v$ is countable and so we are left with the union of a countable set and the complement of a countable set, which is the complement of a countable set.
 
-Anyways after having showed that \(\mathcal{E}\) is a \(\sigma\)-algebra the rest of this problem is trivial. \(\mathcal{C} \subset \mathcal{E}\) is obvious by construction, so by the definition of a \(\sigma\)-algebra being generated we have \(\sigma \mathcal{C} \subset \mathcal{E}\). \(\mathcal{E} \subset \sigma \mathcal{C}\) is trivial because \(\sigma\)-algebras are closed under finite unions and complements.
+Anyways after having showed that \(\mathcal{E}\) is a \(\sigma\)-algebra the rest of this problem is trivial. \(\mathcal{C} \subset \mathcal{E}\) is obvious by construction, so by the definition of a \(\sigma\)-algebra being generated we have \(\sigma \mathcal{C} \subset \mathcal{E}\). \(\mathcal{E} \subset \sigma \mathcal{C}\) is trivial because \(\sigma\)-algebras are closed under finite unions and complements. $\quad \square$
 
 $$
 \\
