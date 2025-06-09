@@ -6,6 +6,14 @@ export_on_save:
 .katex-display { overflow: auto hidden }
 img {display: block; margin: 0 auto;}
 </style>
+
+# Probability and Stochastics (Graduate Texts in Mathematics 261)
+## Erhan Cinlar
+
+## Chapter 1: Measure and Integration
+
+### Exercises
+
 1.9 &nbsp; *Partition generated \(\sigma\)-algebras*.
 \(\quad \text{a)} \>\) Let \(\mathcal{C} = \{A, B, C\}\) be a partition of \(E\). List the elements of \(\sigma \mathcal{C}\).
 **Solution**
