@@ -586,6 +586,148 @@ B \arrow[ur,"g_1"] \arrow[urr,"g_2",swap, bend right]
 \end{document}
 ```
 
+Now let's look at another morphism.
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f_2",swap] \arrow[rrd,"f_3", bend left] \\
+& Z_2 \arrow[r,"\tau"] & Z_3 \\
+B \arrow[ur,"g_2"] \arrow[urr,"g_3",swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
+To compose these two let's first put them side by side,
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f_1",swap] \arrow[rrd,"f_2"] \arrow[rrrd,"f_3", bend left] \\
+& Z_1 \arrow[r,"\sigma"] & Z_2 \arrow[r,"\tau"] & Z_3 \\
+B \arrow[ur,"g_1"] \arrow[urr,"g_2",swap] \arrow[urrr,"g_3", swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
+then remove the middle and compose $\sigma$ and $\tau$.
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f_1",swap] \arrow[rrd,"f_3", bend left] \\
+& Z_1 \arrow[r,"\tau \circ \sigma"]  & Z_3 \\
+B \arrow[ur,"g_1"] \arrow[urr,"g_3", swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
+Here's what an identity looks like
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f",swap] \arrow[rrd,"f", bend left] \\
+& Z_1 \arrow[r,"1"] & Z_1 \\
+B \arrow[ur,"g"] \arrow[urr,"g",swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
+we can compose it with the following morphism
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f",swap] \arrow[rrd,"f'", bend left] \\
+& Z_1 \arrow[r,"\sigma"] & Z_2 \\
+B \arrow[ur,"g"] \arrow[urr,"g'",swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
+by first putting them side by side,
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f",swap] \arrow[rrd,"f"] \arrow[rrrd,"f'", bend left] \\
+& Z_1 \arrow[r,"1"] & Z_1 \arrow[r,"\sigma"] & Z_2 \\
+B \arrow[ur,"g"] \arrow[urr,"g",swap] \arrow[urrr,"g'", swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
+and then removing the middle part and composing $1$ and $\sigma$ to get $\sigma \circ 1 = \sigma$
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f",swap] \arrow[rrd,"f'", bend left] \\
+& Z_1 \arrow[r,"\sigma"] & Z_2 \\
+B \arrow[ur,"g"] \arrow[urr,"g'", swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
+we have another identity
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f'",swap] \arrow[rrd,"f'", bend left] \\
+& Z_2 \arrow[r,"1"] & Z_2 \\
+B \arrow[ur,"g'"] \arrow[urr,"g'",swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
+we can compose it with the one above by first putting them side by side,
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f",swap] \arrow[rrd,"f'"] \arrow[rrrd,"f'", bend left] \\
+& Z_1 \arrow[r,"\sigma"] & Z_2 \arrow[r,"1"] & Z_2 \\
+B \arrow[ur,"g"] \arrow[urr,"g'",swap] \arrow[urrr,"g'", swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
+and then removing the middle and composing $\sigma$ and $1$ to get $1 \circ \sigma = \sigma$,
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f",swap] \arrow[rrd,"f'", bend left] \\
+& Z_1 \arrow[r,"\sigma"] & Z_2 \\
+B \arrow[ur,"g"] \arrow[urr,"g'", swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
+and now we have shown that the identity works on both sides.
+
 $$
 \\
 $$
