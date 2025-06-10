@@ -558,6 +558,34 @@ Where $=$ is the standard equivalence relation, that only elements of a set that
 
 **3.11.** \(\triangleright\) Draw the relevant diagrams and define composition and identities for the category \(\mathsf{C}^{A, B}\) mentioned in Example 3.9. Do the same for the category \(\mathsf{C}^{\alpha, \beta}\) mentioned in Example 3.10. \(\left[\S5.5, 5.12\right]\)
 
+We define the category $\mathsf{C}^{A,B}$ to have the following objects and morphisms
+- $\text{Obj}(\mathsf{C}^{A,B})$ = diagrams
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f"] \\
+& Z \\
+B \arrow[ur,"g", swap]
+\end{tikzcd}
+\end{document}
+```
+in $\mathsf{C}$; and
+- morphisms are commutative diagrams
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+A \arrow[rd,"f_1",swap] \arrow[rrd,"f_2", bend left] \\
+& Z_1 \arrow[r,"\sigma"] & Z_2 \\
+B \arrow[ur,"g_1"] \arrow[urr,"g_2",swap, bend right]
+\end{tikzcd}
+\end{document}
+```
+
 $$
 \\
 $$
