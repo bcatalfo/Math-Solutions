@@ -728,6 +728,179 @@ B \arrow[ur,"g"] \arrow[urr,"g'", swap, bend right]
 
 and now we have shown that the identity works on both sides.
 
+We define the category $\mathsf{C}^{\alpha,\beta}$ to have the following objects and morphisms
+- $\text{Obj}(\mathsf{C}^{\alpha,\beta}) = $ _commutative diagrams_
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f"] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z \\
+ & B \arrow[ur,"g", swap]
+\end{tikzcd}
+\end{document}
+```
+
+in $\mathsf{C}$, and
+
+- morphisms are commutative diagrams
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_1"] \arrow[rrd, "f_2", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_1 \arrow[r,"\sigma"] & Z_2 \\
+ & B \arrow[ur,"g_1", swap] \arrow[rru, bend right, "g_2", swap]
+\end{tikzcd}
+\end{document}
+```
+
+here's another morphism
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_2"] \arrow[rrd, "f_3", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_2 \arrow[r,"\tau"] & Z_3 \\
+ & B \arrow[ur,"g_2", swap] \arrow[rru, bend right, "g_3", swap]
+\end{tikzcd}
+\end{document}
+```
+
+to compose them we first put them side by side,
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_1", swap] \arrow[rrd, "f_2"] \arrow[rrrd, "f_3", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_1 \arrow[r,"\sigma"] & Z_2 \arrow[r,"\tau"] & Z_3 \\
+ & B \arrow[ur,"g_1"] \arrow[rru, "g_2", swap] \arrow[rrru, "g_3", bend right, swap]
+\end{tikzcd}
+\end{document}
+```
+
+then compose $\sigma$ and $\tau$ to get $\tau \circ \sigma$ and remove the middle.
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_1"] \arrow[rrd, "f_3", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_1 \arrow[r,"\tau \circ \sigma"] & Z_3 \\
+ & B \arrow[ur,"g_1", swap] \arrow[rru, bend right, "g_3", swap]
+\end{tikzcd}
+\end{document}
+```
+
+Here's an identity,
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_1"] \arrow[rrd, "f_1", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_1 \arrow[r,"1"] & Z_1 \\
+ & B \arrow[ur,"g_1", swap] \arrow[rru, bend right, "g_1", swap]
+\end{tikzcd}
+\end{document}
+```
+
+we can compose it with the following morphism
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_1"] \arrow[rrd, "f_2", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_1 \arrow[r,"\sigma"] & Z_2 \\
+ & B \arrow[ur,"g_1", swap] \arrow[rru, bend right, "g_2", swap]
+\end{tikzcd}
+\end{document}
+```
+
+by first putting the two side by side,
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_1", swap] \arrow[rrd, "f_1"] \arrow[rrrd, "f_2", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_1 \arrow[r,"1"] & Z_1 \arrow[r,"\sigma"] & Z_2 \\
+ & B \arrow[ur,"g_1"] \arrow[rru, "g_1", swap] \arrow[rrru, "g_2", bend right, swap]
+\end{tikzcd}
+\end{document}
+```
+
+then removing the middle and composing $1$ and $\sigma$ to get $\sigma \circ 1 = \sigma$.
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_1"] \arrow[rrd, "f_2", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_1 \arrow[r,"\sigma"] & Z_2 \\
+ & B \arrow[ur,"g_1", swap] \arrow[rru, bend right, "g_2", swap]
+\end{tikzcd}
+\end{document}
+```
+
+As you can see we get the original morphism, so the right-sided identy works. Our left-sided identity would be
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_2"] \arrow[rrd, "f_2", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_2 \arrow[r,"1"] & Z_2 \\
+ & B \arrow[ur,"g_2", swap] \arrow[rru, bend right, "g_2", swap]
+\end{tikzcd}
+\end{document}
+```
+
+we can compose it with the previous morphism by first putting them side by side,
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_1", swap] \arrow[rrd, "f_2"] \arrow[rrrd, "f_2", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_1 \arrow[r,"\sigma"] & Z_2 \arrow[r,"1"] & Z_2 \\
+ & B \arrow[ur,"g_1"] \arrow[rru, "g_2", swap] \arrow[rrru, "g_2", bend right, swap]
+\end{tikzcd}
+\end{document}
+```
+
+and then removing the middle and composing $\sigma$ and $1$ to get $1 \circ \sigma = \sigma$.
+
+```latex {cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+ & A \arrow[rd,"f_1"] \arrow[rrd, "f_2", bend left] \\
+C \arrow[ur,"\alpha"] \arrow[dr,"\beta",swap] & & Z_1 \arrow[r,"\sigma"] & Z_2 \\
+ & B \arrow[ur,"g_1", swap] \arrow[rru, bend right, "g_2", swap]
+\end{tikzcd}
+\end{document}
+```
+
+Clearly this is the original morphism, so the left-sided identity works as well. $\quad \square$
+
 $$
 \\
 $$
