@@ -77,6 +77,32 @@ $$
 \tag{1.1.81} \phantom{(1.1.81)} \quad \sum_{k=0}^{\infty} z_k = \frac{1}{1-z}, \quad \text{for} \enspace |z| < 1.
 $$
 
+---
+
+$4. \>$ This exercise discusses the ratio test, mentioned in connection with the infinite series $(1.1.49)$ and $(1.1.62)$. Consider the infinite series
+
+$$
+\tag{1.1.82} \phantom{(1.1.82)} \quad \sum_{k=0}^{\infty} a_k, \quad a_k \in \mathbb{C}.
+$$
+
+Assume there exists $r < 1$ and $N < \infty$ such that 
+
+$$
+\tag{1.1.83} \phantom{(1.1.83)} \quad k \geq N \implies \left| \frac{a_{k+1}}{a_k} \right| \leq r.
+$$
+
+Show that
+
+$$
+\tag{1.1.84} \phantom{(1.1.84)} \quad \sum_{k=0}^{\infty} |a_k| < \infty.
+$$
+
+_Hint_. Show that 
+
+$$
+\tag{1.1.85} \phantom{(1.1.85)} \quad \sum_{k=N}^{\infty} |a_k| \leq |a_N| \sum_{\ell=0}^{\infty} r^\ell = \frac{|a_N|}{1-r}.
+$$
+
 $$
 \\
 $$
