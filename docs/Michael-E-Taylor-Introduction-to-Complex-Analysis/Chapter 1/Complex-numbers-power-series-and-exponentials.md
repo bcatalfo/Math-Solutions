@@ -103,6 +103,20 @@ $$
 \tag{1.1.85} \phantom{(1.1.85)} \quad \sum_{k=N}^{\infty} |a_k| \leq |a_N| \sum_{\ell=0}^{\infty} r^\ell = \frac{|a_N|}{1-r}.
 $$
 
+---
+
+$5. \>$ In the case
+
+$$
+\tag{1.1.86} \phantom{(1.1.86)} \quad a_k = \frac{z^k}{k!},
+$$
+
+show that for each $z \in \mathbb{C}$, there exists $N < \infty$ such that $(1.1.83)$ holds, with $r = 1/2$. Also show that the ratio test applies to 
+
+$$
+\tag{1.1.87} \phantom{(1.1.87)} \quad a_k = kz^k, \quad |z| < 1.
+$$
+
 $$
 \\
 $$
