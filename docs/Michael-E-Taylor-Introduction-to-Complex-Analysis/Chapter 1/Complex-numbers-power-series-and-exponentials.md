@@ -57,6 +57,26 @@ $$
 
 Use this to prove $(1.1.77)$, hence $(1.1.76)$, hence $(1.1.75)$.
 
+---
+
+$3. \>$ Letting $s_n = \sum_{k=0}^{n}r^k$, write the series for $rs_n$ and show that 
+
+$$
+\tag{1.1.79} \phantom{(1.1.79)} \quad (1-r)s_n = 1 - r^{n+1}, \quad \text{hence} \enspace s_n = \frac{1 - r^{n+1}}{1-r}.
+$$
+
+Deduce that 
+
+$$
+\tag{1.1.80} \phantom{(1.1.80)} \quad 0 < r < 1 \implies s_n \to \frac{1}{1-r}, \quad \text{as} \enspace n \to \infty,
+$$
+
+as we stated in $(1.1.34)$. More generally, show that 
+
+$$
+\tag{1.1.81} \phantom{(1.1.81)} \quad \sum_{k=0}^{\infty} z_k = \frac{1}{1-z}, \quad \text{for} \enspace |z| < 1.
+$$
+
 $$
 \\
 $$
