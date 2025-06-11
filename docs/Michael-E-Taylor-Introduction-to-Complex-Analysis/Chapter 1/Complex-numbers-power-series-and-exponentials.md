@@ -117,6 +117,21 @@ $$
 \tag{1.1.87} \phantom{(1.1.87)} \quad a_k = kz^k, \quad |z| < 1.
 $$
 
+---
+
+$6. \>$ This exercise discusses the integral test for absolute convergence of an infinite series, which goes as follows. Let $f$ be a positive, monotonically decreasing, continuous function on $[0,\infty)$, and suppose $|a_k|=f(k)$. Then
+
+$$
+\tag{1.1.88} \phantom{(1.1.88)} \quad \sum_{k=0}^{\infty} |a_k| < \infty \iff \int_{0}^{\infty} f(t) \, dt < \infty.
+$$
+
+Prove this.
+_Hint_. Use 
+
+$$
+\tag{1.1.89} \phantom{(1.1.89)} \quad \sum_{k=1}^N |a_k| \leq \int_0^N f(t) \, dt \leq \sum_{k=0}^{N-1} |a_k|.
+$$
+
 $$
 \\
 $$
