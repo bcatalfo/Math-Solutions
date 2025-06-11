@@ -15,7 +15,7 @@ export_on_save:
 
 ### Exercises
 
-$\text{1.} \>$ Supplement $(1.1.20)$ with the following result. Assume there exists $A > 0$ such that $|z_n| \geq A$ for all $n$. Then
+$1. \>$ Supplement $(1.1.20)$ with the following result. Assume there exists $A > 0$ such that $|z_n| \geq A$ for all $n$. Then
 
 $$
 z_n \to z \implies \frac{1}{z_n} \to \frac{1}{z}.
@@ -31,7 +31,7 @@ $$
 
 ---
 
-$\text{2.} \>$ Show that 
+$2. \>$ Show that 
 
 $$
 \tag{1.1.75} \phantom{(1.1.75)} \quad |z| < 1 \implies z^k \to 0, \quad \text{as} \quad k \to \infty.
