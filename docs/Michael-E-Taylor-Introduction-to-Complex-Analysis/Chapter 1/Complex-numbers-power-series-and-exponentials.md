@@ -23,10 +23,30 @@ $$
 
 **Solution**
 
-Recall that $(1.1.20)$ is 
+Let $\varepsilon > 0$. We need to find $N$ large enough such that 
 
 $$
-\tag{1.1.20} \phantom{(1.1.20)} \quad z_n \to z, w_n \to w \implies z_n + w_n \to z + w \quad \text{and} \quad z_nw_n \to zw
+n > N \implies \left| \frac{1}{z_n} - \frac{1}{z} \right| < \varepsilon.
+$$
+
+First use the fact that $z_n \to z$ to choose $N'$ such that
+
+$$
+n > N' \implies |z_n - z| < \varepsilon.
+$$
+
+Then notice that
+
+$$
+1 = \frac{z\overline{z}}{|z|^2} \\[.25em]
+\frac{1}{z} = \frac{\overline{z}}{|z|^2}
+$$
+
+so 
+
+$$
+\left| \frac{1}{z_n} - \frac{1}{z} \right|
+= \left| \frac{\overline{z_n}}{|z_n|^2} - \frac{\overline{z}}{|z|^2} \right |
 $$
 
 ---
