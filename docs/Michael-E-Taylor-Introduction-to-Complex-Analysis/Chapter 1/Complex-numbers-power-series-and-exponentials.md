@@ -91,7 +91,7 @@ $$
 = \left| \frac{|z_n| - |z|}{|z||z_n|} \right| < \left| \frac{|z_n| - |z|}{A^2} \right| .
 $$
 
-Let $\varepsilon > 0$. Choose $N$ such that $n > N \implies |z - z_n| < \varepsilon A^2$. Then $\left| \frac{1}{|z|} - \frac{1}{|z_n|} \right| < \varepsilon$. Therefore $\frac{1}{|z_n|} \to \frac{1}{|z|}$. For a sequence of reals $(x_n)$, $x_n \to x \implies x_n^2 \to x^2 $. Therefore $\frac{1}{|z_n|^2} \to \frac{1}{|z|^2}. \quad \square$
+Let $\varepsilon > 0$. Since $|z_n| \to |z|$ we can choose $N$ such that $n > N \implies ||z| - |z_n|| < \varepsilon A^2$. Then $\left| \frac{1}{|z|} - \frac{1}{|z_n|} \right| < \varepsilon$. Therefore $\frac{1}{|z_n|} \to \frac{1}{|z|}$. For a sequence of reals $(x_n)$, $x_n \to x \implies x_n^2 \to x^2 $. Therefore $\frac{1}{|z_n|^2} \to \frac{1}{|z|^2}. \quad \square$
 
 ---
 
