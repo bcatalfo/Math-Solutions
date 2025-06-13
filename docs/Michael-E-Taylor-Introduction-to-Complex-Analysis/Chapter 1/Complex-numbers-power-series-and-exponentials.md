@@ -23,31 +23,75 @@ $$
 
 **Solution**
 
-Let $\varepsilon > 0$. We need to find $N$ large enough such that 
+Let $z_n \to z$. It remains to show that $\frac{1}{z_n} \to \frac{1}{z}$.
+
+_Lemma_ &nbsp; $|z| > 0$.
+
+_Proof of Lemma_ &nbsp; $|z| = 0 \iff z = 0 \iff z_n \to 0 \implies \left( \exists N \enspace \text{s.t.} \enspace n > N \implies |z_n| < A \right)$, contradicting $|z_n| \geq A$ for all $n$. $\quad \square$
+
+Notice that if $w \in \mathbb{C}, w > 0$ then
 
 $$
-n > N \implies \left| \frac{1}{z_n} - \frac{1}{z} \right| < \varepsilon.
+|w|^2 = w \overline{w} \implies 1 = \frac{w\overline{w}}{|w|^2} \implies
+\frac{1}{w} = \frac{\overline{w}}{|w|^2}.
 $$
 
-First use the fact that $z_n \to z$ to choose $N'$ such that
-
-$$
-n > N' \implies |z_n - z| < \varepsilon.
-$$
-
-Then notice that
-
-$$
-1 = \frac{z\overline{z}}{|z|^2} \\[.25em]
-\frac{1}{z} = \frac{\overline{z}}{|z|^2}
-$$
-
-so 
+Since $z_n, z > 0$,
 
 $$
 \left| \frac{1}{z_n} - \frac{1}{z} \right|
-= \left| \frac{\overline{z_n}}{|z_n|^2} - \frac{\overline{z}}{|z|^2} \right |
+= \left| \frac{\overline{z_n}}{|z_n|^2} - \frac{\overline{z}}{|z|^2} \right | .
 $$
+
+Therefore it is sufficient to show that 
+
+$$
+\tag{1} \phantom{(1)} \quad\overline{z_n} \to \overline{z} \quad \text{and} \quad \frac{1}{|z_n|^2} \to \frac{1}{|z|^2},
+$$
+
+because by Equation $(1.1.20)$ if $(\xi_n)$ is a sequence in $\mathbb{C}$ then
+
+$$
+\xi_n \to \xi, w_n \to w \implies \xi_nw_n \to \xi w.
+$$
+
+Since 
+
+$$
+|\overline{z_n} - \overline{z}| = \left|\overline{z_n} + \overline{-1}\overline{z}\right|
+$$
+
+We can use Equation $(1.1.12)$
+
+$$
+\tag{1.1.12} \phantom{(1.1.12)} \quad \overline{z + w} = \overline{z} + \overline{w}, \quad \overline{zw} = \overline{z} \overline{w}
+$$
+
+to get 
+
+$$
+\left|\overline{z_n} + \overline{-1}\overline{z}\right| = \left| \overline{z_n} + \overline{-z} \right| = \left| \overline{z_n - z} \right|,
+$$
+
+and since $|\overline{z}| = |z|$ we have 
+
+$$
+\tag{2} \phantom{(2)} \quad \left| \overline{z_n} - \overline{z} \right| = \left| z_n - z \right|,
+$$
+
+so $z_n \to z \implies \overline{z_n} \to \overline{z}$. Note that Equation $(2)$ has a geometric interpretation as well $\text{---}$ reflections preserve distance, and $\xi \to \overline{\xi}$ is geometrically a reflection over the $x$-axis.
+
+Since we have shown that $\overline{z_n} \to \overline{z}$, by Equation $(1)$ it remains to show that $\frac{1}{|z_n|^2} \to \frac{1}{|z|^2}$. This is a sequence of real numbers. Since $z_n \to z$ we must have $|z_n| \to |z|$, a sequence of reals. So what follows is a basic exercise in real analysis.
+
+Calculate that
+
+$$
+\left| \frac{1}{|z|} - \frac{1}{|z_n|} \right|
+= \left| \frac{|z_n|}{|z||z_n|} - \frac{|z|}{|z||z_n|} \right| \\[.25em]
+= \left| \frac{|z_n| - |z|}{|z||z_n|} \right| < \left| \frac{|z_n| - |z|}{A^2} \right| .
+$$
+
+Let $\varepsilon > 0$. Choose $N$ such that $n > N \implies |z - z_n| < \varepsilon A^2$. Then $\left| \frac{1}{|z|} - \frac{1}{|z_n|} \right| < \varepsilon$. Therefore $\frac{1}{|z_n|} \to \frac{1}{|z|}$. For a sequence of reals $(x_n)$, $x_n \to x \implies x_n^2 \to x^2 $. Therefore $\frac{1}{|z_n|^2} \to \frac{1}{|z|^2}. \quad \square$
 
 ---
 
