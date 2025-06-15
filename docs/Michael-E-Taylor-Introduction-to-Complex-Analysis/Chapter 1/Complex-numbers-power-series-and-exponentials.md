@@ -121,6 +121,26 @@ $$
 
 Use this to prove $(1.1.77)$, hence $(1.1.76)$, hence $(1.1.75)$.
 
+**Solution**
+
+First show $(1.1.78)$. **TODO**. Proceed by induction?
+
+In light of $(1.1.78)$,
+
+$$
+\frac{k}{(1 + a)^k} \leq \frac{k}{1 + ka} < \frac{k}{ka} = \frac{1}{a},
+$$
+
+proving $(1.1.77)$, which is equivalent to $(1.1.76)$.
+
+Since $ks^k$ is bounded there must exist some $R > 0$ such that
+
+$$
+\left|ks^k\right| < R \implies \left|s^k\right| < \frac{R}{k}.
+$$
+
+Clearly as $k \to \infty$ we must have $\left|s^k\right| \to 0$ proving $(1.1.75). \quad \square$
+
 ---
 
 $3. \>$ Letting $s_n = \sum_{k=0}^{n}r^k$, write the series for $rs_n$ and show that 
