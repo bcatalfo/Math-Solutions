@@ -158,7 +158,7 @@ $$
 as we stated in $(1.1.34)$. More generally, show that 
 
 $$
-\tag{1.1.81} \phantom{(1.1.81)} \quad \sum_{k=0}^{\infty} z_k = \frac{1}{1-z}, \quad \text{for} \enspace |z| < 1.
+\tag{1.1.81} \phantom{(1.1.81)} \quad \sum_{k=0}^{\infty} z^k = \frac{1}{1-z}, \quad \text{for} \enspace |z| < 1.
 $$
 
 ---
