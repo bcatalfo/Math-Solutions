@@ -181,6 +181,38 @@ $$
 \tag{1.1.81} \phantom{(1.1.81)} \quad \sum_{k=0}^{\infty} z^k = \frac{1}{1-z}, \quad \text{for} \enspace |z| < 1.
 $$
 
+**Solution**
+
+First calculate that 
+
+$$
+rs_n = r \sum_{k=0}^n r^k = \sum_{k=0}^n r^{k+1} = \sum_{k=1}^{n+1} r^k,
+$$
+
+so
+
+$$
+(1 - r)s_n = s_n - r s_n = \sum_{k=0}^n r^k - \sum_{k=1}^{n+1}r^k = 1 - r^{n+1}.
+$$
+
+Dividing by $(1-r)$ we get 
+
+$$
+s_n = \frac{1-r^{n+1}}{1-r},
+$$
+
+and if $0 < r < 1$ then $\lim_{n \to \infty} r^{n+1} = 0$ so $(1.1.80)$ holds.
+
+More generally we can show $(1.1.81)$ by using Exercise $2$.
+
+Let $S_n = \sum_{k=0}^n z^k$. Then by the same argument as before 
+
+$$
+S_n = \frac{1 - z^{n+1}}{1-z}.
+$$
+
+By Exercise $2$ if $|z| < 1$ then $\lim_{n\to\infty} z^{n+1} = \lim_{n\to\infty}z^n = 0$ so $(1.1.81)$ holds. $\quad \square$
+
 ---
 
 $4. \>$ This exercise discusses the ratio test, mentioned in connection with the infinite series $(1.1.49)$ and $(1.1.62)$. Consider the infinite series
