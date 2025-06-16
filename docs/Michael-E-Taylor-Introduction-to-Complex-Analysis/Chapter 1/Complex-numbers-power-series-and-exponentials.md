@@ -116,14 +116,34 @@ $$
 Show that
 
 $$
-\tag{1.1.78} \phantom{(1.1.78)} \quad (1+a)^k = (1+a) \cdots (1+a) \geq 1 + ka, \quad \forall a > 0, k \in \N.
+\tag{1.1.78} \phantom{(1.1.78)} \quad (1+a)^k = (1+a) \cdots (1+a) \geq 1 + ka, \> \forall a > 0, k \in \N.
 $$
 
 Use this to prove $(1.1.77)$, hence $(1.1.76)$, hence $(1.1.75)$.
 
 **Solution**
 
-First show $(1.1.78)$. **TODO**. Proceed by induction?
+First show $(1.1.78)$. Proceed by induction. Let 
+
+$$
+P(k): \> (1+a)^k \geq 1 + ka, \> \forall a > 0.
+$$
+
+Then $P(0)$ is the statement $(1+a)^0 \geq 1 + 0 \cdot a \iff 1 \geq 1$ which holds.
+Assume $P(k)$, it remains to show $P(k+1)$, that is 
+
+$$
+(1+a)^{k+1} \geq 1 + (k+1)a
+$$
+
+Calculate that 
+
+$$
+(1+a)^{k+1} = (1+a) \cdot (1+a)^k \geq (1+a) \cdot (1+ka) \\
+ = 1 + ka + a + ka^2 > 1 + (k+1)a.
+$$
+
+This shows $P(k+1)$, completing the proof of $(1.1.78)$.
 
 In light of $(1.1.78)$,
 
@@ -133,13 +153,13 @@ $$
 
 proving $(1.1.77)$, which is equivalent to $(1.1.76)$.
 
-Since $ks^k$ is bounded there must exist some $R > 0$ such that
+Use $(1.1.76)$ to calculate that there must exist $R > 0$ such that
 
 $$
-\left|ks^k\right| < R \implies \left|s^k\right| < \frac{R}{k}.
+\left|kz^k\right| = k |z|^k < R \implies \left|z^k\right| < \frac{R}{k},
 $$
 
-Clearly as $k \to \infty$ we must have $\left|s^k\right| \to 0$ proving $(1.1.75). \quad \square$
+so as $k \to \infty$ we have $z^k \to 0. \quad \square$
 
 ---
 
