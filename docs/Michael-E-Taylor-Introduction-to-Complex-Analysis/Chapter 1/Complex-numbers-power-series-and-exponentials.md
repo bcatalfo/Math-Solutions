@@ -73,13 +73,13 @@ $$
 \left|\overline{z_n} + \overline{-1}\overline{z}\right| = \left| \overline{z_n} + \overline{-z} \right| = \left| \overline{z_n - z} \right|,
 $$
 
-and since $|\overline{z}| = |z|$ we have 
+and since $|\overline{\xi}| = |\xi|, \> \forall \xi \in \mathbb{C}$ we have $\left|\overline{z_n-z}\right| = \left|z_n-z\right|$, so
 
 $$
 \tag{2} \phantom{(2)} \quad \left| \overline{z_n} - \overline{z} \right| = \left| z_n - z \right|,
 $$
 
-so $z_n \to z \implies \overline{z_n} \to \overline{z}$. Note that Equation $(2)$ has a geometric interpretation as well $\text{---}$ reflections preserve distance, and $\xi \to \overline{\xi}$ is geometrically a reflection over the $x$-axis.
+therefore $z_n \to z \implies \overline{z_n} \to \overline{z}$. Note that Equation $(2)$ has a geometric interpretation as well $\text{---}$ reflections preserve distance, and $\xi \to \overline{\xi}$ is geometrically a reflection over the $x$-axis.
 
 Since we have shown that $\overline{z_n} \to \overline{z}$, by Equation $(1)$ it remains to show that $\frac{1}{|z_n|^2} \to \frac{1}{|z|^2}$. This is a sequence of real numbers. Since $z_n \to z$ we must have $|z_n| \to |z|$, a sequence of reals. So what follows is a basic exercise in real analysis.
 
