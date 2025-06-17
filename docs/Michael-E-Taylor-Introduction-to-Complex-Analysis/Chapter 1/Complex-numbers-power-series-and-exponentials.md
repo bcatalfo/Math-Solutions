@@ -344,6 +344,9 @@ $$
 \tag{1.1.92} \phantom{(1.1.92)} \left| \sum_{k=n}^{n+m} (-1)^kb_k \right| \leq b_n.
 $$
 
+---
+
+$9. \>$ Show that $\sum_{k=1}^\infty (-1)^k/k$ is convergent, but not absolutely convergent.
 
 $$
 \\
