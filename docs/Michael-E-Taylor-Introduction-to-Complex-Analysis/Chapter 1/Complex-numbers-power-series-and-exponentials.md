@@ -283,6 +283,34 @@ $$
 \tag{1.1.87} \phantom{(1.1.87)} \quad a_k = kz^k, \quad |z| < 1.
 $$
 
+**Solution**
+
+Let's first do the ratio test on $(1.1.86)$
+
+$$
+\left|\frac{a_{k+1}}{a_k}\right| = \left|\frac{z^{k+1}}{(k+1)!} \frac{k!}{z^k}\right| = \left|\frac{z}{k+1}\right| = \frac{|z|}{k+1}.
+$$
+
+So let $N > 2|z|-1$. Then 
+
+$$
+k > N \implies \frac{|z|}{k+1} < \frac{|z|}{2|z|} = \frac{1}{2},
+$$
+
+showing that $(1.1.83)$ holds with $r = 1/2$.
+
+Next do the same for $(1.1.87)$
+
+$$
+\left|\frac{a_{k+1}}{a_k}\right| = \left| \frac{(k+1)z^{k+1}}{kz^k} \right| = \frac{k+1}{k} \left| z \right|,
+$$
+
+so we need to find an $N > 0$ and $r<1$ s.t.
+
+$$
+k > N \implies \frac{k+1}{k}|z| < r
+$$
+
 ---
 
 $6. \>$ This exercise discusses the integral test for absolute convergence of an infinite series, which goes as follows. Let $f$ be a positive, monotonically decreasing, continuous function on $[0,\infty)$, and suppose $|a_k|=f(k)$. Then
