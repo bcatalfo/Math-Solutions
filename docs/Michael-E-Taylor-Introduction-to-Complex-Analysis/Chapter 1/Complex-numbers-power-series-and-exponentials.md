@@ -330,6 +330,20 @@ $$
 \tag{1.1.90} \phantom{(1.1.90)} \quad \sum_{n=1}^\infty \frac{1}{n^a} < \infty \iff a > 1.
 $$
 
+---
+
+$8. \>$ This exercise deals with alternating series. Assume $b_k \searrow 0$. Show that 
+
+$$
+\tag{1.1.91} \phantom{(1.1.91)} \quad \sum_{k=0}^\infty  (-1)^k b_k \enspace \text{is convergent,}
+$$
+
+by showing that, for $m,n \geq 0$,
+
+$$
+\tag{1.1.92} \phantom{(1.1.92)} \left| \sum_{k=n}^{n+m} (-1)^kb_k \right| \leq b_n.
+$$
+
 
 $$
 \\
