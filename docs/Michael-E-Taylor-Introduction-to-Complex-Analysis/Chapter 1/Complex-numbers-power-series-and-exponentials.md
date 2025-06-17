@@ -239,6 +239,36 @@ $$
 \tag{1.1.85} \phantom{(1.1.85)} \quad \sum_{k=N}^{\infty} |a_k| \leq |a_N| \sum_{\ell=0}^{\infty} r^\ell = \frac{|a_N|}{1-r}.
 $$
 
+**Solution**
+
+First we use $(1.1.83)$ to obtain an upper bound on $a_{N+k}$
+
+$$
+\begin{aligned}
+\left| a_{N+k} \right| &= \left| a_N \frac{a_{N+1}}{a_N} \frac{a_{N+2}}{a_{N+1}} \cdots  \frac{a_{N+k}}{a_{N+(k-1)}} \right| \\[.25em]
+&\leq |a_N| \cdot \left| \frac{a_{N+1}}{a_N} \right| \left| \frac{a_{N+2}}{a_{N+1}} \right| \cdots \left| \frac{a_{N+k}}{a_{N+(k-1)}} \right| \\[.25em]
+&\leq |a_N| r^k,
+\end{aligned}
+$$
+
+and immediately put it to use to show $(1.1.85)$
+
+$$
+\begin{aligned}
+\sum_{k=N}^\infty |a_k| &= \sum_{k=0}^\infty \left| a_{N+k} \right| \leq \sum_{k=0}^\infty |a_N| r^k \\[.25em]
+&= |a_N| \sum_{k=0}^\infty r^k = \frac{|a_N|}{1 - r}. 
+\end{aligned}
+$$
+
+The desired result $(1.1.84)$ follows very easily from this as 
+
+$$
+\begin{aligned}
+\sum_{k=0}^\infty |a_k| &= \sum_{k=0}^N |a_k| + \sum_{k=N}^\infty |a_k| \\[.25em]
+&\leq \sum_{k=0}^N |a_k| + \frac{|a_N|}{1-r} < \infty. \quad \square
+\end{aligned}
+$$
+
 ---
 
 $5. \>$ In the case
