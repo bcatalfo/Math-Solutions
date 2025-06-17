@@ -322,6 +322,15 @@ $$
 \tag{1.1.89} \phantom{(1.1.89)} \quad \sum_{k=1}^N |a_k| \leq \int_0^N f(t) \, dt \leq \sum_{k=0}^{N-1} |a_k|.
 $$
 
+---
+
+$7. \>$ Use the integral test to show that, if $a > 0$,
+
+$$
+\tag{1.1.90} \phantom{(1.1.90)} \quad \sum_{n=1}^\infty \frac{1}{n^a} < \infty \iff a > 1.
+$$
+
+
 $$
 \\
 $$
