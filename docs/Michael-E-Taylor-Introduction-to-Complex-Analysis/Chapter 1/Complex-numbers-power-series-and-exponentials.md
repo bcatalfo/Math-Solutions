@@ -348,6 +348,16 @@ $$
 
 $9. \>$ Show that $\sum_{k=1}^\infty (-1)^k/k$ is convergent, but not absolutely convergent.
 
+---
+
+$10. \>$ Show that if $f,g: (a,b) \to \mathbb{C}$ are differentiable, then
+
+$$
+\tag{1.1.93} \phantom{(1.1.93)} \quad \frac{d}{dt} (f(t)g(t)) = f'(t)g(t) + f(t)g'(t).
+$$
+
+Note the use of this identity in $(1.1.66)$ and $(1.1.70)$.
+
 $$
 \\
 $$
