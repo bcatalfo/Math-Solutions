@@ -302,14 +302,10 @@ showing that $(1.1.83)$ holds with $r = 1/2$.
 Next do the same for $(1.1.87)$
 
 $$
-\left|\frac{a_{k+1}}{a_k}\right| = \left| \frac{(k+1)z^{k+1}}{kz^k} \right| = \frac{k+1}{k} \left| z \right|,
+\left|\frac{a_{k+1}}{a_k}\right| = \left| \frac{(k+1)z^{k+1}}{kz^k} \right| = \frac{k+1}{k} \left| z \right| < |z|,
 $$
 
-so we need to find an $N > 0$ and $r<1$ s.t.
-
-$$
-k > N \implies \frac{k+1}{k}|z| < r
-$$
+since $|z| < 1$, this passes the ratio test with $r=|z|$ and for any $N$, for example $N=1. \quad \square$
 
 ---
 
