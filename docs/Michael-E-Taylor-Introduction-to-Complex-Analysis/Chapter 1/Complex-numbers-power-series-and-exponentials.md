@@ -358,6 +358,22 @@ $$
 
 Note the use of this identity in $(1.1.66)$ and $(1.1.70)$.
 
+---
+
+$11. \>$ Use the results of Exercise $10$ to show, by induction on $k$, that
+
+$$
+\tag{1.1.94} \phantom{(1.1.94)} \quad \frac{d}{dt} t^k = kt^{k-1}, \enspace k = 1,2,3,\dots,
+$$
+
+hence
+
+$$
+\tag{1.1.95} \phantom{(1.1.95)} \quad \int_0^t s^k \> ds = \frac{1}{k+1}t^{k+1}, \enspace k = 0,1,2,\dots.
+$$
+
+Note the use of these identities in $(1.1.57)$, leading to many of the identities in $(1.1.46)$–$(1.1.64).$
+
 $$
 \\
 $$
