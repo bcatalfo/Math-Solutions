@@ -374,6 +374,28 @@ $$
 
 Note the use of these identities in $(1.1.57)$, leading to many of the identities in $(1.1.46)$–$(1.1.64).$
 
+---
+
+$12. \>$ Consider 
+
+$$
+\tag{1.1.96} \phantom{(1.1.96)} \quad \varphi(z) = \frac{z-1}{z+1}.
+$$
+
+Show that 
+
+$$
+\tag{1.1.97} \phantom{(1.1.97)} \quad \varphi: \mathbb{C} \setminus \{-1\} \longrightarrow \mathbb{C} \setminus \{1\}
+$$
+
+is continuous, one-to-one, and onto. Show that, if $\Omega = \{z \in \mathbb{C}: \mathfrak{R}z > 0\}$ and $D = \{z \in \mathbb{C}: |z| < 1\}$, then 
+
+$$
+\tag{1.1.98} \phantom{(1.1.98)} \quad \varphi: \Omega \to D \enspace \text{and} \enspace \varphi: \partial\Omega \to \partial D \setminus \{1\}
+$$
+
+are one-to-one and onto.
+
 $$
 \\
 $$
