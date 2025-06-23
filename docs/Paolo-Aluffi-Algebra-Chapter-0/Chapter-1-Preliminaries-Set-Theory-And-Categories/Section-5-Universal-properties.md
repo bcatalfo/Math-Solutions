@@ -34,6 +34,10 @@ Z_1 \arrow[rr,"\sigma"] & & Z_2 \\
 \end{document}
 ```
 
+---
+
+$\textbf{5.6} \enspace \triangleright$ Consider the category corresponding to endowing (as in Example 3.3) the set $\Z^+$ of positive integers with the _divisibility_ relation. Thus there is exactly one morphism $d \to m$ in this category if and only if $d$ divides $m$ without remainder; there is no morphism between $d$ and $m$ otherwise. Show that this category has products and coproducts. What are their 'conventional' names? $[\S\text{VII}.5.1]$
+
 $$
 \\
 $$
