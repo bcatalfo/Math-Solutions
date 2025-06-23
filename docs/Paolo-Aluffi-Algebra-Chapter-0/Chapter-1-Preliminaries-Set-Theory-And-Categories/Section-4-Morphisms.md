@@ -34,3 +34,7 @@ $$
 $$
 
 Carefully working out the case $n=5$ is helpful.) $[\S4.1, \S\textrm{II}.1.3]$
+
+---
+
+$\textbf{4.2.} \enspace \triangleright$ In Example 3.3 we have seen how to construct a category from a set endowed with a relation, provided this latter is reflexive and transitive. For what types of relations is the corresponding category a groupoid (cf. Example 4.6)? $[\S 4.1]$
