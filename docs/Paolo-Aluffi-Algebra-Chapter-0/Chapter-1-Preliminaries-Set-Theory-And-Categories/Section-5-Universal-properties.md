@@ -18,6 +18,22 @@ $\textbf{5.3.} \enspace \triangleright$ Prove that the final objects are unique 
 
 $\textbf{5.5.} \enspace \triangleright$ What are the final objects in the category considered in $\S 5.3\text{?} \> [\S 5.3]$
 
+**Solution**
+
+Recall that the morphisms in $\S 5.3$ are commutative diagrams
+
+```latex{cmd=true, hide=true, latex_zoom=200%}
+\documentclass[tikz]{standalone}
+\usetikzlibrary{cd}
+\begin{document}
+\begin{tikzcd}
+Z_1 \arrow[rr,"\sigma"] & & Z_2 \\
+& & \\
+& A \arrow[uul,"\varphi_1"] \arrow[uur,"\varphi_2",swap] &
+\end{tikzcd}
+\end{document}
+```
+
 $$
 \\
 $$
