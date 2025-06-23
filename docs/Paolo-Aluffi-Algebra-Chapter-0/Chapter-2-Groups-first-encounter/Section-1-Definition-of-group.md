@@ -1,0 +1,11 @@
+---
+export_on_save:
+  html: true
+---
+<style>
+.katex-display { overflow: auto hidden }
+img { display: block; margin: 0 auto }
+.tikz { display: flex; justify-content: center; align-items: center }
+</style>
+
+$\textbf{1.1.} \enspace \triangleright$ Write a careful proof that
