@@ -1170,6 +1170,15 @@ $$
 
 so we would need to also have $S_{12} = S_{21}$, but this doesn't give us the desired result, so no such matrix $S$ exists. $\quad \square$
 
+$\text{(iv)} \quad$ We need to find $S$ such that $\mathsf{gl}_S(3,\mathbf{R})$ is isomorphic to $\mathbf{R}^3_\land$. By part $\text{(i)}$ of Exercise $1.14$ we know that $\mathbf{R}^3_\land$ is isomorphic to the antisymmetric $3 \times 3$ matrices. So we need to find $S$ such that
+
+$$
+x^tS = -Sx \iff x^t = -x
+$$
+
+Of course $S = I$ solves this!
+
+
 ---
 
 $1.16. \dag \quad$ Show, by giving an example, that if $F$ is a field of characteristic $2$, there are algebras over $F$ which satisfy $(\text{L}1')$ and $(\text{L}2)$ but are not Lie algebras.
