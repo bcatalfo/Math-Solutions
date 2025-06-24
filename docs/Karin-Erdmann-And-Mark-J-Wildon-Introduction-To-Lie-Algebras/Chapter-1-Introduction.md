@@ -999,11 +999,11 @@ $$
 [\varphi(e), \varphi(f)] = \varphi(h),
 $$
 
-so one equation down, to go. Calculate that
+so one equation down, two to go. Calculate that
 
 $$
 [\varphi(e), \varphi(h)] = [ix + z, 2iy] = [ix, 2iy] + [z, 2iy] \\
-= -[x,y] + 2i [z,y] = -2ix - z = -2 \varphi(e).
+= -2[x,y] + 2i [z,y] = -2ix - 2z = -2 \varphi(e).
 $$
 
 One more to go!
