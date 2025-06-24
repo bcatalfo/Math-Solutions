@@ -1178,10 +1178,29 @@ $$
 
 Of course $S = I$ solves this!
 
-
 ---
 
 $1.16. \dag \quad$ Show, by giving an example, that if $F$ is a field of characteristic $2$, there are algebras over $F$ which satisfy $(\text{L}1')$ and $(\text{L}2)$ but are not Lie algebras.
+
+**Solution**
+
+Recall that 
+
+$$
+\tag{L1'} \phantom{(L1')} \quad [x,y] = -[y,x] \quad \text{for all} \enspace x,y \in L.
+$$
+
+$$
+\tag{L2} \phantom{(L2)} \quad [x,[y,z]] + [y,[z,x]] + [z,[x,y]] = 0 \quad \text{for all} \enspace x,y,z \in L.
+$$
+
+So let's find a chararacteristic $2$ field $F$ and an algebra over it such that the above hold but $\text{(L1)}$
+
+$$
+\tag{L1} \phantom{(L1')} \quad [x,x] = 0 \quad \text{for all} \enspace x \in L
+$$
+
+does not.
 
 ---
 
