@@ -1180,7 +1180,7 @@ Of course $S = I$ solves this!
 
 ---
 
-$1.16. \dag \quad$ Show, by giving an example, that if $F$ is a field of characteristic $2$, there are algebras over $F$ which satisfy $(\text{L}1')$ and $(\text{L}2)$ but are not Lie algebras.
+$1.16. \dag \quad$ Show, by giving an example, that if $F$ is a field of characteristic $2$, there are algebras over $F$ which satisfy $(\text{L1'})$ and $(\text{L}2)$ but are not Lie algebras.
 
 **Solution**
 
@@ -1194,13 +1194,249 @@ $$
 \tag{L2} \phantom{(L2)} \quad [x,[y,z]] + [y,[z,x]] + [z,[x,y]] = 0 \quad \text{for all} \enspace x,y,z \in L.
 $$
 
-So let's find a chararacteristic $2$ field $F$ and an algebra over it such that the above hold but $\text{(L1)}$
+So let's find and an algebra over $F$ such that the above holds but $\text{(L1)}$
 
 $$
 \tag{L1} \phantom{(L1')} \quad [x,x] = 0 \quad \text{for all} \enspace x \in L
 $$
 
 does not.
+
+Consider the vector space $V$ of $3 \times 3$ diagonal matrices with entries in $F$ and over the field of $F$. Its basis is given by
+
+$$
+e =
+\begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}
+, \enspace 
+j = 
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}, \enspace
+k = 
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 1
+\end{pmatrix}, \\[.35em]
+V =
+\text{span}
+\left(
+\left\{
+  e,j,k
+\right\}
+\right).
+$$
+
+Equip it with a bilinear map given by
+
+$$
+[x,y] = xy.
+$$
+
+Calculate that 
+
+$$
+[e,e] = 
+\begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} =
+\begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} = e,
+$$
+
+$$
+[e,j] = 
+\begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} =
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} = 0,
+$$
+
+$$
+[e,k] = 
+\begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 1
+\end{pmatrix} =
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} = 0,
+$$
+
+$$
+[j,e] = 
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} =
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} = 0,
+$$
+
+$$
+[j,j] = 
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} =
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} = j,
+$$
+
+$$
+[j,k] = 
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 1
+\end{pmatrix} =
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} = 0,
+$$
+
+$$
+[k,e] = 
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+  1 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} =
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} = 0,
+$$
+
+$$
+[k,j] = 
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 1 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} =
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 0
+\end{pmatrix} = 0,
+$$
+
+$$
+[k,k] = 
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 1
+\end{pmatrix} =
+\begin{pmatrix}
+  0 & 0 & 0 \\
+  0 & 0 & 0 \\
+  0 & 0 & 1
+\end{pmatrix} = k.
+$$
+
+Obviously $\text{(L1)}$ does not hold, so it remains to show that $\text{(L1')}$ and $\text{(L2)}$ hold.
+
+Let $x, y \in V$, and let $x = \lambda_e e + \lambda_j j + \lambda_k k, \> y = \mu_e e + \mu_j j + \mu_k k$. Calculate that
+
+$$
+\begin{aligned}
+&\phantom{=} [x,y] = [\lambda_e e + \lambda_j j + \lambda_k k, \mu_e e + \mu_j j + \mu_k k] \\
+&= \lambda_e \mu_e [e,e] + \lambda_e \mu_j[e,j] + \lambda_e \mu_k [e,k] \\
+&\phantom{=} + \enspace \lambda_j \mu_e [j,e] + \lambda_j \mu_j [j,j] + \lambda_j \mu_k [j,k] \\ 
+&\phantom{=} + \enspace \lambda_k \mu_e [k,e] + \lambda_k \mu_j [k,j] + \lambda_k \mu_k [k,k] \\ 
+&= \lambda_e \mu_e e + \lambda_j \mu_j j 
+\end{aligned}
+$$
+
+so $\text{(L1')}$ holds. Calculate that
+
+$$
+\begin{aligned}
+&\phantom{=}[e,[j,k]] + [j, [k,e]] + [k, [e,j]] \\
+&= [e,0] + [j,0] + [k,0] \\
+&= 0 + 0 + 0 = 0,
+\end{aligned}
+$$
+
+so $\text{(L2)}$ holds as well. $\enspace \square$
 
 ---
 
