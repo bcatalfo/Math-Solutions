@@ -114,20 +114,14 @@ Calculate that
 
 $$
 \begin{aligned}
-[x, [y, z]] + [y, [z, x]] + [z,[x,y]] &= x \circ [y, z] - [y, z ]\circ x \\
+&\phantom{=}[x, [y, z]] + [y, [z, x]] + [z,[x,y]] \\
+&= x \circ [y, z] - [y, z ]\circ x \\
 &\quad + y \circ [z, x] - [z, x ] \circ y \\
 &\quad + z \circ [x, y] - [x, y] \circ z \\
 &= x \circ (y \circ z - z \circ y) - (y \circ z - z \circ y) \circ x \\
 &\quad + y \circ (z \circ x - x \circ z) - (z \circ x - x \circ z) \circ y \\
-&\quad + z \circ (x \circ y - y \circ x) - (x \circ y - y \circ x) \circ z
-\end{aligned}
-$$
-
-Of course, the set of all linear maps is... linear!
-
-$$
-\begin{aligned}
-[x, [y, z]] + [y, [z, x]] + [z,[x,y]] &= x \circ y \circ z - x \circ z \circ y - y \circ z \circ x + z \circ y \circ x \\
+&\quad + z \circ (x \circ y - y \circ x) - (x \circ y - y \circ x) \circ z. \\
+&= x \circ y \circ z - x \circ z \circ y - y \circ z \circ x + z \circ y \circ x \\
 &\quad + y \circ z \circ x - y \circ x \circ z - z \circ x \circ y + x \circ z \circ y \\
 &\quad + z \circ x \circ y - z \circ y \circ x - x \circ y \circ z + y \circ x \circ z \\
 &= 0
