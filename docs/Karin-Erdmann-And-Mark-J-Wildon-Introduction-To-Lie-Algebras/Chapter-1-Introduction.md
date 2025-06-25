@@ -179,15 +179,18 @@ As by definition $(e_{il})_{ab} = \delta_{ai} \cdot \delta_{lb}$. Rearranging sy
 Check the following assertions:
 Let $\mathrm{b}(n,F)$ be the upper triangular matrices in $\mathrm{gl}(n,F)$. (A matrix $x$ is said to be upper triangular if $x_{ij}=0$ whenever $i > j$.) This is a Lie algebra with the same Lie bracket as $\mathrm{gl}(n,F)$.
 
-Similarly, let $\mathrm{n}(n,F)$ be the strictly upper triangular matrices in $\mathrm{gl}(n,F)$. (a matrix $x$ is said to be strictly upper triangular if $x_{ij}=0$ whenever $i \geq j$) Again this is a Lie algebra with the same Lie bracket as $\mathrm{gl}(n,F)$.
+Similarly, let $\mathrm{n}(n,F)$ be the strictly upper triangular matrices in $\mathrm{gl}(n,F)$. (a matrix $x$ is said to be strictly upper triangular if $x_{ij}=0$ whenever $i \geq j$). Again this is a Lie algebra with the same Lie bracket as $\mathrm{gl}(n,F)$.
 **Solution**
 Let $x, y$ be upper-triangular matrices. Recall from linear algebra that upper triangular matrices and strictly upper triangular matrices are subspaces of the vector space formed by all square matrices. Therefore, $(xy - yx)$ forms a Lie Algebra over $\mathrm{b}(n,F)$ and $\mathrm{n}(n,F)$, because the required properties of being a bilinear map $[:]:L \to L$ satisfying the properties
 
+**TODO** You need to show that when you multiply two (strictly) upper triangular matrices you get a (strictly) upper triangular matrix!
+
 $$
-\begin{aligned}
-[x,x]=0 \quad\text{for all } x \in L, \qquad &(L1) \\
-[x,[y,z]] + [y,[z,x]] + [z,[x,y]]=0 \quad \text{for all } x,y,z \in L \qquad &(L2)
-\end{aligned}
+\tag{L1} \phantom{(L1)} \quad [x,x]=0 \quad\text{for all } x \in L,
+$$
+
+$$
+\tag{L2} \phantom{(L2)} \quad [x,[y,z]] + [y,[z,x]] + [z,[x,y]]=0 \quad \text{for all } x,y,z \in L. 
 $$
 
 are inherited from $\mathrm{gl}(n,F)$. $\quad \square$
