@@ -427,13 +427,13 @@ $$
 \iff D(a)E(b) + E(a)D(b)  = 0
 $$
 
-Let $D$ be ordinary differentiation in the associative algebra $A=C^{\infty}\R$ of infinitely differentiable functions $f,g: \R \to \R$, where the product $fg$ is given by pointwise multiplication: $(fg)(x) = f(x)g(x)$. Then $D \circ D$ being a derivation if and only if for every $a, b \in A$
+Let $D$ be ordinary differentiation in the associative algebra $A=C^{\infty}\mathbf{R}$ of infinitely differentiable functions $f,g: \mathbf{R} \to \mathbf{R}$, where the product $fg$ is given by pointwise multiplication: $(fg)(x) = f(x)g(x)$. Then $D \circ D$ is a derivation if and only if for every $a, b \in A$,
 
 $$
-D(a)D(b) + D(a)D(b) = 0
+D(a)D(b) + D(a)D(b) = 0.
 $$
 
-Take $a,b$ to be the identity functions that is $a(x) = x$, $b(x) = x$ for all $x \in \R$. Then
+Take $a,b$ to be the identity functions that is $a(x) = x$, $b(x) = x$ for all $x \in \mathbf{R}$. Then
 
 $$
 D(a)D(b) + D(a)D(b) = 1 \cdot 1 + 1 \cdot 1 = 2 \neq 0.
@@ -451,7 +451,7 @@ $$
 (D \circ D)(aa) = a (D \circ D)(a) + (D \circ D)(a) a = 0,
 $$
 
-and of course in $\R$ we have $0 \neq 2$ and this counterexample shows that the composition of two derivations is not necessarily a derivation. $\quad \square$
+and of course in $\mathbf{R}$ we have $0 \neq 2$ and this counterexample shows that the composition of two derivations is not necessarily a derivation. $\quad \square$
 
 ---
 
