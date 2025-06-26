@@ -1419,11 +1419,17 @@ $$
 &= \lambda_e \mu_e [e,e] + \lambda_e \mu_j[e,j] + \lambda_e \mu_k [e,k] \\
 &\phantom{=} + \enspace \lambda_j \mu_e [j,e] + \lambda_j \mu_j [j,j] + \lambda_j \mu_k [j,k] \\ 
 &\phantom{=} + \enspace \lambda_k \mu_e [k,e] + \lambda_k \mu_j [k,j] + \lambda_k \mu_k [k,k] \\ 
-&= \lambda_e \mu_e e + \lambda_j \mu_j j 
+&= \lambda_e \mu_e e + \lambda_j \mu_j j + \lambda_k \mu_k k.
 \end{aligned}
 $$
 
-so $\text{(L1')}$ holds. Calculate that
+By the symmetry of the above equation, $[x,y] = [y,x]$, so 
+
+$$
+[x,y] + [y,x] = [x,y] + [x,y] = (1 + 1) [x,y] = 0,
+$$
+
+therefore $\text{(L1')}$ holds. Calculate that
 
 $$
 \begin{aligned}
