@@ -35,6 +35,83 @@ $$
 
 Carefully working out the case $n=5$ is helpful.) $[\S4.1, \S\textrm{II}.1.3]$
 
+**Solution**
+
+As the hint suggests, let's start by working out the case $n=5$. We need to show that any arrangement of the parentheses can be rearranged to
+
+$$
+F = (((f_5f_4)f_3)f_2)f_1.
+$$
+
+Here is the basic strategy: first we want to isolate $f_5$, then for the rest of it isolate $f_4$ and shift, so on and so forth, let me give an example.
+
+Say you start with 
+
+$$
+F' = (f_5f_4)(f_3(f_2f_1)),
+$$
+
+then by writing 
+
+$$
+F_3 = f_3(f_2f_1)
+$$
+
+we can subsitute to get 
+
+$$
+F' = (f_5f_4)F_3
+$$
+
+and then use the associative property to get
+
+$$
+F' = f_5(f_4F_3).
+$$
+
+Next we can look at $F_3$ and rewrite it as 
+
+$$
+F_3 = f_3F_2, \enspace F_2 = f_2f_1
+$$
+
+so we can plug back into $F'$ to get 
+
+$$
+F' = (f_5f_4)(f_3F_2),
+$$
+
+and if we let 
+
+$$
+F_5 = f_5f_4,
+$$
+
+then we can rewrite $F'$ as 
+
+$$
+F' = F_5(f_3F_2),
+$$
+
+apply the associative property 
+
+$$
+F' = (F_5f_3)F_2,
+$$
+
+and subsitute to get 
+
+$$
+F' = ((f_5f_4)f_3)f_2f_1,
+$$
+
+repeating the process one more time will give 
+
+$$
+F' = (((f_5f_4)f_3)f_2)f_1.
+$$
+
+
 ---
 
 $\textbf{4.2.} \enspace \triangleright$ In Example 3.3 we have seen how to construct a category from a set endowed with a relation, provided this latter is reflexive and transitive. For what types of relations is the corresponding category a groupoid (cf. Example 4.6)? $[\S 4.1]$
