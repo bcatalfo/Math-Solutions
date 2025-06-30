@@ -214,7 +214,7 @@ $$
 ---
 
 \(\quad \text{(b)}\) If \(z_1, z_2\) are two complex numbers, prove that \(e^{z_1}e^{z_2} = e^{z_1 + z_2}\). [Hint: Use the binomial theorem to expand \((z_1 + z_2)^n\), as well as the formula for the binomial coefficients.]
-**Solution**
+**Solution #1**
 This problem had stumped me for a while. I ended up taking a break from this problem, learning some combinatorics, and coming back to it. Upon doing so I realized that there is a very easy combinatorical solution to this problem using the basic method of "double-counting". Take a look at the following infinite list of terms.
 
 $$
@@ -276,6 +276,36 @@ which holds because both the LHS and RHS are summing over each $k, n \in \N$ suc
 $$
 \sum_{n=0}^{\infty}\sum_{k=0}^{n} \frac{a^{n-k}b^k}{(n-k)!k!} = \sum_{k=0}^{\infty}\sum_{n=k}^{\infty} \frac{a^{n-k}b^k}{(n-k)!k!} \\
 = \sum_{k=0}^{\infty} \frac{b^k}{k!} \sum_{n=k}^{\infty} \frac{a^{n-k}}{(n-k)!} = \sum_{k=0}^{\infty} \frac{b^k}{k!} \sum_{n=0}^{\infty} \frac{a^n}{n!} = e^a \cdot e^b \qquad \square
+$$
+
+**Solution #2**
+
+
+Let's start by calculating
+
+$$
+\frac{d}{dx}[e^{a+x} - e^ae^x] = e^{a+x} -e^{a}e^x
+$$
+
+so $f(x) = e^{a+x}-e^ae^x$ satisfies the diffential equation
+
+$$
+f'(x) - f(x) = 0
+$$
+
+next we need some diffential equation argument to show that this is either $e^x$ or $0$
+
+Assume $f(x) = e^x$. Then 
+
+$$
+f(0) = e^0 = e^{a+0} - e^ae^0 \\
+\implies 1 = 0,
+$$
+
+a contradiction. Therefore $f(x) = 0$ so 
+
+$$
+e^{a+x} - e^ae^x = 0 \implies e^{a+x} = e^ae^x \enspace \square
 $$
 
 ---
