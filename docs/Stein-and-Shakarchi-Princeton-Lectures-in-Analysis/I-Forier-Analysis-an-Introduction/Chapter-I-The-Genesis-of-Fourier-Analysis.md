@@ -293,7 +293,7 @@ $$
 f'(x) - f(x) = 0
 $$
 
-next we need some diffential equation argument to show that this is either $e^x$ or $0$
+next we need some differential equation argument to show that this is either $e^x$ or $0$
 
 Assume $f(x) = e^x$. Then 
 
@@ -307,6 +307,45 @@ a contradiction. Therefore $f(x) = 0$ so
 $$
 e^{a+x} - e^ae^x = 0 \implies e^{a+x} = e^ae^x \enspace \square
 $$
+
+**Solution #2 Variation**
+
+Since we have from Solution #2 that 
+
+$$
+f'(x) = f(x)
+$$
+
+it becomes obvious that 
+
+$$
+f^{(n)}(x) = f(x) \quad \forall n \in N
+$$
+
+in particular 
+
+$$
+f^{(n)}(0) = f(0) \quad \forall n \in \N
+$$
+
+calculate that 
+
+$$
+f(0) = e^{a+0} - e^ae^0 = e^a - e^a = 0
+$$
+
+so 
+
+$$
+f^{(n)}(0) = 0 \quad \forall n \in \N
+$$
+
+so a Taylor series expansion gives (insert argument here that the radius of convergence is infinity for $f$ because it is for $e^x$ or because of no complex poles or some series argument)
+
+$$
+f = 0 \enspace \square
+$$
+
 
 ---
 
