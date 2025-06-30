@@ -293,19 +293,22 @@ $$
 f'(x) - f(x) = 0
 $$
 
-next we need some differential equation argument to show that this is either $e^x$ or $0$
-
-Assume $f(x) = e^x$. Then 
+from differential equations (find the argument and put it here?) the only solution to this is 
 
 $$
-f(0) = e^0 = e^{a+0} - e^ae^0 \\
-\implies 1 = 0,
+f(x) = ke^x
 $$
 
-a contradiction. Therefore $f(x) = 0$ so 
+since we have 
 
 $$
-e^{a+x} - e^ae^x = 0 \implies e^{a+x} = e^ae^x \enspace \square
+f(0) = e^{a+0} - e^ae^0 = e^a - e^a = 0
+$$
+
+we must have 
+
+$$
+k = 0 \implies f = 0. \quad \square
 $$
 
 **Solution #2 Variation**
@@ -319,7 +322,7 @@ $$
 it becomes obvious that 
 
 $$
-f^{(n)}(x) = f(x) \quad \forall n \in N
+f^{(n)}(x) = f(x) \quad \forall n \in \N
 $$
 
 in particular 
