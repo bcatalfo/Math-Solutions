@@ -6,6 +6,7 @@ export_on_save:
 <style>
 .katex-display { overflow: auto hidden }
 .tikz { display: flex; justify-content: center; align-items: center}
+img { display: block; margin: 0 auto }
 </style>
 
 # Chapter 1. The Genesis of Fourier Analysis
@@ -468,20 +469,21 @@ $$
 Next, consider the following right triangle.
 
 
-```tikz {kroki=true}
-\usepackage{tikz}
+```latex {cmd=true, hide=true, latex_zoom=150%}
+\documentclass[tikz]{standalone}
 \begin{document}
-\Large{
 \begin{tikzpicture}
   \draw[thick] (0,0) -- (3,0);
   \draw[thick] (3,0) -- (3,3);
   \draw[thick] (0,0) -- (3,3);
+  \draw (2.5,0) -- (2.5,.5);
+  \draw (2.5,.5) -- (3,.5);
   \node at (1.75,-.25) {$x$};
   \node at (3.25, 1.25) {$y$};
   \node at (1.5,1.75) {$r$};
-  \node at (.75, .35) {$\theta$};
+  \node at (1, .45) {$\theta$};
+  \draw[radius=.75] (.75,0) arc [start angle = 0, end angle = 45];
 \end{tikzpicture}
-}
 \end{document}
 ```
 
@@ -838,10 +840,9 @@ $$
 
 Using the following right triangle
 
-```tikz {kroki=true}
-\usepackage{tikz}
+```latex {cmd=true, hide=true, latex_zoom=150%}
+\documentclass[tikz]{standalone}
 \begin{document}
-\Large{
 \begin{tikzpicture}
   \draw[thick] (0,0) -- (3,0);
   \draw[thick] (3,0) -- (3,3);
@@ -854,7 +855,6 @@ Using the following right triangle
   \node at (1, .45) {$\phi$};
   \draw[radius=.75] (.75,0) arc [start angle = 0, end angle = 45];
 \end{tikzpicture}
-}
 \end{document}
 ```
 
@@ -936,10 +936,9 @@ _Hint_: If $F$ solves the equation, write $F(r) = g(r)r^n$, find the equation sa
 
 ---
 
-```tikz {kroki=true}
-\usepackage{tikz}
+```latex {cmd=true, hide=true, latex_zoom=150%}
+\documentclass[tikz]{standalone}
 \begin{document}
-\Large{
 \begin{tikzpicture}
   \node at (0.25,0.25) {$0$};
   \draw[thick,->] (0,.5) -- (8,.5);
@@ -954,7 +953,6 @@ _Hint_: If $F$ solves the equation, write $F(r) = g(r)r^n$, find the equation sa
   \node at (6.75,1.75) {$u=0$};
   \node at (6,.2) {$\pi$};
 \end{tikzpicture}
-}
 \end{document}
 ```
 
