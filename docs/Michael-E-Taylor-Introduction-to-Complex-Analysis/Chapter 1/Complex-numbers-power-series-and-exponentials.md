@@ -330,18 +330,18 @@ $$
 \int_{0}^N f(t)dt\, \leq \sum_{k=0}^{N-1} |a_k| < \sum_{k=0}^\infty |a_k| < \infty.
 $$
 
-Let $b_k = \int_{0}^k f(t)dt$. Then $\lim_{k \to \infty} b_k  = \int_{0}^\infty f(t)dt\,$.
+Let $b_k = \int_{0}^k f(t)dt$. By the above, $\{b_k\}$ is a sequence of reals and of course $\lim_{k \to \infty} b_k  = \int_{0}^\infty f(t)dt\,$.
 
 *Lemma* $\{b_k\}$ is monotone.
 
 We proceed by showing the stronger condition that $\{b_k\}$ is monotonically increasing.
 
-Let $N, k \in \N$. Note that $\{b_k\}$ is a sequence of reals.
+Let $M, k \in \N$. 
 
 $$
 \begin{aligned}
-b_{N+k} - b_N &= \int_{0}^{N+k} f(t)dt\, - \int_0^N f(t)dt\,  \\[1em]
-&= \int_N^{N+k} f(t)dt \geq 0. \quad \square
+b_{M+k} - b_M &= \int_{0}^{M+k} f(t)dt\, - \int_0^M f(t)dt\,  \\[1em]
+&= \int_M^{M+k} f(t)dt \geq 0. \quad \square
 \end{aligned}
 $$
 
@@ -349,10 +349,10 @@ Note: For the inequality at the end we are utilizing the fact that $f$ is non-ne
 
 *Lemma* $\{b_k\}$ is bounded.
 
-Let $a = \sum_{k=0}^\infty |a_k|$. Let $N \in \N$. Then 
+Let $a = \sum_{k=0}^\infty |a_k|$. Let $M \in \N$. Then 
 
 $$
-a \geq \sum_{k=0}^{N+1} |a_k| > \int_0^{N} f(t)dt\, = b_k = |b_k| . \quad \square
+a \geq \sum_{k=0}^{M+1} |a_k| > \int_0^{M} f(t)dt\, = b_M = |b_M| . \quad \square
 $$
 
 The last equality follows because $b_k$ is a definite integral so it is positive.
@@ -365,19 +365,19 @@ $$
 \sum_{k=1}^N |a_k| < \int_0^N f(t) dt\, < \int_0^\infty f(t) dt < \infty,
 $$
 
-the second inequality utilizing the fact that $f$ is non-negative. Let $b_j = \sum_{k=1}^j |a_k|$ for all $j \in N$. 
+the second inequality utilizing the fact that $f$ is non-negative. Let $b_j = \sum_{k=1}^j |a_k|$ for all $j \in \N$. By the above, $\{b_j\}$ is a sequence of reals.
 
 *Lemma* $\{b_j\}$ is monotone.
 
 We proceed by showing the stronger condition that $\{b_j\}$ is monotonically increasing. 
 
-Let $N,j \in N$. Then
+Let $M,j \in \N$. Then
 
 $$
 \begin{aligned}
-&b_{N+j} - b_N \\
-&= \sum_{k=1}^{N+j} |a_k| - \sum_{k=1}^N |a_k| = \left(\sum_{k=1}^N |a_k| + \sum_{k=N+1}^{N+j} |a_k| \right) - \sum_{k=1}^N |a_k| \\
-&= \sum_{k=N+1}^{N+j} |a_k| \geq 0. \quad \square
+&b_{M+j} - b_M \\
+&= \sum_{k=1}^{M+j} |a_k| - \sum_{k=1}^M |a_k| = \left(\sum_{k=1}^M |a_k| + \sum_{k=M+1}^{M+j} |a_k| \right) - \sum_{k=1}^M |a_k| \\
+&= \sum_{k=M+1}^{M+j} |a_k| \geq 0. \quad \square
 \end{aligned}
 $$
 
