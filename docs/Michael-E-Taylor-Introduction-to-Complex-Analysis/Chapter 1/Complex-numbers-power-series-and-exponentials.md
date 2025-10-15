@@ -369,6 +369,18 @@ the second inequality utilizing the fact that $f$ is non-negative. Let $b_j = \s
 
 *Lemma* $\{b_j\}$ is monotone.
 
+We proceed by showing the stronger condition that $\{b_j\}$ is monotonically increasing. 
+
+Let $N,j \in N$. Then
+
+$$
+\begin{aligned}
+&b_{N+j} - b_N \\
+&= \sum_{k=1}^{N+j} |a_k| - \sum_{k=1}^N |a_k| = \left(\sum_{k=1}^N |a_k| + \sum_{k=N+1}^{N+j} |a_k| \right) - \sum_{k=1}^N |a_k| \\
+&= \sum_{k=N+1}^{N+j} |a_k| \geq 0. \quad \square
+\end{aligned}
+$$
+
 *Lemma* $\{b_j\}$ is bounded.
 
 Since $\{b_j\}$ is monotone and bounded it is convergent. Therefore $\sum_{k=1}^\infty |a_k| < \infty$. Of course this means that $\sum_{k=0}^\infty |a_k| < \infty. \quad \square$
