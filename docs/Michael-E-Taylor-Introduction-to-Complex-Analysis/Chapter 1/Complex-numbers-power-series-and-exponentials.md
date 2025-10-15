@@ -322,6 +322,22 @@ $$
 \tag{1.1.89} \phantom{(1.1.89)} \quad \sum_{k=1}^N |a_k| \leq \int_0^N f(t) \, dt \leq \sum_{k=0}^{N-1} |a_k|.
 $$
 
+**Solution**
+
+$(\implies) \>$ Assume that $\sum_{k=0}^\infty |a_k| < \infty$. Let $N > 0$. Then 
+
+$$
+\int_{0}^N f(t)dt\, \leq \sum_{k=0}^{N-1} |a_k| < \sum_{k=0}^\infty |a_k| < \infty.
+$$
+
+Let $b_k = \int_{0}^N f(t)dt$. Then $\lim_{k \to \infty} b_k  = \int_{0}^\infty f(t)dt\,$.
+
+*Lemma* $\{b_k\}$ is monotone 
+
+*Lemma* $\{b_k\}$ is bounded
+
+Since $\{b_k\}$ is montone and bounded it is convergent. Therefore $\int_0^\infty f(t)dt\, < \infty$.
+
 ---
 
 $7. \>$ Use the integral test to show that, if $a > 0$,
