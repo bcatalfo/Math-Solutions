@@ -400,6 +400,22 @@ $$
 \tag{1.1.90} \phantom{(1.1.90)} \quad \sum_{n=1}^\infty \frac{1}{n^a} < \infty \iff a > 1.
 $$
 
+**Solution**
+
+Let $f(x) = (x+1)^{-a}$. 
+
+*Lemma* hypotheses for 10 apply to $f$.
+
+$$
+\begin{aligned}
+\sum_{n=1}^\infty \frac{1}{n^a} < \infty &\iff  \sum_{n=0}^\infty \frac{1}{(n+1)^a} < \infty \\[1em]
+&\iff \int_0^\infty f(t)dt\, < \infty \\
+&\iff a > 1 
+\end{aligned}
+$$
+
+The last $\iff$ works because ????
+
 ---
 
 $8. \>$ This exercise deals with alternating series. Assume $b_k \searrow 0$. Show that 
