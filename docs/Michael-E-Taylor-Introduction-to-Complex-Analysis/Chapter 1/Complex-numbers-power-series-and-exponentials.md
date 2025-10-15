@@ -29,7 +29,7 @@ _Lemma_ &nbsp; $|z| > 0$.
 
 _Proof of Lemma_ &nbsp; $|z| = 0 \iff z = 0 \iff z_n \to 0 \implies \left( \exists N \enspace \text{s.t.} \enspace n > N \implies |z_n| < A \right)$, contradicting $|z_n| \geq A$ for all $n$. $\quad \square$
 
-Notice that if $w \in \mathbb{C}, w > 0$ then
+Notice that if $w \in \mathbb{C}, |w| > 0$ then
 
 $$
 |w|^2 = w \overline{w} \implies 1 = \frac{w\overline{w}}{|w|^2} \implies
