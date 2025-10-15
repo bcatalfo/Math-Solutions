@@ -324,7 +324,7 @@ $$
 
 **Solution**
 
-$(\implies) \>$ Assume that $\sum_{k=0}^\infty |a_k| < \infty$. Let $N > 0$. Then 
+$(\implies) \>$ Assume that $\sum_{k=0}^\infty |a_k| < \infty$. Let $N \in \N$. Then 
 
 $$
 \int_{0}^N f(t)dt\, \leq \sum_{k=0}^{N-1} |a_k| < \sum_{k=0}^\infty |a_k| < \infty.
@@ -332,7 +332,7 @@ $$
 
 Let $b_k = \int_{0}^k f(t)dt$. Then $\lim_{k \to \infty} b_k  = \int_{0}^\infty f(t)dt\,$.
 
-*Lemma* $\{b_k\}$ is monotone 
+*Lemma* $\{b_k\}$ is monotone.
 
 We proceed by showing the stronger condition that $\{b_k\}$ is monotonically increasing.
 
@@ -347,7 +347,7 @@ $$
 
 Note: For the inequality at the end we are utilizing the fact that $f$ is non-negative, and that the integral of a non-negative function is non-negative.
 
-*Lemma* $\{b_k\}$ is bounded
+*Lemma* $\{b_k\}$ is bounded.
 
 Let $a = \sum_{k=0}^\infty |a_k|$. Let $N \in \N$. Then 
 
@@ -358,6 +358,20 @@ $$
 The last equality follows because $b_k$ is a definite integral so it is positive.
 
 Since $\{b_k\}$ is montone and bounded it is convergent. Therefore $\int_0^\infty f(t)dt\, < \infty. \quad \square$
+
+$(\impliedby)$ This argument is very similar to $(\implies)$. Assume that $\int_0^\infty f(t) dt\, < \infty$. Let $N \in \N$. Then
+
+$$
+\sum_{k=1}^N |a_k| < \int_0^N f(t) dt\, < \int_0^\infty f(t) dt < \infty,
+$$
+
+the second inequality utilizing the fact that $f$ is non-negative. Let $b_j = \sum_{k=1}^j |a_k|$ for all $j \in N$. 
+
+*Lemma* $\{b_j\}$ is monotone.
+
+*Lemma* $\{b_j\}$ is bounded.
+
+Since $\{b_j\}$ is monotone and bounded it is convergent. Therefore $\sum_{k=1}^\infty |a_k| < \infty$. Of course this means that $\sum_{k=0}^\infty |a_k| < \infty. \quad \square$
 
 ---
 
