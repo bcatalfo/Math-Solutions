@@ -330,7 +330,7 @@ $$
 \int_{0}^N f(t)dt\, \leq \sum_{k=0}^{N-1} |a_k| < \sum_{k=0}^\infty |a_k| < \infty.
 $$
 
-Let $b_k = \int_{0}^N f(t)dt$. Then $\lim_{k \to \infty} b_k  = \int_{0}^\infty f(t)dt\,$.
+Let $b_k = \int_{0}^k f(t)dt$. Then $\lim_{k \to \infty} b_k  = \int_{0}^\infty f(t)dt\,$.
 
 *Lemma* $\{b_k\}$ is monotone 
 
@@ -349,7 +349,15 @@ Note: For the inequality at the end we are utilizing the fact that $f$ is non-ne
 
 *Lemma* $\{b_k\}$ is bounded
 
-Since $\{b_k\}$ is montone and bounded it is convergent. Therefore $\int_0^\infty f(t)dt\, < \infty$.
+Let $a = \sum_{k=0}^\infty |a_k|$. Let $N \in \N$. Then 
+
+$$
+a \geq \sum_{k=0}^{N+1} |a_k| > \int_0^{N} f(t)dt\, = b_k = |b_k| . \quad \square
+$$
+
+The last equality follows because $b_k$ is a definite integral so it is positive.
+
+Since $\{b_k\}$ is montone and bounded it is convergent. Therefore $\int_0^\infty f(t)dt\, < \infty. \quad \square$
 
 ---
 
