@@ -334,6 +334,19 @@ Let $b_k = \int_{0}^N f(t)dt$. Then $\lim_{k \to \infty} b_k  = \int_{0}^\infty 
 
 *Lemma* $\{b_k\}$ is monotone 
 
+We proceed by showing the stronger condition that $\{b_k\}$ is monotonically increasing.
+
+Let $N, k \in \N$. Note that $\{b_k\}$ is a sequence of reals.
+
+$$
+\begin{aligned}
+b_{N+k} - b_N &= \int_{0}^{N+k} f(t)dt\, - \int_0^N f(t)dt\,  \\[1em]
+&= \int_N^{N+k} f(t)dt \geq 0. \quad \square
+\end{aligned}
+$$
+
+Note: For the inequality at the end we are utilizing the fact that $f$ is non-negative, and that the integral of a non-negative function is non-negative.
+
 *Lemma* $\{b_k\}$ is bounded
 
 Since $\{b_k\}$ is montone and bounded it is convergent. Therefore $\int_0^\infty f(t)dt\, < \infty$.
