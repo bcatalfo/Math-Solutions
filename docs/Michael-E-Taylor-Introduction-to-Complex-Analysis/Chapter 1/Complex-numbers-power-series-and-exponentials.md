@@ -365,7 +365,7 @@ $$
 \sum_{k=1}^N |a_k| < \int_0^N f(t) dt\, < \int_0^\infty f(t) dt < \infty,
 $$
 
-the second inequality utilizing the fact that $f$ is non-negative. Let $b_j = \sum_{k=1}^j |a_k|$ for all $j \in \N$. By the above, $\{b_j\}$ is a sequence of reals.
+the second inequality utilizing the fact that $f$ is non-negative. Let $b_j = \sum_{k=1}^j |a_k|$ for all $j \in \N$. By the above, $\{b_j\}$ is a sequence of reals, and of course $\lim_{j \to \infty} b_j = \sum_{k=1}^\infty |a_k|$.
 
 *Lemma* $\{b_j\}$ is monotone.
 
@@ -382,6 +382,13 @@ $$
 $$
 
 *Lemma* $\{b_j\}$ is bounded.
+
+Let $a = \int_0^\infty f(t)dt\,$. Let $M \in \N$. Then 
+
+$$
+a \geq \int_0^M f(t)dt\, \geq \sum_{k=1}^M |a_k| = b_M = |b_M|. \quad \square
+$$
+
 
 Since $\{b_j\}$ is monotone and bounded it is convergent. Therefore $\sum_{k=1}^\infty |a_k| < \infty$. Of course this means that $\sum_{k=0}^\infty |a_k| < \infty. \quad \square$
 
