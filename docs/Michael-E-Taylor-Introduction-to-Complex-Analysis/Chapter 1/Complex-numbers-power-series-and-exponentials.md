@@ -332,6 +332,8 @@ $$
 
 Let $b_k = \int_{0}^k f(t)dt$. By the above, $\{b_k\}$ is a sequence of reals and of course $\lim_{k \to \infty} b_k  = \int_{0}^\infty f(t)dt\,$.
 
+**TODO: Show that the limit actually exists! This probably involves using hypotheses like f being continuous and monotonically decreasing that we didn't use yet!**
+
 *Lemma* $\{b_k\}$ is monotone.
 
 We proceed by showing the stronger condition that $\{b_k\}$ is monotonically increasing.
