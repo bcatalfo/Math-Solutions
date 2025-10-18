@@ -324,7 +324,7 @@ $$
 
 **Solution**
 
-**Where do I need monotonically decreasing?**
+**Where do I need monotonically decreasing? Add a proof of (1.1.89) that uses this fact?**
 
 $(\implies) \>$ Assume that $\sum_{k=0}^\infty |a_k| < \infty$. Let $N \in \N$. Then 
 
