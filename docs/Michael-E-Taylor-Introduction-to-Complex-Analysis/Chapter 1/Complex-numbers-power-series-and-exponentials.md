@@ -324,6 +324,8 @@ $$
 
 **Solution**
 
+**Where do I need monotonically decreasing?**
+
 $(\implies) \>$ Assume that $\sum_{k=0}^\infty |a_k| < \infty$. Let $N \in \N$. Then 
 
 $$
@@ -332,7 +334,6 @@ $$
 
 Let $b_k = \int_{0}^k f(t)dt$. By the above, $\{b_k\}$ is a sequence of reals and of course $\lim_{k \to \infty} b_k  = \int_{0}^\infty f(t)dt\,$.
 
-**TODO: Show that the limit actually exists! This probably involves using hypotheses like f being continuous and monotonically decreasing that we didn't use yet!**
 
 *Lemma* $\{b_k\}$ is monotone.
 
@@ -347,7 +348,7 @@ b_{M+k} - b_M &= \int_{0}^{M+k} f(t)dt\, - \int_0^M f(t)dt\,  \\[1em]
 \end{aligned}
 $$
 
-Note: For the inequality at the end we are utilizing the fact that $f$ is non-negative, and that the integral of a non-negative function is non-negative.
+Note: For the inequality at the end we are utilizing the fact that $f$ is non-negative, and that the integral of a non-negative function is non-negative. We are also utilizing the fact that $f$ is a continuous function on on a compact set and hence the integral exists.
 
 *Lemma* $\{b_k\}$ is bounded.
 
@@ -357,7 +358,7 @@ $$
 a \geq \sum_{k=0}^{M+1} |a_k| > \int_0^{M} f(t)dt\, = b_M = |b_M| . \quad \square
 $$
 
-The last equality follows because $b_k$ is a definite integral so it is positive.
+The last equality follows because $b_k$ is a definite integral of a non-negative function and therefore non-negative.
 
 Since $\{b_k\}$ is montone and bounded it is convergent. Therefore $\int_0^\infty f(t)dt\, < \infty. \quad \square$
 
