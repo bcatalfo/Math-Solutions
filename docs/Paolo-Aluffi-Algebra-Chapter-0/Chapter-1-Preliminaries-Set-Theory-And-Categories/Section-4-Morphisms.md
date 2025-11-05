@@ -37,78 +37,49 @@ Carefully working out the case $n=5$ is helpful.) $[\S4.1, \S\textrm{II}.1.3]$
 
 **Solution**
 
-As the hint suggests, let's start by working out the case $n=5$. We need to show that any arrangement of the parentheses can be rearranged to
+Let $S(n)$ be the following proposition. 
+
+$f_nf_{n-1}f_{n-2}\cdots f_1$. $f$ is independent of the placement of the parentheses.
+
+Proceed by induction.
+
+$S(0)$ is just the associative law.
+
+Assume $S(n)$. NTS $S(n+1)$. We know that
 
 $$
-F = (((f_5f_4)f_3)f_2)f_1.
+f = gh
 $$
 
-Here is the basic strategy: first we want to isolate $f_5$, then for the rest of it isolate $f_4$ and shift, so on and so forth, let me give an example.
-
-Say you start with 
+where $g$ is a composition of 
 
 $$
-F' = (f_5f_4)(f_3(f_2f_1)),
+f_n\cdots f_k
 $$
 
-then by writing 
+and $h$ is a composition of
 
 $$
-F_3 = f_3(f_2f_1)
+f_{k-1} \cdots f_1
 $$
 
-we can subsitute to get 
+By $S(n)$
 
 $$
-F' = (f_5f_4)F_3
+f = ((\cdots((f_nf_{n-1})f_{n-2})\cdots)f_{k}) (f_{k-1}(f_{k-2}(f_{k-3}(\cdots )f_1),
 $$
 
-and then use the associative property to get
+apply the associative law to get
+
 
 $$
-F' = f_5(f_4F_3).
+f = (((\cdots((f_nf_{n-1})f_{n-2})\cdots)f_{k})f_{k-1})(f_{k-2}(f_{k-3}(f_{k-4}(\cdots )f_1),
 $$
 
-Next we can look at $F_3$ and rewrite it as 
+and finally repeat this inductively to get 
 
 $$
-F_3 = f_3F_2, \enspace F_2 = f_2f_1
-$$
-
-so we can plug back into $F'$ to get 
-
-$$
-F' = (f_5f_4)(f_3F_2),
-$$
-
-and if we let 
-
-$$
-F_5 = f_5f_4,
-$$
-
-then we can rewrite $F'$ as 
-
-$$
-F' = F_5(f_3F_2),
-$$
-
-apply the associative property 
-
-$$
-F' = (F_5f_3)F_2,
-$$
-
-and subsitute to get 
-
-$$
-F' = ((f_5f_4)f_3)f_2f_1,
-$$
-
-repeating the process one more time will give 
-
-$$
-F' = (((f_5f_4)f_3)f_2)f_1.
+f = (( \cdots ((f_nf_{n-1})f_{n-2})\cdots)f_1). \quad \square
 $$
 
 
