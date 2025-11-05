@@ -54,14 +54,16 @@ $$
 where $g$ is a composition of 
 
 $$
-f_n\cdots f_k
+f_n\cdots f_k,
 $$
 
 and $h$ is a composition of
 
 $$
-f_{k-1} \cdots f_1
+f_{k-1} \cdots f_1,
 $$
+
+for some $1 \leq k \leq n$.
 
 By $S(n)$
 
