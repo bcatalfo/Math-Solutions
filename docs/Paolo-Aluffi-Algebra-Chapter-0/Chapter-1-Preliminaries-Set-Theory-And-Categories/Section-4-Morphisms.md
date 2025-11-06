@@ -88,3 +88,14 @@ $$
 ---
 
 $\textbf{4.2.} \enspace \triangleright$ In Example 3.3 we have seen how to construct a category from a set endowed with a relation, provided this latter is reflexive and transitive. For what types of relations is the corresponding category a groupoid (cf. Example 4.6)? $[\S 4.1]$
+
+**Solution**
+
+Let $\sim$ be a relation on $S$, and let 
+
+$$\text{Hom}(a,b) =  
+\begin{cases}
+  (a,b) \quad \text{if } a ~ b, \\
+  \emptyset \quad \text{otherwise}.
+\end{cases}, \quad \forall a, b \in S.
+$$
