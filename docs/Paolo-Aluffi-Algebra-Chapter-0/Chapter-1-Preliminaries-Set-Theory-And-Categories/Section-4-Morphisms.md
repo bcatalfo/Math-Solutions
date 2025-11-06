@@ -95,22 +95,26 @@ Let $\sim$ be a relation on $S$, and let
 
 $$\text{Hom}(a,b) =  
 \begin{cases}
-  (a,b) \quad \text{if } a \sim b, \\
+  \{(a,b)\} \quad \text{if } a \sim b, \\
   \emptyset \quad \text{otherwise}.
 \end{cases}, \quad \forall a, b \in S.
 $$
 
-For this to be a groupoid, every morphism must be an isomorphism. So we must have $(a,b)$ be an isomorphism for any $a, b \in S$ where $a \sim b$. Then 
+For this to be a groupoid, every morphism must be an isomorphism. So we need to show that $(a,b)$ is an isomorphism for any $a, b \in S$ where $a \sim b$.
+
+Since $a \sim a$ and $b \sim b$ by reflexive, by the definition above $\text{Hom}(a,a) = \{(a,a)\}$ and $\text{Hom}(b,b) = \{(b,b)\}$, so since $(a,b)(b,a) \in \text{Hom}(a,a)$ and $(b,a)(a,b) \in \text{Hom}(b,c)$, by necessity we have
 
 $$
 (a,b)(b,a) = (a,a) = 1_a, \\
-(b,a)(a,b) = (b,b) = 1_b
+(b,a)(a,b) = (b,b) = 1_b.
 $$
 
-So $(a,b)$ is an isomorphism if and only if $(b,a)$ exists, equivalentally $b \sim a$. So we need 
+Therefore $(a,b)$ is an isomorphism if and only if $(b,a)$ exists, equivalentally $b \sim a$. So we NTS 
 
 $$
-a \sim b \implies b \sim a
+a \sim b \implies b \sim a, \quad \forall a,b \in S
 $$
 
-So we can conlcude that the type of relations where this category becomes a groupoid are exactly the symmetric, reflexive, and transitive relations, which are also known as the equivalence relations. $\quad \square$
+which is the definition of $\sim$ being symmetric.
+
+So we can conclude that the type of relations where this category becomes a groupoid are exactly the symmetric, reflexive, and transitive relations, which are also known as the equivalence relations. $\quad \square$
