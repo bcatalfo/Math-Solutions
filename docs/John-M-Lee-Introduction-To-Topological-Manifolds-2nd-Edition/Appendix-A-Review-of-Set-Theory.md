@@ -94,6 +94,11 @@ Alternatively, assume that none of the three conditions are true. We need to sho
 $\blacktriangleright \>$ **Exercise A.4.** &nbsp; Let $f:X \to Y$ and $g:W \to X$ be maps, and suppose $R \subseteq W,S,S' \subseteq X$, and $T,T' \subseteq Y$. Prove the following:
 $\quad \text{(a)} \quad T \supseteq f(f^{-1}(T))$.
 
+**Solution**
+Let $x \in f(f^{-1}(T))$. NTS that $x \in T$.
+
+By our choice of $x$, there must exist some $y \in f^{-1}(T)$ such that $x = f(y)$. Since $y \in f^{-1}(T)$, we have $x = f(y) \in T$. $\> \square$
+
 ---
 
 $\quad \text{(b)} \quad T \subseteq T' \implies f^{-1}(T) \subseteq f^{-1}(T')$.
