@@ -115,6 +115,16 @@ Since $x \in f^{-1}(T)$ by definition $f(x) \in T$. Since $T \subseteq T'$, $f(x
 
 $\quad \text{(c)} \quad f^{-1}(T \cup T') = f^{-1}(T) \cup f^{-1}(T')$.
 
+**Solution**
+
+$\subseteq \quad$ First we will show that $f^{-1}(T \cup T') \subseteq f^{-1}(T) \cup f^{-1}(T')$.
+
+Let $x \in f^{-1}(T \cup T')$. NTS $x \in f^{-1}(T) \cup f^{-1}(T')$. 
+
+By our choice of $x$, we have $f(x) \in T \cup T'$. If $f(x) \in T$ then $x \in f^{-1}(T) \subseteq f^{-1}(T) \cup f^{-1}(T')$ and we are done. So WLOG $f(x) \notin T$.
+
+Since $f(x) \notin T$ and $f(x) \in T \cup T'$, we must have $f(x) \in T'$, equivalentally $x \in f^{-1}(T) \subseteq f^{-1}(T) \cup f^{-1}(T')$, so we are done.
+
 ---
 
 $\quad \text{(d)} \quad f^{-1}(T \cap T') = f^{-1}(T) \cap f^{-1}(T')$.
