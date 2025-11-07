@@ -183,6 +183,13 @@ We continue by showing that $A \cup \partial A \subseteq \overline{A}$.
 Let $x \in A \cup \partial A$. NTS $x \in \overline{A}$. If $x \in A$ then this is trivial as $A \subseteq \overline{A}$. So WLOG $x \notin A$.
 Since $x \in A \cup \partial A$ and $x \notin A$ we must have $x \in \partial A$. Let $A \subseteq B \subseteq X$ were $B$ is closed, NTS $x \in B$.
 Since $B$ is closed, $X \setminus B$ is open. Assume $x \in X \setminus B$. Then $X \setminus B$ is a neighborhood of $x$. Since $x \in \partial A$ and $X \setminus B$ is a neighborhood of $x$, by part (c) $X \setminus B$ contains both a point of $A$ and $X \setminus A$. But $X \setminus B$ containing a point of $A$ is a contradiction, because if $y \in A \subseteq B$ we can not have $y \in X \setminus B$.
+We have now shown that $\overline{A} = A \cup \partial A$. It remains to show that $\overline{A} = \text{Int}A \cup \partial A$.
+We begin by showing that $\overline{A} \subseteq \text{Int} A \cup \partial A$.
+Let $x \in \overline{A}$. NTS $x \in \text{Int}A \cup \partial A$.
+Assume $x \notin \text{Int}A$. It is sufficient to show that $x \in \partial A$.
+Let $B$ be a neighborhood of $x$. By part (c) NTS that $B$ contains a point of $A$ and a point of $X \setminus A$.
+By (d), we know that $B$ contains a point of $A$. It remains to show that it also contains a point of $X \setminus A$.
+Assume that $B$ does not contain a point of $X \setminus A$. Then $B \subseteq A$, contradicting $x \notin \text{Int}A$.
 **(f)** \(\text{Int} A\) and \(\text{Ext} A\) are open in \(X\), while \(\overline{A}\) and \(\partial A\) are closed in \(X\).
 **(g)** The following are equivalent:
 * \(A\) is open in \(X\).
