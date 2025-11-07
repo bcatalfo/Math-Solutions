@@ -215,8 +215,10 @@ First we NTS $A$ is open in $X$ $\implies A = \text{Int}A$
 Let $A$ be open in $X$. NTS $A = \text{Int}A$.
 
 First we NTS $A \subseteq \text{Int}A$.
+Let $x \in A$. NTS $x \in \text{Int}A$. This follows from the definition of interior, as $A \subseteq X$, $A \subseteq A$ and $A$ is open in $X$. 
 
 Next we NTS $\text{Int}A \subseteq A$.
+Let $x \in \text{Int}A$. NTS $x \in A$. By the definition of interior, $x \in C$ for some $C \subseteq A$ where $C$ is open in $A$. So obviously $x \in A$.
 
 We have now shown that  $A$ is open in $X$ $\implies A = \text{Int}A$.
 
