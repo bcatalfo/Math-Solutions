@@ -224,6 +224,10 @@ We have now shown that  $A$ is open in $X$ $\implies A = \text{Int}A$.
 
 Next we NTS $A = \text{Int}A \implies A$ contains none of its boundary points. 
 
+Let $A = \text{Int}A$. NTS $A$ contains none of its boundary points. 
+Suppose for the sake of contradiction that $x \in A \cap \partial A$.
+Since by definition $\partial A = X \setminus (\text{Int}A \cup \text{Ext}A)$, $x \notin \text{Int}A$, contradicting $x \in A = \text{Int}A$.
+
 Next we NTS $A$ contains none of its boundary points $\implies$ Every point of $A$ has a neighborhood contained in $A$.
 
 Finally we NTS every point of $A$ has a neighborhood contained in $A \implies A$ is open in $X$.
