@@ -103,6 +103,14 @@ By our choice of $x$, there must exist some $y \in f^{-1}(T)$ such that $x = f(y
 
 $\quad \text{(b)} \quad T \subseteq T' \implies f^{-1}(T) \subseteq f^{-1}(T')$.
 
+**Solution**
+
+Let $T \subseteq T'$. NTS $f^{-1}(T) \subseteq f^{-1}(T')$.
+
+Let $x \in f^{-1}(T)$. NTS $x \in f^{-1}(T')$.
+
+Since $x \in f^{-1}(T)$ by definition $f(x) \in T$. Since $T \subseteq T'$, $f(x) \in T'$. By definition, $x \in f^{-1}(T)$. $\> \square$
+
 ---
 
 $\quad \text{(c)} \quad f^{-1}(T \cup T') = f^{-1}(T) \cup f^{-1}(T')$.
