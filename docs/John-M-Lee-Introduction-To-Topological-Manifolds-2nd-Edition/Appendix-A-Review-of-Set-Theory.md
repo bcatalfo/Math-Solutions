@@ -125,6 +125,12 @@ By our choice of $x$, we have $f(x) \in T \cup T'$. If $f(x) \in T$ then $x \in 
 
 Since $f(x) \notin T$ and $f(x) \in T \cup T'$, we must have $f(x) \in T'$, equivalentally $x \in f^{-1}(T) \subseteq f^{-1}(T) \cup f^{-1}(T')$, so we are done.
 
+$\supseteq \quad$ It remains to show that $f^{-1}(T \cup T') \supseteq f^{-1}(T) \cup f^{-1}(T')$.
+
+Let $x \in f^{-1}(T) \cup f^{-1}(T')$. NTS $x \in f^{-1}(T \cup T') \iff f(x) \in T \cup T'$.
+
+If $f(x) \in T \subseteq T \cup T'$ we are done so WLOG $f(x) \notin T \iff x \notin f^{-1}(T)$. Since $x \in f^{-1}(T) \cup f^{-1}(T')$ we must have $x \in f^{-1}(T') \iff f(x) \in T' \subseteq T \cup T'$ and we are done. 
+
 ---
 
 $\quad \text{(d)} \quad f^{-1}(T \cap T') = f^{-1}(T) \cap f^{-1}(T')$.
