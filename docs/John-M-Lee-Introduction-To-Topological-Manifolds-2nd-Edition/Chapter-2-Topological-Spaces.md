@@ -210,6 +210,22 @@ $\partial A$ is closed $\iff$ $\text{Int}A \cup \text{Ext}A$ is open, which it i
 * \(A\) contains none of its boundary points.
 * Every point of \(A\) has a neighborhood contained in \(A\).
 
+First we NTS $A$ is open in $X$ $\implies A = \text{Int}A$ 
+
+Let $A$ be open in $X$. NTS $A = \text{Int}A$.
+
+First we NTS $A \subseteq \text{Int}A$.
+
+Next we NTS $\text{Int}A \subseteq A$.
+
+We have now shown that  $A$ is open in $X$ $\implies A = \text{Int}A$.
+
+Next we NTS $A = \text{Int}A \implies A$ contains none of its boundary points. 
+
+Next we NTS $A$ contains none of its boundary points $\implies$ Every point of $A$ has a neighborhood contained in $A$.
+
+Finally we NTS every point of $A$ has a neighborhood contained in $A \implies A$ is open in $X$.
+
 **(h)** The following are equivalent:
 * \(A\) is closed in \(X\).
 * \(A = \overline{A}\).
