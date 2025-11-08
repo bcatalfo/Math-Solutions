@@ -200,6 +200,7 @@ Let $B$ be a neighborhood of $x$. By (d) NTS $B$ contains a point of $A$. We wil
 If $x \in \text{Int}A$ then $B \subseteq A$ so of course $B$ contains a point of $A$.
 If $x \in \partial A$ then by (c) $B$ contains both a point of $A$ and a point of $X \setminus A$ so of course $B$ contains a point of $A$. $\> \square$
 **(f)** \(\text{Int} A\) and \(\text{Ext} A\) are open in \(X\), while \(\overline{A}\) and \(\partial A\) are closed in \(X\).
+**Solution**
 $\text{Int}A$  is open because it is the union of open sets.
 $\text{Ext}A$ is open $\iff$ $X \setminus \overline{A}$ is open $\iff$ $\overline{A}$ is closed.  
 $\overline{A}$ is closed because it is the intersection of closed sets.
@@ -209,6 +210,8 @@ $\partial A$ is closed $\iff$ $\text{Int}A \cup \text{Ext}A$ is open, which it i
 * \(A = \text{Int} A\).
 * \(A\) contains none of its boundary points.
 * Every point of \(A\) has a neighborhood contained in \(A\).
+
+**Solution**
 
 First we NTS $A$ is open in $X$ $\implies A = \text{Int}A$ 
 
