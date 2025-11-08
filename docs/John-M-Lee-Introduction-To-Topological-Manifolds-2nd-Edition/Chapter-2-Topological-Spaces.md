@@ -230,6 +230,10 @@ Since by definition $\partial A = X \setminus (\text{Int}A \cup \text{Ext}A)$, $
 
 Next we NTS $A$ contains none of its boundary points $\implies$ Every point of $A$ has a neighborhood contained in $A$.
 
+Suppose that $A$ contains none of its boundary points. NTS every point of $A$ has a neighborhood contained in $A$.
+For the sake of contradiction, let $x \in A$ have no neighborhood contained in $A$.
+Let $B$ be a neighborhood of $x$. Since $x \in A$, $B$ contains a point of $A$. Since $B$ is not contained in $A$, $B$ contains a point of $X \setminus A$. Therefore by (c), $x \in \partial A$, a contradiction.
+
 Finally we NTS every point of $A$ has a neighborhood contained in $A \implies A$ is open in $X$.
 
 **(h)** The following are equivalent:
