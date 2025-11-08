@@ -235,6 +235,9 @@ For the sake of contradiction, let $x \in A$ have no neighborhood contained in $
 Let $B$ be a neighborhood of $x$. Since $x \in A$, $B$ contains a point of $A$. Since $B$ is not contained in $A$, $B$ contains a point of $X \setminus A$. Therefore by (c), $x \in \partial A$, a contradiction.
 
 Finally we NTS every point of $A$ has a neighborhood contained in $A \implies A$ is open in $X$.
+It is sufficient to show that $A = \text{Int}A$, as by part (f), $\text{Int}A$ is open.
+It is obvious that $\text{Int}A \subseteq A$, as if $x \in \text{Int}A$ then by definition for some open $C \subseteq A$ we have $x \in C$, so $x \in A$.
+It remains to show that $A \subseteq \text{Int}A$. Let $x \in A$. NTS $x \in \text{Int}A$. This is also obvious, as it is given that $x$, being a point of $A$, has some neighborhood $C$ contained in $A$. $\> \square$
 
 **(h)** The following are equivalent:
 * \(A\) is closed in \(X\).
