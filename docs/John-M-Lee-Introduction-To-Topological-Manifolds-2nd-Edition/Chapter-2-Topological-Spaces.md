@@ -259,7 +259,12 @@ Let $B \supseteq A$ be closed. Then we must have $x \in B$ as $\overline{A}$ is 
 
 Next we NTS $A = \overline{A} \implies A$ contains all of its boundary points.
 
+Assume that $A = \overline{A}$ and $x \in \partial A$. NTS $x \in A$.
+Let $B$ be a neighborhood of $x$. By (c), $B$ contains a point of $A$. By (d), $x \in \overline{A} = A$.
+
 Next we NTS $A$ contains all of its boundary points $\implies$ every point of $X \setminus A$ has a neighborhood contained in $X \setminus A$.
+
+Assume $\partial A \subseteq A$. Let $x \in X \setminus A$. NTS there exists a neighborhood $B$ of $x$ such that $B \subseteq X \setminus A$.
 
 Finally we NTS every point of $X \setminus A$ has a neighborhood contained in $X \setminus A \implies A$ is closed in $X$.
 
