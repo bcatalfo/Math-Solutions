@@ -248,6 +248,21 @@ It remains to show that $A \subseteq \text{Int}A$. Let $x \in A$. NTS $x \in \te
 * \(A\) contains all of its boundary points.
 * Every point of \(X \setminus A\) has a neighborhood contained in \(X \setminus A\).
 
+**Solution**
+
+First we NTS $A$ is closed in $X \implies A = \overline{A}$. 
+
+Suppose that $A$ is closed in $X$. NTS $A = \overline{A}$.
+It is obvious that $A \subseteq \overline{A}$ because if $B \supseteq A$ then $x \in A \implies x \in B$.
+It remains to show that $\overline{A} \subseteq A$. Let $x \in \overline{A}$. NTS $x \in A$.
+Let $B \supseteq A$ be closed. Then we must have $x \in B$ as $\overline{A}$ is the intersection of all such sets $B$. Since $A \supseteq A$ is closed, we must have $x \in A$.
+
+Next we NTS $A = \overline{A} \implies A$ contains all of its boundary points.
+
+Next we NTS $A$ contains all of its boundary points $\implies$ every point of $X \setminus A$ has a neighborhood contained in $X \setminus A$.
+
+Finally we NTS every point of $X \setminus A$ has a neighborhood contained in $X \setminus A \implies A$ is closed in $X$.
+
 $$
 \\
 $$
