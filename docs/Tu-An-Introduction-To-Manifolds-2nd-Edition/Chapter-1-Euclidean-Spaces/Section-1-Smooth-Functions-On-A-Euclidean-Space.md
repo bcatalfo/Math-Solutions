@@ -16,6 +16,7 @@ Let \( g: \mathbb{R} \to \mathbb{R} \) be the function in Example 1.2(iii). Show
 
 First, recall that \( g: \mathbb{R} \to \mathbb{R} \) is defined as 
 $$  
+\\[1em]
 g(x) = \frac{3}{4}x^{4/3} 
 $$
 

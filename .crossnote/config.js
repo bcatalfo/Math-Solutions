@@ -1,7 +1,8 @@
 ({
   katexConfig: {
     "leqno": true,
-    "macros": {}
+    "macros": {},
+    "minRuleThickness": 0.06
   },
 
   mathjaxConfig: {
